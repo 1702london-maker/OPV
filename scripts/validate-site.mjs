@@ -62,9 +62,38 @@ for (const file of await htmlFiles(root)) {
   }
 }
 
-if (missing.length || malformed.length) {
+const missingLinks = [];
+for (const file of await htmlFiles(root)) {
+  const html = await readFile(file, "utf8");
+  for (const match of html.matchAll(/href="([^"]+)"/g)) {
+    const href = match[1];
+    if (
+      href.startsWith("http") ||
+      href.startsWith("mailto:") ||
+      href.startsWith("tel:") ||
+      href.startsWith("#")
+    ) {
+      continue;
+    }
+    let target = href.split("#")[0].split("?")[0];
+    if (!target) continue;
+    if (target === "/") {
+      target = "index.html";
+    } else {
+      if (target.startsWith("/")) target = target.slice(1);
+      if (target.endsWith("/")) target += "index.html";
+      else if (!path.extname(target)) target += ".html";
+    }
+    if (!(await exists(target))) {
+      missingLinks.push(`${path.relative(root, file)} -> ${href}`);
+    }
+  }
+}
+
+if (missing.length || malformed.length || missingLinks.length) {
   if (missing.length) console.error("Missing required files:", missing.join(", "));
   if (malformed.length) console.error("Malformed HTML files:", malformed.join(", "));
+  if (missingLinks.length) console.error("Missing internal links:", missingLinks.join(", "));
   process.exit(1);
 }
 
