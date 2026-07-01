@@ -1,0 +1,23 @@
+{
+  "name": "opv",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "buildCommand": "npm run build",
+  "outputDirectory": ".",
+  "installCommand": "npm install",
+  "framework": null,
+  "rewrites": [
+    { "source": "/register", "destination": "/login" },
+    { "source": "/services/private-dining", "destination": "/services" },
+    { "source": "/services/events-experiences", "destination": "/services/events-experiences/the-midnight-concerto" },
+    { "source": "/services/car-rentals", "destination": "/services" },
+    { "source": "/legal/terms", "destination": "/legal/terms.html" },
+    { "source": "/legal/privacy", "destination": "/legal/privacy.html" },
+    { "source": "/legal/verification", "destination": "/legal/verification.html" },
+    { "source": "/legal/cancellation", "destination": "/legal/cancellation.html" },
+    { "source": "/legal/cookies", "destination": "/legal/cookies.html" }
+  ],
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": "https://rjskyzgkxnwxtkijqwgq.supabase.co"
+  }
+}

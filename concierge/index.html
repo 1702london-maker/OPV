@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Concierge Request | OPV</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Hanken+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#c0c6db",
+                    "on-tertiary-fixed-variant": "#46483d",
+                    "on-tertiary": "#2f3128",
+                    "on-secondary-fixed": "#241a00",
+                    "secondary-container": "#af8d11",
+                    "on-tertiary-fixed": "#1b1c14",
+                    "tertiary-fixed-dim": "#c7c7ba",
+                    "error": "#ffb4ab",
+                    "on-primary-fixed": "#151b2b",
+                    "surface-container-highest": "#333535",
+                    "on-surface": "#e2e2e2",
+                    "surface-container-low": "#1a1c1c",
+                    "surface-tint": "#c0c6db",
+                    "surface-variant": "#333535",
+                    "surface-container-lowest": "#0d0f0f",
+                    "on-surface-variant": "#c6c6cd",
+                    "on-secondary": "#3c2f00",
+                    "tertiary-container": "#11130b",
+                    "primary-container": "#0b1221",
+                    "surface-bright": "#38393a",
+                    "on-tertiary-container": "#7d7e72",
+                    "on-secondary-container": "#342800",
+                    "tertiary": "#c7c7ba",
+                    "on-primary-container": "#777d90",
+                    "background": "#121414",
+                    "on-primary": "#293041",
+                    "on-secondary-fixed-variant": "#574500",
+                    "inverse-primary": "#575e70",
+                    "error-container": "#93000a",
+                    "tertiary-fixed": "#e3e3d5",
+                    "surface-container-high": "#282a2b",
+                    "inverse-surface": "#e2e2e2",
+                    "surface-dim": "#121414",
+                    "on-error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#404758",
+                    "secondary": "#e9c349",
+                    "primary-fixed-dim": "#c0c6db",
+                    "on-background": "#e2e2e2",
+                    "secondary-fixed-dim": "#e9c349",
+                    "primary-fixed": "#dce2f8",
+                    "outline": "#909097",
+                    "outline-variant": "#45464c",
+                    "surface-container": "#1e2020",
+                    "surface": "#121414",
+                    "secondary-fixed": "#ffe088",
+                    "on-error": "#690005",
+                    "inverse-on-surface": "#2f3131"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "container-max": "1440px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "80px",
+                    "gutter": "24px",
+                    "section-gap": "120px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Playfair Display"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "body-md": ["Hanken Grotesk"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "label-caps": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0b1221;
+            color: #e2e2e2;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .luxury-gradient {
+            background: linear-gradient(180deg, rgba(11,18,33,0) 0%, rgba(11,18,33,0.8) 70%, rgba(11,18,33,1) 100%);
+        }
+        .form-input-line {
+            border: none;
+            border-bottom: 1px solid rgba(229, 229, 225, 0.2);
+            background: transparent !important;
+            padding: 12px 0;
+            border-radius: 0;
+            transition: border-color 0.3s ease;
+        }
+        .form-input-line:focus {
+            outline: none;
+            box-shadow: none;
+            border-bottom-color: #e9c349;
+        }
+        select.form-input-line {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23e9c349'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: 1.2em;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-primary-container/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-margin-desktop py-unit-gutter max-w-container-max mx-auto w-full">
+<div class="font-display-lg text-headline-sm tracking-tighter text-on-surface">OPV</div>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out" href="#">Services</a>
+<a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out" href="#">Experiences</a>
+<a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out" href="#">Products</a>
+<a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out" href="#">About</a>
+<a class="text-secondary font-semibold border-b border-secondary pb-1 font-label-caps" href="#">Concierge</a>
+<a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out" href="#">Membership</a>
+</div>
+<div class="flex gap-4 items-center">
+<button class="font-label-caps text-on-surface-variant hover:text-secondary transition-colors">Login</button>
+<button class="bg-secondary text-primary-container font-label-caps px-6 py-2 transition-transform active:scale-95">Register</button>
+</div>
+</div>
+</nav>
+<main class="mt-0">
+<!-- Hero Section -->
+<section class="relative h-[921px] w-full flex items-end overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A warm, intimate cinematic shot of a luxury hotel lobby at dusk. Soft golden light spills across velvet armchairs and dark wood surfaces. A polished marble floor reflects the warm amber glow of a grand fireplace in the background. The atmosphere is quiet, prestigious, and deeply private, capturing a sense of ultimate multi-generational heritage and exclusive care." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDoFuXqjtEphtZEVoD4C3tM_sExKi-ozdNN3QfOpx3rb8lTEpXuRVKpkDy5i4941Wk1bRo9eNzBQ3Rm6H-8m5DVW2nxD_vMg_T2mkffarNo40vFqs6thUO2x4i4mR20fWnQRl8wNMXnBAxb49L_nC75kyQAAgYs8ObcWHg8QTXXfopwI4BOsuS7IvGyhg8tiHTJKZkFs350nbuMZrOf_6CmW_H0Cf091I46MJrNjqCX29DxhbVETDIwNQ')">
+</div>
+<div class="absolute inset-0 luxury-gradient"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-desktop pb-section-gap">
+<div class="max-w-3xl">
+<span class="font-label-caps text-secondary mb-4 block tracking-[0.2em]">PRIVATE CONCIERGE</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface leading-tight">
+                        Whatever You Need.<br/>We Will Arrange It.
+                    </h1>
+</div>
+</div>
+</section>
+<!-- Editorial Section -->
+<section class="bg-primary-container py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 flex items-center justify-center border border-secondary/30 rounded-full mb-4">
+<span class="material-symbols-outlined text-secondary">verified</span>
+</div>
+<h3 class="font-headline-sm text-on-surface">Bespoke Mastery</h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+                            Every request is handled with the surgical precision of a master artisan. We do not offer packages; we craft singular responses to your unique requirements.
+                        </p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 flex items-center justify-center border border-secondary/30 rounded-full mb-4">
+<span class="material-symbols-outlined text-secondary">layers</span>
+</div>
+<h3 class="font-headline-sm text-on-surface">Multi-Service Fluidity</h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+                            From securing rare vintage timepieces to managing global logistics and private security, our ecosystem operates as a singular, unified force for your convenience.
+                        </p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 flex items-center justify-center border border-secondary/30 rounded-full mb-4">
+<span class="material-symbols-outlined text-secondary">visibility_off</span>
+</div>
+<h3 class="font-headline-sm text-on-surface">Beyond Listings</h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+                            We exist in the space where others stop. Our network grants access to the unlisted, the unavailable, and the purely exclusive, ensuring your desires are met without compromise.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Request Form Section -->
+<section class="bg-surface-container-lowest py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="bg-[#1F1F1F] border-[0.5px] border-outline-variant/20 overflow-hidden flex flex-col md:flex-row">
+<!-- Form Image/Info Side -->
+<div class="md:w-2/5 relative min-h-[400px]">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A macro shot of high-quality materials: dark navy textured fabric, a thin edge of polished champagne gold metal, and a hint of fine stationery on a charcoal desk. The lighting is focused and moody, highlighting the tactile quality of the surfaces. The overall aesthetic is one of quiet luxury, meticulous detail, and professional reliability." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBRdQfd0Twd1mJ9bHnDy15i9dpteKO655AoqZ5pUQndqoNdusexLfxziQa5m_tgiwpmCMW7otkwM3i4ld95v7GmkE1ipQi-xjpjLIBGkaoxGW8ehpREBTReIVfyTlmMcy9llJc_V1CCNUu82EZgyLcCtfPc8QS_gmF0wP0gbgsq5lwCbWmcNLGuXs0Ko7GGoGoIMdlhbOwlm8D6A-ONluuDXXqogfed5sRvtyOZPtgbPnj72nF1C2aHIA')">
+</div>
+<div class="absolute inset-0 bg-primary-container/40 backdrop-blur-[2px]"></div>
+<div class="relative z-10 p-12 h-full flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-8">
+<div class="w-8 h-8 rounded-full border border-secondary flex items-center justify-center text-[10px] font-bold text-secondary">OPV</div>
+<span class="font-label-caps text-on-surface tracking-widest">VERIFIED SERVICE</span>
+</div>
+<h2 class="font-headline-md text-on-surface mb-6">Initiate Your Request</h2>
+<p class="font-body-md text-on-surface-variant">A dedicated guardian will be assigned to your case within 15 minutes of submission.</p>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary text-sm">schedule</span>
+<span class="font-label-caps text-on-surface-variant">24/7 Global Operations</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary text-sm">lock</span>
+<span class="font-label-caps text-on-surface-variant">End-to-End Encryption</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Form Content Side -->
+<div class="md:w-3/5 p-8 md:p-16">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12" id="conciergeRequest">
+<div class="flex flex-col">
+<label class="font-label-caps text-secondary text-[10px] mb-1">FULL NAME</label>
+<input class="form-input-line font-body-md text-on-surface placeholder:text-on-surface-variant/30" placeholder="Your formal name" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps text-secondary text-[10px] mb-1">EMAIL ADDRESS</label>
+<input class="form-input-line font-body-md text-on-surface placeholder:text-on-surface-variant/30" placeholder="email@address.com" type="email"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps text-secondary text-[10px] mb-1">PHONE NUMBER</label>
+<input class="form-input-line font-body-md text-on-surface placeholder:text-on-surface-variant/30" placeholder="+1 (000) 000-0000" type="tel"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps text-secondary text-[10px] mb-1">REQUEST TYPE</label>
+<select class="form-input-line font-body-md text-on-surface">
+<option disabled="" selected="" value="">Select service category</option>
+<option value="travel">Travel &amp; Yachting</option>
+<option value="lifestyle">Lifestyle &amp; Personal Shopping</option>
+<option value="events">Events &amp; Private Dining</option>
+<option value="security">Security &amp; Protection</option>
+<option value="other">Other Bespoke Request</option>
+</select>
+</div>
+<div class="flex flex-col md:col-span-2">
+<label class="font-label-caps text-secondary text-[10px] mb-1">ESTIMATED BUDGET RANGE</label>
+<div class="flex gap-4 mt-2 overflow-x-auto pb-2 scrollbar-hide">
+<button class="budget-opt px-4 py-2 border border-outline-variant/30 font-label-caps text-on-surface-variant hover:border-secondary hover:text-secondary transition-all whitespace-nowrap active:scale-95" type="button">Entry Luxury</button>
+<button class="budget-opt px-4 py-2 border border-outline-variant/30 font-label-caps text-on-surface-variant hover:border-secondary hover:text-secondary transition-all whitespace-nowrap active:scale-95" type="button">High Tier</button>
+<button class="budget-opt px-4 py-2 border border-outline-variant/30 font-label-caps text-on-surface-variant hover:border-secondary hover:text-secondary transition-all whitespace-nowrap active:scale-95" type="button">Ultra-High Net</button>
+<button class="budget-opt px-4 py-2 border border-outline-variant/30 font-label-caps text-on-surface-variant hover:border-secondary hover:text-secondary transition-all whitespace-nowrap active:scale-95" type="button">No Limit</button>
+</div>
+</div>
+<div class="flex flex-col md:col-span-2">
+<label class="font-label-caps text-secondary text-[10px] mb-1">DESCRIPTION OF REQUEST</label>
+<textarea class="form-input-line font-body-md text-on-surface placeholder:text-on-surface-variant/30 resize-none" placeholder="Describe the specifics of your requirement in detail..." rows="4"></textarea>
+</div>
+<div class="md:col-span-2 flex justify-end items-center gap-8 mt-4">
+<p class="text-[10px] font-label-caps text-on-surface-variant/50 max-w-[200px] text-right leading-tight">
+                                    BY SUBMITTING, YOU AGREE TO OUR PRIVATE SERVICE TERMS.
+                                </p>
+<button class="bg-secondary text-primary-container px-12 py-4 font-label-caps text-sm tracking-[0.2em] hover:brightness-110 transition-all active:scale-[0.98]" type="submit">
+                                    SUBMIT REQUEST
+                                </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-section-gap px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="md:col-span-2">
+<div class="font-display-lg text-headline-md text-on-surface mb-6">OPV</div>
+<p class="font-body-md text-on-surface-variant max-w-sm mb-8">
+                    The Discerning Guardian of Luxury. Providing unparalleled access and security to the world's most elite individuals.
+                </p>
+<p class="font-label-caps text-on-surface-variant/50">© 2024 Opulent Vault. All rights reserved.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-caps text-secondary mb-2">SERVICES</h4>
+<a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Luxury Stays</a>
+<a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Private Dining</a>
+<a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">VIP Security</a>
+<a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Yacht Services</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-caps text-secondary mb-2">NETWORK</h4>
+<a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Events &amp; Exp</a>
+<a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Private Tours</a>
+<a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Concierge</a>
+<a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Membership</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-caps text-secondary mb-2">LEGAL</h4>
+<a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Terms of Service</a>
+<a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Cookie Policy</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for budget buttons
+        const budgetButtons = document.querySelectorAll('.budget-opt');
+        budgetButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                budgetButtons.forEach(b => {
+                    b.classList.remove('bg-secondary', 'text-primary-container', 'border-secondary');
+                    b.classList.add('border-outline-variant/30', 'text-on-surface-variant');
+                });
+                btn.classList.remove('border-outline-variant/30', 'text-on-surface-variant');
+                btn.classList.add('bg-secondary', 'text-primary-container', 'border-secondary');
+            });
+        });
+
+        // Soft close feel on hover/active states
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button[type="submit"]');
+            const originalText = btn.innerText;
+            btn.innerText = "TRANSMITTING...";
+            btn.disabled = true;
+            btn.style.opacity = "0.7";
+            
+            setTimeout(() => {
+                btn.innerText = "RECEIVED";
+                btn.style.backgroundColor = "#c0c6db";
+                btn.style.color = "#0b1221";
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.style.backgroundColor = "#e9c349";
+                    btn.style.color = "#0b1221";
+                    btn.disabled = false;
+                    btn.style.opacity = "1";
+                    e.target.reset();
+                    budgetButtons.forEach(b => b.classList.remove('bg-secondary', 'text-primary-container', 'border-secondary'));
+                }, 2000);
+            }, 1500);
+        });
+
+        // Header scroll behavior
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'bg-primary-container/95');
+                nav.classList.remove('py-unit-gutter', 'bg-primary-container/80');
+            } else {
+                nav.classList.add('py-unit-gutter', 'bg-primary-container/80');
+                nav.classList.remove('py-2', 'bg-primary-container/95');
+            }
+        });
+    </script>
+</body></html>

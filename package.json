@@ -1,0 +1,13 @@
+{
+  "name": "opv",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OPV - Opulent Vault static Stitch export, Vercel-ready.",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "node ./scripts/validate-site.mjs"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
