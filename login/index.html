@@ -20,29 +20,29 @@
                     "error-container": "#93000a",
                     "on-error": "#690005",
                     "on-secondary-fixed-variant": "#574500",
-                    "surface-container": "#1e2020",
-                    "primary-container": "#0b1221",
+                    "surface-container": "#ffffff",
+                    "primary-container": "#fbf9f8",
                     "primary-fixed-dim": "#c0c6db",
                     "on-tertiary": "#2f3128",
-                    "surface-container-high": "#282a2b",
+                    "surface-container-high": "#ebe9e8",
                     "on-secondary-container": "#342800",
-                    "surface-container-highest": "#333535",
+                    "surface-container-highest": "#dbdad9",
                     "outline": "#909097",
                     "inverse-primary": "#575e70",
-                    "surface-bright": "#38393a",
+                    "surface-bright": "#c7c7ba",
                     "secondary-fixed-dim": "#e9c349",
                     "on-tertiary-fixed-variant": "#46483d",
-                    "surface-container-lowest": "#0d0f0f",
+                    "surface-container-lowest": "#ffffff",
                     "on-primary-fixed-variant": "#404758",
-                    "surface-container-low": "#1a1c1c",
+                    "surface-container-low": "#f5f3f3",
                     "on-error-container": "#ffdad6",
                     "tertiary-fixed-dim": "#c7c7ba",
                     "on-primary-fixed": "#151b2b",
                     "inverse-surface": "#e2e2e2",
                     "on-tertiary-container": "#7d7e72",
                     "on-secondary": "#3c2f00",
-                    "surface-variant": "#333535",
-                    "surface-dim": "#121414",
+                    "surface-variant": "#dbdad9",
+                    "surface-dim": "#fbf9f8",
                     "on-primary-container": "#777d90",
                     "primary-fixed": "#dce2f8",
                     "tertiary-container": "#11130b",
@@ -58,10 +58,10 @@
                     "on-primary": "#293041",
                     "secondary": "#e9c349",
                     "on-tertiary-fixed": "#1b1c14",
-                    "background": "#121414",
+                    "background": "#fbf9f8",
                     "on-surface-variant": "#c6c6cd",
                     "inverse-on-surface": "#2f3131",
-                    "surface": "#121414"
+                    "surface": "#fbf9f8"
             },
             "borderRadius": {
                     "DEFAULT": "0.25rem",
@@ -101,7 +101,7 @@
     </script>
 <style>
         body {
-            background-color: #121414; /* surface-dim */
+            background-color: #fbf9f8; /* surface-dim */
             color: #e2e2e2; /* on-surface */
             overflow-x: hidden;
         }
@@ -121,7 +121,7 @@
         }
 
         .auth-card {
-            background-color: #1F1F1F;
+            background-color: #ffffff;
             border: 0.5px solid rgba(229, 225, 225, 0.1);
         }
 
@@ -155,7 +155,7 @@
 <!-- Visual Half (Hero) -->
 <div class="hidden md:flex flex-1 relative min-h-[600px] overflow-hidden">
 <div class="absolute inset-0 bg-cover bg-center" data-alt="A macro cinematic shot of a high-end textured champagne-colored silk fabric gently rippling in low-key lighting. The scene is set in a deep midnight navy environment, creating a sense of profound luxury and exclusivity. Soft golden highlights catch the edges of the folds, emphasizing superior quality and craftsmanship. The atmosphere is quiet, authoritative, and profoundly elegant, echoing the aesthetics of a private members' club." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCO90xkyEJtGlmzM6oNWumTG-3GPHWpfDH8-soxcVgcj_iS84Ak-_BArBC3po34vKQtvTbn8w166CHdkDauz2YLQe5a-zRem0tlon80gavIXJeR4Rd9c-l02RteC3KPitrTEL5mMJGxvquftKurxrlgTptiCxz-vowA_24PTAVvJZ3u_Afehrk40arRBuLwp2JAehJve-rFj530zmgzY1cTomGAyN3dcN8U6JZp341oQ7zEF7sP8a5ecg')"></div>
-<div class="absolute inset-0 bg-primary-container/40 backdrop-brightness-75"></div>
+<div class="absolute inset-0 bg-[#fbf9f8]/40 backdrop-brightness-75"></div>
 <div class="absolute bottom-12 left-12 right-12">
 <div class="flex items-center gap-2 mb-4">
 <div class="w-8 h-8 rounded-full border border-secondary flex items-center justify-center text-[10px] font-label-caps text-secondary">OPV</div>
@@ -166,7 +166,7 @@
 </div>
 </div>
 <!-- Form Half -->
-<div class="flex-1 bg-surface-container-lowest p-8 md:p-16 flex flex-col justify-center">
+<div class="flex-1 bg-white p-8 md:p-16 flex flex-col justify-center">
 <div class="mb-10" id="auth-header">
 <h1 class="font-display-lg text-headline-md text-on-surface mb-2" id="form-title">Sign In</h1>
 <p class="font-body-md text-on-surface-variant" id="form-subtitle">Enter your credentials to access your vault.</p>
@@ -232,7 +232,7 @@
 </div>
 </main>
 <!-- Footer Suppression: Using localized footer instead of global for focus -->
-<footer class="bg-surface-container-lowest border-t border-outline-variant/20 py-section-gap px-margin-mobile md:px-margin-desktop">
+<footer class="bg-white border-t border-outline-variant/20 py-section-gap px-margin-mobile md:px-margin-desktop">
 <div class="max-w-container-max mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-5 gap-gutter mb-20">
 <div>
@@ -295,7 +295,7 @@
 </div>
 </div>
 <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 pt-10 border-t border-outline-variant/10">
-<p class="font-body-md text-on-surface-variant text-sm">? 2026 OPV ? Opulent Vault, Manchester United Kingdom.</p>
+<p class="font-body-md text-on-surface-variant text-sm">(c) 2026 OPV - Opulent Vault, Manchester United Kingdom.</p>
 <div class="flex flex-wrap gap-6 font-label-caps text-[10px] uppercase tracking-widest text-on-surface-variant">
 <a class="hover:text-secondary" href="mailto:concierge@opulentvault.co.uk">concierge@opulentvault.co.uk</a>
 <a class="hover:text-secondary" href="tel:+441610000000">+44 161 000 0000</a>

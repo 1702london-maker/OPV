@@ -17,7 +17,7 @@
             font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
         body {
-            background-color: #121414; /* Using 'background' from theme */
+            background-color: #fbf9f8; /* Using 'background' from theme */
             color: #e2e2e2; /* Using 'on-background' from theme */
             font-family: 'Hanken Grotesk', sans-serif;
             overflow-x: hidden;
@@ -49,29 +49,29 @@
                       "error-container": "#93000a",
                       "on-error": "#690005",
                       "on-secondary-fixed-variant": "#574500",
-                      "surface-container": "#1e2020",
-                      "primary-container": "#0b1221",
+                      "surface-container": "#ffffff",
+                      "primary-container": "#fbf9f8",
                       "primary-fixed-dim": "#c0c6db",
                       "on-tertiary": "#2f3128",
-                      "surface-container-high": "#282a2b",
+                      "surface-container-high": "#ebe9e8",
                       "on-secondary-container": "#342800",
-                      "surface-container-highest": "#333535",
+                      "surface-container-highest": "#dbdad9",
                       "outline": "#909097",
                       "inverse-primary": "#575e70",
-                      "surface-bright": "#38393a",
+                      "surface-bright": "#c7c7ba",
                       "secondary-fixed-dim": "#e9c349",
                       "on-tertiary-fixed-variant": "#46483d",
-                      "surface-container-lowest": "#0d0f0f",
+                      "surface-container-lowest": "#ffffff",
                       "on-primary-fixed-variant": "#404758",
-                      "surface-container-low": "#1a1c1c",
+                      "surface-container-low": "#f5f3f3",
                       "on-error-container": "#ffdad6",
                       "tertiary-fixed-dim": "#c7c7ba",
                       "on-primary-fixed": "#151b2b",
                       "inverse-surface": "#e2e2e2",
                       "on-tertiary-container": "#7d7e72",
                       "on-secondary": "#3c2f00",
-                      "surface-variant": "#333535",
-                      "surface-dim": "#121414",
+                      "surface-variant": "#dbdad9",
+                      "surface-dim": "#fbf9f8",
                       "on-primary-container": "#777d90",
                       "primary-fixed": "#dce2f8",
                       "tertiary-container": "#11130b",
@@ -87,10 +87,10 @@
                       "on-primary": "#293041",
                       "secondary": "#e9c349",
                       "on-tertiary-fixed": "#1b1c14",
-                      "background": "#121414",
+                      "background": "#fbf9f8",
                       "on-surface-variant": "#c6c6cd",
                       "inverse-on-surface": "#2f3131",
-                      "surface": "#121414"
+                      "surface": "#fbf9f8"
               },
               "borderRadius": {
                       "DEFAULT": "0.25rem",
@@ -131,14 +131,14 @@
 </head>
 <body class="flex min-h-screen">
 <!-- Sidebar Navigation -->
-<aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest flex flex-col border-r border-outline-variant/10 z-50">
+<aside class="fixed left-0 top-0 h-full w-64 bg-white flex flex-col border-r border-outline-variant/10 z-50">
 <div class="px-8 py-10">
 <h1 class="font-display-lg text-headline-sm tracking-tighter text-on-surface">OPV</h1>
 <p class="font-label-caps text-secondary text-[10px] mt-1 uppercase">Partner Suite</p>
 </div>
 <nav class="flex-1 px-4 space-y-2 mt-4">
 <!-- Overview (Active) -->
-<a class="flex items-center gap-3 px-4 py-3 bg-primary-container text-secondary rounded-none border-l-2 border-secondary transition-all" href="/">
+<a class="flex items-center gap-3 px-4 py-3 bg-[#fbf9f8] text-secondary rounded-none border-l-2 border-secondary transition-all" href="/">
 <span class="material-symbols-outlined active-icon">dashboard</span>
 <span class="font-label-caps">Overview</span>
 </a>
@@ -180,11 +180,11 @@
 </div>
 </aside>
 <!-- Main Content -->
-<main class="ml-64 flex-1 flex flex-col min-h-screen bg-background relative overflow-hidden">
+<main class="ml-64 flex-1 flex flex-col min-h-screen bg-[#fbf9f8] relative overflow-hidden">
 <!-- Subtle Animated Background Layer -->
 
 <!-- Top Header Bar -->
-<header class="w-full flex justify-between items-center px-margin-desktop py-6 sticky top-0 bg-background/80 backdrop-blur-xl z-40 border-b border-outline-variant/5">
+<header class="w-full flex justify-between items-center px-margin-desktop py-6 sticky top-0 bg-[#fbf9f8]/80 backdrop-blur-xl z-40 border-b border-outline-variant/5">
 <div>
 <h2 class="font-headline-sm text-on-surface">Partner Overview</h2>
 <p class="font-body-md text-on-surface-variant text-sm">Welcome back, Guardian of the Vault.</p>
@@ -195,7 +195,7 @@
 <span class="absolute top-0 right-0 w-2 h-2 bg-secondary rounded-full"></span>
 </button>
 <div class="h-6 w-[1px] bg-outline-variant/20"></div>
-<div class="flex items-center gap-2 px-4 py-2 bg-surface-container rounded-none border border-secondary/20">
+<div class="flex items-center gap-2 px-4 py-2 bg-white rounded-none border border-secondary/20">
 <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
 <span class="font-label-caps text-[10px] text-secondary tracking-widest">VERIFIED STATUS</span>
 </div>
@@ -250,7 +250,7 @@
 </div>
 <div class="space-y-4">
 <!-- Request Card 1 -->
-<div class="glass-card p-6 flex items-center gap-6 group hover:bg-surface-container-high transition-colors">
+<div class="glass-card p-6 flex items-center gap-6 group hover:bg-white-high transition-colors">
 <div class="w-20 h-20 overflow-hidden">
 <img class="w-full h-full object-cover" data-alt="A macro close-up of a vintage luxury yacht steering wheel made of polished mahogany and gleaming chrome, set against a blurred background of deep blue Mediterranean waters under a golden Mediterranean sunset, conveying exclusive maritime luxury and meticulous craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_yHQUYs6SFyCAsAY2Ie8g46S_xHC-YrpiCJEsZwbkBcLN4hiQo6XRS5uj0Wy-g6YgWfCDoTkBcwHfFJtvljtAjVVY3W4h2hKYGMTsB1rsZ6ueKt1v6jd2N1w3cw8RDdT6FWN_syS0JhAZWiukIDNlL5hlA5aQLtKOyLRvLBT0gYTVucRuhjWQjGKmLw0iXrXD6I0Owvmx75cpmhSVl9CMuHpIofPddXPb5B6BD1mUi1CQuePbaCdgOA"/>
 </div>
@@ -267,7 +267,7 @@
 </div>
 </div>
 <!-- Request Card 2 -->
-<div class="glass-card p-6 flex items-center gap-6 group hover:bg-surface-container-high transition-colors">
+<div class="glass-card p-6 flex items-center gap-6 group hover:bg-white-high transition-colors">
 <div class="w-20 h-20 overflow-hidden">
 <img class="w-full h-full object-cover" data-alt="Interior wide shot of a master suite in a contemporary luxury villa, featuring floor-to-ceiling windows overlooking a misty alpine valley. The room is decorated in charcoal greys and warm champagne gold accents, with soft indirect lighting reflecting off a polished marble floor, creating an atmosphere of quiet, secluded elite luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO2URG-A2mwRU9jRotHQlt0rn0lIAVYwYCImCjUxM1ZLWCp4LESnxRRHvesUG570sjTgXH2IlVwj395gxhH5Ueqby76yhZB7YHdfSIuM9cWqzNLkmrECW7Jon2q279fzXLRJ32jTfAzhPDbhVcbnvm5DNXMlBrF2NFyl5rMDbzZjYEnPSN7Od3pgn22YqT1U5zFkjX55iXUb6fc9EaRNlntAfoVEZHmEKs3kEa7AKlgvZ8ZY_h5dT4Pg"/>
 </div>
@@ -284,7 +284,7 @@
 </div>
 </div>
 <!-- Request Card 3 -->
-<div class="glass-card p-6 flex items-center gap-6 group hover:bg-surface-container-high transition-colors opacity-60">
+<div class="glass-card p-6 flex items-center gap-6 group hover:bg-white-high transition-colors opacity-60">
 <div class="w-20 h-20 overflow-hidden">
 <img class="w-full h-full object-cover grayscale" data-alt="An artistic high-end capture of a rare vintage sports car's silver curves under studio spotlights. The lighting is moody and dramatic, focusing on the reflective metallic surface and the sharp, aerodynamic silhouette of the vehicle against a dark, minimalist charcoal backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8AmHkh5SL19-P7qwef4FE7-mJ5_gfkJSP-H9jyvA355C5b0dt21HgaEMRsoaak5C0kqiPGtfqmMQyXaYOmrd2M5V0mHxMNPTfDARUYC4dPX7QwnGmN_Cqsyi8TX6VHa8cZz5r-dExm4OEY2PH29hHSkLNDJwFAEpuPCdDwPbFOtRPtC8HFwJ86hWbmLIUCPZn4Nq0QWvwMsy4NuZMpZVfaA-99gR-8ZJCIgqk8Lf9nP0wHcwEQbGNCg"/>
 </div>
@@ -329,7 +329,7 @@
 <div class="flex flex-col gap-3 pb-6 border-b border-outline-variant/10">
 <div class="flex justify-between items-center">
 <span class="font-label-caps text-on-surface text-[11px] tracking-wider">THE MONACO CHALET</span>
-<span class="px-3 py-1 bg-surface-container-highest text-tertiary text-[9px] font-label-caps tracking-widest border border-outline-variant/30">PENDING REVIEW</span>
+<span class="px-3 py-1 bg-white-highest text-tertiary text-[9px] font-label-caps tracking-widest border border-outline-variant/30">PENDING REVIEW</span>
 </div>
 <div class="flex items-center gap-4 text-[10px] font-label-caps text-on-surface-variant uppercase">
 <span>Views: 84</span>
@@ -355,7 +355,7 @@
 <div class="flex flex-col gap-3 pb-2">
 <div class="flex justify-between items-center">
 <span class="font-label-caps text-on-surface text-[11px] tracking-wider">TUSCAN VINEYARD TOUR</span>
-<span class="px-3 py-1 bg-surface-container-highest text-tertiary text-[9px] font-label-caps tracking-widest border border-outline-variant/30">PENDING REVIEW</span>
+<span class="px-3 py-1 bg-white-highest text-tertiary text-[9px] font-label-caps tracking-widest border border-outline-variant/30">PENDING REVIEW</span>
 </div>
 <div class="flex items-center gap-4 text-[10px] font-label-caps text-on-surface-variant uppercase">
 <span>Views: 12</span>
@@ -371,7 +371,7 @@
 </div>
 </div>
 <!-- Footer area in main content -->
-<footer class="bg-surface-container-lowest border-t border-outline-variant/20 py-section-gap px-margin-mobile md:px-margin-desktop">
+<footer class="bg-white border-t border-outline-variant/20 py-section-gap px-margin-mobile md:px-margin-desktop">
 <div class="max-w-container-max mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-5 gap-gutter mb-20">
 <div>
@@ -434,7 +434,7 @@
 </div>
 </div>
 <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 pt-10 border-t border-outline-variant/10">
-<p class="font-body-md text-on-surface-variant text-sm">? 2026 OPV ? Opulent Vault, Manchester United Kingdom.</p>
+<p class="font-body-md text-on-surface-variant text-sm">(c) 2026 OPV - Opulent Vault, Manchester United Kingdom.</p>
 <div class="flex flex-wrap gap-6 font-label-caps text-[10px] uppercase tracking-widest text-on-surface-variant">
 <a class="hover:text-secondary" href="mailto:concierge@opulentvault.co.uk">concierge@opulentvault.co.uk</a>
 <a class="hover:text-secondary" href="tel:+441610000000">+44 161 000 0000</a>
@@ -445,7 +445,7 @@
 </section>
 </main>
 <!-- Modal Placeholder / Overlay for Interactions -->
-<div class="fixed inset-0 bg-primary-container/90 backdrop-blur-md z-[60] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300" id="modal-overlay">
+<div class="fixed inset-0 bg-[#fbf9f8]/90 backdrop-blur-md z-[60] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300" id="modal-overlay">
 <div class="glass-card p-12 max-w-md w-full text-center">
 <span class="material-symbols-outlined text-secondary text-5xl mb-6">verified_user</span>
 <h4 class="font-headline-sm text-on-surface mb-4">Request Accepted</h4>
