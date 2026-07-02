@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
+<html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Membership | Opulent Vault (OPV)</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&amp;family=Hanken+Grotesk:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
         }
         .glass-card {
-            background: rgba(255, 255, 255, 0.7);
+            background: rgba(31, 31, 31, 0.6);
             backdrop-filter: blur(12px);
-            border: 0.5px solid rgba(0, 0, 0, 0.1);
+            border: 0.5px solid rgba(229, 229, 229, 0.2);
         }
         .gold-gradient-text {
-            background: linear-gradient(135deg, #d4af37 0%, #d4af37 100%);
+            background: linear-gradient(135deg, #e9c349 0%, #af8d11 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -26,13 +27,13 @@
         }
         .soft-close-hover:hover {
             transform: translateY(-8px);
-            border-color: rgba(212, 175, 55, 0.4);
+            border-color: rgba(233, 195, 73, 0.4);
         }
         /* Custom scrollbar for premium feel */
         ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: #fbf9f8; }
-        ::-webkit-scrollbar-thumb { background: #dbdad9; }
-        ::-webkit-scrollbar-thumb:hover { background: #d4af37; }
+        ::-webkit-scrollbar-track { background: #0b1221; }
+        ::-webkit-scrollbar-thumb { background: #45464c; }
+        ::-webkit-scrollbar-thumb:hover { background: #e9c349; }
     </style>
 <script id="tailwind-config">
         tailwind.config = {
@@ -40,53 +41,53 @@
             theme: {
                 extend: {
                     "colors": {
-                        "secondary-container": "#d4af37",
-                        "on-background": "#1e1e1e", /* Charcoal text */
+                        "secondary-container": "#af8d11",
+                        "on-background": "#e2e2e2",
                         "error-container": "#93000a",
                         "on-error": "#690005",
                         "on-secondary-fixed-variant": "#574500",
-                        "surface-container": "#f5f3f3",
-                        "primary-container": "#ffffff",
-                        "primary-fixed-dim": "#dbdad9",
+                        "surface-container": "#1e2020",
+                        "primary-container": "#0b1221",
+                        "primary-fixed-dim": "#c0c6db",
                         "on-tertiary": "#2f3128",
-                        "surface-container-high": "#ebe9e8",
-                        "on-secondary-container": "#f2e6c2",
-                        "surface-container-highest": "#e2e0df",
-                        "outline": "#74777f",
+                        "surface-container-high": "#282a2b",
+                        "on-secondary-container": "#342800",
+                        "surface-container-highest": "#333535",
+                        "outline": "#909097",
                         "inverse-primary": "#575e70",
-                        "surface-bright": "#fbf9f8",
-                        "secondary-fixed-dim": "#d4af37",
+                        "surface-bright": "#38393a",
+                        "secondary-fixed-dim": "#e9c349",
                         "on-tertiary-fixed-variant": "#46483d",
-                        "surface-container-lowest": "#ffffff",
+                        "surface-container-lowest": "#0d0f0f",
                         "on-primary-fixed-variant": "#404758",
-                        "surface-container-low": "#f5f3f3",
+                        "surface-container-low": "#1a1c1c",
                         "on-error-container": "#ffdad6",
                         "tertiary-fixed-dim": "#c7c7ba",
                         "on-primary-fixed": "#151b2b",
-                        "inverse-surface": "#1e1e1e",
+                        "inverse-surface": "#e2e2e2",
                         "on-tertiary-container": "#7d7e72",
-                        "on-secondary": "#ffffff",
-                        "surface-variant": "#f0eeed",
-                        "surface-dim": "#dbdad9",
-                        "on-primary-container": "#1e1e1e",
-                        "primary-fixed": "#fbf9f8",
+                        "on-secondary": "#3c2f00",
+                        "surface-variant": "#333535",
+                        "surface-dim": "#121414",
+                        "on-primary-container": "#777d90",
+                        "primary-fixed": "#dce2f8",
                         "tertiary-container": "#11130b",
                         "tertiary-fixed": "#e3e3d5",
-                        "secondary-fixed": "#f2d67e",
-                        "surface-tint": "#d4af37",
-                        "primary": "#1e1e1e",
-                        "on-secondary-fixed": "#1e1e1e",
+                        "secondary-fixed": "#ffe088",
+                        "surface-tint": "#c0c6db",
+                        "primary": "#c0c6db",
+                        "on-secondary-fixed": "#241a00",
                         "error": "#ffb4ab",
                         "tertiary": "#c7c7ba",
-                        "on-surface": "#1e1e1e",
-                        "outline-variant": "#dbdad9",
-                        "on-primary": "#ffffff",
-                        "secondary": "#d4af37",
+                        "on-surface": "#e2e2e2",
+                        "outline-variant": "#45464c",
+                        "on-primary": "#293041",
+                        "secondary": "#e9c349",
                         "on-tertiary-fixed": "#1b1c14",
-                        "background": "#fbf9f8",
-                        "on-surface-variant": "#454545",
-                        "inverse-on-surface": "#fbf9f8",
-                        "surface": "#fbf9f8"
+                        "background": "#121414",
+                        "on-surface-variant": "#c6c6cd",
+                        "inverse-on-surface": "#2f3131",
+                        "surface": "#121414"
                     },
                     "borderRadius": {
                         "DEFAULT": "0.25rem",
@@ -125,69 +126,70 @@
         }
     </script>
 </head>
-<body class="bg-surface text-[#1e1e1e] font-body-md overflow-x-hidden">
+<body class="bg-primary-container text-on-background font-body-md overflow-x-hidden">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-[#fbf9f8]/90 backdrop-blur-md border-b border-[#dbdad9] transition-all duration-300">
+<nav class="fixed top-0 w-full z-50 glass-nav bg-primary-container/80 backdrop-blur-md transition-all duration-300">
 <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit-gutter max-w-container-max mx-auto w-full">
 <div class="flex items-center gap-12">
-<a class="font-display-lg text-headline-sm tracking-tighter text-[#1e1e1e] uppercase" href="/">OPV</a>
+<a class="font-display-lg text-headline-sm tracking-tighter text-on-surface uppercase" href="/">OPV</a>
 <div class="hidden md:flex gap-8 items-center">
 <div class="relative group">
-<a class="text-[#d4af37] font-semibold border-b border-[#d4af37] pb-1 font-label-caps uppercase text-label-caps" href="/services/">Services</a>
+<a class="text-secondary font-semibold border-b border-secondary pb-1 font-label-caps uppercase text-label-caps" href="/services/">Services</a>
 <div class="absolute left-0 top-full pt-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-[760px] max-w-[calc(100vw-160px)]">
-<div class="bg-[#fbf9f8]/98 backdrop-blur-xl border border-[#dbdad9] p-8 grid grid-cols-2 lg:grid-cols-3 gap-5 shadow-[0_30px_80px_rgba(30,30,30,0.16)]">
-<a class="group/item block bg-white border border-[#dbdad9] p-4 hover:border-[#d4af37] hover:bg-[#f5f3f3] transition-colors" href="/services/luxury-stays/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-[#d4af37] block mb-2">Luxury Stays</span><span class="font-body-md text-sm text-[#575e71] leading-5">Verified properties and private residences</span></a>
-<a class="group/item block bg-white border border-[#dbdad9] p-4 hover:border-[#d4af37] hover:bg-[#f5f3f3] transition-colors" href="/services/private-dining/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-[#d4af37] block mb-2">Private Dining</span><span class="font-body-md text-sm text-[#575e71] leading-5">Chefs, tastings, and hosted tables</span></a>
-<a class="group/item block bg-white border border-[#dbdad9] p-4 hover:border-[#d4af37] hover:bg-[#f5f3f3] transition-colors" href="/services/events-experiences/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-[#d4af37] block mb-2">Events & Experiences</span><span class="font-body-md text-sm text-[#575e71] leading-5">Member events and rare access</span></a>
-<a class="group/item block bg-white border border-[#dbdad9] p-4 hover:border-[#d4af37] hover:bg-[#f5f3f3] transition-colors" href="/services/wine-tasting/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-[#d4af37] block mb-2">Wine Tasting</span><span class="font-body-md text-sm text-[#575e71] leading-5">Cellars, vintages, and private tastings</span></a>
-<a class="group/item block bg-white border border-[#dbdad9] p-4 hover:border-[#d4af37] hover:bg-[#f5f3f3] transition-colors" href="/services/private-tours/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-[#d4af37] block mb-2">Private Tours</span><span class="font-body-md text-sm text-[#575e71] leading-5">Guided journeys with expert hosts</span></a>
-<a class="group/item block bg-white border border-[#dbdad9] p-4 hover:border-[#d4af37] hover:bg-[#f5f3f3] transition-colors" href="/services/vip-security/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-[#d4af37] block mb-2">VIP & Celebrity Security</span><span class="font-body-md text-sm text-[#575e71] leading-5">Confidential protection requests</span></a>
-<a class="group/item block bg-white border border-[#dbdad9] p-4 hover:border-[#d4af37] hover:bg-[#f5f3f3] transition-colors" href="/services/car-rentals/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-[#d4af37] block mb-2">Luxury Car Rentals</span><span class="font-body-md text-sm text-[#575e71] leading-5">Self-drive and chauffeur vehicles</span></a>
-<a class="group/item block bg-white border border-[#dbdad9] p-4 hover:border-[#d4af37] hover:bg-[#f5f3f3] transition-colors" href="/services/yacht-services/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-[#d4af37] block mb-2">Yacht Services</span><span class="font-body-md text-sm text-[#575e71] leading-5">Charters, crews, and event hire</span></a>
-<a class="group/item block bg-white border border-[#dbdad9] p-4 hover:border-[#d4af37] hover:bg-[#f5f3f3] transition-colors" href="/services/cleaning-lifestyle/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-[#d4af37] block mb-2">Cleaning & Lifestyle Maintenance</span><span class="font-body-md text-sm text-[#575e71] leading-5">Housekeeping and property care</span></a>
-<a class="group/item block bg-white border border-[#dbdad9] p-4 hover:border-[#d4af37] hover:bg-[#f5f3f3] transition-colors" href="/services/videography-photography/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-[#d4af37] block mb-2">Videography & Photography</span><span class="font-body-md text-sm text-[#575e71] leading-5">Luxury creative coverage</span></a>
-<a class="group/item block bg-white border border-[#dbdad9] p-4 hover:border-[#d4af37] hover:bg-[#f5f3f3] transition-colors" href="/services/personal-shopping/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-[#d4af37] block mb-2">Personal Shopping</span><span class="font-body-md text-sm text-[#575e71] leading-5">Private sourcing and wardrobe support</span></a>
-<a class="group/item block bg-white border border-[#dbdad9] p-4 hover:border-[#d4af37] hover:bg-[#f5f3f3] transition-colors" href="/services/luxury-products/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-[#d4af37] block mb-2">Luxury Products</span><span class="font-body-md text-sm text-[#575e71] leading-5">Curated goods and private sourcing</span></a>
-<a class="lg:col-span-3 text-[#d4af37] font-label-caps text-label-caps uppercase tracking-widest border-t border-[#dbdad9] pt-5 hover:text-[#1e1e1e] transition-colors" href="/services/">View All Services</a>
+<div class="bg-primary-container/95 backdrop-blur-xl border border-outline-variant/20 p-8 grid grid-cols-2 lg:grid-cols-3 gap-5 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/luxury-stays/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Luxury Stays</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Verified properties and private residences</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/private-dining/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Private Dining</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Chefs, tastings, and hosted tables</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/events-experiences/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Events & Experiences</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Member events and rare access</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/wine-tasting/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Wine Tasting</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Cellars, vintages, and private tastings</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/private-tours/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Private Tours</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Guided journeys with expert hosts</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/vip-security/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">VIP & Celebrity Security</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Confidential protection requests</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/car-rentals/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Luxury Car Rentals</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Self-drive and chauffeur vehicles</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/yacht-services/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Yacht Services</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Charters, crews, and event hire</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/cleaning-lifestyle/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Cleaning & Lifestyle Maintenance</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Housekeeping and property care</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/videography-photography/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Videography & Photography</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Luxury creative coverage</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/personal-shopping/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Personal Shopping</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Private sourcing and wardrobe support</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/luxury-products/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Luxury Products</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Curated goods and private sourcing</span></a>
+<a class="lg:col-span-3 text-secondary font-label-caps text-label-caps uppercase tracking-widest border-t border-outline-variant/20 pt-5 hover:text-white transition-colors" href="/services/">View All Services</a>
 </div>
 </div>
 </div>
 <div class="relative group">
-<a class="text-[#1e1e1e] font-label-caps hover:text-[#d4af37] transition-all duration-300 ease-out uppercase text-label-caps" href="/services/events-experiences/">Experiences</a>
+<a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-label-caps" href="/services/events-experiences/">Experiences</a>
 <div class="absolute left-0 top-full pt-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-72">
-<div class="bg-[#fbf9f8]/98 backdrop-blur-xl border border-[#dbdad9] p-5 space-y-3 shadow-[0_30px_80px_rgba(30,30,30,0.16)]">
-<a class="block font-label-caps text-label-caps uppercase text-[#575e71] hover:text-[#d4af37]" href="/services/events-experiences/">Events &amp; Experiences</a>
-<a class="block font-label-caps text-label-caps uppercase text-[#575e71] hover:text-[#d4af37]" href="/services/private-tours/">Private Tours</a>
-<a class="block font-label-caps text-label-caps uppercase text-[#575e71] hover:text-[#d4af37]" href="/services/wine-tasting/">Wine Tasting</a>
-<a class="block font-label-caps text-label-caps uppercase text-[#575e71] hover:text-[#d4af37]" href="/blog/">Blog &amp; Editorial</a>
+<div class="bg-primary-container/95 backdrop-blur-xl border border-outline-variant/20 p-5 space-y-3 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
+<a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary" href="/services/events-experiences/">Events &amp; Experiences</a>
+<a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary" href="/services/private-tours/">Private Tours</a>
+<a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary" href="/services/wine-tasting/">Wine Tasting</a>
+<a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary" href="/blog/">Blog &amp; Editorial</a>
 </div>
 </div>
 </div>
-<a class="text-[#1e1e1e] font-label-caps hover:text-[#d4af37] transition-all duration-300 ease-out uppercase text-label-caps" href="/services/luxury-products/">Products</a>
-<a class="text-[#1e1e1e] font-label-caps hover:text-[#d4af37] transition-all duration-300 ease-out uppercase text-label-caps" href="/about/">About</a>
-<a class="text-[#1e1e1e] font-label-caps hover:text-[#d4af37] transition-all duration-300 ease-out uppercase text-label-caps" href="/concierge/">Concierge</a>
+<a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-label-caps" href="/services/luxury-products/">Products</a>
+<a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-label-caps" href="/about/">About</a>
+<a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-label-caps" href="/concierge/">Concierge</a>
 <div class="relative group">
-<a class="text-[#1e1e1e] font-label-caps hover:text-[#d4af37] transition-all duration-300 ease-out uppercase text-label-caps" href="/membership/">Membership</a>
+<a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-label-caps" href="/membership/">Membership</a>
 <div class="absolute left-0 top-full pt-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-80">
-<div class="bg-[#fbf9f8]/98 backdrop-blur-xl border border-[#dbdad9] p-5 space-y-4 shadow-[0_30px_80px_rgba(30,30,30,0.16)]">
-<a class="block" href="/membership/"><span class="font-label-caps text-label-caps uppercase text-[#d4af37]">Standard Membership</span><span class="block text-sm text-[#575e71] mt-1">Gateway access to the verified marketplace.</span></a>
-<a class="block" href="/membership/"><span class="font-label-caps text-label-caps uppercase text-[#d4af37]">OPV Black</span><span class="block text-sm text-[#575e71] mt-1">Enhanced privilege and priority support.</span></a>
-<a class="block" href="/membership/"><span class="font-label-caps text-label-caps uppercase text-[#d4af37]">OPV Vault</span><span class="block text-sm text-[#575e71] mt-1">Total custodianship for bespoke needs.</span></a>
+<div class="bg-primary-container/95 backdrop-blur-xl border border-outline-variant/20 p-5 space-y-4 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
+<a class="block" href="/membership/"><span class="font-label-caps text-label-caps uppercase text-secondary">Standard Membership</span><span class="block text-sm text-on-surface-variant mt-1">Gateway access to the verified marketplace.</span></a>
+<a class="block" href="/membership/"><span class="font-label-caps text-label-caps uppercase text-secondary">OPV Black</span><span class="block text-sm text-on-surface-variant mt-1">Enhanced privilege and priority support.</span></a>
+<a class="block" href="/membership/"><span class="font-label-caps text-label-caps uppercase text-secondary">OPV Vault</span><span class="block text-sm text-on-surface-variant mt-1">Total custodianship for bespoke needs.</span></a>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="flex gap-5 items-center">
-<a class="hidden md:inline-flex border border-[#d4af37] text-[#1e1e1e] px-5 py-2 font-label-caps uppercase text-label-caps tracking-widest hover:bg-[#d4af37] hover:text-white transition-colors" href="/services/">Search the Vault</a>
-<a class="text-[#575e71] font-label-caps hover:text-[#d4af37] transition-colors uppercase text-label-caps" href="/login/">Login</a>
+<div class="flex gap-6 items-center">
+<a class="text-on-surface-variant font-label-caps hover:text-secondary transition-colors uppercase text-label-caps" href="/login/">Login</a>
+<a class="bg-secondary text-primary-container px-6 py-2 font-label-caps uppercase text-label-caps font-bold tracking-widest hover:bg-white transition-colors duration-300" href="/login/">Register</a>
 </div>
 </div>
 </nav>
 <!-- Hero Section -->
 <section class="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
 <div class="absolute inset-0 z-0">
-<div class="absolute inset-0 bg-gradient-to-b from-surface/20 via-transparent to-surface"></div>
+
+<div class="absolute inset-0 bg-gradient-to-b from-primary-container/20 via-transparent to-primary-container"></div>
 </div>
 <div class="relative z-10 text-center px-margin-mobile md:px-0">
 <div class="flex justify-center mb-8">
@@ -195,13 +197,13 @@
 <span class="font-label-caps text-secondary text-lg">OPV</span>
 </div>
 </div>
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 max-w-4xl mx-auto leading-tight text-[#1e1e1e]">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 max-w-4xl mx-auto leading-tight">
                 Access the Exceptional.<br/>On Every Level.
             </h1>
-<p class="font-body-lg text-[#575e71] max-w-2xl mx-auto mb-12 opacity-80">
+<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12 opacity-80">
                 The world’s most exclusive concierge and lifestyle management firm. Our membership tiers are designed for those who demand absolute discretion, unparalleled access, and a life without friction.
             </p>
-<a class="inline-block border border-on-surface px-10 py-4 font-label-caps uppercase tracking-[0.2em] hover:bg-on-surface hover:text-surface transition-all duration-500" href="#tiers">
+<a class="inline-block border border-on-surface px-10 py-4 font-label-caps uppercase tracking-[0.2em] hover:bg-on-surface hover:text-primary-container transition-all duration-500" href="#tiers">
                 Explore The Tiers
             </a>
 </div>
@@ -216,41 +218,41 @@
 <!-- Standard Tier -->
 <div class="glass-card p-12 flex flex-col soft-close-hover">
 <div class="mb-12">
-<span class="font-label-caps text-[#575e71] uppercase mb-2 block">Entry Tier</span>
-<h3 class="font-headline-md text-[#1e1e1e]">Standard</h3>
+<span class="font-label-caps text-on-surface-variant uppercase mb-2 block">Entry Tier</span>
+<h3 class="font-headline-md text-on-surface">Standard</h3>
 </div>
 <div class="mb-12">
 <span class="text-4xl font-display-lg text-secondary">$5,000</span>
-<span class="font-label-caps text-[#575e71] block mt-1">ANNUAL FEE</span>
+<span class="font-label-caps text-on-surface-variant block mt-1">ANNUAL FEE</span>
 </div>
 <ul class="flex-grow space-y-6 mb-12">
 <li class="flex items-start space-x-4">
 <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-<span class="text-[#575e71] font-body-md opacity-90">24/7 Digital Concierge Access</span>
+<span class="text-on-surface-variant font-body-md opacity-90">24/7 Digital Concierge Access</span>
 </li>
 <li class="flex items-start space-x-4">
 <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-<span class="text-[#575e71] font-body-md opacity-90">Preferred Luxury Hotel Rates</span>
+<span class="text-on-surface-variant font-body-md opacity-90">Preferred Luxury Hotel Rates</span>
 </li>
 <li class="flex items-start space-x-4">
 <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-<span class="text-[#575e71] font-body-md opacity-90">Invitation to Seasonal Events</span>
+<span class="text-on-surface-variant font-body-md opacity-90">Invitation to Seasonal Events</span>
 </li>
 <li class="flex items-start space-x-4">
 <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-<span class="text-[#575e71] font-body-md opacity-90">Bespoke Travel Itineraries</span>
+<span class="text-on-surface-variant font-body-md opacity-90">Bespoke Travel Itineraries</span>
 </li>
 </ul>
-<button class="w-full border border-secondary/30 py-4 font-label-caps uppercase tracking-widest text-secondary hover:bg-secondary hover:text-white transition-all">Apply for Invitation</button>
+<button class="w-full border border-secondary/30 py-4 font-label-caps uppercase tracking-widest text-secondary hover:bg-secondary hover:text-primary-container transition-all">Apply for Invitation</button>
 </div>
 <!-- OPV Black Tier (Most Popular) -->
-<div class="relative glass-card p-12 flex flex-col soft-close-hover border-secondary/40 shadow-xl shadow-secondary/5">
-<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary text-white px-4 py-1 font-label-caps text-[10px] uppercase tracking-widest">Most Distinguished</div>
+<div class="relative glass-card p-12 flex flex-col soft-close-hover border-secondary/40">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary text-primary-container px-4 py-1 font-label-caps text-[10px] uppercase tracking-widest">Most Distinguished</div>
 <div class="mb-12">
 <div class="flex items-center justify-between">
 <div>
 <span class="font-label-caps text-secondary uppercase mb-2 block">Elite Tier</span>
-<h3 class="font-headline-md text-[#1e1e1e]">OPV Black</h3>
+<h3 class="font-headline-md text-on-surface">OPV Black</h3>
 </div>
 <div class="w-10 h-10 border border-secondary rounded-full flex items-center justify-center">
 <span class="font-label-caps text-[10px] text-secondary">OPV</span>
@@ -259,82 +261,82 @@
 </div>
 <div class="mb-12">
 <span class="text-4xl font-display-lg text-secondary">$15,000</span>
-<span class="font-label-caps text-[#575e71] block mt-1">ANNUAL FEE</span>
+<span class="font-label-caps text-on-surface-variant block mt-1">ANNUAL FEE</span>
 </div>
 <ul class="flex-grow space-y-6 mb-12">
 <li class="flex items-start space-x-4">
 <span class="material-symbols-outlined text-secondary text-sm">verified</span>
-<span class="text-[#1e1e1e] font-body-md">Dedicated Personal Guardian</span>
+<span class="text-on-surface font-body-md">Dedicated Personal Guardian</span>
 </li>
 <li class="flex items-start space-x-4">
 <span class="material-symbols-outlined text-secondary text-sm">verified</span>
-<span class="text-[#1e1e1e] font-body-md">Global VIP Airport Fast-Track</span>
+<span class="text-on-surface font-body-md">Global VIP Airport Fast-Track</span>
 </li>
 <li class="flex items-start space-x-4">
 <span class="material-symbols-outlined text-secondary text-sm">verified</span>
-<span class="text-[#1e1e1e] font-body-md">Private Club &amp; Member Access</span>
+<span class="text-on-surface font-body-md">Private Club &amp; Member Access</span>
 </li>
 <li class="flex items-start space-x-4">
 <span class="material-symbols-outlined text-secondary text-sm">verified</span>
-<span class="text-[#1e1e1e] font-body-md">Complimentary Car Upgrades</span>
+<span class="text-on-surface font-body-md">Complimentary Car Upgrades</span>
 </li>
 <li class="flex items-start space-x-4">
 <span class="material-symbols-outlined text-secondary text-sm">verified</span>
-<span class="text-[#1e1e1e] font-body-md">Executive Protection Consulting</span>
+<span class="text-on-surface font-body-md">Executive Protection Consulting</span>
 </li>
 </ul>
-<button class="w-full bg-secondary text-white py-4 font-label-caps uppercase tracking-widest hover:opacity-90 transition-all shadow-lg shadow-secondary/20">Apply for Invitation</button>
+<button class="w-full bg-secondary text-primary-container py-4 font-label-caps uppercase tracking-widest hover:opacity-90 transition-all">Apply for Invitation</button>
 </div>
 <!-- OPV Vault Tier -->
-<div class="glass-card p-12 flex flex-col soft-close-hover border-on-surface/10">
+<div class="glass-card p-12 flex flex-col soft-close-hover border-on-surface/20">
 <div class="mb-12">
-<span class="font-label-caps text-[#575e71] uppercase mb-2 block">The Pinnacle</span>
-<h3 class="font-headline-md text-[#1e1e1e]">OPV Vault</h3>
+<span class="font-label-caps text-on-surface-variant uppercase mb-2 block">The Pinnacle</span>
+<h3 class="font-headline-md text-on-surface">OPV Vault</h3>
 </div>
 <div class="mb-12">
 <span class="text-4xl font-display-lg text-secondary">INVITATION ONLY</span>
-<span class="font-label-caps text-[#575e71] block mt-1">ULTIMATE TIER</span>
+<span class="font-label-caps text-on-surface-variant block mt-1">ULTIMATE TIER</span>
 </div>
 <ul class="flex-grow space-y-6 mb-12">
 <li class="flex items-start space-x-4">
 <span class="material-symbols-outlined text-secondary text-sm">lock_person</span>
-<span class="text-[#1e1e1e] font-body-md italic">Unlimited Global Lifestyle Support</span>
+<span class="text-on-surface font-body-md italic">Unlimited Global Lifestyle Support</span>
 </li>
 <li class="flex items-start space-x-4">
 <span class="material-symbols-outlined text-secondary text-sm">lock_person</span>
-<span class="text-[#1e1e1e] font-body-md italic">Direct Access to Yacht &amp; Jet Fleet</span>
+<span class="text-on-surface font-body-md italic">Direct Access to Yacht &amp; Jet Fleet</span>
 </li>
 <li class="flex items-start space-x-4">
 <span class="material-symbols-outlined text-secondary text-sm">lock_person</span>
-<span class="text-[#1e1e1e] font-body-md italic">Off-Market Real Estate Access</span>
+<span class="text-on-surface font-body-md italic">Off-Market Real Estate Access</span>
 </li>
 <li class="flex items-start space-x-4">
 <span class="material-symbols-outlined text-secondary text-sm">lock_person</span>
-<span class="text-[#1e1e1e] font-body-md italic">Dedicated Wealth Security Detail</span>
+<span class="text-on-surface font-body-md italic">Dedicated Wealth Security Detail</span>
 </li>
 </ul>
-<button class="w-full bg-surface border border-secondary text-secondary py-4 font-label-caps uppercase tracking-widest hover:bg-secondary hover:text-white transition-all">Contact Representative</button>
+<button class="w-full bg-primary-container border border-secondary text-secondary py-4 font-label-caps uppercase tracking-widest hover:bg-secondary hover:text-primary-container transition-all">Contact Representative</button>
 </div>
 </div>
 </section>
 <!-- Member Experience Section -->
-<section class="py-section-gap bg-[#fbf9f8]">
+<section class="py-section-gap bg-surface-container-lowest">
 <div class="max-w-container-max mx-auto px-margin-desktop">
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
 <div class="space-y-12">
 <span class="font-label-caps text-secondary uppercase tracking-[0.3em]">The Experience</span>
-<h2 class="font-display-lg text-headline-md md:text-5xl leading-tight text-[#1e1e1e]">Beyond Service. <br/>Infinite Protection.</h2>
-<p class="font-body-lg text-[#575e71] leading-relaxed">
+<h2 class="font-display-lg text-headline-md md:text-5xl leading-tight">Beyond Service. <br/>Infinite Protection.</h2>
+<p class="font-body-lg text-on-surface-variant leading-relaxed">
                         Membership at Opulent Vault is not merely a utility; it is an induction into a global network of silent guardians and elite facilitators. We handle the complexities of ultra-high-net-worth living so you can inhabit the moment.
                     </p>
 <div class="grid grid-cols-2 gap-8">
 <div>
-<h4 class="font-label-caps text-[#1e1e1e] mb-2">98%</h4>
-<p class="text-xs text-[#575e71] uppercase tracking-wider">Member Retention</p>
+<h4 class="font-label-caps text-on-surface mb-2">98%</h4>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider">Member Retention</p>
 </div>
 <div>
-<h4 class="font-label-caps text-[#1e1e1e] mb-2">24/7/365</h4>
-<p class="text-xs text-[#575e71] uppercase tracking-wider">Active Watch</p>
+<h4 class="font-label-caps text-on-surface mb-2">24/7/365</h4>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider">Active Watch</p>
 </div>
 </div>
 <div class="pt-8">
@@ -349,8 +351,8 @@
 <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="A cinematic, high-fashion editorial photograph of a luxurious private jet interior at twilight. The cabin is lit with warm, amber accent lighting against deep midnight blue upholstery. A crystal glass of scotch sits on a polished walnut table, reflecting the soft glow. The mood is one of profound silence, exclusivity, and contemporary luxury. The camera angle is low and wide, capturing the expansive, premium environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgnvL_pj2ZQGA_0_Y1Wo1ej07gkhWYrO8sPM-eieTdalsh3xz34wTucs4DFH85zuxep6bfv3LJ9MLdQ2shJxvYZgUZHSGAC3Oikg5pgLjz99IAVHPXq_F-Box6ahJsjB2ieSul9_LVXDW_R3I22ssk0bWayK9FdiVywLusIpSdzxYwG-cmkodpq3pfNv4vNEdDd2qMBF-wOBxUqyWzHGPVN1Nljtobf7FlOwXfQ4Nonkmq5u7NIZV-kA"/>
 </div>
 <!-- Overlaid badge -->
-<div class="absolute -bottom-10 -left-10 w-40 h-40 bg-secondary flex items-center justify-center rounded-none hidden md:flex shadow-2xl">
-<div class="text-center text-white p-6 border border-white/20">
+<div class="absolute -bottom-10 -left-10 w-40 h-40 bg-secondary flex items-center justify-center rounded-none hidden md:flex">
+<div class="text-center text-primary-container p-6 border border-primary-container/20">
 <span class="font-label-caps text-[10px] block mb-2 uppercase">Verified by</span>
 <span class="font-display-lg text-2xl font-bold tracking-tighter">OPV</span>
 </div>
@@ -362,112 +364,107 @@
 <!-- Content Grid / Bento -->
 <section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-[800px]">
-<div class="md:col-span-2 md:row-span-2 relative overflow-hidden group border border-outline-variant/30">
-<div class="absolute inset-0 bg-on-background/10 z-10"></div>
+<div class="md:col-span-2 md:row-span-2 relative overflow-hidden group">
+<div class="absolute inset-0 bg-primary-container/40 z-10"></div>
 <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[2s]" data-alt="An atmospheric, low-light shot of a private member's club library. Floor-to-ceiling dark oak bookshelves are filled with antique leather-bound books. A single green-shaded banker's lamp illuminates a velvet armchair and a heavy mahogany desk. The color palette consists of deep browns, forest greens, and golden highlights. The scene evokes heritage, intelligence, and quiet authority." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWwpVCTkwmFmVN8-yKs_7RMWPAd9TpbTwFM1cshEFkp8j3Y740CmxtoKfyHmD5O5TcA1gj6gARdRlfFvh_Mmd0o6YITy4aS9KPBq8lItOzsQHHTZJdwWF37yyOKSsNFIUSjtPh2Phv2fq53Y3HssleIGHmCNJUVwvnOXCIABNTiV5kO2xnJARb6wS9GXWqbmUxwlQHTbL4Um0QMxJHP-Au8N1oGW28ULoXsEDJfpO1VC6opiQ0zowS0g"/>
 <div class="absolute bottom-8 left-8 z-20">
 <span class="font-label-caps text-secondary text-xs uppercase mb-2 block">Heritage Access</span>
-<h3 class="font-headline-sm text-white">Private Estates &amp; Clubs</h3>
+<h3 class="font-headline-sm text-on-surface">Private Estates &amp; Clubs</h3>
 </div>
 </div>
-<div class="md:col-span-2 relative overflow-hidden group border border-outline-variant/30">
-<div class="absolute inset-0 bg-on-background/10 z-10"></div>
+<div class="md:col-span-2 relative overflow-hidden group">
+<div class="absolute inset-0 bg-primary-container/40 z-10"></div>
 <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[2s]" data-alt="A high-contrast black and white image of a professional security detail in tailored charcoal suits standing subtly at the edge of a gala event. The background is blurred with bokeh from opulent chandeliers. The focus is on the sharp, professional posture of the guardian. The atmosphere is one of invisible protection and peak efficiency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJNEr7Kmsc_j0EXkM4YtW8mu8mkX8m8CxGwx4OwpIStYZ1ZeHzSGreZppt5U5q5sWTsnfV3t506F9F517UM7nUIiV11CvcCOH5dQiIYu9_Y65i9CDSczvISgNVyFhftLcCXmr-Qr6W06qwda2DeA8zHxLLctlDjXbvCS0wCUAoyC1wurepSl9X9M4SYzSxpdXknIYqBc4JsB09TNnVhoX8LcbppSPrNgjHH1fkX9t6Qm-N5ioDf-s6Lg"/>
 <div class="absolute bottom-8 left-8 z-20">
 <span class="font-label-caps text-secondary text-xs uppercase mb-2 block">Discreet Guarding</span>
-<h3 class="font-headline-sm text-white">Elite Close Protection</h3>
+<h3 class="font-headline-sm text-on-surface">Elite Close Protection</h3>
 </div>
 </div>
-<div class="relative overflow-hidden group border border-outline-variant/30">
-<div class="absolute inset-0 bg-on-background/10 z-10"></div>
+<div class="relative overflow-hidden group">
+<div class="absolute inset-0 bg-primary-container/40 z-10"></div>
 <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[2s]" data-alt="Close-up of a premium, matte black credit card with a gold-leaf OPV monogram resting on a white marble surface. Soft sunlight creates elegant shadows across the texture of the stone. Minimalist, expensive, and modern luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmfnhpudkQm_DMeAKAKQsNmx3VckKSEUaKRaRMjnCfunJ-bW0GsyrOa29Di9PB4UX3dhgN1J-XRFITDwWwOBaaKgAnGw8Z-whWrAeRj98pD7soBRi0MbMclXe6ihBEwzXF8TdnMfAshKqxJK_o6dOy4Pjrph2vJ4tgudClMbr_8BEMI0CL-5P28-eUNy9qZI6u5EOEgUcVaQnJEAg9Fkmt2BONUgPrLPQd-zmvszLn0H3CqMbukbkPog"/>
 </div>
-<div class="relative overflow-hidden group border border-outline-variant/30">
-<div class="absolute inset-0 bg-on-background/10 z-10"></div>
+<div class="relative overflow-hidden group">
+<div class="absolute inset-0 bg-primary-container/40 z-10"></div>
 <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[2s]" data-alt="A birds-eye view of a sleek, modern superyacht cutting through crystalline turquoise water. The wake is perfectly symmetrical and white against the deep blue. The sun is high, creating sharp, clean lines and a vibrant, wealthy travel mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGur5eRqeQcQwcqw_JIKqUNt1wpT3bgdT5_PEyP6BjcQRzglsRS2BCkTLCg_k3QxmyK5n78bvcnrEuRateoAlwJjyALdL4mnZafIGsb7w-dP_R6bmhMmWapfyQimwskFtfeG6x7Sw_xkE970sH7aBFk9_gsVf5po1O4mWE9RAydy6Gw-eIo5wda-t9jr8StO-h5DeXW3nJzQom1tJ3QAr_CHt2SQHMqw5USLqIDn0p2U7OGGhmHb54qQ"/>
 <div class="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-<span class="font-label-caps text-white border border-white px-4 py-2">Explore Yachting</span>
+<span class="font-label-caps text-on-surface border border-on-surface px-4 py-2">Explore Yachting</span>
 </div>
 </div>
 </div>
 </section>
 <!-- Footer -->
-<footer class="bg-[#fbf9f8] border-t border-[#dbdad9] py-section-gap px-margin-mobile md:px-margin-desktop">
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 py-section-gap px-margin-mobile md:px-margin-desktop">
 <div class="max-w-container-max mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-5 gap-gutter mb-20">
 <div>
-<a class="font-display-lg text-headline-md text-[#1e1e1e] block mb-6" href="/">OPV</a>
-<p class="font-body-md text-[#575e71] text-sm mb-8">Opulent Vault is Manchester's curated luxury lifestyle concierge marketplace.</p>
-<div class="flex gap-5 text-[#575e71]">
-<a class="hover:text-[#d4af37]" href="https://www.instagram.com/" aria-label="Instagram"><span class="material-symbols-outlined">photo_camera</span></a>
-<a class="hover:text-[#d4af37]" href="https://www.linkedin.com/" aria-label="LinkedIn"><span class="material-symbols-outlined">business_center</span></a>
-<a class="hover:text-[#d4af37]" href="https://x.com/" aria-label="X"><span class="material-symbols-outlined">alternate_email</span></a>
-<a class="hover:text-[#d4af37]" href="https://www.facebook.com/" aria-label="Facebook"><span class="material-symbols-outlined">groups</span></a>
-<a class="hover:text-[#d4af37]" href="https://www.youtube.com/" aria-label="YouTube"><span class="material-symbols-outlined">play_circle</span></a>
+<a class="font-display-lg text-headline-md text-on-surface block mb-6" href="/">OPV</a>
+<p class="font-body-md text-on-surface-variant text-sm mb-8">Opulent Vault is Manchester's curated luxury lifestyle concierge marketplace.</p>
+<div class="flex gap-5 text-on-surface-variant">
+<a class="hover:text-secondary" href="https://www.instagram.com/" aria-label="Instagram"><span class="material-symbols-outlined">photo_camera</span></a>
+<a class="hover:text-secondary" href="https://www.linkedin.com/" aria-label="LinkedIn"><span class="material-symbols-outlined">business_center</span></a>
+<a class="hover:text-secondary" href="https://x.com/" aria-label="X"><span class="material-symbols-outlined">alternate_email</span></a>
+<a class="hover:text-secondary" href="https://www.facebook.com/" aria-label="Facebook"><span class="material-symbols-outlined">groups</span></a>
+<a class="hover:text-secondary" href="https://www.youtube.com/" aria-label="YouTube"><span class="material-symbols-outlined">play_circle</span></a>
 </div>
 </div>
 <div>
-<h6 class="font-label-caps text-label-caps text-[#d4af37] uppercase tracking-widest mb-6">Services</h6>
-<ul class="space-y-3 font-body-md text-[#575e71] text-sm">
-<li><a class="hover:text-[#d4af37] transition-colors" href="/services/luxury-stays/">Luxury Stays</a></li>
-<li><a class="hover:text-[#d4af37] transition-colors" href="/services/private-dining/">Private Dining</a></li>
-<li><a class="hover:text-[#d4af37] transition-colors" href="/services/events-experiences/">Events & Experiences</a></li>
-<li><a class="hover:text-[#d4af37] transition-colors" href="/services/wine-tasting/">Wine Tasting</a></li>
-<li><a class="hover:text-[#d4af37] transition-colors" href="/services/private-tours/">Private Tours</a></li>
-<li><a class="hover:text-[#d4af37] transition-colors" href="/services/vip-security/">VIP & Celebrity Security</a></li>
-<li><a class="hover:text-[#d4af37] transition-colors" href="/services/car-rentals/">Luxury Car Rentals</a></li>
-<li><a class="hover:text-[#d4af37] transition-colors" href="/services/yacht-services/">Yacht Services</a></li>
-<li><a class="hover:text-[#d4af37] transition-colors" href="/services/cleaning-lifestyle/">Cleaning & Lifestyle Maintenance</a></li>
-<li><a class="hover:text-[#d4af37] transition-colors" href="/services/videography-photography/">Videography & Photography</a></li>
-<li><a class="hover:text-[#d4af37] transition-colors" href="/services/personal-shopping/">Personal Shopping</a></li>
-<li><a class="hover:text-[#d4af37] transition-colors" href="/services/luxury-products/">Luxury Products</a></li>
+<h6 class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-6">Services</h6>
+<ul class="space-y-3 font-body-md text-on-surface-variant text-sm">
+<li><a class="hover:text-secondary transition-colors" href="/services/luxury-stays/">Luxury Stays</a></li>
+<li><a class="hover:text-secondary transition-colors" href="/services/private-dining/">Private Dining</a></li>
+<li><a class="hover:text-secondary transition-colors" href="/services/events-experiences/">Events & Experiences</a></li>
+<li><a class="hover:text-secondary transition-colors" href="/services/wine-tasting/">Wine Tasting</a></li>
+<li><a class="hover:text-secondary transition-colors" href="/services/private-tours/">Private Tours</a></li>
+<li><a class="hover:text-secondary transition-colors" href="/services/vip-security/">VIP & Celebrity Security</a></li>
+<li><a class="hover:text-secondary transition-colors" href="/services/car-rentals/">Luxury Car Rentals</a></li>
+<li><a class="hover:text-secondary transition-colors" href="/services/yacht-services/">Yacht Services</a></li>
+<li><a class="hover:text-secondary transition-colors" href="/services/cleaning-lifestyle/">Cleaning & Lifestyle Maintenance</a></li>
+<li><a class="hover:text-secondary transition-colors" href="/services/videography-photography/">Videography & Photography</a></li>
+<li><a class="hover:text-secondary transition-colors" href="/services/personal-shopping/">Personal Shopping</a></li>
+<li><a class="hover:text-secondary transition-colors" href="/services/luxury-products/">Luxury Products</a></li>
 </ul>
 </div>
 <div>
-<h6 class="font-label-caps text-label-caps text-[#d4af37] uppercase tracking-widest mb-6">Company</h6>
-<ul class="space-y-3 font-body-md text-[#575e71] text-sm">
-<li><a class="hover:text-[#d4af37] transition-colors" href="/about/">About OPV</a></li>
-<li><a class="hover:text-[#d4af37] transition-colors" href="/partners/apply/">Become a Host or Partner</a></li>
-<li><a class="hover:text-[#d4af37] transition-colors" href="/affiliates/">Affiliate Programme</a></li>
-<li><a class="hover:text-[#d4af37] transition-colors" href="/blog/">Blog &amp; Editorial</a></li>
-<li><a class="hover:text-[#d4af37] transition-colors" href="/faqs/">FAQs</a></li>
-<li><a class="hover:text-[#d4af37] transition-colors" href="/contact/">Contact</a></li>
+<h6 class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-6">Company</h6>
+<ul class="space-y-3 font-body-md text-on-surface-variant text-sm">
+<li><a class="hover:text-secondary transition-colors" href="/about/">About OPV</a></li>
+<li><a class="hover:text-secondary transition-colors" href="/partners/apply/">Become a Host or Partner</a></li>
+<li><a class="hover:text-secondary transition-colors" href="/affiliates/">Affiliate Programme</a></li>
+<li><a class="hover:text-secondary transition-colors" href="/blog/">Blog &amp; Editorial</a></li>
+<li><a class="hover:text-secondary transition-colors" href="/faqs/">FAQs</a></li>
+<li><a class="hover:text-secondary transition-colors" href="/contact/">Contact</a></li>
 </ul>
 </div>
 <div>
-<h6 class="font-label-caps text-label-caps text-[#d4af37] uppercase tracking-widest mb-6">Legal</h6>
-<ul class="space-y-3 font-body-md text-[#575e71] text-sm">
-<li><a class="hover:text-[#d4af37] transition-colors" href="/legal/terms">Terms &amp; Conditions</a></li>
-<li><a class="hover:text-[#d4af37] transition-colors" href="/legal/privacy">Privacy Policy</a></li>
-<li><a class="hover:text-[#d4af37] transition-colors" href="/legal/verification">Verification Policy</a></li>
-<li><a class="hover:text-[#d4af37] transition-colors" href="/legal/cancellation">Cancellation &amp; Refund Policy</a></li>
-<li><a class="hover:text-[#d4af37] transition-colors" href="/legal/cookies">Cookie Policy</a></li>
+<h6 class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-6">Legal</h6>
+<ul class="space-y-3 font-body-md text-on-surface-variant text-sm">
+<li><a class="hover:text-secondary transition-colors" href="/legal/terms">Terms &amp; Conditions</a></li>
+<li><a class="hover:text-secondary transition-colors" href="/legal/privacy">Privacy Policy</a></li>
+<li><a class="hover:text-secondary transition-colors" href="/legal/verification">Verification Policy</a></li>
+<li><a class="hover:text-secondary transition-colors" href="/legal/cancellation">Cancellation &amp; Refund Policy</a></li>
+<li><a class="hover:text-secondary transition-colors" href="/legal/cookies">Cookie Policy</a></li>
 </ul>
 </div>
 <div>
-<h6 class="font-label-caps text-label-caps text-[#d4af37] uppercase tracking-widest mb-6">Stay in the Know</h6>
-<p class="font-body-md text-[#575e71] text-sm mb-6">Private invitations, editorial notes, and verified luxury access from the Vault.</p>
+<h6 class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-6">Stay in the Know</h6>
+<p class="font-body-md text-on-surface-variant text-sm mb-6">Private invitations, editorial notes, and verified luxury access from the Vault.</p>
 <form class="flex flex-col gap-3" action="/contact/">
-<input class="bg-transparent border-0 border-b border-[#dbdad9] text-[#1e1e1e] placeholder:text-[#575e71] focus:border-[#d4af37] focus:ring-0 px-0" type="email" placeholder="Email address" />
-<button class="bg-[#d4af37] text-white px-6 py-3 font-label-caps text-label-caps uppercase tracking-widest font-bold hover:bg-[#1e1e1e] transition-colors" type="submit">Subscribe</button>
+<input class="bg-transparent border-0 border-b border-outline-variant text-on-surface placeholder:text-on-surface-variant focus:border-secondary focus:ring-0 px-0" type="email" placeholder="Email address" />
+<button class="bg-secondary text-primary-container px-6 py-3 font-label-caps text-label-caps uppercase tracking-widest font-bold hover:bg-white transition-colors" type="submit">Subscribe</button>
 </form>
-<p class="font-body-md text-[#575e71] text-xs mt-4">Your details remain private and are used only for OPV communications.</p>
+<p class="font-body-md text-on-surface-variant text-xs mt-4">Your details remain private and are used only for OPV communications.</p>
 </div>
 </div>
-<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 pt-10 border-t border-[#dbdad9]">
-<p class="font-body-md text-[#575e71] text-sm">? 2026 OPV - Opulent Vault, Manchester United Kingdom.</p>
-<div class="flex flex-wrap gap-6 font-label-caps text-[10px] uppercase tracking-widest text-[#575e71]">
-<a class="hover:text-[#d4af37]" href="mailto:concierge@opulentvault.co.uk">concierge@opulentvault.co.uk</a>
-<a class="hover:text-[#d4af37]" href="tel:+441610000000">+44 161 000 0000</a>
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 pt-10 border-t border-outline-variant/10">
+<p class="font-body-md text-on-surface-variant text-sm">? 2026 OPV ? Opulent Vault, Manchester United Kingdom.</p>
+<div class="flex flex-wrap gap-6 font-label-caps text-[10px] uppercase tracking-widest text-on-surface-variant">
+<a class="hover:text-secondary" href="mailto:concierge@opulentvault.co.uk">concierge@opulentvault.co.uk</a>
+<a class="hover:text-secondary" href="tel:+441610000000">+44 161 000 0000</a>
 </div>
 </div>
 </div>
 </footer>
-<!-- Chat Now Concierge Button -->
-<button class="fixed bottom-8 right-8 z-[60] bg-secondary text-white px-8 py-4 rounded-full font-label-caps uppercase tracking-widest shadow-2xl flex items-center space-x-3 group hover:scale-105 transition-all duration-300">
-<span class="material-symbols-outlined text-lg">chat_bubble</span>
-<span>Chat Now</span>
-</button>
 <script>
         // Subtle reveal animation on scroll
         const observerOptions = {
@@ -488,15 +485,15 @@
             observer.observe(el);
         });
 
-        // Scroll effect for Navbar
+        // Hover effect for TopNavBar
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
             if (window.scrollY > 50) {
-                nav.classList.add('py-2', 'shadow-md');
+                nav.classList.add('py-2');
                 nav.classList.remove('py-unit-gutter');
             } else {
                 nav.classList.add('py-unit-gutter');
-                nav.classList.remove('py-2', 'shadow-md');
+                nav.classList.remove('py-2');
             }
         });
     </script>
