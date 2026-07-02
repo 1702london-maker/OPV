@@ -23,30 +23,30 @@
                     "tertiary-fixed-dim": "#c7c7ba",
                     "error": "#ffb4ab",
                     "on-primary-fixed": "#151b2b",
-                    "surface-container-highest": "#dbdad9",
+                    "surface-container-highest": "#333535",
                     "on-surface": "#e2e2e2",
-                    "surface-container-low": "#f5f3f3",
+                    "surface-container-low": "#1a1c1c",
                     "surface-tint": "#c0c6db",
-                    "surface-variant": "#dbdad9",
-                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#333535",
+                    "surface-container-lowest": "#0d0f0f",
                     "on-surface-variant": "#c6c6cd",
                     "on-secondary": "#3c2f00",
                     "tertiary-container": "#11130b",
-                    "primary-container": "#fbf9f8",
-                    "surface-bright": "#c7c7ba",
+                    "primary-container": "#0b1221",
+                    "surface-bright": "#38393a",
                     "on-tertiary-container": "#7d7e72",
                     "on-secondary-container": "#342800",
                     "tertiary": "#c7c7ba",
                     "on-primary-container": "#777d90",
-                    "background": "#fbf9f8",
+                    "background": "#121414",
                     "on-primary": "#293041",
                     "on-secondary-fixed-variant": "#574500",
                     "inverse-primary": "#575e70",
                     "error-container": "#93000a",
                     "tertiary-fixed": "#e3e3d5",
-                    "surface-container-high": "#ebe9e8",
+                    "surface-container-high": "#282a2b",
                     "inverse-surface": "#e2e2e2",
-                    "surface-dim": "#fbf9f8",
+                    "surface-dim": "#121414",
                     "on-error-container": "#ffdad6",
                     "on-primary-fixed-variant": "#404758",
                     "secondary": "#e9c349",
@@ -56,8 +56,8 @@
                     "primary-fixed": "#dce2f8",
                     "outline": "#909097",
                     "outline-variant": "#45464c",
-                    "surface-container": "#ffffff",
-                    "surface": "#fbf9f8",
+                    "surface-container": "#1e2020",
+                    "surface": "#121414",
                     "secondary-fixed": "#ffe088",
                     "on-error": "#690005",
                     "inverse-on-surface": "#2f3131"
@@ -100,7 +100,7 @@
     </script>
 <style>
         body {
-            background-color: #fbf9f8; /* Midnight Navy Base */
+            background-color: #0b1221; /* Midnight Navy Base */
             color: #e2e2e2;
             -webkit-font-smoothing: antialiased;
         }
@@ -147,13 +147,13 @@
             background: linear-gradient(to bottom, rgba(11, 18, 33, 0.4), rgba(11, 18, 33, 1));
         }
         ::-webkit-scrollbar { width: 4px; }
-        ::-webkit-scrollbar-track { background: #fbf9f8; }
-        ::-webkit-scrollbar-thumb { background: #ffffff; }
+        ::-webkit-scrollbar-track { background: #0b1221; }
+        ::-webkit-scrollbar-thumb { background: #1f1f1f; }
     </style>
 </head>
 <body class="font-body-md">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 glass-nav bg-[#fbf9f8]/90 backdrop-blur-md transition-all duration-300">
+<nav class="fixed top-0 w-full z-50 glass-nav bg-primary-container/80 backdrop-blur-md transition-all duration-300">
 <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit-gutter max-w-container-max mx-auto w-full">
 <div class="flex items-center gap-12">
 <a class="font-display-lg text-headline-sm tracking-tighter text-on-surface uppercase" href="/">OPV</a>
@@ -161,7 +161,7 @@
 <div class="relative group">
 <a class="text-secondary font-semibold border-b border-secondary pb-1 font-label-caps uppercase text-label-caps" href="/services/">Services</a>
 <div class="absolute left-0 top-full pt-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-[760px] max-w-[calc(100vw-160px)]">
-<div class="bg-[#fbf9f8]/95 backdrop-blur-xl border border-outline-variant/20 p-8 grid grid-cols-2 lg:grid-cols-3 gap-5 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
+<div class="bg-primary-container/95 backdrop-blur-xl border border-outline-variant/20 p-8 grid grid-cols-2 lg:grid-cols-3 gap-5 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
 <a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/luxury-stays/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Luxury Stays</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Verified properties and private residences</span></a>
 <a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/private-dining/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Private Dining</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Chefs, tastings, and hosted tables</span></a>
 <a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/events-experiences/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Events & Experiences</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Member events and rare access</span></a>
@@ -181,7 +181,7 @@
 <div class="relative group">
 <a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-label-caps" href="/services/events-experiences/">Experiences</a>
 <div class="absolute left-0 top-full pt-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-72">
-<div class="bg-[#fbf9f8]/95 backdrop-blur-xl border border-outline-variant/20 p-5 space-y-3 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
+<div class="bg-primary-container/95 backdrop-blur-xl border border-outline-variant/20 p-5 space-y-3 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
 <a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary" href="/services/events-experiences/">Events &amp; Experiences</a>
 <a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary" href="/services/private-tours/">Private Tours</a>
 <a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary" href="/services/wine-tasting/">Wine Tasting</a>
@@ -195,7 +195,7 @@
 <div class="relative group">
 <a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-label-caps" href="/membership/">Membership</a>
 <div class="absolute left-0 top-full pt-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-80">
-<div class="bg-[#fbf9f8]/95 backdrop-blur-xl border border-outline-variant/20 p-5 space-y-4 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
+<div class="bg-primary-container/95 backdrop-blur-xl border border-outline-variant/20 p-5 space-y-4 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
 <a class="block" href="/membership/"><span class="font-label-caps text-label-caps uppercase text-secondary">Standard Membership</span><span class="block text-sm text-on-surface-variant mt-1">Gateway access to the verified marketplace.</span></a>
 <a class="block" href="/membership/"><span class="font-label-caps text-label-caps uppercase text-secondary">OPV Black</span><span class="block text-sm text-on-surface-variant mt-1">Enhanced privilege and priority support.</span></a>
 <a class="block" href="/membership/"><span class="font-label-caps text-label-caps uppercase text-secondary">OPV Vault</span><span class="block text-sm text-on-surface-variant mt-1">Total custodianship for bespoke needs.</span></a>
@@ -205,7 +205,6 @@
 </div>
 </div>
 <div class="flex gap-6 items-center">
-<a class="hidden md:inline-flex border border-secondary text-on-surface px-5 py-2 font-label-caps uppercase text-label-caps tracking-widest hover:bg-secondary hover:text-white transition-colors" href="/services/">Search the Vault</a>
 <a class="text-on-surface-variant font-label-caps hover:text-secondary transition-colors uppercase text-label-caps" href="/login/">Login</a>
 <a class="bg-secondary text-primary-container px-6 py-2 font-label-caps uppercase text-label-caps font-bold tracking-widest hover:bg-white transition-colors duration-300" href="/login/">Register</a>
 </div>
@@ -228,7 +227,7 @@
 </div>
 </header>
 <!-- Service Intro -->
-<section class="py-section-gap px-margin-desktop bg-[#fbf9f8]">
+<section class="py-section-gap px-margin-desktop bg-primary-container">
 <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
 <div>
 <h2 class="font-headline-md text-headline-md mb-8">Beyond the Boutique</h2>
@@ -238,17 +237,17 @@
 </div>
 </div>
 <div class="grid grid-cols-2 gap-4">
-<div class="aspect-[3/4] bg-white overflow-hidden">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden">
 <img class="w-full h-full object-cover" data-alt="Close-up artistic shot of a high-end luxury watch being handled with white gloves in a dimly lit, sophisticated setting. The lighting emphasizes the metallic glint of the champagne gold casing against a midnight navy velvet backdrop, conveying meticulous care and exclusivity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9qsTt5TwWFU2jub2OaVg5evlwBjy6w-ZVYQd4iQOOFmsoZKksfXchtuoO5CSr2zwuWTB466gL8lgQ8d2MC0Mk3S-kiReC7H_WqGCD63qxwagyKAdegQ7GQl6g4PX8hmd3oiICvJC6Tk-4l-8Dt0BqOL2YUrzZIUT1Pcl9_wwxvIfC-CRJcDw0NJZeRlpMsqcjQ7CHlOBJ-etJlrqXycBHQIA150UOJxwFZlDEtR-Gdt-PA2tGiovwgg"/>
 </div>
-<div class="aspect-[3/4] bg-white overflow-hidden mt-8">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden mt-8">
 <img class="w-full h-full object-cover" data-alt="An array of premium leather accessories including a handbag and gloves, presented on a minimalist charcoal gray stone plinth. The composition is clean and editorial, using a low-key lighting style to evoke a sense of high-value, private acquisitions and refined taste." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3gb8R_67dAKYfo_7jhYHK9HG1p5uh9onBfDHKgeha-3tiFoivRqy2xEtsDmRmC7dcaBTroAmN2DQ2CgnPbyD5OxvUxYqRJTKKzdqJj7J0ZHCJS7jNT6L69M9ddUG3YhnwfjPHOdl7PkPqJPU_hoXuqksaEeSRPI9fEb6zLqSQCMjQddpGDRoB5Qp239SgvydQsKoPlDAxs2CKg_7azyf7XbmzErpu7U-j5IttV_Ub4ZmWn4x1kmEe7w"/>
 </div>
 </div>
 </div>
 </section>
 <!-- Personal Shopper Grid -->
-<section class="py-section-gap px-margin-desktop bg-white">
+<section class="py-section-gap px-margin-desktop bg-surface-container-lowest">
 <div class="max-w-container-max mx-auto">
 <div class="flex justify-between items-end mb-16">
 <div>
@@ -261,10 +260,10 @@
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
 <!-- Profile 1 -->
-<div class="bg-[#f5f3f3] border-[0.5px] border-outline-variant/20 p-unit*4 group hover:border-secondary/40 transition-all duration-500">
+<div class="bg-surface-container-low border-[0.5px] border-outline-variant/20 p-unit*4 group hover:border-secondary/40 transition-all duration-500">
 <div class="relative aspect-[4/5] mb-6 overflow-hidden">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Portrait of a sophisticated female personal shopper in a minimalist charcoal studio. She has a sharp, professional look with a focused expression. The lighting is soft and cinematic, highlighting the fine texture of her high-end navy blazer. The background is a deep, dark blue, maintaining the brand's aesthetic of quiet luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAyU1DxuTo-593xEBYVXae4l3zs9Ge9W8r3FFFD0OSSaDXkrvZTSFQ1_aVjQFyoM_ALIefaY9D6fjlEo5PEEEYCq8c3RiBYp8YnxDSUMTqwN9LNXaZNqYOD5_W8dMy1YkrZ8XSGsSX6Y0EuL2Js3r_hyy7zYblZEzRDgOJDjgQyWqbChLxLbPxa8U19eZ0tHsS1r8ysnnDsRoomHQz1bKpysK_rtxqXPIv4h3jmPBOGvtfs5xdY9ga9A"/>
-<div class="absolute top-4 right-4 verified-badge bg-[#fbf9f8]/90 luxury-blur">OPV</div>
+<div class="absolute top-4 right-4 verified-badge bg-primary-container/80 luxury-blur">OPV</div>
 </div>
 <h3 class="font-headline-sm text-headline-sm mb-1">Elena Moretti</h3>
 <p class="font-label-caps text-secondary mb-4">Haute Couture &amp; Heritage Jewelry</p>
@@ -276,10 +275,10 @@
 </div>
 </div>
 <!-- Profile 2 -->
-<div class="bg-[#f5f3f3] border-[0.5px] border-outline-variant/20 p-unit*4 group hover:border-secondary/40 transition-all duration-500">
+<div class="bg-surface-container-low border-[0.5px] border-outline-variant/20 p-unit*4 group hover:border-secondary/40 transition-all duration-500">
 <div class="relative aspect-[4/5] mb-6 overflow-hidden">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Portrait of a distinguished male personal shopper in a tailored midnight navy suit, standing in a library of rare books with subtle gold detailing. He exudes authority and discerning taste. The lighting is warm and directional, creating a moody, exclusive atmosphere consistent with a private members' club." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJVYl0S3hMRalAIjqQAIdaSoaPPh-yQOSLNW5V5W8kh-x9Yq3TEc-2ySH5sP1Fk8ZAux7RiY296tsJNT4O_S3aL6_w4VSfSzyhULitp-KUKss7GzJqjgHwYKoYBX3gg6-pC3Vay8R9rMJ5qhzJBUno4MU7NMrgRou_yAwXWx_LmJrj1RABJyeXwcndXX0KvhLWlJ_AmrIAKPZx6XM7rtGn3bx44Ol9UETXhpwzeEl4uT4PbVtlvqIeEA"/>
-<div class="absolute top-4 right-4 verified-badge bg-[#fbf9f8]/90 luxury-blur">OPV</div>
+<div class="absolute top-4 right-4 verified-badge bg-primary-container/80 luxury-blur">OPV</div>
 </div>
 <h3 class="font-headline-sm text-headline-sm mb-1">Julian Thorne</h3>
 <p class="font-label-caps text-secondary mb-4">Horology &amp; Bespoke Tailoring</p>
@@ -291,10 +290,10 @@
 </div>
 </div>
 <!-- Profile 3 -->
-<div class="bg-[#f5f3f3] border-[0.5px] border-outline-variant/20 p-unit*4 group hover:border-secondary/40 transition-all duration-500">
+<div class="bg-surface-container-low border-[0.5px] border-outline-variant/20 p-unit*4 group hover:border-secondary/40 transition-all duration-500">
 <div class="relative aspect-[4/5] mb-6 overflow-hidden">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Portrait of a modern, stylish woman in a high-fashion, minimalist charcoal setting. Her gaze is confident and professional. The aesthetic is clean and high-contrast, with shadows playing across a midnight navy wall. She embodies the 'Discerning Guardian' brand persona through her poised and understated elegance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjpJbo11xoQTpUHrEgY5fDx5QDsE_EwcOUYuxwXXg3n1_OAmIFYmYlx8N7Jr3uAs7wsfS8nZtIjCPaqiq_5JERrdid_lXtjRq3DmLIE9iDcz86ylfMF4Ejquay2XJQzG1UcvyhRJrU2zhaeevQeJ0RDQNXhbTFBosMd_Bk0eflrShrN1iTBv_Yup5R5LCjH5sUt8nqGvtaayEobSG8tZ91GcxCj-QuwszMzxoUtsX5BFcFU09VKRaBXw"/>
-<div class="absolute top-4 right-4 verified-badge bg-[#fbf9f8]/90 luxury-blur">OPV</div>
+<div class="absolute top-4 right-4 verified-badge bg-primary-container/80 luxury-blur">OPV</div>
 </div>
 <h3 class="font-headline-sm text-headline-sm mb-1">Sofia Zhang</h3>
 <p class="font-label-caps text-secondary mb-4">Emerging Luxury &amp; Tech-Fashion</p>
@@ -309,8 +308,8 @@
 </div>
 </section>
 <!-- Request Form Section -->
-<section class="py-section-gap px-margin-desktop bg-[#fbf9f8]">
-<div class="max-w-4xl mx-auto bg-white p-12 md:p-20 relative overflow-hidden">
+<section class="py-section-gap px-margin-desktop bg-primary-container">
+<div class="max-w-4xl mx-auto bg-surface-container p-12 md:p-20 relative overflow-hidden">
 <!-- Background WebGL/Shader Placeholder -->
 <div class="absolute top-0 right-0 w-64 h-64 opacity-10 pointer-events-none">
 
@@ -354,7 +353,7 @@
 </div>
 </section>
 <!-- Private Sourcing / Off-Market Section -->
-<section class="py-section-gap px-margin-desktop bg-white">
+<section class="py-section-gap px-margin-desktop bg-surface-container-lowest">
 <div class="max-w-container-max mx-auto flex flex-col md:flex-row gap-gutter">
 <div class="md:w-1/3">
 <h2 class="font-headline-md text-headline-md mb-6">Private Sourcing</h2>
@@ -377,7 +376,7 @@
 <div class="md:w-2/3 grid grid-cols-2 gap-gutter">
 <div class="group relative overflow-hidden bg-charcoal aspect-square">
 <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A detailed shot of an ultra-exclusive car showroom at night. The lighting is cinematic with deep midnight navy shadows and sharp highlights on the curves of a vintage luxury sports car. The environment is pristine and minimalist, emphasizing the 'off-market' and secretive nature of the private sourcing service." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDTabAq0XFsTMln_ixbHAWOSyWW4q5umNfloG8EF1JqB6cMZExfIBPS_jZoUDUW2CJaoqfZnQa5zdCjVtHJxHI1RT_zu14HbKLI5pcJPLr6u6oki32KPxuUBFuD9_wsZVNcSXq6r56YeyKtNhMVmecHNo6aJfj-H6ETZAkN3hTaYK5UvNOvjzwhtknAeBO5sjQtdPei5pAQHFhDLEN3CcjqA4d6zZMbt7MgXYIBw9lLu1KFfhJWLXZFnQ')"></div>
-<div class="absolute inset-0 bg-[#fbf9f8]/40 group-hover:bg-[#fbf9f8]/20 transition-colors"></div>
+<div class="absolute inset-0 bg-primary-container/40 group-hover:bg-primary-container/20 transition-colors"></div>
 <div class="absolute bottom-6 left-6">
 <span class="font-label-caps text-secondary text-xs">Recently Sourced</span>
 <p class="font-headline-sm text-white">1965 Vintage Grand Tourer</p>
@@ -385,7 +384,7 @@
 </div>
 <div class="group relative overflow-hidden bg-charcoal aspect-square mt-12">
 <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A display of rare, high-jewelry pieces including a diamond necklace and earrings, set against a dark charcoal silk background. The lighting is focused and dramatic, highlighting the brilliance of the stones. The composition is clean and premium, evoking a sense of high-value private acquisitions." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuATNU11ok0AmUMfHrrvrYtkzwm09dfgPRocOWpTON2yaJjMTz2LCzMqbaYR28sysOuw4CiwShwCLZoWm3bSp-9nizB6rI8bAVSh7waxT-5x56vifGWBbfv4i-akXlJ9m_qXURirT9VQk99O4n7DYlMn-tyPtulMYI1mY7umux9XN0EJK28nrfHjJYSOdAu6LfrGKZDTfE37pAMsqbDi49n9_OowxAFoovRSwP4pTMzToEGkve_w2Xj2xw')"></div>
-<div class="absolute inset-0 bg-[#fbf9f8]/40 group-hover:bg-[#fbf9f8]/20 transition-colors"></div>
+<div class="absolute inset-0 bg-primary-container/40 group-hover:bg-primary-container/20 transition-colors"></div>
 <div class="absolute bottom-6 left-6">
 <span class="font-label-caps text-secondary text-xs">Private Sale</span>
 <p class="font-headline-sm text-white">The 'Azure' Heritage Suite</p>
@@ -395,7 +394,7 @@
 </div>
 </section>
 <!-- Footer -->
-<footer class="bg-white border-t border-outline-variant/20 py-section-gap px-margin-mobile md:px-margin-desktop">
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 py-section-gap px-margin-mobile md:px-margin-desktop">
 <div class="max-w-container-max mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-5 gap-gutter mb-20">
 <div>
@@ -458,7 +457,7 @@
 </div>
 </div>
 <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 pt-10 border-t border-outline-variant/10">
-<p class="font-body-md text-on-surface-variant text-sm">(c) 2026 OPV - Opulent Vault, Manchester United Kingdom.</p>
+<p class="font-body-md text-on-surface-variant text-sm">? 2026 OPV ? Opulent Vault, Manchester United Kingdom.</p>
 <div class="flex flex-wrap gap-6 font-label-caps text-[10px] uppercase tracking-widest text-on-surface-variant">
 <a class="hover:text-secondary" href="mailto:concierge@opulentvault.co.uk">concierge@opulentvault.co.uk</a>
 <a class="hover:text-secondary" href="tel:+441610000000">+44 161 000 0000</a>
@@ -487,9 +486,9 @@
         const nav = document.querySelector('nav');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 100) {
-                nav.classList.add('bg-[#fbf9f8]/95', 'shadow-lg');
+                nav.classList.add('bg-primary-container/95', 'shadow-lg');
             } else {
-                nav.classList.remove('bg-[#fbf9f8]/95', 'shadow-lg');
+                nav.classList.remove('bg-primary-container/95', 'shadow-lg');
             }
         });
     </script>

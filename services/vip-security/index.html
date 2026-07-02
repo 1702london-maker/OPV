@@ -39,34 +39,34 @@
             theme: {
                 extend: {
                     "colors": {
-                        "surface-dim": "#fbf9f8",
+                        "surface-dim": "#121414",
                         "on-primary-container": "#777d90",
                         "primary-fixed-dim": "#c0c6db",
                         "on-error-container": "#ffdad6",
                         "tertiary-container": "#11130b",
-                        "surface-container": "#ffffff",
+                        "surface-container": "#1e2020",
                         "inverse-surface": "#e2e2e2",
                         "on-secondary-container": "#342800",
                         "secondary-container": "#af8d11",
-                        "surface-container-highest": "#dbdad9",
+                        "surface-container-highest": "#333535",
                         "on-secondary-fixed-variant": "#574500",
                         "secondary": "#e9c349",
                         "tertiary": "#c7c7ba",
-                        "surface-container-lowest": "#ffffff",
+                        "surface-container-lowest": "#0d0f0f",
                         "primary-fixed": "#dce2f8",
                         "on-tertiary-fixed": "#1b1c14",
                         "outline": "#909097",
                         "surface-tint": "#c0c6db",
                         "inverse-primary": "#575e70",
                         "inverse-on-surface": "#2f3131",
-                        "surface-container-high": "#ebe9e8",
-                        "surface-container-low": "#f5f3f3",
+                        "surface-container-high": "#282a2b",
+                        "surface-container-low": "#1a1c1c",
                         "on-error": "#690005",
                         "on-primary": "#293041",
                         "on-tertiary-container": "#7d7e72",
                         "on-primary-fixed": "#151b2b",
-                        "background": "#fbf9f8",
-                        "primary-container": "#fbf9f8",
+                        "background": "#121414",
+                        "primary-container": "#0b1221",
                         "outline-variant": "#45464c",
                         "on-surface-variant": "#c6c6cd",
                         "on-secondary": "#3c2f00",
@@ -74,15 +74,15 @@
                         "on-surface": "#e2e2e2",
                         "on-tertiary-fixed-variant": "#46483d",
                         "error": "#ffb4ab",
-                        "surface-bright": "#c7c7ba",
+                        "surface-bright": "#38393a",
                         "on-primary-fixed-variant": "#404758",
                         "error-container": "#93000a",
                         "on-secondary-fixed": "#241a00",
                         "primary": "#c0c6db",
                         "on-background": "#e2e2e2",
-                        "surface-variant": "#dbdad9",
+                        "surface-variant": "#333535",
                         "secondary-fixed-dim": "#e9c349",
-                        "surface": "#fbf9f8",
+                        "surface": "#121414",
                         "tertiary-fixed": "#e3e3d5",
                         "secondary-fixed": "#ffe088",
                         "tertiary-fixed-dim": "#c7c7ba"
@@ -123,9 +123,9 @@
         }
     </script>
 </head>
-<body class="bg-[#fbf9f8] text-on-surface font-body-md overflow-x-hidden">
+<body class="bg-primary-container text-on-surface font-body-md overflow-x-hidden">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 glass-nav bg-[#fbf9f8]/90 backdrop-blur-md transition-all duration-300">
+<nav class="fixed top-0 w-full z-50 glass-nav bg-primary-container/80 backdrop-blur-md transition-all duration-300">
 <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit-gutter max-w-container-max mx-auto w-full">
 <div class="flex items-center gap-12">
 <a class="font-display-lg text-headline-sm tracking-tighter text-on-surface uppercase" href="/">OPV</a>
@@ -133,7 +133,7 @@
 <div class="relative group">
 <a class="text-secondary font-semibold border-b border-secondary pb-1 font-label-caps uppercase text-label-caps" href="/services/">Services</a>
 <div class="absolute left-0 top-full pt-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-[760px] max-w-[calc(100vw-160px)]">
-<div class="bg-[#fbf9f8]/95 backdrop-blur-xl border border-outline-variant/20 p-8 grid grid-cols-2 lg:grid-cols-3 gap-5 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
+<div class="bg-primary-container/95 backdrop-blur-xl border border-outline-variant/20 p-8 grid grid-cols-2 lg:grid-cols-3 gap-5 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
 <a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/luxury-stays/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Luxury Stays</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Verified properties and private residences</span></a>
 <a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/private-dining/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Private Dining</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Chefs, tastings, and hosted tables</span></a>
 <a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/events-experiences/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Events & Experiences</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Member events and rare access</span></a>
@@ -153,7 +153,7 @@
 <div class="relative group">
 <a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-label-caps" href="/services/events-experiences/">Experiences</a>
 <div class="absolute left-0 top-full pt-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-72">
-<div class="bg-[#fbf9f8]/95 backdrop-blur-xl border border-outline-variant/20 p-5 space-y-3 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
+<div class="bg-primary-container/95 backdrop-blur-xl border border-outline-variant/20 p-5 space-y-3 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
 <a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary" href="/services/events-experiences/">Events &amp; Experiences</a>
 <a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary" href="/services/private-tours/">Private Tours</a>
 <a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary" href="/services/wine-tasting/">Wine Tasting</a>
@@ -167,7 +167,7 @@
 <div class="relative group">
 <a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-label-caps" href="/membership/">Membership</a>
 <div class="absolute left-0 top-full pt-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-80">
-<div class="bg-[#fbf9f8]/95 backdrop-blur-xl border border-outline-variant/20 p-5 space-y-4 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
+<div class="bg-primary-container/95 backdrop-blur-xl border border-outline-variant/20 p-5 space-y-4 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
 <a class="block" href="/membership/"><span class="font-label-caps text-label-caps uppercase text-secondary">Standard Membership</span><span class="block text-sm text-on-surface-variant mt-1">Gateway access to the verified marketplace.</span></a>
 <a class="block" href="/membership/"><span class="font-label-caps text-label-caps uppercase text-secondary">OPV Black</span><span class="block text-sm text-on-surface-variant mt-1">Enhanced privilege and priority support.</span></a>
 <a class="block" href="/membership/"><span class="font-label-caps text-label-caps uppercase text-secondary">OPV Vault</span><span class="block text-sm text-on-surface-variant mt-1">Total custodianship for bespoke needs.</span></a>
@@ -177,7 +177,6 @@
 </div>
 </div>
 <div class="flex gap-6 items-center">
-<a class="hidden md:inline-flex border border-secondary text-on-surface px-5 py-2 font-label-caps uppercase text-label-caps tracking-widest hover:bg-secondary hover:text-white transition-colors" href="/services/">Search the Vault</a>
 <a class="text-on-surface-variant font-label-caps hover:text-secondary transition-colors uppercase text-label-caps" href="/login/">Login</a>
 <a class="bg-secondary text-primary-container px-6 py-2 font-label-caps uppercase text-label-caps font-bold tracking-widest hover:bg-white transition-colors duration-300" href="/login/">Register</a>
 </div>
@@ -219,7 +218,7 @@
 </div>
 <div class="col-span-12 md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
 <!-- Close Protection -->
-<div class="bg-[#f5f3f3] p-10 border border-outline-variant/20 hover:border-secondary/40 transition-colors">
+<div class="bg-surface-container-low p-10 border border-outline-variant/20 hover:border-secondary/40 transition-colors">
 <span class="material-symbols-outlined text-secondary text-4xl mb-6">shield_person</span>
 <h3 class="font-display-lg text-headline-sm mb-4">Close Protection</h3>
 <p class="text-on-surface-variant text-sm leading-relaxed">
@@ -227,7 +226,7 @@
                         </p>
 </div>
 <!-- Residential -->
-<div class="bg-[#f5f3f3] p-10 border border-outline-variant/20 hover:border-secondary/40 transition-colors">
+<div class="bg-surface-container-low p-10 border border-outline-variant/20 hover:border-secondary/40 transition-colors">
 <span class="material-symbols-outlined text-secondary text-4xl mb-6">domain</span>
 <h3 class="font-display-lg text-headline-sm mb-4">Residential Security</h3>
 <p class="text-on-surface-variant text-sm leading-relaxed">
@@ -235,7 +234,7 @@
                         </p>
 </div>
 <!-- Secure Transport -->
-<div class="bg-[#f5f3f3] p-10 border border-outline-variant/20 hover:border-secondary/40 transition-colors md:col-span-2">
+<div class="bg-surface-container-low p-10 border border-outline-variant/20 hover:border-secondary/40 transition-colors md:col-span-2">
 <div class="flex flex-col md:flex-row gap-8 items-center">
 <div class="md:w-1/2">
 <span class="material-symbols-outlined text-secondary text-4xl mb-6">directions_car</span>
@@ -251,7 +250,7 @@
 </div>
 </section>
 <!-- Vetting & Trust Section -->
-<section class="bg-white py-section-gap border-y border-outline-variant/10">
+<section class="bg-surface-container-lowest py-section-gap border-y border-outline-variant/10">
 <div class="px-margin-desktop max-w-container-max mx-auto text-center mb-20">
 <div class="verified-badge mb-6">
 <span class="text-secondary font-display-lg text-[10px]">OPV</span>
@@ -278,7 +277,7 @@
 </section>
 <!-- Confidentiality Section -->
 <section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
-<div class="bg-[#fbf9f8] p-16 relative overflow-hidden border border-secondary/10">
+<div class="bg-primary-container p-16 relative overflow-hidden border border-secondary/10">
 <div class="absolute top-0 right-0 p-8 opacity-10">
 <span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'FILL' 1;">lock</span>
 </div>
@@ -289,10 +288,10 @@
                     </p>
 <div class="flex items-center gap-6">
 <div class="flex -space-x-4">
-<div class="w-12 h-12 rounded-full border-2 border-primary-container bg-white-high flex items-center justify-center">
+<div class="w-12 h-12 rounded-full border-2 border-primary-container bg-surface-container-high flex items-center justify-center">
 <span class="material-symbols-outlined text-secondary">key</span>
 </div>
-<div class="w-12 h-12 rounded-full border-2 border-primary-container bg-white-high flex items-center justify-center">
+<div class="w-12 h-12 rounded-full border-2 border-primary-container bg-surface-container-high flex items-center justify-center">
 <span class="material-symbols-outlined text-secondary">verified_user</span>
 </div>
 </div>
@@ -305,17 +304,17 @@
 <section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
 <h2 class="font-display-lg text-headline-md text-center mb-16">The Protocol</h2>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-unit">
-<div class="p-12 bg-[#f5f3f3] text-center relative">
+<div class="p-12 bg-surface-container-low text-center relative">
 <span class="absolute top-4 left-4 font-display-lg text-headline-sm opacity-10 italic">01</span>
 <h3 class="font-label-caps text-secondary mb-4">Submit Request</h3>
 <p class="text-sm text-on-surface-variant">Provide the foundational details of your security requirements via our encrypted portal.</p>
 </div>
-<div class="p-12 bg-[#f5f3f3] text-center relative border-x border-outline-variant/10">
+<div class="p-12 bg-surface-container-low text-center relative border-x border-outline-variant/10">
 <span class="absolute top-4 left-4 font-display-lg text-headline-sm opacity-10 italic">02</span>
 <h3 class="font-label-caps text-secondary mb-4">OPV Reviews</h3>
 <p class="text-sm text-on-surface-variant">Our internal security directors assess the risk profile and logistics to select the appropriate team.</p>
 </div>
-<div class="p-12 bg-[#f5f3f3] text-center relative">
+<div class="p-12 bg-surface-container-low text-center relative">
 <span class="absolute top-4 left-4 font-display-lg text-headline-sm opacity-10 italic">03</span>
 <h3 class="font-label-caps text-secondary mb-4">Proposal</h3>
 <p class="text-sm text-on-surface-variant">A confidential operational proposal is delivered via secure link for your final approval.</p>
@@ -333,11 +332,11 @@
 <div class="gold-border-focus border-b border-outline-variant/50 py-4 transition-all">
 <label class="block font-label-caps text-[10px] text-secondary mb-1">Type of Protection</label>
 <select class="w-full bg-transparent border-none p-0 focus:ring-0 text-on-surface font-body-md appearance-none">
-<option class="bg-[#fbf9f8]">Select category...</option>
-<option class="bg-[#fbf9f8]">Close Protection (Bodyguard)</option>
-<option class="bg-[#fbf9f8]">Residential Security Detail</option>
-<option class="bg-[#fbf9f8]">Secure Chauffeur &amp; Transit</option>
-<option class="bg-[#fbf9f8]">Special Event Security</option>
+<option class="bg-primary-container">Select category...</option>
+<option class="bg-primary-container">Close Protection (Bodyguard)</option>
+<option class="bg-primary-container">Residential Security Detail</option>
+<option class="bg-primary-container">Secure Chauffeur &amp; Transit</option>
+<option class="bg-primary-container">Special Event Security</option>
 </select>
 </div>
 <div class="gold-border-focus border-b border-outline-variant/50 py-4 transition-all">
@@ -351,10 +350,10 @@
 <div class="gold-border-focus border-b border-outline-variant/50 py-4 transition-all">
 <label class="block font-label-caps text-[10px] text-secondary mb-1">Operational Context</label>
 <select class="w-full bg-transparent border-none p-0 focus:ring-0 text-on-surface font-body-md appearance-none">
-<option class="bg-[#fbf9f8]">Leisure / Travel</option>
-<option class="bg-[#fbf9f8]">Public Appearance</option>
-<option class="bg-[#fbf9f8]">Corporate Engagement</option>
-<option class="bg-[#fbf9f8]">High-Risk Transit</option>
+<option class="bg-primary-container">Leisure / Travel</option>
+<option class="bg-primary-container">Public Appearance</option>
+<option class="bg-primary-container">Corporate Engagement</option>
+<option class="bg-primary-container">High-Risk Transit</option>
 </select>
 </div>
 </div>
@@ -374,7 +373,7 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-white border-t border-outline-variant/20 py-section-gap px-margin-mobile md:px-margin-desktop">
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 py-section-gap px-margin-mobile md:px-margin-desktop">
 <div class="max-w-container-max mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-5 gap-gutter mb-20">
 <div>
@@ -437,7 +436,7 @@
 </div>
 </div>
 <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 pt-10 border-t border-outline-variant/10">
-<p class="font-body-md text-on-surface-variant text-sm">(c) 2026 OPV - Opulent Vault, Manchester United Kingdom.</p>
+<p class="font-body-md text-on-surface-variant text-sm">? 2026 OPV ? Opulent Vault, Manchester United Kingdom.</p>
 <div class="flex flex-wrap gap-6 font-label-caps text-[10px] uppercase tracking-widest text-on-surface-variant">
 <a class="hover:text-secondary" href="mailto:concierge@opulentvault.co.uk">concierge@opulentvault.co.uk</a>
 <a class="hover:text-secondary" href="tel:+441610000000">+44 161 000 0000</a>

@@ -13,7 +13,7 @@
             font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
         }
         ::-webkit-scrollbar { width: 4px; }
-        ::-webkit-scrollbar-track { background: #fbf9f8; }
+        ::-webkit-scrollbar-track { background: #0b1221; }
         ::-webkit-scrollbar-thumb { background: #e9c349; }
         
         .glass-panel {
@@ -36,34 +36,34 @@
           theme: {
             extend: {
               "colors": {
-                "surface-dim": "#fbf9f8",
+                "surface-dim": "#121414",
                 "on-primary-container": "#777d90",
                 "primary-fixed-dim": "#c0c6db",
                 "on-error-container": "#ffdad6",
                 "tertiary-container": "#11130b",
-                "surface-container": "#ffffff",
+                "surface-container": "#1e2020",
                 "inverse-surface": "#e2e2e2",
                 "on-secondary-container": "#342800",
                 "secondary-container": "#af8d11",
-                "surface-container-highest": "#dbdad9",
+                "surface-container-highest": "#333535",
                 "on-secondary-fixed-variant": "#574500",
                 "secondary": "#e9c349",
                 "tertiary": "#c7c7ba",
-                "surface-container-lowest": "#ffffff",
+                "surface-container-lowest": "#0d0f0f",
                 "primary-fixed": "#dce2f8",
                 "on-tertiary-fixed": "#1b1c14",
                 "outline": "#909097",
                 "surface-tint": "#c0c6db",
                 "inverse-primary": "#575e70",
                 "inverse-on-surface": "#2f3131",
-                "surface-container-high": "#ebe9e8",
-                "surface-container-low": "#f5f3f3",
+                "surface-container-high": "#282a2b",
+                "surface-container-low": "#1a1c1c",
                 "on-error": "#690005",
                 "on-primary": "#293041",
                 "on-tertiary-container": "#7d7e72",
                 "on-primary-fixed": "#151b2b",
-                "background": "#fbf9f8",
-                "primary-container": "#fbf9f8",
+                "background": "#121414",
+                "primary-container": "#0b1221",
                 "outline-variant": "#45464c",
                 "on-surface-variant": "#c6c6cd",
                 "on-secondary": "#3c2f00",
@@ -71,15 +71,15 @@
                 "on-surface": "#e2e2e2",
                 "on-tertiary-fixed-variant": "#46483d",
                 "error": "#ffb4ab",
-                "surface-bright": "#c7c7ba",
+                "surface-bright": "#38393a",
                 "on-primary-fixed-variant": "#404758",
                 "error-container": "#93000a",
                 "on-secondary-fixed": "#241a00",
                 "primary": "#c0c6db",
                 "on-background": "#e2e2e2",
-                "surface-variant": "#dbdad9",
+                "surface-variant": "#333535",
                 "secondary-fixed-dim": "#e9c349",
-                "surface": "#fbf9f8",
+                "surface": "#121414",
                 "tertiary-fixed": "#e3e3d5",
                 "secondary-fixed": "#ffe088",
                 "tertiary-fixed-dim": "#c7c7ba"
@@ -107,9 +107,9 @@
         }
     </script>
 </head>
-<body class="bg-[#fbf9f8] text-on-surface font-body overflow-x-hidden">
+<body class="bg-primary-container text-on-surface font-body overflow-x-hidden">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 glass-nav bg-[#fbf9f8]/90 backdrop-blur-md transition-all duration-300">
+<nav class="fixed top-0 w-full z-50 glass-nav bg-primary-container/80 backdrop-blur-md transition-all duration-300">
 <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit-gutter max-w-container-max mx-auto w-full">
 <div class="flex items-center gap-12">
 <a class="font-display-lg text-headline-sm tracking-tighter text-on-surface uppercase" href="/">OPV</a>
@@ -117,7 +117,7 @@
 <div class="relative group">
 <a class="text-secondary font-semibold border-b border-secondary pb-1 font-label-caps uppercase text-label-caps" href="/services/">Services</a>
 <div class="absolute left-0 top-full pt-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-[760px] max-w-[calc(100vw-160px)]">
-<div class="bg-[#fbf9f8]/95 backdrop-blur-xl border border-outline-variant/20 p-8 grid grid-cols-2 lg:grid-cols-3 gap-5 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
+<div class="bg-primary-container/95 backdrop-blur-xl border border-outline-variant/20 p-8 grid grid-cols-2 lg:grid-cols-3 gap-5 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
 <a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/luxury-stays/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Luxury Stays</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Verified properties and private residences</span></a>
 <a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/private-dining/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Private Dining</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Chefs, tastings, and hosted tables</span></a>
 <a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/events-experiences/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Events & Experiences</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Member events and rare access</span></a>
@@ -137,7 +137,7 @@
 <div class="relative group">
 <a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-label-caps" href="/services/events-experiences/">Experiences</a>
 <div class="absolute left-0 top-full pt-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-72">
-<div class="bg-[#fbf9f8]/95 backdrop-blur-xl border border-outline-variant/20 p-5 space-y-3 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
+<div class="bg-primary-container/95 backdrop-blur-xl border border-outline-variant/20 p-5 space-y-3 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
 <a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary" href="/services/events-experiences/">Events &amp; Experiences</a>
 <a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary" href="/services/private-tours/">Private Tours</a>
 <a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary" href="/services/wine-tasting/">Wine Tasting</a>
@@ -151,7 +151,7 @@
 <div class="relative group">
 <a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-label-caps" href="/membership/">Membership</a>
 <div class="absolute left-0 top-full pt-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-80">
-<div class="bg-[#fbf9f8]/95 backdrop-blur-xl border border-outline-variant/20 p-5 space-y-4 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
+<div class="bg-primary-container/95 backdrop-blur-xl border border-outline-variant/20 p-5 space-y-4 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
 <a class="block" href="/membership/"><span class="font-label-caps text-label-caps uppercase text-secondary">Standard Membership</span><span class="block text-sm text-on-surface-variant mt-1">Gateway access to the verified marketplace.</span></a>
 <a class="block" href="/membership/"><span class="font-label-caps text-label-caps uppercase text-secondary">OPV Black</span><span class="block text-sm text-on-surface-variant mt-1">Enhanced privilege and priority support.</span></a>
 <a class="block" href="/membership/"><span class="font-label-caps text-label-caps uppercase text-secondary">OPV Vault</span><span class="block text-sm text-on-surface-variant mt-1">Total custodianship for bespoke needs.</span></a>
@@ -161,7 +161,6 @@
 </div>
 </div>
 <div class="flex gap-6 items-center">
-<a class="hidden md:inline-flex border border-secondary text-on-surface px-5 py-2 font-label-caps uppercase text-label-caps tracking-widest hover:bg-secondary hover:text-white transition-colors" href="/services/">Search the Vault</a>
 <a class="text-on-surface-variant font-label-caps hover:text-secondary transition-colors uppercase text-label-caps" href="/login/">Login</a>
 <a class="bg-secondary text-primary-container px-6 py-2 font-label-caps uppercase text-label-caps font-bold tracking-widest hover:bg-white transition-colors duration-300" href="/login/">Register</a>
 </div>
@@ -171,10 +170,10 @@
 <header class="relative h-screen flex items-center justify-center overflow-hidden">
 <div class="absolute inset-0 z-0">
 <div class="w-full h-full bg-cover bg-center scale-105 animate-pulse-slow" data-alt="A cinematic, low-angle shot of a majestic 100-meter superyacht slicing through deep navy blue Mediterranean waters at sunset. The lighting is golden and high-contrast, catching the metallic curves of the hull and the white foam of the wake. The sky is a gradient of deep indigo and soft champagne, reflecting the brand's luxury aesthetic. No people are visible, emphasizing the quiet exclusivity of the vessel." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6r2jrQd_MaGankgmtPfqYnkyX-aekjmU_ZQ1r1gd2JKwYdoIBrfWhvJur6QdHJvL9YuTBVaup-HLsCZiKEdKZk0lSjjfBVok3pQ03DmzbPIQtPFr3lObmG8Y6fXdCL04qOROrfwd2z7AmZJykgWXWGTZyjuFA-SSustv1htv-p528rBYBuPC4O59oIjIPTbtpGEXlcpYknGVd1J_Mu2iaTqQNJRY-7WhVSRx5iTp3MNQnZnv2-WvjQg')"></div>
-<div class="absolute inset-0 bg-[#fbf9f8]/40"></div>
+<div class="absolute inset-0 bg-primary-container/40"></div>
 </div>
 <div class="relative z-10 text-center max-w-4xl px-margin-mobile">
-<div class="inline-flex items-center gap-2 mb-6 border border-secondary/30 px-4 py-1 rounded-full bg-[#fbf9f8]/40 backdrop-blur-sm">
+<div class="inline-flex items-center gap-2 mb-6 border border-secondary/30 px-4 py-1 rounded-full bg-primary-container/40 backdrop-blur-sm">
 <span class="material-symbols-outlined text-secondary text-sm">directions_boat</span>
 <span class="text-secondary text-[10px] uppercase tracking-[0.3em] font-bold">Maritime Excellence</span>
 </div>
@@ -228,7 +227,7 @@
 </div>
 </section>
 <!-- Fleet Listing -->
-<section class="py-section-gap bg-[#f5f3f3]">
+<section class="py-section-gap bg-surface-container-low">
 <div class="px-margin-desktop max-w-container-max mx-auto">
 <div class="flex justify-between items-end mb-16">
 <div>
@@ -246,7 +245,7 @@
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 <!-- Yacht Card 1 -->
-<div class="group bg-white relative overflow-hidden flex flex-col">
+<div class="group bg-surface-container relative overflow-hidden flex flex-col">
 <div class="relative aspect-[16/10] overflow-hidden">
 <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" data-alt="Wide shot of a sleek white superyacht anchored in a turquoise lagoon in the Maldives. High-key lighting, bright colors, luxury photography style. The vessel has multiple decks and a clean, modern silhouette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxmJtzrqzEzJSWc5tA-Oz3kJbC_0n3YG-je96DQKOEME80f9A-Cd26CIeS8jKyvw8AXofPRhEjQgroZ7O432R7-sqaOQsEj66UMY0ZZVjGzWv_cA_5hDdCs6Gol1KC1xZfWu4G6gL1woOrkzja2irvyD4nfFznz92gwNWvkiilQdwOEVrRVfNJ-V_7M-iXDrkvxGqp79Ob6jexVg1mYPmMW0g9BzWplLzCnH5BqcowFYhoUJJPL_IsdA"/>
 <div class="absolute top-4 left-4 glass-panel px-3 py-1 flex items-center gap-2">
@@ -280,7 +279,7 @@
 <button class="w-full bg-on-surface text-primary-container py-4 text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">Request Dossier</button>
 </div>
 <!-- Yacht Card 2 -->
-<div class="group bg-white relative overflow-hidden flex flex-col">
+<div class="group bg-surface-container relative overflow-hidden flex flex-col">
 <div class="relative aspect-[16/10] overflow-hidden">
 <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" data-alt="A dark-hulled contemporary motor yacht cruising along the Amalfi Coast at dusk. Dramatic lighting from the setting sun, orange and purple hues in the sky, warm cabin lights visible. The yacht is 60 meters long and looks extremely modern." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHo8avzFcqvhd5Y8zY6LvGu6M2tp6PMXJFH1V2ZFFOEjax0XcX8-NqYob5di19rqww78HEWfAu30Fr0p2IuOa66oNzicUhvS7NNlTncwER5g_I2gLq_3KqsqEnIMTuGBSn7JsAEu9uL1_8EUk1jLZpTdJwyR_TRI5aOTqKftUZxU_VJvX6iZOJe9tug1TLyKK3_qWEEacMkstwdaZzPQH5-yVkZBUrxHu8vku6S-1mcn_jxTNMiIPG9Q"/>
 <div class="absolute top-4 left-4 glass-panel px-3 py-1 flex items-center gap-2">
@@ -314,7 +313,7 @@
 <button class="w-full bg-on-surface text-primary-container py-4 text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">Request Dossier</button>
 </div>
 <!-- Yacht Card 3 -->
-<div class="group bg-white relative overflow-hidden flex flex-col">
+<div class="group bg-surface-container relative overflow-hidden flex flex-col">
 <div class="relative aspect-[16/10] overflow-hidden">
 <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" data-alt="A classic sailing yacht with large white sails fully deployed in the Aegean sea. The lighting is bright and airy, typical of a summer afternoon. The water is deep blue with white crests. The yacht has a traditional wooden deck and brass fittings." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxjNYN8pHr-OTRMtvTrxaziYGgASSIbfBlIXmW_cDXupozFzbZJz_9E7jHkaSBd-AC6lqsJIOMEvfaFOQ9qbPb3Otuj84itJO0zoawt3nMFAt4BEd7Qda-KQCMjuSN0ySu3j5Cw2QKxLTqY2ZoJ6GhmGUo6m-3txhbLtT7bWWLbmaUsisk3B-LkiMzu6XcN_HQfwhhQsMSorBf-IbRQ0eFNSJmX9fFAYLXcBL6Nv1sQXB_gvx6LfGIGw"/>
 <div class="absolute top-4 left-4 glass-panel px-3 py-1 flex items-center gap-2">
@@ -358,11 +357,11 @@
 <h2 class="font-display text-4xl mb-6">Uncompromising Certification</h2>
 <p class="text-on-surface-variant mb-10">Every vessel in the OPV registry undergoes rigorous annual inspections exceeding industry standards. We prioritize safety, legal compliance, and technical perfection so you can focus on the horizon.</p>
 <div class="space-y-6">
-<div class="p-6 border-l-2 border-secondary bg-[#f5f3f3]">
+<div class="p-6 border-l-2 border-secondary bg-surface-container-low">
 <div class="text-secondary font-bold text-xs uppercase tracking-widest mb-2">Safety Benchmark</div>
 <p class="text-sm text-on-surface">SOLAS &amp; IMO Compliant with additional OPV-specific protocols.</p>
 </div>
-<div class="p-6 border-l-2 border-outline-variant bg-[#f5f3f3]/50">
+<div class="p-6 border-l-2 border-outline-variant bg-surface-container-low/50">
 <div class="text-on-surface-variant font-bold text-xs uppercase tracking-widest mb-2">Crew Vetting</div>
 <p class="text-sm text-on-surface">Multilingual crews with specialist training in security and hospitality.</p>
 </div>
@@ -370,22 +369,22 @@
 </div>
 </div>
 <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-px bg-outline-variant/20">
-<div class="bg-[#fbf9f8] p-12 border border-outline-variant/10">
+<div class="bg-primary-container p-12 border border-outline-variant/10">
 <span class="material-symbols-outlined text-secondary mb-4 text-3xl">medical_services</span>
 <h4 class="text-lg font-display mb-3">On-Board Medical</h4>
 <p class="text-sm text-on-surface-variant font-light">Fully equipped medical bays with tele-medicine links to leading hospitals.</p>
 </div>
-<div class="bg-[#fbf9f8] p-12 border border-outline-variant/10">
+<div class="bg-primary-container p-12 border border-outline-variant/10">
 <span class="material-symbols-outlined text-secondary mb-4 text-3xl">wifi_tethering</span>
 <h4 class="text-lg font-display mb-3">Starlink High-Speed</h4>
 <p class="text-sm text-on-surface-variant font-light">Dedicated low-latency satellite internet for remote global operations.</p>
 </div>
-<div class="bg-[#fbf9f8] p-12 border border-outline-variant/10">
+<div class="bg-primary-container p-12 border border-outline-variant/10">
 <span class="material-symbols-outlined text-secondary mb-4 text-3xl">water_drop</span>
 <h4 class="text-lg font-display mb-3">ECO Certification</h4>
 <p class="text-sm text-on-surface-variant font-light">Sustainable waste management and low-emission propulsion systems.</p>
 </div>
-<div class="bg-[#fbf9f8] p-12 border border-outline-variant/10">
+<div class="bg-primary-container p-12 border border-outline-variant/10">
 <span class="material-symbols-outlined text-secondary mb-4 text-3xl">private_connectivity</span>
 <h4 class="text-lg font-display mb-3">Privacy Shield</h4>
 <p class="text-sm text-on-surface-variant font-light">Anti-drone technology and hardware-level network encryption available.</p>
@@ -394,7 +393,7 @@
 </div>
 </section>
 <!-- Yacht Enquiry Form Section -->
-<section class="py-section-gap bg-white">
+<section class="py-section-gap bg-surface-container-lowest">
 <div class="px-margin-desktop max-w-[1000px] mx-auto">
 <div class="text-center mb-16">
 <h2 class="font-display text-4xl mb-4 italic">The Commencement</h2>
@@ -448,7 +447,7 @@
 </div>
 </section>
 <!-- Footer -->
-<footer class="bg-white border-t border-outline-variant/20 py-section-gap px-margin-mobile md:px-margin-desktop">
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 py-section-gap px-margin-mobile md:px-margin-desktop">
 <div class="max-w-container-max mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-5 gap-gutter mb-20">
 <div>
@@ -511,7 +510,7 @@
 </div>
 </div>
 <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 pt-10 border-t border-outline-variant/10">
-<p class="font-body-md text-on-surface-variant text-sm">(c) 2026 OPV - Opulent Vault, Manchester United Kingdom.</p>
+<p class="font-body-md text-on-surface-variant text-sm">? 2026 OPV ? Opulent Vault, Manchester United Kingdom.</p>
 <div class="flex flex-wrap gap-6 font-label-caps text-[10px] uppercase tracking-widest text-on-surface-variant">
 <a class="hover:text-secondary" href="mailto:concierge@opulentvault.co.uk">concierge@opulentvault.co.uk</a>
 <a class="hover:text-secondary" href="tel:+441610000000">+44 161 000 0000</a>
@@ -524,11 +523,11 @@
         document.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
             if (window.scrollY > 50) {
-                nav.classList.add('py-4', 'bg-[#fbf9f8]/95');
-                nav.classList.remove('py-6', 'bg-[#fbf9f8]/90');
+                nav.classList.add('py-4', 'bg-primary-container/95');
+                nav.classList.remove('py-6', 'bg-primary-container/80');
             } else {
-                nav.classList.add('py-6', 'bg-[#fbf9f8]/90');
-                nav.classList.remove('py-4', 'bg-[#fbf9f8]/95');
+                nav.classList.add('py-6', 'bg-primary-container/80');
+                nav.classList.remove('py-4', 'bg-primary-container/95');
             }
         });
 
