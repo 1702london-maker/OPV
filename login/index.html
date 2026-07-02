@@ -15,34 +15,34 @@
         theme: {
           extend: {
             "colors": {
-                    "secondary-container": "#af8d11",
-                    "on-background": "#e2e2e2",
+                    "secondary-container": "#d4af37",
+                    "on-background": "#1e1e1e",
                     "error-container": "#93000a",
                     "on-error": "#690005",
                     "on-secondary-fixed-variant": "#574500",
-                    "surface-container": "#1e2020",
-                    "primary-container": "#0b1221",
+                    "surface-container": "#ffffff",
+                    "primary-container": "#fbf9f8",
                     "primary-fixed-dim": "#c0c6db",
                     "on-tertiary": "#2f3128",
-                    "surface-container-high": "#282a2b",
-                    "on-secondary-container": "#342800",
-                    "surface-container-highest": "#333535",
-                    "outline": "#909097",
+                    "surface-container-high": "#ebe9e8",
+                    "on-secondary-container": "#f2e6c2",
+                    "surface-container-highest": "#dbdad9",
+                    "outline": "#74777f",
                     "inverse-primary": "#575e70",
-                    "surface-bright": "#38393a",
-                    "secondary-fixed-dim": "#e9c349",
+                    "surface-bright": "#c7c7ba",
+                    "secondary-fixed-dim": "#d4af37",
                     "on-tertiary-fixed-variant": "#46483d",
-                    "surface-container-lowest": "#0d0f0f",
+                    "surface-container-lowest": "#ffffff",
                     "on-primary-fixed-variant": "#404758",
-                    "surface-container-low": "#1a1c1c",
+                    "surface-container-low": "#f5f3f3",
                     "on-error-container": "#ffdad6",
                     "tertiary-fixed-dim": "#c7c7ba",
                     "on-primary-fixed": "#151b2b",
-                    "inverse-surface": "#e2e2e2",
+                    "inverse-surface": "#1e1e1e",
                     "on-tertiary-container": "#7d7e72",
-                    "on-secondary": "#3c2f00",
-                    "surface-variant": "#333535",
-                    "surface-dim": "#121414",
+                    "on-secondary": "#ffffff",
+                    "surface-variant": "#dbdad9",
+                    "surface-dim": "#fbf9f8",
                     "on-primary-container": "#777d90",
                     "primary-fixed": "#dce2f8",
                     "tertiary-container": "#11130b",
@@ -50,18 +50,18 @@
                     "secondary-fixed": "#ffe088",
                     "surface-tint": "#c0c6db",
                     "primary": "#c0c6db",
-                    "on-secondary-fixed": "#241a00",
+                    "on-secondary-fixed": "#1e1e1e",
                     "error": "#ffb4ab",
                     "tertiary": "#c7c7ba",
-                    "on-surface": "#e2e2e2",
-                    "outline-variant": "#45464c",
-                    "on-primary": "#293041",
-                    "secondary": "#e9c349",
+                    "on-surface": "#1e1e1e",
+                    "outline-variant": "#dbdad9",
+                    "on-primary": "#ffffff",
+                    "secondary": "#d4af37",
                     "on-tertiary-fixed": "#1b1c14",
-                    "background": "#121414",
-                    "on-surface-variant": "#c6c6cd",
+                    "background": "#fbf9f8",
+                    "on-surface-variant": "#575e71",
                     "inverse-on-surface": "#2f3131",
-                    "surface": "#121414"
+                    "surface": "#fbf9f8"
             },
             "borderRadius": {
                     "DEFAULT": "0.25rem",
@@ -101,13 +101,13 @@
     </script>
 <style>
         body {
-            background-color: #121414; /* surface-dim */
-            color: #e2e2e2; /* on-surface */
+            background-color: #fbf9f8; /* surface-dim */
+            color: #1e1e1e; /* on-surface */
             overflow-x: hidden;
         }
 
         .champagne-gradient {
-            background: linear-gradient(135deg, #e9c349 0%, #af8d11 100%);
+            background: linear-gradient(135deg, #d4af37 0%, #d4af37 100%);
         }
 
         .soft-stone-border {
@@ -116,7 +116,7 @@
         }
 
         .soft-stone-border:focus-within {
-            border-bottom: 1px solid #e9c349;
+            border-bottom: 1px solid #d4af37;
             outline: none;
         }
 
@@ -142,7 +142,7 @@
 <body class="font-body-md text-body-md antialiased">
 <!-- Header Suppression: Auth screen uses minimal branding -->
 <header class="fixed top-0 w-full z-50 py-10 px-margin-desktop flex justify-center">
-<div class="font-display-lg text-headline-sm tracking-tighter text-on-surface">OPV</div>
+<div class="font-display-lg text-headline-sm tracking-tighter text-[#1e1e1e]">OPV</div>
 </header>
 <main class="min-h-screen flex items-center justify-center relative overflow-hidden px-margin-mobile md:px-margin-desktop py-section-gap">
 <!-- Atmospheric Background Animation -->
@@ -162,44 +162,44 @@
 <span class="font-label-caps text-secondary">VERIFIED GUARDIAN</span>
 </div>
 <h2 class="font-display-lg text-headline-md text-white mb-4">The Gate to Excellence.</h2>
-<p class="font-body-md text-on-surface-variant max-w-xs">Access the world's most exclusive sanctuary for the discerning few.</p>
+<p class="font-body-md text-[#575e71] max-w-xs">Access the world's most exclusive sanctuary for the discerning few.</p>
 </div>
 </div>
 <!-- Form Half -->
-<div class="flex-1 bg-surface-container-lowest p-8 md:p-16 flex flex-col justify-center">
+<div class="flex-1 bg-[#fbf9f8] p-8 md:p-16 flex flex-col justify-center">
 <div class="mb-10" id="auth-header">
-<h1 class="font-display-lg text-headline-md text-on-surface mb-2" id="form-title">Sign In</h1>
-<p class="font-body-md text-on-surface-variant" id="form-subtitle">Enter your credentials to access your vault.</p>
+<h1 class="font-display-lg text-headline-md text-[#1e1e1e] mb-2" id="form-title">Sign In</h1>
+<p class="font-body-md text-[#575e71]" id="form-subtitle">Enter your credentials to access your vault.</p>
 </div>
 <!-- Toggle Navigation (Internal to Form) -->
 <div class="flex gap-8 mb-10 border-b border-outline-variant/20">
 <button class="pb-3 font-label-caps text-secondary border-b border-secondary luxury-ease" id="tab-login" onclick="switchTab('login')">Login</button>
-<button class="pb-3 font-label-caps text-on-surface-variant hover:text-secondary luxury-ease" id="tab-register" onclick="switchTab('register')">Register</button>
+<button class="pb-3 font-label-caps text-[#575e71] hover:text-secondary luxury-ease" id="tab-register" onclick="switchTab('register')">Register</button>
 </div>
 <!-- Form Fields -->
 <form class="space-y-8" id="auth-form" onsubmit="return false;">
 <!-- Registration Fields (Hidden initially) -->
 <div class="hidden space-y-8" id="registration-fields">
 <div class="flex flex-col gap-2">
-<label class="font-label-caps text-on-surface-variant text-[10px] uppercase tracking-widest">Full Name</label>
+<label class="font-label-caps text-[#575e71] text-[10px] uppercase tracking-widest">Full Name</label>
 <div class="soft-stone-border py-2 flex items-center">
-<input class="bg-transparent border-none w-full p-0 text-on-surface placeholder:text-outline-variant/40 focus:ring-0 font-body-md" placeholder="ALEXANDER VANCE" type="text"/>
+<input class="bg-transparent border-none w-full p-0 text-[#1e1e1e] placeholder:text-outline-variant/40 focus:ring-0 font-body-md" placeholder="ALEXANDER VANCE" type="text"/>
 </div>
 </div>
 </div>
 <div class="flex flex-col gap-2">
-<label class="font-label-caps text-on-surface-variant text-[10px] uppercase tracking-widest">Email Address</label>
+<label class="font-label-caps text-[#575e71] text-[10px] uppercase tracking-widest">Email Address</label>
 <div class="soft-stone-border py-2 flex items-center">
-<input class="bg-transparent border-none w-full p-0 text-on-surface placeholder:text-outline-variant/40 focus:ring-0 font-body-md" placeholder="GUARDIAN@OPULENTVAULT.COM" type="email"/>
+<input class="bg-transparent border-none w-full p-0 text-[#1e1e1e] placeholder:text-outline-variant/40 focus:ring-0 font-body-md" placeholder="GUARDIAN@OPULENTVAULT.COM" type="email"/>
 </div>
 </div>
 <div class="flex flex-col gap-2">
 <div class="flex justify-between items-center">
-<label class="font-label-caps text-on-surface-variant text-[10px] uppercase tracking-widest">Password</label>
+<label class="font-label-caps text-[#575e71] text-[10px] uppercase tracking-widest">Password</label>
 <a class="text-[10px] font-label-caps text-secondary/70 hover:text-secondary uppercase tracking-widest luxury-ease" href="/" id="forgot-password">Forgot?</a>
 </div>
 <div class="soft-stone-border py-2 flex items-center">
-<input class="bg-transparent border-none w-full p-0 text-on-surface placeholder:text-outline-variant/40 focus:ring-0 font-body-md" placeholder="••••••••••••" type="password"/>
+<input class="bg-transparent border-none w-full p-0 text-[#1e1e1e] placeholder:text-outline-variant/40 focus:ring-0 font-body-md" placeholder="••••••••••••" type="password"/>
 </div>
 </div>
 <!-- Primary Action -->
@@ -224,7 +224,7 @@
                             SAML
                         </button>
 </div>
-<p class="text-[11px] font-body-md text-on-surface-variant/60 leading-relaxed text-center">
+<p class="text-[11px] font-body-md text-[#575e71]/60 leading-relaxed text-center">
                         By continuing, you acknowledge our <a class="text-secondary/60 hover:text-secondary underline underline-offset-4" href="/">Privacy Charter</a>. We safeguard your digital presence with sovereign-grade encryption.
                     </p>
 </div>
@@ -232,73 +232,73 @@
 </div>
 </main>
 <!-- Footer Suppression: Using localized footer instead of global for focus -->
-<footer class="bg-surface-container-lowest border-t border-outline-variant/20 py-section-gap px-margin-mobile md:px-margin-desktop">
+<footer class="bg-[#fbf9f8] border-t border-[#dbdad9] py-section-gap px-margin-mobile md:px-margin-desktop">
 <div class="max-w-container-max mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-5 gap-gutter mb-20">
 <div>
-<a class="font-display-lg text-headline-md text-on-surface block mb-6" href="/">OPV</a>
-<p class="font-body-md text-on-surface-variant text-sm mb-8">Opulent Vault is Manchester's curated luxury lifestyle concierge marketplace.</p>
-<div class="flex gap-5 text-on-surface-variant">
-<a class="hover:text-secondary" href="https://www.instagram.com/" aria-label="Instagram"><span class="material-symbols-outlined">photo_camera</span></a>
-<a class="hover:text-secondary" href="https://www.linkedin.com/" aria-label="LinkedIn"><span class="material-symbols-outlined">business_center</span></a>
-<a class="hover:text-secondary" href="https://x.com/" aria-label="X"><span class="material-symbols-outlined">alternate_email</span></a>
-<a class="hover:text-secondary" href="https://www.facebook.com/" aria-label="Facebook"><span class="material-symbols-outlined">groups</span></a>
-<a class="hover:text-secondary" href="https://www.youtube.com/" aria-label="YouTube"><span class="material-symbols-outlined">play_circle</span></a>
+<a class="font-display-lg text-headline-md text-[#1e1e1e] block mb-6" href="/">OPV</a>
+<p class="font-body-md text-[#575e71] text-sm mb-8">Opulent Vault is Manchester's curated luxury lifestyle concierge marketplace.</p>
+<div class="flex gap-5 text-[#575e71]">
+<a class="hover:text-[#d4af37]" href="https://www.instagram.com/" aria-label="Instagram"><span class="material-symbols-outlined">photo_camera</span></a>
+<a class="hover:text-[#d4af37]" href="https://www.linkedin.com/" aria-label="LinkedIn"><span class="material-symbols-outlined">business_center</span></a>
+<a class="hover:text-[#d4af37]" href="https://x.com/" aria-label="X"><span class="material-symbols-outlined">alternate_email</span></a>
+<a class="hover:text-[#d4af37]" href="https://www.facebook.com/" aria-label="Facebook"><span class="material-symbols-outlined">groups</span></a>
+<a class="hover:text-[#d4af37]" href="https://www.youtube.com/" aria-label="YouTube"><span class="material-symbols-outlined">play_circle</span></a>
 </div>
 </div>
 <div>
-<h6 class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-6">Services</h6>
-<ul class="space-y-3 font-body-md text-on-surface-variant text-sm">
-<li><a class="hover:text-secondary transition-colors" href="/services/luxury-stays/">Luxury Stays</a></li>
-<li><a class="hover:text-secondary transition-colors" href="/services/private-dining/">Private Dining</a></li>
-<li><a class="hover:text-secondary transition-colors" href="/services/events-experiences/">Events & Experiences</a></li>
-<li><a class="hover:text-secondary transition-colors" href="/services/wine-tasting/">Wine Tasting</a></li>
-<li><a class="hover:text-secondary transition-colors" href="/services/private-tours/">Private Tours</a></li>
-<li><a class="hover:text-secondary transition-colors" href="/services/vip-security/">VIP & Celebrity Security</a></li>
-<li><a class="hover:text-secondary transition-colors" href="/services/car-rentals/">Luxury Car Rentals</a></li>
-<li><a class="hover:text-secondary transition-colors" href="/services/yacht-services/">Yacht Services</a></li>
-<li><a class="hover:text-secondary transition-colors" href="/services/cleaning-lifestyle/">Cleaning & Lifestyle Maintenance</a></li>
-<li><a class="hover:text-secondary transition-colors" href="/services/videography-photography/">Videography & Photography</a></li>
-<li><a class="hover:text-secondary transition-colors" href="/services/personal-shopping/">Personal Shopping</a></li>
-<li><a class="hover:text-secondary transition-colors" href="/services/luxury-products/">Luxury Products</a></li>
+<h6 class="font-label-caps text-label-caps text-[#d4af37] uppercase tracking-widest mb-6">Services</h6>
+<ul class="space-y-3 font-body-md text-[#575e71] text-sm">
+<li><a class="hover:text-[#d4af37] transition-colors" href="/services/luxury-stays/">Luxury Stays</a></li>
+<li><a class="hover:text-[#d4af37] transition-colors" href="/services/private-dining/">Private Dining</a></li>
+<li><a class="hover:text-[#d4af37] transition-colors" href="/services/events-experiences/">Events & Experiences</a></li>
+<li><a class="hover:text-[#d4af37] transition-colors" href="/services/wine-tasting/">Wine Tasting</a></li>
+<li><a class="hover:text-[#d4af37] transition-colors" href="/services/private-tours/">Private Tours</a></li>
+<li><a class="hover:text-[#d4af37] transition-colors" href="/services/vip-security/">VIP & Celebrity Security</a></li>
+<li><a class="hover:text-[#d4af37] transition-colors" href="/services/car-rentals/">Luxury Car Rentals</a></li>
+<li><a class="hover:text-[#d4af37] transition-colors" href="/services/yacht-services/">Yacht Services</a></li>
+<li><a class="hover:text-[#d4af37] transition-colors" href="/services/cleaning-lifestyle/">Cleaning & Lifestyle Maintenance</a></li>
+<li><a class="hover:text-[#d4af37] transition-colors" href="/services/videography-photography/">Videography & Photography</a></li>
+<li><a class="hover:text-[#d4af37] transition-colors" href="/services/personal-shopping/">Personal Shopping</a></li>
+<li><a class="hover:text-[#d4af37] transition-colors" href="/services/luxury-products/">Luxury Products</a></li>
 </ul>
 </div>
 <div>
-<h6 class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-6">Company</h6>
-<ul class="space-y-3 font-body-md text-on-surface-variant text-sm">
-<li><a class="hover:text-secondary transition-colors" href="/about/">About OPV</a></li>
-<li><a class="hover:text-secondary transition-colors" href="/partners/apply/">Become a Host or Partner</a></li>
-<li><a class="hover:text-secondary transition-colors" href="/affiliates/">Affiliate Programme</a></li>
-<li><a class="hover:text-secondary transition-colors" href="/blog/">Blog &amp; Editorial</a></li>
-<li><a class="hover:text-secondary transition-colors" href="/faqs/">FAQs</a></li>
-<li><a class="hover:text-secondary transition-colors" href="/contact/">Contact</a></li>
+<h6 class="font-label-caps text-label-caps text-[#d4af37] uppercase tracking-widest mb-6">Company</h6>
+<ul class="space-y-3 font-body-md text-[#575e71] text-sm">
+<li><a class="hover:text-[#d4af37] transition-colors" href="/about/">About OPV</a></li>
+<li><a class="hover:text-[#d4af37] transition-colors" href="/partners/apply/">Become a Host or Partner</a></li>
+<li><a class="hover:text-[#d4af37] transition-colors" href="/affiliates/">Affiliate Programme</a></li>
+<li><a class="hover:text-[#d4af37] transition-colors" href="/blog/">Blog &amp; Editorial</a></li>
+<li><a class="hover:text-[#d4af37] transition-colors" href="/faqs/">FAQs</a></li>
+<li><a class="hover:text-[#d4af37] transition-colors" href="/contact/">Contact</a></li>
 </ul>
 </div>
 <div>
-<h6 class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-6">Legal</h6>
-<ul class="space-y-3 font-body-md text-on-surface-variant text-sm">
-<li><a class="hover:text-secondary transition-colors" href="/legal/terms">Terms &amp; Conditions</a></li>
-<li><a class="hover:text-secondary transition-colors" href="/legal/privacy">Privacy Policy</a></li>
-<li><a class="hover:text-secondary transition-colors" href="/legal/verification">Verification Policy</a></li>
-<li><a class="hover:text-secondary transition-colors" href="/legal/cancellation">Cancellation &amp; Refund Policy</a></li>
-<li><a class="hover:text-secondary transition-colors" href="/legal/cookies">Cookie Policy</a></li>
+<h6 class="font-label-caps text-label-caps text-[#d4af37] uppercase tracking-widest mb-6">Legal</h6>
+<ul class="space-y-3 font-body-md text-[#575e71] text-sm">
+<li><a class="hover:text-[#d4af37] transition-colors" href="/legal/terms">Terms &amp; Conditions</a></li>
+<li><a class="hover:text-[#d4af37] transition-colors" href="/legal/privacy">Privacy Policy</a></li>
+<li><a class="hover:text-[#d4af37] transition-colors" href="/legal/verification">Verification Policy</a></li>
+<li><a class="hover:text-[#d4af37] transition-colors" href="/legal/cancellation">Cancellation &amp; Refund Policy</a></li>
+<li><a class="hover:text-[#d4af37] transition-colors" href="/legal/cookies">Cookie Policy</a></li>
 </ul>
 </div>
 <div>
-<h6 class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-6">Stay in the Know</h6>
-<p class="font-body-md text-on-surface-variant text-sm mb-6">Private invitations, editorial notes, and verified luxury access from the Vault.</p>
+<h6 class="font-label-caps text-label-caps text-[#d4af37] uppercase tracking-widest mb-6">Stay in the Know</h6>
+<p class="font-body-md text-[#575e71] text-sm mb-6">Private invitations, editorial notes, and verified luxury access from the Vault.</p>
 <form class="flex flex-col gap-3" action="/contact/">
-<input class="bg-transparent border-0 border-b border-outline-variant text-on-surface placeholder:text-on-surface-variant focus:border-secondary focus:ring-0 px-0" type="email" placeholder="Email address" />
-<button class="bg-secondary text-primary-container px-6 py-3 font-label-caps text-label-caps uppercase tracking-widest font-bold hover:bg-white transition-colors" type="submit">Subscribe</button>
+<input class="bg-transparent border-0 border-b border-[#dbdad9] text-[#1e1e1e] placeholder:text-[#575e71] focus:border-[#d4af37] focus:ring-0 px-0" type="email" placeholder="Email address" />
+<button class="bg-[#d4af37] text-white px-6 py-3 font-label-caps text-label-caps uppercase tracking-widest font-bold hover:bg-[#1e1e1e] transition-colors" type="submit">Subscribe</button>
 </form>
-<p class="font-body-md text-on-surface-variant text-xs mt-4">Your details remain private and are used only for OPV communications.</p>
+<p class="font-body-md text-[#575e71] text-xs mt-4">Your details remain private and are used only for OPV communications.</p>
 </div>
 </div>
-<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 pt-10 border-t border-outline-variant/10">
-<p class="font-body-md text-on-surface-variant text-sm">? 2026 OPV ? Opulent Vault, Manchester United Kingdom.</p>
-<div class="flex flex-wrap gap-6 font-label-caps text-[10px] uppercase tracking-widest text-on-surface-variant">
-<a class="hover:text-secondary" href="mailto:concierge@opulentvault.co.uk">concierge@opulentvault.co.uk</a>
-<a class="hover:text-secondary" href="tel:+441610000000">+44 161 000 0000</a>
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 pt-10 border-t border-[#dbdad9]">
+<p class="font-body-md text-[#575e71] text-sm">? 2026 OPV - Opulent Vault, Manchester United Kingdom.</p>
+<div class="flex flex-wrap gap-6 font-label-caps text-[10px] uppercase tracking-widest text-[#575e71]">
+<a class="hover:text-[#d4af37]" href="mailto:concierge@opulentvault.co.uk">concierge@opulentvault.co.uk</a>
+<a class="hover:text-[#d4af37]" href="tel:+441610000000">+44 161 000 0000</a>
 </div>
 </div>
 </div>
@@ -316,9 +316,9 @@
             if (type === 'register') {
                 // Style updates
                 registerTab.classList.add('text-secondary', 'border-b', 'border-secondary');
-                registerTab.classList.remove('text-on-surface-variant');
+                registerTab.classList.remove('text-[#575e71]');
                 loginTab.classList.remove('text-secondary', 'border-b', 'border-secondary');
-                loginTab.classList.add('text-on-surface-variant');
+                loginTab.classList.add('text-[#575e71]');
                 
                 // Content updates
                 registrationFields.classList.remove('hidden');
@@ -329,9 +329,9 @@
             } else {
                 // Style updates
                 loginTab.classList.add('text-secondary', 'border-b', 'border-secondary');
-                loginTab.classList.remove('text-on-surface-variant');
+                loginTab.classList.remove('text-[#575e71]');
                 registerTab.classList.remove('text-secondary', 'border-b', 'border-secondary');
-                registerTab.classList.add('text-on-surface-variant');
+                registerTab.classList.add('text-[#575e71]');
 
                 // Content updates
                 registrationFields.classList.add('hidden');
