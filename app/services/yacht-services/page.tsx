@@ -2,7 +2,7 @@
   return (
     <>
       {/* Hero */}
-      <header className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6r2jrQd_MaGankgmtPfqYnkyX-aekjmU_ZQ1r1gd2JKwYdoIBrfWhvJur6QdHJvL9YuTBVaup-HLsCZiKEdKZk0lSjjfBVok3pQ03DmzbPIQtPFr3lObmG8Y6fXdCL04qOROrfwd2z7AmZJykgWXWGTZyjuFA-SSustv1htv-p528rBYBuPC4O59oIjIPTbtpGEXlcpYknGVd1J_Mu2iaTqQNJRY-7WhVSRx5iTp3MNQnZnv2-WvjQg')" }}></div>
           <div className="absolute inset-0 bg-primary-container/40"></div>
@@ -23,7 +23,7 @@
             <a href="#fleet" className="border border-on-surface/20 text-on-surface px-10 py-5 text-sm tracking-[0.2em] font-bold uppercase backdrop-blur-md hover:bg-on-surface/5 transition-all inline-block">View Fleet</a>
           </div>
         </div>
-      </header>
+      </section>
 
       {/* Intro */}
       <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center bg-primary-container">
