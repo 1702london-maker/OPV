@@ -1,44 +1,61 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
-const CAPABILITIES = [
-  { icon: "home", label: "Property Recommendations" },
-  { icon: "directions_car", label: "Vehicle Recommendations" },
-  { icon: "flight", label: "Private Jet Requests" },
-  { icon: "security", label: "Security Bookings" },
-  { icon: "concierge_service", label: "Concierge Requests" },
-  { icon: "explore", label: "Experience Planning" },
-  { icon: "map", label: "Travel Planning" },
-  { icon: "support_agent", label: "Booking Support" },
+interface Message {
+  role: "user" | "assistant";
+  text: string;
+}
+
+const WELCOME: Message = {
+  role: "assistant",
+  text: "Good evening. I'm your OPV concierge guardian. How may I arrange something extraordinary for you today?",
+};
+
+const QUICK_PROMPTS = [
+  "Book a private yacht",
+  "Arrange private dining",
+  "VIP security detail",
+  "Luxury stay request",
 ];
 
 export default function AIConciergeWidget() {
   const [open, setOpen] = useState(false);
-  const [formOpen, setFormOpen] = useState(false);
-  const [form, setForm] = useState({ name: "", email: "", phone: "", request: "", service: "Property Recommendations" });
-  const [submitted, setSubmitted] = useState(false);
+  const [messages, setMessages] = useState<Message[]>([WELCOME]);
+  const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
+  const bottomRef = useRef<HTMLDivElement>(null);
 
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
+  useEffect(() => {
+    if (open) bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages, open]);
+
+  async function send(text: string) {
+    if (!text.trim() || loading) return;
+    const userMsg: Message = { role: "user", text: text.trim() };
+    setMessages((prev) => [...prev, userMsg]);
+    setInput("");
     setLoading(true);
+
     try {
-      await fetch("/api/enquiry", {
+      const res = await fetch("/api/enquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          type: "concierge_request",
-          name: form.name,
-          email: form.email,
-          phone: form.phone,
-          message: form.request,
-          payload: { service: form.service },
-        }),
+        body: JSON.stringify({ message: text.trim() }),
       });
-      setSubmitted(true);
+      const data = await res.json().catch(() => ({}));
+      const reply =
+        data?.reply ||
+        "Your request has been received. A dedicated guardian will be in touch within 15 minutes. Is there anything else I can assist you with?";
+      setMessages((prev) => [...prev, { role: "assistant", text: reply }]);
     } catch {
-      // silently fail
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "assistant",
+          text: "Your request has been received. A dedicated guardian will be in touch within 15 minutes.",
+        },
+      ]);
     } finally {
       setLoading(false);
     }
@@ -46,84 +63,101 @@ export default function AIConciergeWidget() {
 
   return (
     <>
-      {/* Floating gold trigger */}
-      <div className="fixed bottom-8 right-8 z-50 flex flex-col items-end gap-3">
-        <button
-          onClick={() => { setOpen(!open); setFormOpen(false); setSubmitted(false); }}
-          className="w-16 h-16 rounded-full bg-secondary border border-secondary flex items-center justify-center shadow-[0_8px_32px_rgba(233,195,73,0.4)] hover:scale-105 transition-all duration-300"
-          aria-label="AI Concierge"
-        >
-          <span className="material-symbols-outlined text-primary-container text-2xl">auto_awesome</span>
-        </button>
-      </div>
+      {/* Floating trigger */}
+      <button
+        onClick={() => setOpen((v) => !v)}
+        aria-label="Open concierge chat"
+        className="fixed bottom-8 right-8 z-50 w-14 h-14 rounded-full bg-secondary flex items-center justify-center shadow-2xl hover:scale-105 active:scale-95 transition-transform"
+      >
+        <span className="material-symbols-outlined text-primary-container text-2xl">
+          {open ? "close" : "chat"}
+        </span>
+      </button>
 
-      {/* Panel */}
+      {/* Chat panel */}
       {open && (
-        <div className="fixed bottom-32 right-8 z-50 w-[360px] bg-primary-container/95 backdrop-blur-xl border border-secondary/30 shadow-[0_30px_80px_rgba(0,0,0,0.5)]">
+        <div className="fixed bottom-28 right-8 z-50 w-[360px] max-h-[580px] flex flex-col bg-[#0f1928] border border-outline-variant/30 shadow-2xl overflow-hidden">
           {/* Header */}
-          <div className="border-b border-outline-variant/30 px-6 py-4 flex items-center justify-between">
-            <div>
-              <div className="flex items-center gap-2 mb-1">
-                <span className="material-symbols-outlined text-secondary text-base">auto_awesome</span>
-                <span className="font-label-caps text-label-caps text-secondary uppercase tracking-widest">OPV AI Concierge</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-green-400 inline-block"></span>
-                <span className="font-body-md text-xs text-on-surface-variant">Online — Ready to assist</span>
-              </div>
+          <div className="flex items-center gap-3 px-5 py-4 border-b border-outline-variant/20 bg-surface-container-low">
+            <div className="w-8 h-8 rounded-full border border-secondary flex items-center justify-center text-[10px] font-bold text-secondary shrink-0">
+              OPV
             </div>
-            <button onClick={() => setOpen(false)} className="text-on-surface-variant hover:text-secondary transition-colors">
+            <div className="flex-1">
+              <p className="text-on-surface font-label-caps text-xs tracking-widest">OPV CONCIERGE</p>
+              <p className="text-secondary text-[10px] font-label-caps flex items-center gap-1">
+                <span className="w-1.5 h-1.5 rounded-full bg-secondary inline-block"></span>
+                Available 24 / 7
+              </p>
+            </div>
+            <button onClick={() => setOpen(false)} className="text-on-surface-variant hover:text-on-surface transition-colors">
               <span className="material-symbols-outlined text-lg">close</span>
             </button>
           </div>
 
-          {!formOpen ? (
-            <div className="p-6">
-              <p className="font-body-md text-sm text-on-surface-variant mb-5 leading-relaxed">
-                Your personal AI-powered concierge. How may I assist you today?
-              </p>
-              <div className="grid grid-cols-2 gap-2 mb-6">
-                {CAPABILITIES.map((cap) => (
-                  <button
-                    key={cap.label}
-                    onClick={() => { setForm((f) => ({ ...f, service: cap.label })); setFormOpen(true); }}
-                    className="flex items-center gap-2 border border-outline-variant/40 px-3 py-3 text-left hover:border-secondary/60 hover:bg-white/5 transition-all"
-                  >
-                    <span className="material-symbols-outlined text-secondary text-sm">{cap.icon}</span>
-                    <span className="font-body-md text-xs text-on-surface leading-tight">{cap.label}</span>
-                  </button>
-                ))}
+          {/* Messages */}
+          <div className="flex-1 overflow-y-auto px-4 py-5 space-y-4 min-h-0">
+            {messages.map((m, i) => (
+              <div key={i} className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}>
+                {m.role === "assistant" && (
+                  <div className="w-6 h-6 rounded-full border border-secondary flex items-center justify-center text-[8px] font-bold text-secondary shrink-0 mr-2 mt-1">O</div>
+                )}
+                <div
+                  className={`max-w-[80%] px-4 py-3 text-sm leading-relaxed ${
+                    m.role === "user"
+                      ? "bg-secondary text-primary-container font-medium"
+                      : "bg-surface-container-low text-on-surface border border-outline-variant/20"
+                  }`}
+                >
+                  {m.text}
+                </div>
               </div>
-              <button
-                onClick={() => setFormOpen(true)}
-                className="w-full bg-secondary text-primary-container font-label-caps text-label-caps py-4 uppercase tracking-widest hover:bg-white transition-colors"
-              >
-                Start a Request
-              </button>
+            ))}
+
+            {loading && (
+              <div className="flex justify-start items-end gap-2">
+                <div className="w-6 h-6 rounded-full border border-secondary flex items-center justify-center text-[8px] font-bold text-secondary shrink-0">O</div>
+                <div className="bg-surface-container-low border border-outline-variant/20 px-4 py-3 flex items-center gap-1">
+                  <span className="w-1.5 h-1.5 rounded-full bg-on-surface-variant animate-bounce" style={{ animationDelay: "0ms" }}></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-on-surface-variant animate-bounce" style={{ animationDelay: "150ms" }}></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-on-surface-variant animate-bounce" style={{ animationDelay: "300ms" }}></span>
+                </div>
+              </div>
+            )}
+            <div ref={bottomRef} />
+          </div>
+
+          {/* Quick prompts — shown only at start */}
+          {messages.length <= 1 && (
+            <div className="px-4 pb-3 flex flex-wrap gap-2">
+              {QUICK_PROMPTS.map((p) => (
+                <button
+                  key={p}
+                  onClick={() => send(p)}
+                  className="text-[10px] font-label-caps border border-outline-variant/30 text-on-surface-variant hover:border-secondary hover:text-secondary px-3 py-1.5 transition-colors"
+                >
+                  {p}
+                </button>
+              ))}
             </div>
-          ) : submitted ? (
-            <div className="p-6 text-center">
-              <span className="material-symbols-outlined text-secondary text-3xl mb-3 block">check_circle</span>
-              <p className="font-display-lg text-headline-sm text-on-surface mb-2">Request Received</p>
-              <p className="font-body-md text-sm text-on-surface-variant">
-                Your concierge request has been submitted. A member of the Opulent Vault team will be in touch shortly.
-              </p>
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="p-6 space-y-4">
-              <div className="mb-2">
-                <span className="font-label-caps text-[10px] text-secondary uppercase tracking-widest">{form.service}</span>
-              </div>
-              <input type="text" placeholder="Full Name" value={form.name} onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))} required className="w-full border-b border-outline-variant/40 focus:border-secondary bg-transparent pb-2 font-body-md text-sm text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none transition-colors" />
-              <input type="email" placeholder="Email Address" value={form.email} onChange={(e) => setForm((f) => ({ ...f, email: e.target.value }))} required className="w-full border-b border-outline-variant/40 focus:border-secondary bg-transparent pb-2 font-body-md text-sm text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none transition-colors" />
-              <input type="tel" placeholder="Phone Number (optional)" value={form.phone} onChange={(e) => setForm((f) => ({ ...f, phone: e.target.value }))} className="w-full border-b border-outline-variant/40 focus:border-secondary bg-transparent pb-2 font-body-md text-sm text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none transition-colors" />
-              <textarea placeholder="Tell us about your request..." value={form.request} onChange={(e) => setForm((f) => ({ ...f, request: e.target.value }))} required rows={3} className="w-full border-b border-outline-variant/40 focus:border-secondary bg-transparent pb-2 font-body-md text-sm text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none resize-none transition-colors" />
-              <div className="flex gap-3 pt-2">
-                <button type="button" onClick={() => setFormOpen(false)} className="flex-1 border border-outline-variant/40 font-label-caps text-label-caps text-on-surface-variant py-3 uppercase hover:border-secondary transition-colors">Back</button>
-                <button type="submit" disabled={loading} className="flex-1 bg-secondary text-primary-container font-label-caps text-label-caps py-3 uppercase tracking-widest hover:bg-white transition-colors disabled:opacity-50">{loading ? "Sending..." : "Submit"}</button>
-              </div>
-            </form>
           )}
+
+          {/* Input */}
+          <div className="border-t border-outline-variant/20 flex items-center px-4 py-3 gap-3 bg-surface-container-low">
+            <input
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && send(input)}
+              placeholder="Type your request..."
+              className="flex-1 bg-transparent text-on-surface text-sm placeholder:text-on-surface-variant/40 focus:outline-none"
+            />
+            <button
+              onClick={() => send(input)}
+              disabled={!input.trim() || loading}
+              className="w-8 h-8 bg-secondary flex items-center justify-center hover:opacity-90 disabled:opacity-30 transition-opacity shrink-0"
+            >
+              <span className="material-symbols-outlined text-primary-container text-lg">send</span>
+            </button>
+          </div>
         </div>
       )}
     </>

@@ -32,7 +32,7 @@
             <div>
               <h3 className="font-headline-md text-on-surface mb-2">Private Dining</h3>
               <p className="text-on-surface-variant font-body-md line-clamp-2 mb-6">Culinary masterpieces prepared in total seclusion by Michelin-starred masters.</p>
-              <a className="inline-flex items-center gap-2 font-label-caps text-label-caps text-secondary group-hover:gap-4 transition-all duration-300" href="#">EXPLORE <span className="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+              <a className="inline-flex items-center gap-2 font-label-caps text-label-caps text-secondary group-hover:gap-4 transition-all duration-300" href="/services/private-dining">EXPLORE <span className="material-symbols-outlined text-[16px]">arrow_forward</span></a>
             </div>
           </div>
           <div className="group flex flex-col space-y-6">
@@ -43,7 +43,7 @@
             <div>
               <h3 className="font-headline-md text-on-surface mb-2">Events &amp; Experiences</h3>
               <p className="text-on-surface-variant font-body-md line-clamp-2 mb-6">Access to the inaccessible. From private gallery openings to closed-set performances.</p>
-              <a className="inline-flex items-center gap-2 font-label-caps text-label-caps text-secondary group-hover:gap-4 transition-all duration-300" href="#">EXPLORE <span className="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+              <a className="inline-flex items-center gap-2 font-label-caps text-label-caps text-secondary group-hover:gap-4 transition-all duration-300" href="/services/events-experiences">EXPLORE <span className="material-symbols-outlined text-[16px]">arrow_forward</span></a>
             </div>
           </div>
           <div className="group flex flex-col space-y-6">
@@ -87,7 +87,7 @@
             <div>
               <h3 className="font-headline-md text-on-surface mb-2">Luxury Car Rentals</h3>
               <p className="text-on-surface-variant font-body-md line-clamp-2 mb-6">A fleet of the world&apos;s most sought-after automobiles, from limited-edition hypercars to classic restorations.</p>
-              <a className="inline-flex items-center gap-2 font-label-caps text-label-caps text-secondary group-hover:gap-4 transition-all duration-300" href="#">EXPLORE <span className="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+              <a className="inline-flex items-center gap-2 font-label-caps text-label-caps text-secondary group-hover:gap-4 transition-all duration-300" href="/services/car-rentals">EXPLORE <span className="material-symbols-outlined text-[16px]">arrow_forward</span></a>
             </div>
           </div>
           <div className="group flex flex-col space-y-6">

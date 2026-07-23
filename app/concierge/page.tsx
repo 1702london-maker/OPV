@@ -55,9 +55,9 @@ export default function ConciergePage() {
       </section>
 
       {/* Request Form Section */}
-      <section className="bg-[#f9f9f9] py-section-gap">
+      <section className="bg-primary-container py-section-gap">
         <div className="max-w-container-max mx-auto px-margin-desktop">
-          <div className="bg-[#1F1F1F] border border-outline-variant/20 overflow-hidden flex flex-col md:flex-row">
+          <div className="bg-surface-container-low border border-outline-variant/20 overflow-hidden flex flex-col md:flex-row">
             {/* Form Info Side */}
             <div className="md:w-2/5 relative min-h-[400px]">
               <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBRdQfd0Twd1mJ9bHnDy15i9dpteKO655AoqZ5pUQndqoNdusexLfxziQa5m_tgiwpmCMW7otkwM3i4ld95v7GmkE1ipQi-xjpjLIBGkaoxGW8ehpREBTReIVfyTlmMcy9llJc_V1CCNUu82EZgyLcCtfPc8QS_gmF0wP0gbgsq5lwCbWmcNLGuXs0Ko7GGoGoIMdlhbOwlm8D6A-ONluuDXXqogfed5sRvtyOZPtgbPnj72nF1C2aHIA')" }}></div>

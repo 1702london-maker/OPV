@@ -2,7 +2,7 @@
 
 export default function BlogPage() {
   return (
-    <main className="pt-24">
+    <div className="pt-24">
       {/* Hero Section */}
       <section className="relative w-full h-[819px] flex flex-col justify-end overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -203,7 +203,7 @@ export default function BlogPage() {
       </section>
 
       {/* Membership CTA — bg-surface-container-lowest → bg-[#f9f9f9] */}
-      <section className="py-section-gap bg-[#f9f9f9]">
+      <section className="py-section-gap bg-primary-container">
         <div className="px-margin-desktop max-w-container-max mx-auto w-full text-center">
           <div className="mb-12 flex justify-center">
             <div className="w-16 h-16 rounded-full border border-secondary flex items-center justify-center">
@@ -215,6 +215,6 @@ export default function BlogPage() {
           <button className="bg-secondary text-primary-container px-12 py-5 font-label-caps tracking-[0.2em] hover:bg-secondary-fixed transition-colors">REQUEST ADMISSION</button>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

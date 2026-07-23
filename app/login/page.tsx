@@ -3,12 +3,7 @@
 export default function LoginPage() {
   return (
     <>
-      {/* Minimal branding header — kept for auth screen */}
-      <header className="fixed top-0 w-full z-50 py-10 px-margin-desktop flex justify-center">
-        <div className="font-display-lg text-headline-sm tracking-tighter text-on-surface">OPV</div>
-      </header>
-
-      <main className="min-h-screen flex items-center justify-center relative overflow-hidden px-margin-mobile md:px-margin-desktop py-section-gap">
+      <div className="min-h-screen flex items-center justify-center relative overflow-hidden px-margin-mobile md:px-margin-desktop py-section-gap">
         {/* Atmospheric background */}
         <div className="absolute inset-0 z-0 opacity-40"></div>
         <div className="glow-overlay absolute inset-0 z-0"></div>
@@ -33,8 +28,8 @@ export default function LoginPage() {
             </div>
           </div>
 
-          {/* Form Half — bg-surface-container-lowest → bg-[#f9f9f9] */}
-          <div className="flex-1 bg-[#f9f9f9] p-8 md:p-16 flex flex-col justify-center">
+          {/* Form Half */}
+          <div className="flex-1 bg-surface-container-low p-8 md:p-16 flex flex-col justify-center">
             <div className="mb-10" id="auth-header">
               <h1 className="font-display-lg text-headline-md text-on-surface mb-2" id="form-title">Sign In</h1>
               <p className="font-body-md text-on-surface-variant" id="form-subtitle">Enter your credentials to access your vault.</p>
@@ -115,7 +110,7 @@ export default function LoginPage() {
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </>
   );
 }
