@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 export default function EventsExperiencesPage() {
   return (
     <>
@@ -21,7 +21,7 @@ export default function EventsExperiencesPage() {
       </section>
 
       {/* Filter Bar */}
-      <section className="bg-[#f9f9f9] py-8 border-b border-outline-variant/20">
+      <section className="bg-primary-container py-8 border-b border-outline-variant/20">
         <div className="px-margin-desktop max-w-container-max mx-auto">
           <div className="flex flex-wrap gap-6 items-center">
             {["All Experiences", "Art & Culture", "Gastronomy", "Private Gala", "Performance"].map((cat) => (
@@ -36,7 +36,7 @@ export default function EventsExperiencesPage() {
       </section>
 
       {/* Event Listings */}
-      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-[#f9f9f9]" id="listings">
+      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-primary-container" id="listings">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
           {[
             {
@@ -67,7 +67,7 @@ export default function EventsExperiencesPage() {
               img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDyN1YxjwV7Pu_HmiRa6kCx5U3se42d_eQ7xShiskE9gW3lcDvejgZYkHQg9syelcIMaAXghj71kqOLNedpC7lDD01C4Bgc2xu0XSpSBzP0K-YFNaiHwX7RAL_bvhIxngXk5jyp1oh9DfOh0N6Wcx4H8BdyIchL0snvNoTd4CgJvygdbi0BXvOiMHbMOuO9iYD4DDzUtAvRaHYlBxN5b0i_08ZQzki1kD8DTuAZ_96avrR6k8D3sfmiHQ",
             },
           ].map(({ title, venue, date, guests, type, price, img }) => (
-            <div key={title} className="group bg-[#f0ede8] border border-outline-variant/10 overflow-hidden hover:border-secondary/40 transition-all duration-500">
+            <div key={title} className="group bg-primary-container border border-outline-variant/10 overflow-hidden hover:border-secondary/40 transition-all duration-500">
               <div className="relative h-72 overflow-hidden">
                 <div className="absolute top-4 left-4 z-10">
                   <div className={`font-label-caps text-[10px] px-3 py-1 ${type === "PRIVATE INVITATION" ? "bg-primary-container text-secondary border border-secondary" : "bg-secondary text-primary-container"}`}>{type}</div>
@@ -100,7 +100,7 @@ export default function EventsExperiencesPage() {
       </section>
 
       {/* Featured Event */}
-      <section className="py-section-gap bg-[#f0ede8]">
+      <section className="py-section-gap bg-primary-container">
         <div className="px-margin-desktop max-w-container-max mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative aspect-[4/3] overflow-hidden">
@@ -126,7 +126,7 @@ export default function EventsExperiencesPage() {
       </section>
 
       {/* Invitation Form */}
-      <section className="py-section-gap px-margin-desktop max-w-3xl mx-auto bg-[#f9f9f9]">
+      <section className="py-section-gap px-margin-desktop max-w-3xl mx-auto bg-primary-container">
         <div className="text-center mb-12">
           <h2 className="font-display-lg text-headline-md text-on-surface mb-4">Request an Invitation</h2>
           <p className="text-on-surface-variant">For private events, submit your details below. Our team reviews all requests within 24 hours.</p>
@@ -155,7 +155,7 @@ export default function EventsExperiencesPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-section-gap px-margin-desktop max-w-3xl mx-auto bg-[#f9f9f9]">
+      <section className="py-section-gap px-margin-desktop max-w-3xl mx-auto bg-primary-container">
         <h2 className="font-display-lg text-headline-md text-on-surface mb-12 text-center">Questions</h2>
         <div className="space-y-6">
           {[

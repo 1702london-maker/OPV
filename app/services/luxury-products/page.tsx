@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 export default function LuxuryProductsPage() {
   return (
     <>
@@ -21,7 +21,7 @@ export default function LuxuryProductsPage() {
       </section>
 
       {/* Filter Tabs */}
-      <section className="bg-[#f9f9f9] py-6 border-b border-outline-variant/20">
+      <section className="bg-primary-container py-6 border-b border-outline-variant/20">
         <div className="px-margin-desktop max-w-container-max mx-auto">
           <div className="flex gap-8">
             {["All Assets", "Timepieces", "Fine Art", "Bespoke Vehicles", "Rare Spirits"].map((tab, i) => (
@@ -32,7 +32,7 @@ export default function LuxuryProductsPage() {
       </section>
 
       {/* Products Grid */}
-      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-[#f9f9f9]" id="products">
+      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-primary-container" id="products">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
           {[
             {
@@ -57,7 +57,7 @@ export default function LuxuryProductsPage() {
               img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCHo8avzFcqvhd5Y8zY6LvGu6M2tp6PMXJFH1V2ZFFOEjax0XcX8-NqYob5di19rqww78HEWfAu30Fr0p2IuOa66oNzicUhvS7NNlTncwER5g_I2gLq_3KqsqEnIMTuGBSn7JsAEu9uL1_8EUk1jLZpTdJwyR_TRI5aOTqKftUZxU_VJvX6iZOJe9tug1TLyKK3_qWEEacMkstwdaZzPQH5-yVkZBUrxHu8vku6S-1mcn_jxTNMiIPG9Q",
             },
           ].map(({ category, name, subtitle, price, img }) => (
-            <div key={name} className="group bg-[#f0ede8] border border-outline-variant/10 overflow-hidden hover:border-secondary/40 transition-all duration-500">
+            <div key={name} className="group bg-primary-container border border-outline-variant/10 overflow-hidden hover:border-secondary/40 transition-all duration-500">
               <div className="relative h-72 overflow-hidden">
                 <div className="absolute top-4 left-4 z-10">
                   <div className="font-label-caps text-[10px] border border-secondary text-secondary bg-primary-container/90 px-3 py-1">{category}</div>
@@ -83,7 +83,7 @@ export default function LuxuryProductsPage() {
       </section>
 
       {/* Private Sourcing */}
-      <section className="py-section-gap bg-[#f0ede8]">
+      <section className="py-section-gap bg-primary-container">
         <div className="px-margin-desktop max-w-container-max mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
@@ -105,7 +105,7 @@ export default function LuxuryProductsPage() {
                 ))}
               </div>
             </div>
-            <div className="bg-[#f9f9f9] p-12 border border-outline-variant/20">
+            <div className="bg-primary-container p-12 border border-outline-variant/20">
               <h3 className="font-display-lg text-2xl text-on-surface mb-8">Submit a Sourcing Request</h3>
               <form className="space-y-8" onSubmit={(e) => e.preventDefault()}>
                 <div className="border-b border-outline-variant/50 py-3">

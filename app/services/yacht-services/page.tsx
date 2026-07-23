@@ -1,4 +1,4 @@
-export default function YachtServicesPage() {
+﻿export default function YachtServicesPage() {
   return (
     <>
       {/* Hero */}
@@ -26,7 +26,7 @@ export default function YachtServicesPage() {
       </header>
 
       {/* Intro */}
-      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center bg-[#f9f9f9]">
+      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center bg-primary-container">
         <div>
           <h2 className="font-display-lg text-4xl md:text-5xl mb-8 leading-snug text-on-surface">The Architecture of Maritime Privacy</h2>
           <p className="text-on-surface-variant text-body-lg mb-6">Our fleet represents the pinnacle of private ownership. Due to the exclusive nature of these vessels, availability is strictly managed via our bespoke enquiry-only handling system. This ensures the utmost confidentiality for both owners and guests.</p>
@@ -53,7 +53,7 @@ export default function YachtServicesPage() {
       </section>
 
       {/* Fleet */}
-      <section className="py-section-gap bg-[#f0ede8]" id="fleet">
+      <section className="py-section-gap bg-primary-container" id="fleet">
         <div className="px-margin-desktop max-w-container-max mx-auto">
           <div className="flex justify-between items-end mb-16">
             <div>
@@ -114,7 +114,7 @@ export default function YachtServicesPage() {
       </section>
 
       {/* Specs Section */}
-      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-[#f9f9f9]">
+      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-primary-container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
           <div className="lg:col-span-5">
             <div className="sticky top-32">

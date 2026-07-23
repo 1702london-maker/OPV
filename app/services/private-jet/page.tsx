@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 export default function PrivateJetPage() {
   return (
     <>
@@ -27,7 +27,7 @@ export default function PrivateJetPage() {
       </section>
 
       {/* Jet Categories */}
-      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-[#f9f9f9]" id="fleet">
+      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-primary-container" id="fleet">
         <div className="mb-16">
           <h2 className="font-display-lg text-headline-md text-on-surface mb-4">Aircraft Categories</h2>
           <p className="text-on-surface-variant">Every aircraft OPV-inspected and operator-verified before charter.</p>
@@ -39,7 +39,7 @@ export default function PrivateJetPage() {
             { type: "Heavy Jet", model: "Challenger 650", range: "Up to 8 hrs", capacity: "12 Passengers", icon: "airlines" },
             { type: "Long Range", model: "Global 7500", range: "17+ hrs", capacity: "19 Passengers", icon: "travel" },
           ].map(({ type, model, range, capacity, icon }) => (
-            <div key={model} className="bg-[#f0ede8] border border-outline-variant/10 p-10 hover:border-secondary/40 transition-all group">
+            <div key={model} className="bg-primary-container border border-outline-variant/10 p-10 hover:border-secondary/40 transition-all group">
               <span className="material-symbols-outlined text-secondary text-4xl mb-6">{icon}</span>
               <div className="font-label-caps text-[10px] text-secondary mb-2">{type}</div>
               <h3 className="font-headline-sm text-on-surface mb-6">{model}</h3>
@@ -62,7 +62,7 @@ export default function PrivateJetPage() {
       </section>
 
       {/* Helicopter */}
-      <section className="py-section-gap bg-[#f0ede8]">
+      <section className="py-section-gap bg-primary-container">
         <div className="px-margin-desktop max-w-container-max mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
@@ -87,7 +87,7 @@ export default function PrivateJetPage() {
       </section>
 
       {/* VIP Ground Services */}
-      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-[#f9f9f9]">
+      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-primary-container">
         <h2 className="font-display-lg text-headline-md text-on-surface text-center mb-16">VIP Ground Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
           {[
@@ -95,7 +95,7 @@ export default function PrivateJetPage() {
             { icon: "fast_forward", title: "Fast Track", desc: "Priority security processing at over 350 global airports. Zero queue time, maximum discretion." },
             { icon: "local_bar", title: "Lounge Access", desc: "Access to exclusive FBO lounges and private terminal facilities. Not the shared executive lounge — the real thing." },
           ].map(({ icon, title, desc }) => (
-            <div key={title} className="bg-[#f0ede8] p-12 border border-outline-variant/10 hover:border-secondary/40 transition-all">
+            <div key={title} className="bg-primary-container p-12 border border-outline-variant/10 hover:border-secondary/40 transition-all">
               <span className="material-symbols-outlined text-secondary text-4xl mb-6">{icon}</span>
               <h3 className="font-headline-sm text-on-surface mb-4">{title}</h3>
               <p className="text-sm text-on-surface-variant leading-relaxed">{desc}</p>

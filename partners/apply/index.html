@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Become a Partner | OPV</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Hanken+Grotesk:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#c0c6db",
+                    "on-tertiary-fixed-variant": "#46483d",
+                    "on-tertiary": "#2f3128",
+                    "on-secondary-fixed": "#241a00",
+                    "secondary-container": "#af8d11",
+                    "on-tertiary-fixed": "#1b1c14",
+                    "tertiary-fixed-dim": "#c7c7ba",
+                    "error": "#ffb4ab",
+                    "on-primary-fixed": "#151b2b",
+                    "surface-container-highest": "#333535",
+                    "on-surface": "#e2e2e2",
+                    "surface-container-low": "#1a1c1c",
+                    "surface-tint": "#c0c6db",
+                    "surface-variant": "#333535",
+                    "surface-container-lowest": "#0d0f0f",
+                    "on-surface-variant": "#c6c6cd",
+                    "on-secondary": "#3c2f00",
+                    "tertiary-container": "#11130b",
+                    "primary-container": "#0b1221",
+                    "surface-bright": "#38393a",
+                    "on-tertiary-container": "#7d7e72",
+                    "on-secondary-container": "#342800",
+                    "tertiary": "#c7c7ba",
+                    "on-primary-container": "#777d90",
+                    "background": "#121414",
+                    "on-primary": "#293041",
+                    "on-secondary-fixed-variant": "#574500",
+                    "inverse-primary": "#575e70",
+                    "error-container": "#93000a",
+                    "tertiary-fixed": "#e3e3d5",
+                    "surface-container-high": "#282a2b",
+                    "inverse-surface": "#e2e2e2",
+                    "surface-dim": "#121414",
+                    "on-error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#404758",
+                    "secondary": "#e9c349",
+                    "primary-fixed-dim": "#c0c6db",
+                    "on-background": "#e2e2e2",
+                    "secondary-fixed-dim": "#e9c349",
+                    "primary-fixed": "#dce2f8",
+                    "outline": "#909097",
+                    "outline-variant": "#45464c",
+                    "surface-container": "#1e2020",
+                    "surface": "#121414",
+                    "secondary-fixed": "#ffe088",
+                    "on-error": "#690005",
+                    "inverse-on-surface": "#2f3131"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "container-max": "1440px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "80px",
+                    "gutter": "24px",
+                    "section-gap": "120px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Playfair Display"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "body-md": ["Hanken Grotesk"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "label-caps": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0b1221; /* Midnight Navy */
+            color: #e2e2e2;
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .luxury-blur {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .partner-card {
+            background-color: #1F1F1F; /* Charcoal */
+            border: 0.5px solid rgba(229, 225, 225, 0.2);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .partner-card:hover {
+            border-color: #e9c349;
+        }
+        .form-input {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(229, 225, 225, 0.2);
+            padding: 12px 0;
+            width: 100%;
+            color: #e2e2e2;
+            transition: border-color 0.3s ease;
+        }
+        .form-input:focus {
+            outline: none;
+            border-bottom: 1px solid #e9c349;
+        }
+        .step-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            opacity: 0.1;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav bg-primary-container/80 backdrop-blur-md transition-all duration-300">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto w-full">
+<div class="flex items-center gap-10">
+<a class="flex items-center" href="/" aria-label="OPV home"><img class="h-16 w-16 object-contain" src="/assets/opulent-vault-logo-transparent.png" alt="Opulent Vault logo"/></a>
+<div class="hidden md:flex gap-8 items-center">
+<div class="relative group"><a class="text-secondary font-semibold border-b border-secondary pb-1 font-label-caps uppercase text-[13px]" href="/services/">Services</a>
+<div class="absolute left-0 top-full pt-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-[860px] max-w-[calc(100vw-160px)]"><div class="bg-primary-container/95 backdrop-blur-xl border border-outline-variant/20 p-8 grid grid-cols-2 lg:grid-cols-3 gap-5 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/luxury-stays/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Luxury Stays</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Verified properties and private residences</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/private-dining/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Private Dining</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Chefs, tastings, and hosted tables</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/events-experiences/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Events & Experiences</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Member events and rare access</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/wine-tasting/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Wine Tasting</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Cellars, vintages, and private tastings</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/private-tours/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Private Tours</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Guided journeys with expert hosts</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/vip-security/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">VIP & Celebrity Security</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Confidential protection requests</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/car-rentals/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Luxury Car Rentals</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Self-drive and chauffeur vehicles</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/private-jet/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Private Jet</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Private aircraft and aviation concierge</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/yacht-services/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Yacht Services</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Charters, crews, and event hire</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/cleaning-lifestyle/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Cleaning & Lifestyle Maintenance</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Housekeeping and property care</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/videography-photography/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Videography & Photography</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Luxury creative coverage</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/personal-shopping/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Personal Shopping</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Private sourcing and wardrobe support</span></a>
+<a class="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/luxury-products/"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Luxury Products</span><span class="font-body-md text-sm text-on-surface-variant leading-5">Curated goods and private sourcing</span></a>
+<a class="lg:col-span-3 text-secondary font-label-caps text-label-caps uppercase tracking-widest border-t border-outline-variant/20 pt-5 hover:text-white transition-colors" href="/services/">View All Services</a>
+</div></div></div>
+<div class="relative group"><a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-[13px]" href="/services/events-experiences/">Experiences</a><div class="absolute left-0 top-full pt-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-72"><div class="bg-primary-container/95 backdrop-blur-xl border border-outline-variant/20 p-5 space-y-3 shadow-[0_30px_80px_rgba(0,0,0,0.45)]"><a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary" href="/services/events-experiences/">Events &amp; Experiences</a><a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary" href="/services/private-tours/">Private Tours</a><a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary" href="/services/wine-tasting/">Wine Tasting</a><a class="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary" href="/blog/">Blog &amp; Editorial</a></div></div></div>
+<a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-[13px]" href="/services/luxury-products/">Products</a>
+<a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-[13px]" href="/about/">About</a>
+<a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-[13px]" href="/concierge/">Concierge</a>
+<a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-[13px]" href="/membership/">Membership</a>
+<a class="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-[13px]" href="/affiliates/">Affiliate</a>
+</div></div>
+<div class="flex gap-5 items-center shrink-0">
+<a class="hidden md:inline-flex rounded-full border border-secondary text-on-surface px-7 py-3 font-label-caps uppercase text-[13px] tracking-widest hover:bg-secondary hover:text-primary-container transition-colors whitespace-nowrap" href="/services/">Search the Vault</a>
+<a class="text-on-surface-variant font-label-caps hover:text-secondary transition-colors uppercase text-[13px]" href="/login/">Login</a>
+<a class="bg-secondary text-primary-container px-7 py-3 font-label-caps uppercase text-[13px] font-bold tracking-widest hover:bg-white transition-colors duration-300" href="/login/">Register</a>
+</div></div></nav>
+<main class="mt-24">
+<!-- Full-Width Hero -->
+<section class="relative h-[819px] flex items-center justify-center overflow-hidden px-margin-mobile md:px-margin-desktop">
+
+<div class="relative z-10 text-center max-w-4xl mx-auto">
+<span class="font-label-caps text-secondary tracking-[0.3em] block mb-6">EXCLUSIVE PARTNERSHIP</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg leading-tight mb-8">
+                    OPV Is Selective. <br/>
+<span class="italic font-normal">That Is Why Our Partners Succeed.</span>
+</h1>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
+                    We don't just list services; we curate experiences for the world's most discerning individuals. Our vetting process ensures only the absolute pinnacle of luxury joins our ecosystem.
+                </p>
+<a class="bg-secondary text-primary-container px-12 py-4 font-label-caps text-lg transition-all hover:tracking-widest inline-block" href="#register">
+                    Apply for Selection
+                </a>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+<span class="material-symbols-outlined text-4xl">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- 6-Step Editorial Flow -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="mb-20 text-center">
+<h2 class="font-headline-md text-headline-md mb-4 uppercase tracking-widest">The Discerning Guardian Protocol</h2>
+<div class="h-px w-24 bg-secondary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Step 1 -->
+<div class="partner-card p-10 flex flex-col justify-between h-80 relative overflow-hidden">
+<span class="step-number absolute top-4 right-4">01</span>
+<div>
+<div class="flex items-center gap-2 mb-4">
+<div class="w-8 h-8 rounded-full border border-secondary flex items-center justify-center">
+<span class="font-label-caps text-[10px] text-secondary">OPV</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm">Initial Inquiry</h3>
+</div>
+<p class="text-on-surface-variant leading-relaxed">Submit your portfolio and business profile. We look for a history of excellence and a dedication to the extraordinary.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="partner-card p-10 flex flex-col justify-between h-80 relative overflow-hidden">
+<span class="step-number absolute top-4 right-4">02</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-4">Ethics Alignment</h3>
+<p class="text-on-surface-variant leading-relaxed">A deep dive into your business practices. We partner with those who value privacy, integrity, and sustainability as much as we do.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="partner-card p-10 flex flex-col justify-between h-80 relative overflow-hidden">
+<span class="step-number absolute top-4 right-4">03</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-4">Quality Audit</h3>
+<p class="text-on-surface-variant leading-relaxed">An anonymous audit of your service or product. We experience what our members experience to ensure absolute perfection.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="partner-card p-10 flex flex-col justify-between h-80 relative overflow-hidden">
+<span class="step-number absolute top-4 right-4">04</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-4">Verified by OPV</h3>
+<p class="text-on-surface-variant leading-relaxed">Upon passing audit, you receive the OPV Seal—a mark of absolute trust in the luxury world.</p>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="partner-card p-10 flex flex-col justify-between h-80 relative overflow-hidden">
+<span class="step-number absolute top-4 right-4">05</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-4">Network Integration</h3>
+<p class="text-on-surface-variant leading-relaxed">Onboarding into our concierge ecosystem, connecting you directly with high-net-worth individuals and corporate entities.</p>
+</div>
+</div>
+<!-- Step 6 -->
+<div class="partner-card p-10 flex flex-col justify-between h-80 relative overflow-hidden">
+<span class="step-number absolute top-4 right-4">06</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-4">Continuous Review</h3>
+<p class="text-on-surface-variant leading-relaxed">Elite status is maintained through constant performance monitoring and exclusive member feedback loops.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust-focused Layout / Bento Content -->
+<section class="py-section-gap bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7">
+<div class="grid grid-cols-2 gap-4">
+<div class="relative aspect-square partner-card overflow-hidden">
+<img class="object-cover w-full h-full opacity-60" data-alt="A macro photograph of a high-end luxury watch movement, focusing on the intricate gold gears and mechanical precision. The lighting is dramatic and moody, reflecting a midnight navy and champagne gold aesthetic. The image conveys the values of precision, heritage, and timeless craftsmanship essential to the OPV brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsyw6l4tBh5y0YsWjhwLBrIeHPdQL_m39bf9gxGCpIIKw36NBLCWFddW5Yw2qxrh-5lclSNrvC3867aTPWzRI0yNYDfdf4gTN0lQdjPI0OhDjaMpe9l6BAgzyL0emq7oBNouAEshL2DYgwwcxyEWJvdW_Sa0kj6QbOLmzjqpaHGI36LDNda4-sbKObSPrJZ3dA3zgR0-gdEk-T7U9a42KtC3HJvnwhwJy1XCliIqnmouuPKfFCUG1w1A"/>
+</div>
+<div class="relative aspect-[4/5] partner-card overflow-hidden translate-y-12">
+<img class="object-cover w-full h-full opacity-60" data-alt="A wide-angle interior shot of a minimalist, private members club in London at twilight. The room features deep charcoal leather furniture, dark wood paneling, and soft ambient floor lighting in warm gold tones. The atmosphere is quiet, exclusive, and profoundly authoritative, reflecting the essence of a modern high-end concierge service." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDynEP5I3FGGYtmjAJNh-ysWkvvN-F0FRD7dx1qnw_HWig-KuyfbatbS1tpJgVAeT7jb08s6BLRJnwTiPWiqp-YEKvRbrdTcAme7dORQoblAA1pqsklLv-bM_fcJ5fJMOsxiH7Mq1V8FBPQZPFG5idwTHFbTwW1iirbtz0bFu467GPKrjjTTPQ2oX5ttlMs62z7RpyLDZKjwglje0PKq8xF1kKx1x8VCPG8AJheH1QkSTzz0fqhdevkng"/>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 lg:pl-12 mt-16 lg:mt-0">
+<h2 class="font-headline-md text-headline-md mb-6">Why Global Leaders Trust OPV</h2>
+<ul class="space-y-8">
+<li class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-secondary">verified</span>
+<div>
+<h4 class="font-label-caps text-on-surface mb-2">Unmatched Pedigree</h4>
+<p class="text-on-surface-variant">Our partners include multi-generational family offices and world-class artisans.</p>
+</div>
+</li>
+<li class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-secondary">encrypted</span>
+<div>
+<h4 class="font-label-caps text-on-surface mb-2">Absolute Confidentiality</h4>
+<p class="text-on-surface-variant">Non-disclosure is the baseline of our interaction. Your brand’s privacy is paramount.</p>
+</div>
+</li>
+<li class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-secondary">star_rate</span>
+<div>
+<h4 class="font-label-caps text-on-surface mb-2">Elite Referral Loop</h4>
+<p class="text-on-surface-variant">Access a closed network of UHNW individuals who value excellence over convenience.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Registration Form -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-4xl mx-auto" id="register">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md mb-4 uppercase">Selection Application</h2>
+<p class="text-on-surface-variant">Begin your journey toward becoming an OPV Verified Partner.</p>
+</div>
+<form class="space-y-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="relative">
+<label class="font-label-caps text-[10px] text-secondary absolute -top-4 left-0 uppercase">Business Name</label>
+<input class="form-input" placeholder="Enter legally registered name" type="text"/>
+</div>
+<div class="relative">
+<label class="font-label-caps text-[10px] text-secondary absolute -top-4 left-0 uppercase">Service Category</label>
+<select class="form-input appearance-none bg-primary-container">
+<option value="">Select Primary Service</option>
+<option value="travel">Luxury Stays &amp; Travel</option>
+<option value="security">Private Security</option>
+<option value="concierge">Lifestyle Concierge</option>
+<option value="dining">Private Dining &amp; Events</option>
+<option value="aviation">Private Aviation &amp; Yachting</option>
+</select>
+</div>
+</div>
+<div class="relative">
+<label class="font-label-caps text-[10px] text-secondary absolute -top-4 left-0 uppercase">Business Description</label>
+<textarea class="form-input h-32 resize-none" placeholder="Briefly describe your unique value proposition and heritage..."></textarea>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="relative">
+<label class="font-label-caps text-[10px] text-secondary absolute -top-4 left-0 uppercase">Contact Person</label>
+<input class="form-input" placeholder="Full name of representative" type="text"/>
+</div>
+<div class="relative">
+<label class="font-label-caps text-[10px] text-secondary absolute -top-4 left-0 uppercase">Email Address</label>
+<input class="form-input" placeholder="official@business.com" type="email"/>
+</div>
+</div>
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-8">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-5 h-5 border-outline-variant bg-transparent text-secondary focus:ring-0" type="checkbox"/>
+<span class="text-sm text-on-surface-variant group-hover:text-on-surface transition-colors">I agree to the OPV Confidentiality &amp; Integrity Agreement.</span>
+</label>
+<button class="w-full md:w-auto bg-secondary text-primary-container px-16 py-4 font-label-caps transition-all hover:bg-secondary/90 active:scale-95" type="submit">
+                        Submit Application
+                    </button>
+</div>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#fbf9f8] border-t border-[#dbdad9] py-section-gap px-margin-mobile md:px-margin-desktop"><div class="max-w-container-max mx-auto"><div class="grid grid-cols-1 md:grid-cols-5 gap-gutter mb-16"><div><a class="block mb-6" href="/" aria-label="OPV home"><img class="h-28 w-28 object-contain" src="/assets/opulent-vault-logo-transparent.png" alt="Opulent Vault logo"/></a><p class="font-body-md text-[#575e71] text-sm mb-8">Opulent Vault is Manchester's curated luxury lifestyle concierge marketplace.</p><div class="flex gap-5 text-[#575e71]"><a class="hover:text-secondary" href="https://www.instagram.com/" aria-label="Instagram"><span class="material-symbols-outlined">photo_camera</span></a><a class="hover:text-secondary" href="https://www.linkedin.com/" aria-label="LinkedIn"><span class="material-symbols-outlined">business_center</span></a><a class="hover:text-secondary" href="https://x.com/" aria-label="X"><span class="material-symbols-outlined">alternate_email</span></a><a class="hover:text-secondary" href="https://www.facebook.com/" aria-label="Facebook"><span class="material-symbols-outlined">groups</span></a><a class="hover:text-secondary" href="https://www.youtube.com/" aria-label="YouTube"><span class="material-symbols-outlined">play_circle</span></a></div></div><div><h6 class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-6">Services</h6><ul class="space-y-3 font-body-md text-[#575e71] text-sm"><li><a class="hover:text-secondary transition-colors" href="/services/luxury-stays/">Luxury Stays</a></li><li><a class="hover:text-secondary transition-colors" href="/services/private-dining/">Private Dining</a></li><li><a class="hover:text-secondary transition-colors" href="/services/events-experiences/">Events & Experiences</a></li><li><a class="hover:text-secondary transition-colors" href="/services/wine-tasting/">Wine Tasting</a></li><li><a class="hover:text-secondary transition-colors" href="/services/private-tours/">Private Tours</a></li><li><a class="hover:text-secondary transition-colors" href="/services/vip-security/">VIP & Celebrity Security</a></li><li><a class="hover:text-secondary transition-colors" href="/services/car-rentals/">Luxury Car Rentals</a></li><li><a class="hover:text-secondary transition-colors" href="/services/private-jet/">Private Jet</a></li></ul></div><div><h6 class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-6">Company</h6><ul class="space-y-3 font-body-md text-[#575e71] text-sm"><li><a class="hover:text-secondary transition-colors" href="/about/">About OPV</a></li><li><a class="hover:text-secondary transition-colors" href="/partners/apply/">Become a Host or Partner</a></li><li><a class="hover:text-secondary transition-colors" href="/affiliates/">Affiliate Programme</a></li><li><a class="hover:text-secondary transition-colors" href="/blog/">Blog &amp; Editorial</a></li><li><a class="hover:text-secondary transition-colors" href="/faqs/">FAQs</a></li><li><a class="hover:text-secondary transition-colors" href="/contact/">Contact</a></li></ul></div><div><h6 class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-6">Legal</h6><ul class="space-y-3 font-body-md text-[#575e71] text-sm"><li><a class="hover:text-secondary transition-colors" href="/legal/terms">Terms &amp; Conditions</a></li><li><a class="hover:text-secondary transition-colors" href="/legal/privacy">Privacy Policy</a></li><li><a class="hover:text-secondary transition-colors" href="/legal/verification">Verification Policy</a></li><li><a class="hover:text-secondary transition-colors" href="/legal/cancellation">Cancellation &amp; Refund Policy</a></li><li><a class="hover:text-secondary transition-colors" href="/legal/cookies">Cookie Policy</a></li></ul></div><div><h6 class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-6">Stay in the Know</h6><p class="font-body-md text-[#575e71] text-sm mb-6">Private invitations, editorial notes, and verified luxury access from the Vault.</p><form class="flex flex-col gap-3" action="/contact/"><input class="bg-transparent border-0 border-b border-[#dbdad9] text-[#1e2020] placeholder:text-[#575e71] focus:border-secondary focus:ring-0 px-0" type="email" placeholder="Email address" /><button class="bg-secondary text-primary-container px-6 py-3 font-label-caps text-label-caps uppercase tracking-widest font-bold hover:bg-[#1e2020] hover:text-white transition-colors" type="submit">Subscribe</button></form><p class="font-body-md text-[#575e71] text-xs mt-4">Your details remain private and are used only for OPV communications.</p></div></div><div class="border-t border-[#dbdad9] py-2"><div class="max-w-4xl mx-auto flex flex-col xl:flex-row items-center justify-center gap-3"><p class="font-body-md text-[#575e71] text-[10px] shrink-0">@2026 OPULENT VAULT.</p><div class="flex items-center justify-center gap-2 shrink-0"><span class="font-label-caps text-[10px] text-secondary uppercase tracking-widest">Available on</span><a class="inline-flex" href="https://www.apple.com/app-store/" aria-label="Download on the App Store"><img class="h-6 w-auto object-contain" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store"/></a><a class="inline-flex" href="https://play.google.com/store" aria-label="Get it on Google Play"><img class="h-6 w-auto object-contain" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play"/></a></div><div class="flex items-center justify-center gap-1.5 shrink-0"><div class="h-7 w-12 border border-[#dbdad9] bg-white flex items-center justify-center px-2" aria-label="Visa"><img class="max-h-3.5 max-w-full object-contain" src="https://cdn.simpleicons.org/visa/1A1F71" alt="Visa logo"/></div><div class="h-7 w-12 border border-[#dbdad9] bg-white flex items-center justify-center px-1.5" aria-label="Mastercard"><img class="max-h-3.5 max-w-full object-contain" src="https://cdn.simpleicons.org/mastercard/EB001B" alt="Mastercard logo"/></div><div class="h-7 w-12 border border-[#dbdad9] bg-white flex items-center justify-center px-1.5" aria-label="American Express"><img class="max-h-3.5 max-w-full object-contain" src="https://cdn.simpleicons.org/americanexpress/2E77BC" alt="American Express logo"/></div><div class="h-7 w-12 border border-[#dbdad9] bg-white flex items-center justify-center px-1.5" aria-label="PayPal"><img class="max-h-3.5 max-w-full object-contain" src="https://cdn.simpleicons.org/paypal/003087" alt="PayPal logo"/></div><div class="h-7 w-12 border border-[#dbdad9] bg-white flex items-center justify-center px-1.5" aria-label="Klarna"><img class="max-h-3.5 max-w-full object-contain" src="https://cdn.simpleicons.org/klarna/FFB3C7" alt="Klarna logo"/></div></div><a class="font-label-caps text-[10px] uppercase tracking-widest text-[#575e71] hover:text-secondary shrink-0" href="/legal/privacy">Privacy</a></div></div></div></footer>
+<script>
+        // Micro-interaction for inputs
+        document.querySelectorAll('.form-input').forEach(input => {
+            input.addEventListener('focus', () => {
+                input.parentElement.querySelector('label').style.color = '#e9c349';
+            });
+            input.addEventListener('blur', () => {
+                input.parentElement.querySelector('label').style.color = 'rgba(192, 198, 219, 0.6)';
+            });
+        });
+
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.partner-card').forEach(card => {
+            card.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+            observer.observe(card);
+        });
+    </script>
+</body></html>

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 export default function PrivateDiningPage() {
   return (
     <>
@@ -24,7 +24,7 @@ export default function PrivateDiningPage() {
       </section>
 
       {/* Curator Standard */}
-      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-[#f9f9f9]">
+      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-primary-container">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 items-center">
           <div className="lg:col-span-3 space-y-6">
             <span className="font-label-caps text-secondary tracking-widest">THE CURATOR&apos;S STANDARD</span>
@@ -43,7 +43,7 @@ export default function PrivateDiningPage() {
       </section>
 
       {/* Dining Cards */}
-      <section className="py-section-gap bg-[#f0ede8]" id="listings">
+      <section className="py-section-gap bg-primary-container" id="listings">
         <div className="px-margin-desktop max-w-container-max mx-auto">
           <div className="flex justify-between items-end mb-16">
             <div>
@@ -81,7 +81,7 @@ export default function PrivateDiningPage() {
                 img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBPHDZGL82QLbTzQ88JPDfah3bqvD3oTppEHQOVlqfGv2xmWh-KwR9X2GoRY8CbwCudY5nvMJyScVEPBxeW8Smypzk5SOCPBLvwYDFIC2ff6vvBELYybGb03rnZq3X1ke0WdQlU8yJo-SUFwbOODun0sUJjN8t-epW1GvG1svBwY1OMnkbwgvIznzK8aGQNkC_A4zOiRFSt50Bds-gBspnsRfzvnr6_iWFtI0XIXJGIHuKBS1Vlm0ExNg",
               },
             ].map(({ name, location, chef, stars, guests, price, img }) => (
-              <div key={name} className="group bg-[#f9f9f9] border border-outline-variant/10 overflow-hidden hover:border-secondary/40 transition-all duration-500">
+              <div key={name} className="group bg-primary-container border border-outline-variant/10 overflow-hidden hover:border-secondary/40 transition-all duration-500">
                 <div className="relative h-72 overflow-hidden">
                   <div className="absolute top-4 left-4 z-10">
                     <div className="font-label-caps text-[10px] border border-secondary text-secondary bg-primary-container/90 px-3 py-1">OPV VERIFIED</div>
@@ -115,7 +115,7 @@ export default function PrivateDiningPage() {
       </section>
 
       {/* Featured Experience */}
-      <section className="py-section-gap bg-[#f9f9f9]">
+      <section className="py-section-gap bg-primary-container">
         <div className="px-margin-desktop max-w-container-max mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div className="space-y-6">
@@ -142,7 +142,7 @@ export default function PrivateDiningPage() {
       </section>
 
       {/* Booking Form */}
-      <section className="py-section-gap bg-[#f0ede8]" id="booking">
+      <section className="py-section-gap bg-primary-container" id="booking">
         <div className="px-margin-desktop max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="font-display-lg text-headline-md text-on-surface mb-4">Reserve an Experience</h2>

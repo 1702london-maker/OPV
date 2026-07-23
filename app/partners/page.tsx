@@ -1,145 +1,151 @@
-﻿"use client";
-import { useState } from "react";
-import AIConciergeSection from "@/components/AIConciergeSection";
-
 export default function PartnersPage() {
-  const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
-
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setLoading(true);
-    const form = e.currentTarget;
-    const data = {
-      full_name: (form.querySelector("#full_name") as HTMLInputElement)?.value,
-      company_name: (form.querySelector("#company_name") as HTMLInputElement)?.value,
-      industry: (form.querySelector("#industry") as HTMLSelectElement)?.value,
-      email: (form.querySelector("#email") as HTMLInputElement)?.value,
-      message: (form.querySelector("#message") as HTMLTextAreaElement)?.value,
-    };
-    try {
-      await fetch("/api/partner", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) });
-    } catch {}
-    setLoading(false);
-    setSubmitted(true);
-  }
-
   return (
     <>
-      {/* Hero */}
-      <section className="relative h-[60vh] flex items-end pb-16 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALLVulWd6MKGpl2qtIbwnWT6VuBFbkaTkfTP_-g-FhQasHV3ELs0fDNl6zg_mSk40bxWaVDCI6e69Hlqj1pHRHBjclXN_8tstq_KYUoy28GV6ynfPNFTlREvMnPoXZP00eZXRq2AFbGXnBe3WiMnn6H2REmQtedF377Apuu515IUL3QquP6aD49R-HHyyUI0mMgWTYBQaaX9UdW9fFXKiFt0yoUAyvV6isuVZVnoWaXs9idp4rlwy2DvLUJELhgB-wkMu46PhDSC1v" alt="Partners" data-placeholder="true" />
-          <div className="absolute inset-0 hero-gradient" />
+      {/* Full-Width Hero */}
+      <section className="relative h-[819px] flex items-center justify-center overflow-hidden px-margin-mobile md:px-margin-desktop bg-primary-container">
+        <div className="relative z-10 text-center max-w-4xl mx-auto">
+          <span className="font-label-caps text-secondary tracking-[0.3em] block mb-6">EXCLUSIVE PARTNERSHIP</span>
+          <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg leading-tight mb-8">
+            OPV Is Selective. <br />
+            <span className="italic font-normal">That Is Why Our Partners Succeed.</span>
+          </h1>
+          <p className="font-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
+            We don&apos;t just list services; we curate experiences for the world&apos;s most discerning individuals. Our vetting process ensures only the absolute pinnacle of luxury joins our ecosystem.
+          </p>
+          <a className="bg-secondary text-primary-container px-12 py-4 font-label-caps text-lg transition-all hover:tracking-widest inline-block" href="#register">
+            Apply for Selection
+          </a>
         </div>
-        <div className="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
-          <span className="font-label-caps text-label-caps text-secondary-fixed mb-4 block uppercase">Global Partnerships</span>
-          <h1 className="font-serif text-headline-lg text-white">Expand Your Reach with Opulent Vault.</h1>
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+          <span className="material-symbols-outlined text-4xl text-secondary">keyboard_double_arrow_down</span>
         </div>
       </section>
 
-      {/* Ecosystem */}
-      <section className="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="font-serif text-headline-md mb-4">The Partnership Ecosystem</h2>
-          <div className="w-20 h-px bg-secondary mx-auto" />
+      {/* 6-Step Editorial Flow */}
+      <section className="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto bg-[#f9f9f9]">
+        <div className="mb-20 text-center">
+          <h2 className="font-headline-md text-headline-md mb-4 uppercase tracking-widest text-on-surface">The Discerning Guardian Protocol</h2>
+          <div className="h-px w-24 bg-secondary mx-auto"></div>
         </div>
-        <div className="grid grid-cols-12 gap-gutter">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
           {[
-            { cols: "col-span-12 md:col-span-8", aspect: "aspect-[16/9]", title: "Property Partners", desc: "Villas, chalets, and boutique hotels that define architectural excellence and bespoke service.", src: "https://lh3.googleusercontent.com/aida-public/AB6AXuALLVulWd6MKGpl2qtIbwnWT6VuBFbkaTkfTP_-g-FhQasHV3ELs0fDNl6zg_mSk40bxWaVDCI6e69Hlqj1pHRHBjclXN_8tstq_KYUoy28GV6ynfPNFTlREvMnPoXZP00eZXRq2AFbGXnBe3WiMnn6H2REmQtedF377Apuu515IUL3QquP6aD49R-HHyyUI0mMgWTYBQaaX9UdW9fFXKiFt0yoUAyvV6isuVZVnoWaXs9idp4rlwy2DvLUJELhgB-wkMu46PhDSC1v" },
-            { cols: "col-span-12 md:col-span-4", aspect: "aspect-square", title: "Vehicle Partners", desc: "Elite fleets for mobility on any terrain.", src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAwNziuYtbYqw-_Xx8O0L1yjIUZrARN6aMXrqH7aC3zNkStKCtR-0yXOKxEQuH1O3dmgVbgn9Pm38gymYMT715pyRXCUUm8EFSGGS38nVKioT09OuOkY9aQWncp3hYyWCGuEFwkWdj_zsLBd8bEiekww9s20wJY2PUsfAwqhBUs0Ho9xul7syEU1FhKmC2AEgFwZJdZQkZe6WeuiTf38rwpcnwHyB6ZMlyAuvoC6K4PVPgQfR1CsHlxhbvQq_7Nz2FLHANfEDgJDzE0" },
-            { cols: "col-span-12 md:col-span-4", aspect: "aspect-square", title: "Aviation", desc: "Private charters and bespoke sky journeys.", src: "https://lh3.googleusercontent.com/aida-public/AB6AXuB4B_8B4dOLvv5-TCmEtw0VewkfYFDXr42y0TjInUiR7m5kfIKSuNrvNFnrjH-YAuRlt31BMcBLImAjv5FfDmBo4-uHyOzpky8gi3vNouFuiMiBEuQ4fXYijW8K8FG4n_FcDQozQzDKqMgsk-_2ZBZjsyLhM2RFaN84UpIj0E5h7QDmMtDutdda_6yp21-BwNMIo7NoFrp98RukeH5WW1m0P1yqyrMV5rvJ8pnoGMtSc-hnIMZgySjOZD7qx_M6vDHgc-Ok48887t4d" },
-            { cols: "col-span-12 md:col-span-8", aspect: "aspect-[16/9]", title: "Security", desc: "Discreet, high-level protection and logistical support for absolute peace of mind.", src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBOGY2stkND1piKL4aBRc6JlWwCqTI0nKPgfQl-gQk_UiaUgcRhsa6o4upGuiy1DS3YcLYy6wP3nkSTn96ODQvLVIjO_eNV8CsagMZWhIL6La-Z04VHNx3NcjUSItORq2DtAP5wyfM5UCcBqoHQtrhSyYXzqTGLneK8VJ8vzHb9hncpYmg1dkDyb-dsAr0uxWy-b1Di2FwFmkL7LEGP9HAoFdHIfufTJIEgaY1MgWCF3Pl2B6XqE8F-_ZdUB4m_8_gv94I6fj" },
-          ].map((card) => (
-            <div key={card.title} className={"group overflow-hidden relative " + card.cols + " " + card.aspect}>
-              <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src={card.src} alt={card.title} data-placeholder="true" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-              <div className="absolute bottom-0 left-0 p-8 text-white">
-                <h3 className="font-serif text-headline-md mb-2">{card.title}</h3>
-                <p className="font-sans text-body-md opacity-80 max-w-md">{card.desc}</p>
+            { n: "01", title: "Initial Inquiry", desc: "Submit your portfolio and business profile. We look for a history of excellence and a dedication to the extraordinary." },
+            { n: "02", title: "Ethics Alignment", desc: "A deep dive into your business practices. We partner with those who value privacy, integrity, and sustainability as much as we do." },
+            { n: "03", title: "Quality Audit", desc: "An anonymous audit of your service or product. We experience what our members experience to ensure absolute perfection." },
+            { n: "04", title: "Verified by OPV", desc: "Upon passing audit, you receive the OPV Seal—a mark of absolute trust in the luxury world." },
+            { n: "05", title: "Network Integration", desc: "Onboarding into our concierge ecosystem, connecting you directly with high-net-worth individuals and corporate entities." },
+            { n: "06", title: "Continuous Review", desc: "Elite status is maintained through constant performance monitoring and exclusive member feedback loops." },
+          ].map(({ n, title, desc }) => (
+            <div key={n} className="bg-[#1F1F1F] border border-[rgba(229,225,225,0.2)] p-10 flex flex-col justify-between h-80 relative overflow-hidden hover:border-secondary transition-all duration-[400ms]">
+              <span className="absolute top-4 right-4 font-display-lg text-[4rem] opacity-10 leading-none text-on-surface">{n}</span>
+              <div>
+                {n === "01" && (
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="w-8 h-8 rounded-full border border-secondary flex items-center justify-center">
+                      <span className="font-label-caps text-[10px] text-secondary">OPV</span>
+                    </div>
+                    <h3 className="font-headline-sm text-headline-sm text-on-surface">{title}</h3>
+                  </div>
+                )}
+                {n !== "01" && <h3 className="font-headline-sm text-headline-sm mb-4 text-on-surface">{title}</h3>}
+                <p className="text-on-surface-variant leading-relaxed">{desc}</p>
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Benefits */}
-      <section className="bg-surface-container py-section-gap">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-          <div className="grid grid-cols-12 gap-gutter items-center">
-            <div className="col-span-12 lg:col-span-5 mb-12 lg:mb-0">
-              <h2 className="font-serif text-headline-lg mb-8">Unrivaled Benefits for Elite Partners.</h2>
-              <p className="font-sans text-body-lg text-on-surface-variant mb-8">We do not just provide a platform; we build long-term strategic alliances that elevate your brand and optimise your operations.</p>
-              <div className="space-y-6">
-                {[
-                  { icon: "public", title: "Global Reach", desc: "Instant access to our network of high-net-worth individuals and corporate clients worldwide." },
-                  { icon: "integration_instructions", title: "Seamless Integration", desc: "Direct API access and dedicated support to sync your inventory and booking flows effortlessly." },
-                  { icon: "verified_user", title: "Trusted Ecosystem", desc: "Operate within a vetted environment where excellence is the baseline and security is paramount." },
-                ].map((b) => (
-                  <div key={b.title} className="flex items-start gap-4">
-                    <span className="material-symbols-outlined text-secondary text-3xl">{b.icon}</span>
-                    <div>
-                      <h4 className="font-label-caps text-label-caps text-primary mb-1">{b.title}</h4>
-                      <p className="font-sans text-body-md text-on-surface-variant">{b.desc}</p>
-                    </div>
-                  </div>
-                ))}
+      {/* Trust Layout */}
+      <section className="py-section-gap bg-[#f0ede8]">
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+          <div className="lg:col-span-7">
+            <div className="grid grid-cols-2 gap-4">
+              <div className="relative aspect-square bg-[#1F1F1F] border border-[rgba(229,225,225,0.2)] overflow-hidden">
+                <img className="object-cover w-full h-full opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsyw6l4tBh5y0YsWjhwLBrIeHPdQL_m39bf9gxGCpIIKw36NBLCWFddW5Yw2qxrh-5lclSNrvC3867aTPWzRI0yNYDfdf4gTN0lQdjPI0OhDjaMpe9l6BAgzyL0emq7oBNouAEshL2DYgwwcxyEWJvdW_Sa0kj6QbOLmzjqpaHGI36LDNda4-sbKObSPrJZ3dA3zgR0-gdEk-T7U9a42KtC3HJvnwhwJy1XCliIqnmouuPKfFCUG1w1A" alt="Watch movement" />
               </div>
-            </div>
-            <div className="col-span-12 lg:col-span-6 lg:col-start-7">
-              <div className="aspect-square p-8 bg-surface border border-outline-variant/20">
-                <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLIdwEPRy7sYU3BplHHfX_QQFN7N6NmZalx42hx69RYDNaT4eM7Po2VsLJuHanUCFiEduafs2zo9AmkkChi9FPijoSfs20PVV3M7a8T002KUre9SYk-pt_JGa0QQWhrr6ifwZmWoy5YzDSE3EVWa3w3ZVvNbQBVUWh5likJ3uc5TF0ijbbi01TBO2r5QOAKcuHK3kK4uLfavE9Q46CsJgjqbkkTImBMBXNXW1O_UVd4q8t8HWQiQpVj_pmSNs_hnObpHzUbcwOa4CE" alt="Partnership meeting" data-placeholder="true" />
+              <div className="relative aspect-[4/5] bg-[#1F1F1F] border border-[rgba(229,225,225,0.2)] overflow-hidden translate-y-12">
+                <img className="object-cover w-full h-full opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDynEP5I3FGGYtmjAJNh-ysWkvvN-F0FRD7dx1qnw_HWig-KuyfbatbS1tpJgVAeT7jb08s6BLRJnwTiPWiqp-YEKvRbrdTcAme7dORQoblAA1pqsklLv-bM_fcJ5fJMOsxiH7Mq1V8FBPQZPFG5idwTHFbTwW1iirbtz0bFu467GPKrjjTTPQ2oX5ttlMs62z7RpyLDKjwglje0PKq8xF1kKx1x8VCPG8AJheH1QkSTzz0fqhdevkng" alt="Members club" />
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Application Form */}
-      <section className="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="apply">
-        <div className="grid grid-cols-12 gap-gutter">
-          <div className="col-span-12 lg:col-span-4 mb-12 lg:mb-0">
-            <h2 className="font-serif text-headline-md mb-6">Partner Application</h2>
-            <p className="font-sans text-body-md text-on-surface-variant mb-8">Ready to elevate your business? Complete our professional application form. Our partnerships team will review your submission and contact you within 48 hours.</p>
-            <div className="p-8 bg-surface-container-low border border-outline-variant/20">
-              <h4 className="font-label-caps text-label-caps text-primary mb-4">Contact Team</h4>
-              <p className="font-sans text-body-md text-on-surface-variant">partnerships@opulentvault.com</p>
-              <p className="font-sans text-body-md text-on-surface-variant">+44 (0) 20 7946 0123</p>
-            </div>
-          </div>
-          <div className="col-span-12 lg:col-span-8">
-            {submitted ? (
-              <div className="bg-surface-container-low border border-secondary/30 p-16 text-center">
-                <span className="material-symbols-outlined text-secondary text-5xl mb-4 block">check_circle</span>
-                <h3 className="font-serif text-headline-md text-primary mb-4">Application Received</h3>
-                <p className="font-sans text-body-lg text-on-surface-variant">Thank you for your interest. Our partnerships team will review your application and contact you within 48 hours.</p>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-12 bg-white p-12 border border-outline-variant/20">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                  <input id="full_name" className="w-full bg-transparent border-b border-outline/30 py-4 font-sans placeholder:text-outline focus:ring-0 outline-none" placeholder="Full Name" type="text" required />
-                  <input id="company_name" className="w-full bg-transparent border-b border-outline/30 py-4 font-sans placeholder:text-outline focus:ring-0 outline-none" placeholder="Company Name" type="text" required />
-                  <select id="industry" className="w-full bg-transparent border-b border-outline/30 py-4 font-sans text-on-surface-variant focus:ring-0 appearance-none outline-none">
-                    <option value="">Industry</option>
-                    <option value="property">Property &amp; Real Estate</option>
-                    <option value="aviation">Aviation &amp; Jets</option>
-                    <option value="mobility">Luxury Mobility</option>
-                    <option value="security">Security &amp; Protection</option>
-                    <option value="experience">Concierge &amp; Experiences</option>
-                  </select>
-                  <input id="email" className="w-full bg-transparent border-b border-outline/30 py-4 font-sans placeholder:text-outline focus:ring-0 outline-none" placeholder="Professional Email" type="email" required />
+          <div className="lg:col-span-5 lg:pl-12 mt-16 lg:mt-0">
+            <h2 className="font-headline-md text-headline-md mb-6 text-on-surface">Why Global Leaders Trust OPV</h2>
+            <ul className="space-y-8">
+              <li className="flex gap-4 items-start">
+                <span className="material-symbols-outlined text-secondary">verified</span>
+                <div>
+                  <h4 className="font-label-caps text-on-surface mb-2">Unmatched Pedigree</h4>
+                  <p className="text-on-surface-variant">Our partners include multi-generational family offices and world-class artisans.</p>
                 </div>
-                <textarea id="message" className="w-full bg-transparent border-b border-outline/30 py-4 font-sans placeholder:text-outline focus:ring-0 resize-none outline-none" placeholder="How can we help you grow?" rows={4} />
-                <button className="w-full md:w-auto bg-primary text-on-primary px-16 py-4 font-label-caps text-label-caps hover:bg-secondary transition-all" type="submit" disabled={loading}>
-                  {loading ? "Processing..." : "Submit Application"}
-                </button>
-              </form>
-            )}
+              </li>
+              <li className="flex gap-4 items-start">
+                <span className="material-symbols-outlined text-secondary">encrypted</span>
+                <div>
+                  <h4 className="font-label-caps text-on-surface mb-2">Absolute Confidentiality</h4>
+                  <p className="text-on-surface-variant">Non-disclosure is the baseline of our interaction. Your brand&apos;s privacy is paramount.</p>
+                </div>
+              </li>
+              <li className="flex gap-4 items-start">
+                <span className="material-symbols-outlined text-secondary">star_rate</span>
+                <div>
+                  <h4 className="font-label-caps text-on-surface mb-2">Elite Referral Loop</h4>
+                  <p className="text-on-surface-variant">Access a closed network of UHNW individuals who value excellence over convenience.</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <AIConciergeSection />
+      {/* Registration Form */}
+      <section className="py-section-gap px-margin-mobile md:px-margin-desktop max-w-4xl mx-auto bg-[#f9f9f9]" id="register">
+        <div className="text-center mb-16">
+          <h2 className="font-headline-md text-headline-md mb-4 uppercase text-on-surface">Selection Application</h2>
+          <p className="text-on-surface-variant">Begin your journey toward becoming an OPV Verified Partner.</p>
+        </div>
+        <form className="space-y-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="relative">
+              <label className="font-label-caps text-[10px] text-secondary absolute -top-4 left-0 uppercase">Business Name</label>
+              <input className="w-full bg-transparent border-b border-[rgba(229,225,225,0.2)] py-3 text-on-surface focus:outline-none focus:border-secondary transition-colors" placeholder="Enter legally registered name" type="text" />
+            </div>
+            <div className="relative">
+              <label className="font-label-caps text-[10px] text-secondary absolute -top-4 left-0 uppercase">Service Category</label>
+              <select className="w-full bg-primary-container border-b border-[rgba(229,225,225,0.2)] py-3 text-on-surface focus:outline-none appearance-none">
+                <option value="">Select Primary Service</option>
+                <option value="travel">Luxury Stays &amp; Travel</option>
+                <option value="security">Private Security</option>
+                <option value="concierge">Lifestyle Concierge</option>
+                <option value="dining">Private Dining &amp; Events</option>
+                <option value="aviation">Private Aviation &amp; Yachting</option>
+              </select>
+            </div>
+          </div>
+          <div className="relative">
+            <label className="font-label-caps text-[10px] text-secondary absolute -top-4 left-0 uppercase">Business Description</label>
+            <textarea className="w-full bg-transparent border-b border-[rgba(229,225,225,0.2)] py-3 text-on-surface focus:outline-none focus:border-secondary transition-colors h-32 resize-none" placeholder="Briefly describe your unique value proposition and heritage..."></textarea>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="relative">
+              <label className="font-label-caps text-[10px] text-secondary absolute -top-4 left-0 uppercase">Contact Person</label>
+              <input className="w-full bg-transparent border-b border-[rgba(229,225,225,0.2)] py-3 text-on-surface focus:outline-none focus:border-secondary transition-colors" placeholder="Full name of representative" type="text" />
+            </div>
+            <div className="relative">
+              <label className="font-label-caps text-[10px] text-secondary absolute -top-4 left-0 uppercase">Email Address</label>
+              <input className="w-full bg-transparent border-b border-[rgba(229,225,225,0.2)] py-3 text-on-surface focus:outline-none focus:border-secondary transition-colors" placeholder="official@business.com" type="email" />
+            </div>
+          </div>
+          <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-8">
+            <label className="flex items-center gap-3 cursor-pointer group">
+              <input className="w-5 h-5 border-outline-variant bg-transparent text-secondary focus:ring-0" type="checkbox" />
+              <span className="text-sm text-on-surface-variant group-hover:text-on-surface transition-colors">I agree to the OPV Confidentiality &amp; Integrity Agreement.</span>
+            </label>
+            <button className="w-full md:w-auto bg-secondary text-primary-container px-16 py-4 font-label-caps transition-all hover:bg-secondary/90 active:scale-95" type="submit">
+              Submit Application
+            </button>
+          </div>
+        </form>
+      </section>
     </>
   );
 }

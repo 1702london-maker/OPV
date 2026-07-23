@@ -1,145 +1,139 @@
-﻿import AIConciergeSection from "@/components/AIConciergeSection";
-
-const CARD_SERVICES = [
-  { icon: "celebration", title: "Event Planning", desc: "From intimate dinners to grand celebrations — managed to perfection with access to the world&apos;s most exclusive venues." },
-  { icon: "sailing", title: "Yacht Charter", desc: "Mediterranean and Caribbean yacht charters sourced from our vetted fleet of superyachts, with crew and itinerary arranged." },
-  { icon: "star_rate", title: "VIP Reservations", desc: "Priority access to Michelin-starred restaurants, sold-out shows, members clubs, and cultural events worldwide." },
-  { icon: "workspace_premium", title: "Luxury Requests", desc: "Have an extraordinary request? Our team specialises in sourcing the impossible — from rare collectibles to once-in-a-lifetime experiences." },
-];
-
-const SERVICE_SECTIONS = [
-  {
-    label: "Housekeeping",
-    title: "Impeccable Interiors.",
-    desc: "Our household management service ensures every property under your care operates at hotel standard. We place vetted, discreet housekeeping teams who become an invisible yet essential part of your home.",
-    icon: "home",
-    img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDcgMbzx3g3SZsd-0IqLQT9qiBGwoVEXb-dK6kU1mbTUF8nunhwJBrM4bVITjCLm1B7HTW67XGlye9ciV-nv9oPPUC0PdcQ2Cme7cDTjUNoY9oN8zRgahorlLM402ghmSNIYmWPx6LZIC5Uh78iFY_9JtOjQ0dsVRwsJkDtUb_45dGkO_eyNzZTj9psRbPoZLcBhNgM9GKcm9v55o70pBVyYBYnfxUfxshw8iRH_SxDcn32gkO-QryZVhtUTd-thpjuMo3pWIKwKVGi",
-  },
-  {
-    label: "Photography",
-    title: "Moments Preserved in Luxury.",
-    desc: "Commission our exclusive editorial photographers for private portraits, property documentation, event coverage, and brand content. Every frame crafted with artistic precision.",
-    icon: "photo_camera",
-    img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD64G6fh7cj5KYz-TTku5yLv7c7HvLIEBdXEBEqAoULMGFHCYdgP0YLxi3LrnM-pU7ImYJPJAS4K9jjKjq0sFQIiA5UeW_PSNB2YtaIyjz4yN6_-7YURGxLNyVB12JvzdQft58MMX434L90YTWqe8TAmBaC2givSOsiJmHuyz-DTgp9u43byMoEKSJ6swrB2QWaZ6xfZP_k7ul1DTULWRvqMFZ5UKjEDXvL2T6QSyGl5Dc_iq6F4BuL_tHCwUW6t0slLnicIrcpR4UU",
-  },
-  {
-    label: "Personal Shopping",
-    title: "Curated for You Alone.",
-    desc: "Access private showrooms, pre-launch collections, and dedicated luxury brand relationships. Our personal shoppers source, negotiate, and present only what aligns perfectly with your aesthetic.",
-    icon: "shopping_bag",
-    img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDm4LzX8oNBw0P4GJR_MqTZPRZMG7M0bwlQj7G6WJVzJkPK0FiXtGjO1cQWEJV-H0L9oU3bRrLmkv4K5m3OP96DGiPcVL23XkMlsZ3QzJjMfEbIXFwxhLi31ZxAlC47dFMkAkTGCHuJIiWCaLFJIr9NrdNJwvz0J8X4bN2cS0X3sLx3oB3w5ieMPTB-vhV3D0bpK7i5AYdnqPjBrZv0bHnqS_Nq6dZWkRvb7mWi_BNpWD_1f4v6tOMhvJl4dh5QqiGSfqwZ_U",
-  },
-  {
-    label: "Wellness",
-    title: "Restoration on Your Terms.",
-    desc: "Private yoga instruction, in-villa spa treatments, nutritionist consultations, and retreat planning — your wellness regimen designed and delivered around your schedule.",
-    icon: "spa",
-    img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDcgMbzx3g3SZsd-0IqLQT9qiBGwoVEXb-dK6kU1mbTUF8nunhwJBrM4bVITjCLm1B7HTW67XGlye9ciV-nv9oPPUC0PdcQ2Cme7cDTjUNoY9oN8zRgahorlLM402ghmSNIYmWPx6LZIC5Uh78iFY_9JtOjQ0dsVRwsJkDtUb_45dGkO_eyNzZTj9psRbPoZLcBhNgM9GKcm9v55o70pBVyYBYnfxUfxshw8iRH_SxDcn32gkO-QryZVhtUTd-thpjuMo3pWIKwKVGi",
-  },
-];
+"use client";
 
 export default function ConciergePage() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative h-[85vh] flex items-end pb-section-gap overflow-hidden">
+      {/* Hero Section */}
+      <section className="relative h-[921px] w-full flex items-end overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD64G6fh7cj5KYz-TTku5yLv7c7HvLIEBdXEBEqAoULMGFHCYdgP0YLxi3LrnM-pU7ImYJPJAS4K9jjKjq0sFQIiA5UeW_PSNB2YtaIyjz4yN6_-7YURGxLNyVB12JvzdQft58MMX434L90YTWqe8TAmBaC2givSOsiJmHuyz-DTgp9u43byMoEKSJ6swrB2QWaZ6xfZP_k7ul1DTULWRvqMFZ5UKjEDXvL2T6QSyGl5Dc_iq6F4BuL_tHCwUW6t0slLnicIrcpR4UU" alt="Concierge" data-placeholder="true" />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-background" />
+          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDoFuXqjtEphtZEVoD4C3tM_sExKi-ozdNN3QfOpx3rb8lTEpXuRVKpkDy5i4941Wk1bRo9eNzBQ3Rm6H-8m5DVW2nxD_vMg_T2mkffarNo40vFqs6thUO2x4i4mR20fWnQRl8wNMXnBAxb49L_nC75kyQAAgYs8ObcWHg8QTXXfopwI4BOsuS7IvGyhg8tiHTJKZkFs350nbuMZrOf_6CmW_H0Cf091I46MJrNjqCX29DxhbVETDIwNQ')" }}></div>
+          <div className="absolute inset-0" style={{ background: "linear-gradient(180deg, rgba(11,18,33,0) 0%, rgba(11,18,33,0.8) 70%, rgba(11,18,33,1) 100%)" }}></div>
         </div>
-        <div className="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full">
-          <span className="font-label-caps text-label-caps text-secondary mb-4 block">Opulent Vault Concierge</span>
-          <h1 className="font-serif text-display-xl text-on-primary max-w-3xl leading-[1.1]">Your Vision,<br />Our Expertise.</h1>
-          <p className="font-sans text-body-lg text-on-primary/70 mt-6 max-w-xl">Every request handled with discretion, precision, and an unwavering commitment to the extraordinary.</p>
+        <div className="relative z-10 w-full max-w-container-max mx-auto px-margin-desktop pb-section-gap">
+          <div className="max-w-3xl">
+            <span className="font-label-caps text-secondary mb-4 block tracking-[0.2em]">PRIVATE CONCIERGE</span>
+            <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface leading-tight">
+              Whatever You Need.<br />We Will Arrange It.
+            </h1>
+          </div>
         </div>
       </section>
 
-      {/* Private Chef 2-col */}
-      <section className="py-section-gap">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-          <div className="grid grid-cols-12 gap-gutter items-center">
-            <div className="col-span-12 md:col-span-5">
-              <span className="font-label-caps text-label-caps text-secondary mb-4 block">Private Chef</span>
-              <h2 className="font-serif text-headline-lg mb-8">Michelin Calibre.<br />Your Private Table.</h2>
-              <p className="font-sans text-body-lg text-on-surface-variant mb-6">Our private chef service connects you with culinary artists trained in the finest kitchens across Europe. From a romantic tasting menu for two to a 40-cover gala dinner, every plate reflects the same obsession with perfection.</p>
-              <p className="font-sans text-body-md text-on-surface-variant mb-10">We manage everything from menu consultation and ingredient sourcing to kitchen preparation and tableside service — leaving you entirely free to enjoy the experience.</p>
-              <div className="flex gap-8">
+      {/* Editorial Section */}
+      <section className="bg-primary-container py-section-gap">
+        <div className="max-w-container-max mx-auto px-margin-desktop">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            <div className="flex flex-col gap-4">
+              <div className="w-12 h-12 flex items-center justify-center border border-secondary/30 rounded-full mb-4">
+                <span className="material-symbols-outlined text-secondary">verified</span>
+              </div>
+              <h3 className="font-headline-sm text-on-surface">Bespoke Mastery</h3>
+              <p className="font-body-md text-on-surface-variant leading-relaxed">
+                Every request is handled with the surgical precision of a master artisan. We do not offer packages; we craft singular responses to your unique requirements.
+              </p>
+            </div>
+            <div className="flex flex-col gap-4">
+              <div className="w-12 h-12 flex items-center justify-center border border-secondary/30 rounded-full mb-4">
+                <span className="material-symbols-outlined text-secondary">layers</span>
+              </div>
+              <h3 className="font-headline-sm text-on-surface">Multi-Service Fluidity</h3>
+              <p className="font-body-md text-on-surface-variant leading-relaxed">
+                From securing rare vintage timepieces to managing global logistics and private security, our ecosystem operates as a singular, unified force for your convenience.
+              </p>
+            </div>
+            <div className="flex flex-col gap-4">
+              <div className="w-12 h-12 flex items-center justify-center border border-secondary/30 rounded-full mb-4">
+                <span className="material-symbols-outlined text-secondary">visibility_off</span>
+              </div>
+              <h3 className="font-headline-sm text-on-surface">Beyond Listings</h3>
+              <p className="font-body-md text-on-surface-variant leading-relaxed">
+                We exist in the space where others stop. Our network grants access to the unlisted, the unavailable, and the purely exclusive, ensuring your desires are met without compromise.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Request Form Section */}
+      <section className="bg-[#f9f9f9] py-section-gap">
+        <div className="max-w-container-max mx-auto px-margin-desktop">
+          <div className="bg-[#1F1F1F] border border-outline-variant/20 overflow-hidden flex flex-col md:flex-row">
+            {/* Form Info Side */}
+            <div className="md:w-2/5 relative min-h-[400px]">
+              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBRdQfd0Twd1mJ9bHnDy15i9dpteKO655AoqZ5pUQndqoNdusexLfxziQa5m_tgiwpmCMW7otkwM3i4ld95v7GmkE1ipQi-xjpjLIBGkaoxGW8ehpREBTReIVfyTlmMcy9llJc_V1CCNUu82EZgyLcCtfPc8QS_gmF0wP0gbgsq5lwCbWmcNLGuXs0Ko7GGoGoIMdlhbOwlm8D6A-ONluuDXXqogfed5sRvtyOZPtgbPnj72nF1C2aHIA')" }}></div>
+              <div className="absolute inset-0 bg-primary-container/40 backdrop-blur-[2px]"></div>
+              <div className="relative z-10 p-12 h-full flex flex-col justify-between">
                 <div>
-                  <div className="font-serif text-headline-lg text-secondary mb-1">200+</div>
-                  <p className="font-label-caps text-label-caps text-on-surface-variant">Partner Chefs</p>
+                  <div className="flex items-center gap-2 mb-8">
+                    <div className="w-8 h-8 rounded-full border border-secondary flex items-center justify-center text-[10px] font-bold text-secondary">OPV</div>
+                    <span className="font-label-caps text-on-surface tracking-widest">VERIFIED SERVICE</span>
+                  </div>
+                  <h2 className="font-headline-md text-on-surface mb-6">Initiate Your Request</h2>
+                  <p className="font-body-md text-on-surface-variant">A dedicated guardian will be assigned to your case within 15 minutes of submission.</p>
                 </div>
-                <div>
-                  <div className="font-serif text-headline-lg text-secondary mb-1">48h</div>
-                  <p className="font-label-caps text-label-caps text-on-surface-variant">Min. Advance Notice</p>
-                </div>
-                <div>
-                  <div className="font-serif text-headline-lg text-secondary mb-1">30+</div>
-                  <p className="font-label-caps text-label-caps text-on-surface-variant">Cuisines Available</p>
+                <div className="space-y-4">
+                  <div className="flex items-center gap-4">
+                    <span className="material-symbols-outlined text-secondary text-sm">schedule</span>
+                    <span className="font-label-caps text-on-surface-variant">24/7 Global Operations</span>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <span className="material-symbols-outlined text-secondary text-sm">lock</span>
+                    <span className="font-label-caps text-on-surface-variant">End-to-End Encryption</span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="col-span-12 md:col-span-6 md:col-start-7">
-              <img className="w-full aspect-[4/5] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm4LzX8oNBw0P4GJR_MqTZPRZMG7M0bwlQj7G6WJVzJkPK0FiXtGjO1cQWEJV-H0L9oU3bRrLmkv4K5m3OP96DGiPcVL23XkMlsZ3QzJjMfEbIXFwxhLi31ZxAlC47dFMkAkTGCHuJIiWCaLFJIr9NrdNJwvz0J8X4bN2cS0X3sLx3oB3w5ieMPTB-vhV3D0bpK7i5AYdnqPjBrZv0bHnqS_Nq6dZWkRvb7mWi_BNpWD_1f4v6tOMhvJl4dh5QqiGSfqwZ_U" alt="Private Chef" data-placeholder="true" />
+            {/* Form Content Side */}
+            <div className="md:w-3/5 p-8 md:p-16">
+              <form className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12" onSubmit={(e) => e.preventDefault()}>
+                <div className="flex flex-col">
+                  <label className="font-label-caps text-secondary text-[10px] mb-1">FULL NAME</label>
+                  <input className="bg-transparent border-b border-[rgba(229,229,225,0.2)] py-3 text-on-surface font-body-md placeholder:text-on-surface-variant/30 focus:outline-none focus:border-secondary transition-colors" placeholder="Your formal name" type="text" />
+                </div>
+                <div className="flex flex-col">
+                  <label className="font-label-caps text-secondary text-[10px] mb-1">EMAIL ADDRESS</label>
+                  <input className="bg-transparent border-b border-[rgba(229,229,225,0.2)] py-3 text-on-surface font-body-md placeholder:text-on-surface-variant/30 focus:outline-none focus:border-secondary transition-colors" placeholder="email@address.com" type="email" />
+                </div>
+                <div className="flex flex-col">
+                  <label className="font-label-caps text-secondary text-[10px] mb-1">PHONE NUMBER</label>
+                  <input className="bg-transparent border-b border-[rgba(229,229,225,0.2)] py-3 text-on-surface font-body-md placeholder:text-on-surface-variant/30 focus:outline-none focus:border-secondary transition-colors" placeholder="+1 (000) 000-0000" type="tel" />
+                </div>
+                <div className="flex flex-col">
+                  <label className="font-label-caps text-secondary text-[10px] mb-1">REQUEST TYPE</label>
+                  <select className="bg-transparent border-b border-[rgba(229,229,225,0.2)] py-3 text-on-surface font-body-md focus:outline-none focus:border-secondary transition-colors appearance-none">
+                    <option disabled value="">Select service category</option>
+                    <option value="travel">Travel &amp; Yachting</option>
+                    <option value="lifestyle">Lifestyle &amp; Personal Shopping</option>
+                    <option value="events">Events &amp; Private Dining</option>
+                    <option value="security">Security &amp; Protection</option>
+                    <option value="other">Other Bespoke Request</option>
+                  </select>
+                </div>
+                <div className="flex flex-col md:col-span-2">
+                  <label className="font-label-caps text-secondary text-[10px] mb-1">ESTIMATED BUDGET RANGE</label>
+                  <div className="flex gap-4 mt-2 overflow-x-auto pb-2">
+                    {["Entry Luxury", "High Tier", "Ultra-High Net", "No Limit"].map((label) => (
+                      <button key={label} className="px-4 py-2 border border-outline-variant/30 font-label-caps text-on-surface-variant hover:border-secondary hover:text-secondary transition-all whitespace-nowrap active:scale-95" type="button">{label}</button>
+                    ))}
+                  </div>
+                </div>
+                <div className="flex flex-col md:col-span-2">
+                  <label className="font-label-caps text-secondary text-[10px] mb-1">DESCRIPTION OF REQUEST</label>
+                  <textarea className="bg-transparent border-b border-[rgba(229,229,225,0.2)] py-3 text-on-surface font-body-md placeholder:text-on-surface-variant/30 focus:outline-none focus:border-secondary transition-colors resize-none" placeholder="Describe the specifics of your requirement in detail..." rows={4}></textarea>
+                </div>
+                <div className="md:col-span-2 flex justify-end items-center gap-8 mt-4">
+                  <p className="text-[10px] font-label-caps text-on-surface-variant/50 max-w-[200px] text-right leading-tight">
+                    BY SUBMITTING, YOU AGREE TO OUR PRIVATE SERVICE TERMS.
+                  </p>
+                  <button className="bg-secondary text-primary-container px-12 py-4 font-label-caps text-sm tracking-[0.2em] hover:brightness-110 transition-all active:scale-[0.98]" type="submit">
+                    SUBMIT REQUEST
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </section>
-
-      {/* Service Sections */}
-      {SERVICE_SECTIONS.map((s, i) => (
-        <section key={s.label} className={"py-section-gap " + (i % 2 === 0 ? "bg-surface-container-low" : "")}>
-          <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-            <div className={"grid grid-cols-12 gap-gutter items-center " + (i % 2 !== 0 ? "direction-rtl" : "")}>
-              <div className={"col-span-12 md:col-span-5 " + (i % 2 !== 0 ? "md:col-start-8 md:order-2" : "")}>
-                <span className="font-label-caps text-label-caps text-secondary mb-4 block">{s.label}</span>
-                <h2 className="font-serif text-headline-lg mb-6">{s.title}</h2>
-                <p className="font-sans text-body-lg text-on-surface-variant">{s.desc}</p>
-              </div>
-              <div className={"col-span-12 md:col-span-6 " + (i % 2 !== 0 ? "md:col-start-1 md:order-1" : "md:col-start-7")}>
-                <img className="w-full aspect-video object-cover" src={s.img} alt={s.label} data-placeholder="true" />
-              </div>
-            </div>
-          </div>
-        </section>
-      ))}
-
-      {/* Card Grid */}
-      <section className="py-section-gap">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-          <div className="text-center mb-16">
-            <span className="font-label-caps text-label-caps text-secondary mb-4 block">Additional Services</span>
-            <h2 className="font-serif text-headline-lg">Beyond the Expected.</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
-            {CARD_SERVICES.map((c) => (
-              <div key={c.title} className="flex gap-8 p-12 border border-outline-variant/30 hover:border-secondary/30 transition-colors">
-                <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center border border-secondary">
-                  <span className="material-symbols-outlined text-secondary">{c.icon}</span>
-                </div>
-                <div>
-                  <h3 className="font-serif text-headline-md mb-3">{c.title}</h3>
-                  <p className="font-sans text-body-md text-on-surface-variant">{c.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Bespoke Services CTA */}
-      <section className="py-section-gap bg-primary text-on-primary">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
-          <span className="font-label-caps text-label-caps text-secondary-fixed mb-4 block">Bespoke Services</span>
-          <h2 className="font-serif text-headline-lg text-on-primary mb-6 max-w-2xl mx-auto">No Request Is Beyond Our Reach.</h2>
-          <p className="font-sans text-body-lg text-on-primary/70 max-w-xl mx-auto mb-10">Whether you require something entirely unique or simply wish to discuss how we can enhance your lifestyle, our senior concierge team is available now.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/contact" className="inline-block bg-secondary text-on-secondary font-label-caps text-label-caps px-12 py-5 hover:opacity-90 transition-all">Make a Bespoke Request</a>
-            <a href="tel:+442079460958" className="inline-block border border-white/30 text-on-primary font-label-caps text-label-caps px-12 py-5 hover:bg-white hover:text-primary transition-all">+44 20 7946 0958</a>
-          </div>
-        </div>
-      </section>
-
-      <AIConciergeSection />
     </>
   );
 }

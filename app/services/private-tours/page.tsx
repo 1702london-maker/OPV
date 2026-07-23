@@ -1,4 +1,4 @@
-export default function PrivateToursPage() {
+﻿export default function PrivateToursPage() {
   return (
     <>
       {/* Hero */}
@@ -28,7 +28,7 @@ export default function PrivateToursPage() {
       </section>
 
       {/* Category Intro */}
-      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-[#f9f9f9]">
+      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-primary-container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
           <div className="space-y-6">
             <span className="font-label-caps text-secondary tracking-widest">THE ART OF EXPLORATION</span>
@@ -37,7 +37,7 @@ export default function PrivateToursPage() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             {["City & Cultural", "Heritage & History", "Countryside & Scenic", "Bespoke Itinerary"].map((cat) => (
-              <div key={cat} className="bg-[#f0ede8] border border-outline-variant/10 p-8 hover:border-secondary transition-colors">
+              <div key={cat} className="bg-primary-container border border-outline-variant/10 p-8 hover:border-secondary transition-colors">
                 <span className="material-symbols-outlined text-secondary text-3xl mb-4">explore</span>
                 <h3 className="font-label-caps text-on-surface text-sm">{cat}</h3>
               </div>
@@ -47,7 +47,7 @@ export default function PrivateToursPage() {
       </section>
 
       {/* Tour Cards */}
-      <section className="py-section-gap bg-[#f0ede8]" id="tours">
+      <section className="py-section-gap bg-primary-container" id="tours">
         <div className="px-margin-desktop max-w-container-max mx-auto">
           <div className="mb-16">
             <h2 className="font-display-lg text-headline-md text-on-surface mb-4">Signature Tours</h2>
@@ -86,7 +86,7 @@ export default function PrivateToursPage() {
                 img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBPHDZGL82QLbTzQ88JPDfah3bqvD3oTppEHQOVlqfGv2xmWh-KwR9X2GoRY8CbwCudY5nvMJyScVEPBxeW8Smypzk5SOCPBLvwYDFIC2ff6vvBELYybGb03rnZq3X1ke0WdQlU8yJo-SUFwbOODun0sUJjN8t-epW1GvG1svBwY1OMnkbwgvIznzK8aGQNkC_A4zOiRFSt50Bds-gBspnsRfzvnr6_iWFtI0XIXJGIHuKBS1Vlm0ExNg",
               },
             ].map(({ name, location, price, duration, capacity, vehicle, guide, img }) => (
-              <div key={name} className="group bg-[#f9f9f9] border border-outline-variant/10 overflow-hidden hover:border-secondary/40 transition-all duration-500">
+              <div key={name} className="group bg-primary-container border border-outline-variant/10 overflow-hidden hover:border-secondary/40 transition-all duration-500">
                 <div className="relative h-72 overflow-hidden">
                   <div className="absolute top-4 left-4 z-10">
                     <div className="font-label-caps text-[10px] border border-secondary text-secondary bg-primary-container/90 px-3 py-1">OPV VERIFIED</div>
@@ -114,7 +114,7 @@ export default function PrivateToursPage() {
       </section>
 
       {/* Featured Itinerary */}
-      <section className="py-section-gap bg-[#f9f9f9]">
+      <section className="py-section-gap bg-primary-container">
         <div className="px-margin-desktop max-w-container-max mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div className="space-y-6">
@@ -138,7 +138,7 @@ export default function PrivateToursPage() {
                 ))}
               </div>
               <div className="flex items-center gap-4 pt-4 border-t border-outline-variant/20">
-                <div className="w-12 h-12 rounded-full bg-[#f0ede8] border border-outline-variant/20 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-primary-container border border-outline-variant/20 flex items-center justify-center">
                   <span className="material-symbols-outlined text-secondary">person</span>
                 </div>
                 <div>

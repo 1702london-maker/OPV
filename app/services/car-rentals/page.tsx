@@ -1,4 +1,4 @@
-export default function CarRentalsPage() {
+﻿export default function CarRentalsPage() {
   return (
     <>
       {/* Hero */}
@@ -28,7 +28,7 @@ export default function CarRentalsPage() {
       </section>
 
       {/* Filter Bar */}
-      <section className="bg-[#f9f9f9] py-8 border-b border-outline-variant/20">
+      <section className="bg-primary-container py-8 border-b border-outline-variant/20">
         <div className="px-margin-desktop max-w-container-max mx-auto">
           <div className="flex flex-wrap gap-6 items-end">
             <div className="flex flex-col gap-1">
@@ -69,7 +69,7 @@ export default function CarRentalsPage() {
       </section>
 
       {/* Fleet Grid */}
-      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-[#f9f9f9]" id="fleet">
+      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-primary-container" id="fleet">
         <div className="flex justify-between items-end mb-16">
           <div>
             <h2 className="font-display-lg text-headline-md text-on-surface">Current Fleet</h2>
@@ -103,7 +103,7 @@ export default function CarRentalsPage() {
               img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDpKxQ1vB_CqSNkKMnfDPJrSYjXE4nWaB7iA9mLT3BfAqJxB7iJpVFahnWaVPH0kHkjHJB7OW9P-0MhGf2Ej0-PeBw",
             },
           ].map(({ name, price, driver, accel, engine, img }) => (
-            <div key={name} className="group bg-[#f0ede8] border border-outline-variant/10 overflow-hidden hover:border-secondary/40 transition-all duration-500">
+            <div key={name} className="group bg-primary-container border border-outline-variant/10 overflow-hidden hover:border-secondary/40 transition-all duration-500">
               <div className="relative h-72 overflow-hidden">
                 <div className="absolute top-4 left-4 z-10">
                   <div className="font-label-caps text-[10px] border border-secondary text-secondary bg-primary-container/90 px-3 py-1">OPV VERIFIED</div>
@@ -136,7 +136,7 @@ export default function CarRentalsPage() {
       </section>
 
       {/* OPV Standards */}
-      <section className="py-section-gap bg-[#f0ede8] border-y border-outline-variant/10">
+      <section className="py-section-gap bg-primary-container border-y border-outline-variant/10">
         <div className="px-margin-desktop max-w-container-max mx-auto">
           <h2 className="font-display-lg text-headline-md text-on-surface text-center mb-16">OPV Standards</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16 text-center">

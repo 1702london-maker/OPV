@@ -1,4 +1,4 @@
-export default function CleaningLifestylePage() {
+﻿export default function CleaningLifestylePage() {
   return (
     <>
       {/* Hero */}
@@ -24,7 +24,7 @@ export default function CleaningLifestylePage() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-[#f9f9f9]" id="services">
+      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-primary-container" id="services">
         <div className="mb-16">
           <h2 className="font-display-lg text-headline-md text-on-surface mb-4">Our Services</h2>
           <p className="text-on-surface-variant font-body-md">Curated household and lifestyle management for discerning principals.</p>
@@ -69,7 +69,7 @@ export default function CleaningLifestylePage() {
               dark: true,
             },
           ].map(({ title, desc, icon, img, bg, dark }) => (
-            <div key={title} className={`group relative overflow-hidden border border-outline-variant/10 hover:border-secondary/40 transition-all duration-500 ${bg || "bg-[#f0ede8]"}`}>
+            <div key={title} className={`group relative overflow-hidden border border-outline-variant/10 hover:border-secondary/40 transition-all duration-500 ${bg || "bg-primary-container"}`}>
               {img && (
                 <div className="relative h-52 overflow-hidden">
                   <div className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{ backgroundImage: `url('${img}')` }}></div>
@@ -87,7 +87,7 @@ export default function CleaningLifestylePage() {
       </section>
 
       {/* Verification */}
-      <section className="py-section-gap bg-[#f0ede8] border-y border-outline-variant/10">
+      <section className="py-section-gap bg-primary-container border-y border-outline-variant/10">
         <div className="px-margin-desktop max-w-container-max mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-display-lg text-headline-md text-on-surface mb-4">The Standard of Trust</h2>
@@ -111,7 +111,7 @@ export default function CleaningLifestylePage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-section-gap px-margin-desktop max-w-3xl mx-auto bg-[#f9f9f9]">
+      <section className="py-section-gap px-margin-desktop max-w-3xl mx-auto bg-primary-container">
         <h2 className="font-display-lg text-headline-md text-on-surface mb-12 text-center">Common Questions</h2>
         <div className="space-y-6">
           {[

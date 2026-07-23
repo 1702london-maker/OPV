@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>OPV | Authentication</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Hanken+Grotesk:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#af8d11",
+                    "on-background": "#e2e2e2",
+                    "error-container": "#93000a",
+                    "on-error": "#690005",
+                    "on-secondary-fixed-variant": "#574500",
+                    "surface-container": "#1e2020",
+                    "primary-container": "#0b1221",
+                    "primary-fixed-dim": "#c0c6db",
+                    "on-tertiary": "#2f3128",
+                    "surface-container-high": "#282a2b",
+                    "on-secondary-container": "#342800",
+                    "surface-container-highest": "#333535",
+                    "outline": "#909097",
+                    "inverse-primary": "#575e70",
+                    "surface-bright": "#38393a",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-tertiary-fixed-variant": "#46483d",
+                    "surface-container-lowest": "#0d0f0f",
+                    "on-primary-fixed-variant": "#404758",
+                    "surface-container-low": "#1a1c1c",
+                    "on-error-container": "#ffdad6",
+                    "tertiary-fixed-dim": "#c7c7ba",
+                    "on-primary-fixed": "#151b2b",
+                    "inverse-surface": "#e2e2e2",
+                    "on-tertiary-container": "#7d7e72",
+                    "on-secondary": "#3c2f00",
+                    "surface-variant": "#333535",
+                    "surface-dim": "#121414",
+                    "on-primary-container": "#777d90",
+                    "primary-fixed": "#dce2f8",
+                    "tertiary-container": "#11130b",
+                    "tertiary-fixed": "#e3e3d5",
+                    "secondary-fixed": "#ffe088",
+                    "surface-tint": "#c0c6db",
+                    "primary": "#c0c6db",
+                    "on-secondary-fixed": "#241a00",
+                    "error": "#ffb4ab",
+                    "tertiary": "#c7c7ba",
+                    "on-surface": "#e2e2e2",
+                    "outline-variant": "#45464c",
+                    "on-primary": "#293041",
+                    "secondary": "#e9c349",
+                    "on-tertiary-fixed": "#1b1c14",
+                    "background": "#121414",
+                    "on-surface-variant": "#c6c6cd",
+                    "inverse-on-surface": "#2f3131",
+                    "surface": "#121414"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "80px",
+                    "container-max": "1440px",
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "section-gap": "120px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "label-caps": ["Hanken Grotesk"],
+                    "headline-md": ["Playfair Display"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "display-lg": ["Playfair Display"],
+                    "headline-sm": ["Playfair Display"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "body-md": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #121414; /* surface-dim */
+            color: #e2e2e2; /* on-surface */
+            overflow-x: hidden;
+        }
+
+        .champagne-gradient {
+            background: linear-gradient(135deg, #e9c349 0%, #af8d11 100%);
+        }
+
+        .soft-stone-border {
+            border-bottom: 1px solid rgba(229, 225, 225, 0.2);
+            transition: border-color 0.4s ease;
+        }
+
+        .soft-stone-border:focus-within {
+            border-bottom: 1px solid #e9c349;
+            outline: none;
+        }
+
+        .auth-card {
+            background-color: #1F1F1F;
+            border: 0.5px solid rgba(229, 225, 225, 0.1);
+        }
+
+        .luxury-ease {
+            transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+
+        /* Glassmorphism for atmospheric glow */
+        .glow-overlay {
+            background: radial-gradient(circle at 50% 50%, rgba(233, 195, 73, 0.05) 0%, transparent 70%);
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md antialiased">
+<!-- Header Suppression: Auth screen uses minimal branding -->
+<header class="fixed top-0 w-full z-50 py-10 px-margin-desktop flex justify-center">
+<div class="font-display-lg text-headline-md tracking-tighter text-on-surface">OPV</div>
+</header>
+<main class="min-h-screen flex items-center justify-center relative overflow-hidden px-margin-mobile md:px-margin-desktop py-section-gap">
+<!-- Atmospheric Background Animation -->
+<div class="absolute inset-0 z-0 opacity-40">
+
+</div>
+<div class="glow-overlay absolute inset-0 z-0"></div>
+<!-- Auth Container -->
+<div class="relative z-10 w-full max-w-[1000px] flex flex-col md:flex-row shadow-2xl luxury-ease">
+<!-- Visual Half (Hero) -->
+<div class="hidden md:flex flex-1 relative min-h-[600px] overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A macro cinematic shot of a high-end textured champagne-colored silk fabric gently rippling in low-key lighting. The scene is set in a deep midnight navy environment, creating a sense of profound luxury and exclusivity. Soft golden highlights catch the edges of the folds, emphasizing superior quality and craftsmanship. The atmosphere is quiet, authoritative, and profoundly elegant, echoing the aesthetics of a private members' club." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCO90xkyEJtGlmzM6oNWumTG-3GPHWpfDH8-soxcVgcj_iS84Ak-_BArBC3po34vKQtvTbn8w166CHdkDauz2YLQe5a-zRem0tlon80gavIXJeR4Rd9c-l02RteC3KPitrTEL5mMJGxvquftKurxrlgTptiCxz-vowA_24PTAVvJZ3u_Afehrk40arRBuLwp2JAehJve-rFj530zmgzY1cTomGAyN3dcN8U6JZp341oQ7zEF7sP8a5ecg')"></div>
+<div class="absolute inset-0 bg-primary-container/40 backdrop-brightness-75"></div>
+<div class="absolute bottom-12 left-12 right-12">
+<div class="flex items-center gap-2 mb-4">
+<div class="w-8 h-8 rounded-full border border-secondary flex items-center justify-center text-[10px] font-label-caps text-secondary">OPV</div>
+<span class="font-label-caps text-secondary">VERIFIED GUARDIAN</span>
+</div>
+<h2 class="font-display-lg text-headline-md text-white mb-4">The Gate to Excellence.</h2>
+<p class="font-body-md text-on-surface-variant max-w-xs">Access the world's most exclusive sanctuary for the discerning few.</p>
+</div>
+</div>
+<!-- Form Half -->
+<div class="flex-1 bg-surface-container-lowest p-8 md:p-16 flex flex-col justify-center">
+<div class="mb-10" id="auth-header">
+<h1 class="font-display-lg text-headline-md text-on-surface mb-2" id="form-title">Sign In</h1>
+<p class="font-body-md text-on-surface-variant" id="form-subtitle">Enter your credentials to access your vault.</p>
+</div>
+<!-- Toggle Navigation (Internal to Form) -->
+<div class="flex gap-8 mb-10 border-b border-outline-variant/20">
+<button class="pb-3 font-label-caps text-secondary border-b border-secondary luxury-ease" id="tab-login" onclick="switchTab('login')">Login</button>
+<button class="pb-3 font-label-caps text-on-surface-variant hover:text-secondary luxury-ease" id="tab-register" onclick="switchTab('register')">Register</button>
+</div>
+<!-- Form Fields -->
+<form class="space-y-8" id="auth-form" onsubmit="return false;">
+<!-- Registration Fields (Hidden initially) -->
+<div class="hidden space-y-8" id="registration-fields">
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-on-surface-variant text-[10px] uppercase tracking-widest">Full Name</label>
+<div class="soft-stone-border py-2 flex items-center">
+<input class="bg-transparent border-none w-full p-0 text-on-surface placeholder:text-outline-variant/40 focus:ring-0 font-body-md" placeholder="ALEXANDER VANCE" type="text"/>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-on-surface-variant text-[10px] uppercase tracking-widest">Email Address</label>
+<div class="soft-stone-border py-2 flex items-center">
+<input class="bg-transparent border-none w-full p-0 text-on-surface placeholder:text-outline-variant/40 focus:ring-0 font-body-md" placeholder="GUARDIAN@OPULENTVAULT.COM" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<label class="font-label-caps text-on-surface-variant text-[10px] uppercase tracking-widest">Password</label>
+<a class="text-[10px] font-label-caps text-secondary/70 hover:text-secondary uppercase tracking-widest luxury-ease" href="/" id="forgot-password">Forgot?</a>
+</div>
+<div class="soft-stone-border py-2 flex items-center">
+<input class="bg-transparent border-none w-full p-0 text-on-surface placeholder:text-outline-variant/40 focus:ring-0 font-body-md" placeholder="••••••••••••" type="password"/>
+</div>
+</div>
+<!-- Primary Action -->
+<button class="w-full champagne-gradient py-4 text-primary-container font-label-caps uppercase tracking-[0.2em] hover:brightness-110 active:scale-[0.98] luxury-ease">
+<span id="btn-text">Authenticate</span>
+</button>
+</form>
+<!-- Discreet Footer Links -->
+<div class="mt-12 space-y-6">
+<div class="flex items-center gap-4">
+<div class="h-px flex-1 bg-outline-variant/20"></div>
+<span class="font-label-caps text-[10px] text-outline-variant/40 uppercase">Social Access</span>
+<div class="h-px flex-1 bg-outline-variant/20"></div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-2 border border-outline-variant/30 py-3 font-label-caps text-[10px] hover:bg-white/5 luxury-ease">
+<span class="material-symbols-outlined text-sm">key</span>
+                            PASSKEY
+                        </button>
+<button class="flex items-center justify-center gap-2 border border-outline-variant/30 py-3 font-label-caps text-[10px] hover:bg-white/5 luxury-ease">
+<span class="material-symbols-outlined text-sm">shield</span>
+                            SAML
+                        </button>
+</div>
+<p class="text-[11px] font-body-md text-on-surface-variant/60 leading-relaxed text-center">
+                        By continuing, you acknowledge our <a class="text-secondary/60 hover:text-secondary underline underline-offset-4" href="/">Privacy Charter</a>. We safeguard your digital presence with sovereign-grade encryption.
+                    </p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Suppression: Using localized footer instead of global for focus -->
+<footer class="bg-[#fbf9f8] border-t border-[#dbdad9] py-section-gap px-margin-mobile md:px-margin-desktop"><div class="max-w-container-max mx-auto"><div class="grid grid-cols-1 md:grid-cols-5 gap-gutter mb-16"><div><a class="block mb-6" href="/" aria-label="OPV home"><img class="h-28 w-28 object-contain" src="/assets/opulent-vault-logo-transparent.png" alt="Opulent Vault logo"/></a><p class="font-body-md text-[#575e71] text-sm mb-8">Opulent Vault is Manchester's curated luxury lifestyle concierge marketplace.</p><div class="flex gap-5 text-[#575e71]"><a class="hover:text-secondary" href="https://www.instagram.com/" aria-label="Instagram"><span class="material-symbols-outlined">photo_camera</span></a><a class="hover:text-secondary" href="https://www.linkedin.com/" aria-label="LinkedIn"><span class="material-symbols-outlined">business_center</span></a><a class="hover:text-secondary" href="https://x.com/" aria-label="X"><span class="material-symbols-outlined">alternate_email</span></a><a class="hover:text-secondary" href="https://www.facebook.com/" aria-label="Facebook"><span class="material-symbols-outlined">groups</span></a><a class="hover:text-secondary" href="https://www.youtube.com/" aria-label="YouTube"><span class="material-symbols-outlined">play_circle</span></a></div></div><div><h6 class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-6">Services</h6><ul class="space-y-3 font-body-md text-[#575e71] text-sm"><li><a class="hover:text-secondary transition-colors" href="/services/luxury-stays/">Luxury Stays</a></li><li><a class="hover:text-secondary transition-colors" href="/services/private-dining/">Private Dining</a></li><li><a class="hover:text-secondary transition-colors" href="/services/events-experiences/">Events & Experiences</a></li><li><a class="hover:text-secondary transition-colors" href="/services/wine-tasting/">Wine Tasting</a></li><li><a class="hover:text-secondary transition-colors" href="/services/private-tours/">Private Tours</a></li><li><a class="hover:text-secondary transition-colors" href="/services/vip-security/">VIP & Celebrity Security</a></li><li><a class="hover:text-secondary transition-colors" href="/services/car-rentals/">Luxury Car Rentals</a></li><li><a class="hover:text-secondary transition-colors" href="/services/private-jet/">Private Jet</a></li></ul></div><div><h6 class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-6">Company</h6><ul class="space-y-3 font-body-md text-[#575e71] text-sm"><li><a class="hover:text-secondary transition-colors" href="/about/">About OPV</a></li><li><a class="hover:text-secondary transition-colors" href="/partners/apply/">Become a Host or Partner</a></li><li><a class="hover:text-secondary transition-colors" href="/affiliates/">Affiliate Programme</a></li><li><a class="hover:text-secondary transition-colors" href="/blog/">Blog &amp; Editorial</a></li><li><a class="hover:text-secondary transition-colors" href="/faqs/">FAQs</a></li><li><a class="hover:text-secondary transition-colors" href="/contact/">Contact</a></li></ul></div><div><h6 class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-6">Legal</h6><ul class="space-y-3 font-body-md text-[#575e71] text-sm"><li><a class="hover:text-secondary transition-colors" href="/legal/terms">Terms &amp; Conditions</a></li><li><a class="hover:text-secondary transition-colors" href="/legal/privacy">Privacy Policy</a></li><li><a class="hover:text-secondary transition-colors" href="/legal/verification">Verification Policy</a></li><li><a class="hover:text-secondary transition-colors" href="/legal/cancellation">Cancellation &amp; Refund Policy</a></li><li><a class="hover:text-secondary transition-colors" href="/legal/cookies">Cookie Policy</a></li></ul></div><div><h6 class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-6">Stay in the Know</h6><p class="font-body-md text-[#575e71] text-sm mb-6">Private invitations, editorial notes, and verified luxury access from the Vault.</p><form class="flex flex-col gap-3" action="/contact/"><input class="bg-transparent border-0 border-b border-[#dbdad9] text-[#1e2020] placeholder:text-[#575e71] focus:border-secondary focus:ring-0 px-0" type="email" placeholder="Email address" /><button class="bg-secondary text-primary-container px-6 py-3 font-label-caps text-label-caps uppercase tracking-widest font-bold hover:bg-[#1e2020] hover:text-white transition-colors" type="submit">Subscribe</button></form><p class="font-body-md text-[#575e71] text-xs mt-4">Your details remain private and are used only for OPV communications.</p></div></div><div class="border-t border-[#dbdad9] py-2"><div class="max-w-4xl mx-auto flex flex-col xl:flex-row items-center justify-center gap-3"><p class="font-body-md text-[#575e71] text-[10px] shrink-0">@2026 OPULENT VAULT.</p><div class="flex items-center justify-center gap-2 shrink-0"><span class="font-label-caps text-[10px] text-secondary uppercase tracking-widest">Available on</span><a class="inline-flex" href="https://www.apple.com/app-store/" aria-label="Download on the App Store"><img class="h-6 w-auto object-contain" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store"/></a><a class="inline-flex" href="https://play.google.com/store" aria-label="Get it on Google Play"><img class="h-6 w-auto object-contain" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play"/></a></div><div class="flex items-center justify-center gap-1.5 shrink-0"><div class="h-7 w-12 border border-[#dbdad9] bg-white flex items-center justify-center px-2" aria-label="Visa"><img class="max-h-3.5 max-w-full object-contain" src="https://cdn.simpleicons.org/visa/1A1F71" alt="Visa logo"/></div><div class="h-7 w-12 border border-[#dbdad9] bg-white flex items-center justify-center px-1.5" aria-label="Mastercard"><img class="max-h-3.5 max-w-full object-contain" src="https://cdn.simpleicons.org/mastercard/EB001B" alt="Mastercard logo"/></div><div class="h-7 w-12 border border-[#dbdad9] bg-white flex items-center justify-center px-1.5" aria-label="American Express"><img class="max-h-3.5 max-w-full object-contain" src="https://cdn.simpleicons.org/americanexpress/2E77BC" alt="American Express logo"/></div><div class="h-7 w-12 border border-[#dbdad9] bg-white flex items-center justify-center px-1.5" aria-label="PayPal"><img class="max-h-3.5 max-w-full object-contain" src="https://cdn.simpleicons.org/paypal/003087" alt="PayPal logo"/></div><div class="h-7 w-12 border border-[#dbdad9] bg-white flex items-center justify-center px-1.5" aria-label="Klarna"><img class="max-h-3.5 max-w-full object-contain" src="https://cdn.simpleicons.org/klarna/FFB3C7" alt="Klarna logo"/></div></div><a class="font-label-caps text-[10px] uppercase tracking-widest text-[#575e71] hover:text-secondary shrink-0" href="/legal/privacy">Privacy</a></div></div></div></footer>
+<script>
+        function switchTab(type) {
+            const loginTab = document.getElementById('tab-login');
+            const registerTab = document.getElementById('tab-register');
+            const registrationFields = document.getElementById('registration-fields');
+            const formTitle = document.getElementById('form-title');
+            const formSubtitle = document.getElementById('form-subtitle');
+            const btnText = document.getElementById('btn-text');
+            const forgotPass = document.getElementById('forgot-password');
+
+            if (type === 'register') {
+                // Style updates
+                registerTab.classList.add('text-secondary', 'border-b', 'border-secondary');
+                registerTab.classList.remove('text-on-surface-variant');
+                loginTab.classList.remove('text-secondary', 'border-b', 'border-secondary');
+                loginTab.classList.add('text-on-surface-variant');
+                
+                // Content updates
+                registrationFields.classList.remove('hidden');
+                formTitle.innerText = "Join the Vault";
+                formSubtitle.innerText = "Request membership for the private guardian ecosystem.";
+                btnText.innerText = "Request Access";
+                forgotPass.classList.add('invisible');
+            } else {
+                // Style updates
+                loginTab.classList.add('text-secondary', 'border-b', 'border-secondary');
+                loginTab.classList.remove('text-on-surface-variant');
+                registerTab.classList.remove('text-secondary', 'border-b', 'border-secondary');
+                registerTab.classList.add('text-on-surface-variant');
+
+                // Content updates
+                registrationFields.classList.add('hidden');
+                formTitle.innerText = "Sign In";
+                formSubtitle.innerText = "Enter your credentials to access your vault.";
+                btnText.innerText = "Authenticate";
+                forgotPass.classList.remove('invisible');
+            }
+        }
+
+        // Soft entry animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const card = document.querySelector('.auth-card');
+            if(card) {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100);
+            }
+        });
+    </script>
+</body></html>

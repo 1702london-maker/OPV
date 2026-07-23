@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 export default function PersonalShoppingPage() {
   return (
     <>
@@ -22,7 +22,7 @@ export default function PersonalShoppingPage() {
       </section>
 
       {/* Service Intro */}
-      <section className="py-section-gap px-margin-desktop bg-[#f9f9f9]">
+      <section className="py-section-gap px-margin-desktop bg-primary-container">
         <div className="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
           <div>
             <h2 className="font-headline-md text-headline-md mb-8 text-on-surface">Beyond the Boutique</h2>
@@ -32,10 +32,10 @@ export default function PersonalShoppingPage() {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <div className="aspect-[3/4] bg-[#f0ede8] overflow-hidden">
+            <div className="aspect-[3/4] bg-primary-container overflow-hidden">
               <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9qsTt5TwWFU2jub2OaVg5evlwBjy6w-ZVYQd4iQOOFmsoZKksfXchtuoO5CSr2zwuWTB466gL8lgQ8d2MC0Mk3S-kiReC7H_WqGCD63qxwagyKAdegQ7GQl6g4PX8hmd3oiICvJC6Tk-4l-8Dt0BqOL2YUrzZIUT1Pcl9_wwxvIfC-CRJcDw0NJZeRlpMsqcjQ7CHlOBJ-etJlrqXycBHQIA150UOJxwFZlDEtR-Gdt-PA2tGiovwgg" alt="Luxury watch" />
             </div>
-            <div className="aspect-[3/4] bg-[#f0ede8] overflow-hidden mt-8">
+            <div className="aspect-[3/4] bg-primary-container overflow-hidden mt-8">
               <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3gb8R_67dAKYfo_7jhYHK9HG1p5uh9onBfDHKgeha-3tiFoivRqy2xEtsDmRmC7dcaBTroAmN2DQ2CgnPbyD5OxvUxYqRJTKKzdqJj7J0ZHCJS7jNT6L69M9ddUG3YhnwfjPHOdl7PkPqJPU_hoXuqksaEeSRPI9fEb6zLqSQCMjQddpGDRoB5Qp239SgvydQsKoPlDAxs2CKg_7azyf7XbmzErpu7U-j5IttV_Ub4ZmWn4x1kmEe7w" alt="Leather goods" />
             </div>
           </div>
@@ -43,7 +43,7 @@ export default function PersonalShoppingPage() {
       </section>
 
       {/* Curators */}
-      <section className="py-section-gap px-margin-desktop bg-[#f0ede8]">
+      <section className="py-section-gap px-margin-desktop bg-primary-container">
         <div className="max-w-container-max mx-auto">
           <div className="flex justify-between items-end mb-16">
             <div>
@@ -76,7 +76,7 @@ export default function PersonalShoppingPage() {
                 img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDjpJbo11xoQTpUHrEgY5fDx5QDsE_EwcOUYuxwXXg3n1_OAmIFYmYlx8N7Jr3uAs7wsfS8nZtIjCPaqiq_5JERrdid_lXtjRq3DmLIE9iDcz86ylfMF4Ejquay2XJQzG1UcvyhRJrU2zhaeevQeJ0RDQNXhbTFBosMd_Bk0eflrShrN1iTBv_Yup5R5LCjH5sUt8nqGvtaayEobSG8tZ91GcxCj-QuwszMzxoUtsX5BFcFU09VKRaBXw",
               },
             ].map(({ name, specialty, bio, credential, img }) => (
-              <div key={name} className="bg-[#f9f9f9] border border-outline-variant/20 group hover:border-secondary/40 transition-all duration-500">
+              <div key={name} className="bg-primary-container border border-outline-variant/20 group hover:border-secondary/40 transition-all duration-500">
                 <div className="relative aspect-[4/5] overflow-hidden">
                   <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src={img} alt={name} />
                   <div className="absolute top-4 right-4 bg-primary-container/80 backdrop-blur px-2 py-1 text-[8px] font-bold text-secondary font-label-caps">OPV</div>
@@ -98,7 +98,7 @@ export default function PersonalShoppingPage() {
       </section>
 
       {/* Acquisition Request Form */}
-      <section className="py-section-gap px-margin-desktop bg-[#f9f9f9]">
+      <section className="py-section-gap px-margin-desktop bg-primary-container">
         <div className="max-w-4xl mx-auto border border-outline-variant/20 p-12 md:p-20">
           <h2 className="font-headline-md text-headline-md mb-4 text-on-surface text-center">Acquisition Request</h2>
           <p className="font-body-md text-on-surface-variant text-center mb-16">Outline your requirements. Our specialists will respond within four hours.</p>
@@ -138,7 +138,7 @@ export default function PersonalShoppingPage() {
       </section>
 
       {/* Private Sourcing */}
-      <section className="py-section-gap px-margin-desktop bg-[#f0ede8]">
+      <section className="py-section-gap px-margin-desktop bg-primary-container">
         <div className="max-w-container-max mx-auto flex flex-col md:flex-row gap-gutter">
           <div className="md:w-1/3 space-y-6">
             <h2 className="font-headline-md text-headline-md text-on-surface">Private Sourcing</h2>

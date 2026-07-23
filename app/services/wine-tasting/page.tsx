@@ -1,4 +1,4 @@
-export default function WineTastingPage() {
+﻿export default function WineTastingPage() {
   return (
     <>
       {/* Hero Section */}
@@ -23,7 +23,7 @@ export default function WineTastingPage() {
       </section>
 
       {/* Category Intro */}
-      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto border-b border-outline-variant/20 bg-[#f9f9f9]">
+      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto border-b border-outline-variant/20 bg-primary-container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
             <span className="text-secondary font-label-caps mb-4 block">THE COLLECTIONS</span>
@@ -46,7 +46,7 @@ export default function WineTastingPage() {
       </section>
 
       {/* Listings Grid */}
-      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-[#f9f9f9]" id="listings">
+      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-primary-container" id="listings">
         <div className="flex justify-between items-end mb-16">
           <div>
             <h2 className="font-display-lg text-headline-md text-on-surface">Available Experiences</h2>

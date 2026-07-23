@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 export default function VideographyPhotographyPage() {
   return (
     <>
@@ -21,13 +21,13 @@ export default function VideographyPhotographyPage() {
       </section>
 
       {/* Intro */}
-      <section className="py-section-gap px-margin-desktop max-w-3xl mx-auto text-center bg-[#f9f9f9]">
+      <section className="py-section-gap px-margin-desktop max-w-3xl mx-auto text-center bg-primary-container">
         <h2 className="font-display-lg text-4xl md:text-5xl text-on-surface mb-6">The Discerning Guardian&apos;s Lens</h2>
         <p className="text-on-surface-variant text-lg leading-relaxed">Our artists are selected not merely for technical excellence, but for discretion, emotional intelligence, and the ability to disappear into an environment while capturing its soul. Every provider operates under strict NDA.</p>
       </section>
 
       {/* Provider Cards */}
-      <section className="py-section-gap bg-[#f0ede8]" id="providers">
+      <section className="py-section-gap bg-primary-container" id="providers">
         <div className="px-margin-desktop max-w-container-max mx-auto">
           <div className="mb-16">
             <h2 className="font-display-lg text-headline-md text-on-surface mb-4">OPV Verified Providers</h2>
@@ -57,7 +57,7 @@ export default function VideographyPhotographyPage() {
                 img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCHo8avzFcqvhd5Y8zY6LvGu6M2tp6PMXJFH1V2ZFFOEjax0XcX8-NqYob5di19rqww78HEWfAu30Fr0p2IuOa66oNzicUhvS7NNlTncwER5g_I2gLq_3KqsqEnIMTuGBSn7JsAEu9uL1_8EUk1jLZpTdJwyR_TRI5aOTqKftUZxU_VJvX6iZOJe9tug1TLyKK3_qWEEacMkstwdaZzPQH5-yVkZBUrxHu8vku6S-1mcn_jxTNMiIPG9Q",
               },
             ].map(({ studio, specialty, rate, desc, img }) => (
-              <div key={studio} className="group bg-[#f9f9f9] border border-outline-variant/10 overflow-hidden hover:border-secondary/40 transition-all duration-500">
+              <div key={studio} className="group bg-primary-container border border-outline-variant/10 overflow-hidden hover:border-secondary/40 transition-all duration-500">
                 <div className="relative h-64 overflow-hidden">
                   <div className="absolute top-4 left-4 z-10">
                     <div className="font-label-caps text-[10px] border border-secondary text-secondary bg-primary-container/90 px-3 py-1">OPV VERIFIED</div>
@@ -80,7 +80,7 @@ export default function VideographyPhotographyPage() {
       </section>
 
       {/* Artist Spotlight */}
-      <section className="py-section-gap bg-[#f9f9f9]">
+      <section className="py-section-gap bg-primary-container">
         <div className="px-margin-desktop max-w-container-max mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div className="space-y-6">

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 export default function VipSecurityPage() {
   return (
     <>
@@ -28,7 +28,7 @@ export default function VipSecurityPage() {
       </section>
 
       {/* Bento Categories */}
-      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-[#f9f9f9]">
+      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-primary-container">
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-12 md:col-span-4 flex flex-col justify-center">
             <h2 className="font-display-lg text-headline-md text-on-surface mb-6">Tiers of Vigilance</h2>
@@ -68,7 +68,7 @@ export default function VipSecurityPage() {
       </section>
 
       {/* Trust Section */}
-      <section className="bg-[#f0ede8] py-section-gap border-y border-outline-variant/10">
+      <section className="bg-primary-container py-section-gap border-y border-outline-variant/10">
         <div className="px-margin-desktop max-w-container-max mx-auto text-center mb-20">
           <div className="border border-secondary w-8 h-8 rounded-full flex items-center justify-center text-[10px] text-secondary font-display-lg mx-auto mb-6">OPV</div>
           <h2 className="font-display-lg text-headline-md mb-4 text-on-surface">The Standard of Trust</h2>
@@ -93,7 +93,7 @@ export default function VipSecurityPage() {
       </section>
 
       {/* Confidentiality */}
-      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-[#f9f9f9]">
+      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-primary-container">
         <div className="bg-primary-container p-16 relative overflow-hidden border border-secondary/10">
           <div className="absolute top-0 right-0 p-8 opacity-10">
             <span className="material-symbols-outlined text-[200px]" style={{ fontVariationSettings: "'FILL' 1" }}>lock</span>
@@ -119,7 +119,7 @@ export default function VipSecurityPage() {
       </section>
 
       {/* The Protocol */}
-      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-[#f9f9f9]">
+      <section className="py-section-gap px-margin-desktop max-w-container-max mx-auto bg-primary-container">
         <h2 className="font-display-lg text-headline-md text-center mb-16 text-on-surface">The Protocol</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-unit">
           <div className="p-12 bg-surface-container-low text-center relative">
@@ -141,7 +141,7 @@ export default function VipSecurityPage() {
       </section>
 
       {/* Request Form */}
-      <section className="py-section-gap px-margin-desktop max-w-4xl mx-auto bg-[#f9f9f9]" id="request-form">
+      <section className="py-section-gap px-margin-desktop max-w-4xl mx-auto bg-primary-container" id="request-form">
         <div className="text-center mb-12">
           <h2 className="font-display-lg text-headline-md mb-4 text-on-surface">Private Security Request</h2>
           <p className="text-on-surface-variant">Fill in the requirements below. This data is handled exclusively by our VIP concierge team.</p>
