@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-gutter mb-16">
           <div>
             <a className="block mb-6" href="/" aria-label="OPV home">
-              <img className="h-28 w-28 object-contain" src="/assets/opulent-vault-logo-transparent.png" alt="Opulent Vault logo" />
+              <img className="h-28 w-28 object-contain" src="/opv-logo.png" alt="Opulent Vault logo" />
             </a>
             <p className="font-body-md text-[#575e71] text-sm mb-8">Opulent Vault is Manchester&apos;s curated luxury lifestyle concierge marketplace.</p>
             <div className="flex gap-5 text-[#575e71]">

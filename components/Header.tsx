@@ -19,7 +19,7 @@ export default function Header() {
         {/* Logo */}
         <div className="flex items-center gap-10">
           <a className="flex items-center" href="/" aria-label="OPV home">
-            <img className="h-16 w-16 object-contain" src="/assets/opulent-vault-logo-transparent.png" alt="Opulent Vault logo" />
+            <img className="h-16 w-16 object-contain" src="/opv-logo.png" alt="Opulent Vault logo" />
           </a>
 
           {/* Desktop nav links */}
