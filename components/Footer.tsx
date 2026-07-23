@@ -1,207 +1,90 @@
 "use client";
 
-import Link from "next/link";
-import { useState } from "react";
-
 export default function Footer() {
-  const [email, setEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
-  const [loading, setLoading] = useState(false);
-
-  async function handleSubscribe(e: React.FormEvent) {
-    e.preventDefault();
-    if (!email) return;
-    setLoading(true);
-    try {
-      await fetch("/api/newsletter", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, source_page: "footer" }),
-      });
-      setSubscribed(true);
-    } catch {
-      // silently fail
-    } finally {
-      setLoading(false);
-    }
-  }
-
   return (
-    <>
-      {/* Pre-footer 'Stay Inspired' — light bg matching Stitch design */}
-      <section className="py-24 bg-[#f0ede8] border-t border-outline-variant/10">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="max-w-xl">
-            <span className="font-label-caps text-label-caps text-secondary block mb-3 uppercase tracking-widest">
-              OPV Circle
-            </span>
-            <h2 className="font-serif text-headline-md text-primary mb-3">Stay Inspired</h2>
-            <p className="font-sans text-body-md text-on-surface-variant">
-              Receive destination guides, luxury travel inspiration, member-only offers and exclusive
-              experiences across the UK and Europe.
-            </p>
-          </div>
-          {subscribed ? (
-            <div className="flex items-center gap-3 text-secondary font-label-caps text-label-caps uppercase">
-              <span className="material-symbols-outlined">check_circle</span>
-              Welcome to the OPV Circle.
+    <footer className="bg-[#fbf9f8] border-t border-[#dbdad9] py-section-gap px-margin-mobile md:px-margin-desktop">
+      <div className="max-w-container-max mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-gutter mb-16">
+          <div>
+            <a className="block mb-6" href="/" aria-label="OPV home">
+              <img className="h-28 w-28 object-contain" src="/assets/opulent-vault-logo-transparent.png" alt="Opulent Vault logo" />
+            </a>
+            <p className="font-body-md text-[#575e71] text-sm mb-8">Opulent Vault is Manchester&apos;s curated luxury lifestyle concierge marketplace.</p>
+            <div className="flex gap-5 text-[#575e71]">
+              <a className="hover:text-secondary" href="https://www.instagram.com/" aria-label="Instagram"><span className="material-symbols-outlined">photo_camera</span></a>
+              <a className="hover:text-secondary" href="https://www.linkedin.com/" aria-label="LinkedIn"><span className="material-symbols-outlined">business_center</span></a>
+              <a className="hover:text-secondary" href="https://x.com/" aria-label="X"><span className="material-symbols-outlined">alternate_email</span></a>
+              <a className="hover:text-secondary" href="https://www.facebook.com/" aria-label="Facebook"><span className="material-symbols-outlined">groups</span></a>
+              <a className="hover:text-secondary" href="https://www.youtube.com/" aria-label="YouTube"><span className="material-symbols-outlined">play_circle</span></a>
             </div>
-          ) : (
-            <form onSubmit={handleSubscribe} className="flex w-full md:w-auto gap-0">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Email Address"
-                required
-                className="bg-transparent border-b border-primary/30 p-4 font-sans text-body-md text-primary placeholder:text-on-surface-variant/60 focus:outline-none focus:border-primary flex-1 md:w-72"
-              />
-              <button
-                type="submit"
-                disabled={loading}
-                className="bg-primary text-on-primary font-label-caps text-label-caps px-12 py-4 uppercase tracking-widest hover:bg-secondary transition-colors shrink-0 disabled:opacity-50"
-              >
-                {loading ? "..." : "Subscribe"}
-              </button>
+          </div>
+          <div>
+            <h6 className="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-6">Services</h6>
+            <ul className="space-y-3 font-body-md text-[#575e71] text-sm">
+              <li><a className="hover:text-secondary transition-colors" href="/services/luxury-stays/">Luxury Stays</a></li>
+              <li><a className="hover:text-secondary transition-colors" href="/services/private-dining/">Private Dining</a></li>
+              <li><a className="hover:text-secondary transition-colors" href="/services/events-experiences/">Events &amp; Experiences</a></li>
+              <li><a className="hover:text-secondary transition-colors" href="/services/wine-tasting/">Wine Tasting</a></li>
+              <li><a className="hover:text-secondary transition-colors" href="/services/private-tours/">Private Tours</a></li>
+              <li><a className="hover:text-secondary transition-colors" href="/services/vip-security/">VIP &amp; Celebrity Security</a></li>
+              <li><a className="hover:text-secondary transition-colors" href="/services/car-rentals/">Luxury Car Rentals</a></li>
+              <li><a className="hover:text-secondary transition-colors" href="/services/private-jet/">Private Jet</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6 className="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-6">Company</h6>
+            <ul className="space-y-3 font-body-md text-[#575e71] text-sm">
+              <li><a className="hover:text-secondary transition-colors" href="/about/">About OPV</a></li>
+              <li><a className="hover:text-secondary transition-colors" href="/partners/apply/">Become a Host or Partner</a></li>
+              <li><a className="hover:text-secondary transition-colors" href="/affiliates/">Affiliate Programme</a></li>
+              <li><a className="hover:text-secondary transition-colors" href="/blog/">Blog &amp; Editorial</a></li>
+              <li><a className="hover:text-secondary transition-colors" href="/faqs/">FAQs</a></li>
+              <li><a className="hover:text-secondary transition-colors" href="/contact/">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6 className="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-6">Legal</h6>
+            <ul className="space-y-3 font-body-md text-[#575e71] text-sm">
+              <li><a className="hover:text-secondary transition-colors" href="/legal/terms">Terms &amp; Conditions</a></li>
+              <li><a className="hover:text-secondary transition-colors" href="/legal/privacy">Privacy Policy</a></li>
+              <li><a className="hover:text-secondary transition-colors" href="/legal/verification">Verification Policy</a></li>
+              <li><a className="hover:text-secondary transition-colors" href="/legal/cancellation">Cancellation &amp; Refund Policy</a></li>
+              <li><a className="hover:text-secondary transition-colors" href="/legal/cookies">Cookie Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6 className="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-6">Stay in the Know</h6>
+            <p className="font-body-md text-[#575e71] text-sm mb-6">Private invitations, editorial notes, and verified luxury access from the Vault.</p>
+            <form className="flex flex-col gap-3" action="/contact/">
+              <input className="bg-transparent border-0 border-b border-[#dbdad9] text-[#1e2020] placeholder:text-[#575e71] focus:border-secondary focus:ring-0 px-0" type="email" placeholder="Email address" />
+              <button className="bg-secondary text-primary-container px-6 py-3 font-label-caps text-label-caps uppercase tracking-widest font-bold hover:bg-[#1e2020] hover:text-white transition-colors" type="submit">Subscribe</button>
             </form>
-          )}
+            <p className="font-body-md text-[#575e71] text-xs mt-4">Your details remain private and are used only for OPV communications.</p>
+          </div>
         </div>
-      </section>
-
-      {/* Main footer */}
-      <footer className="w-full bg-white border-t border-outline-variant/20 pt-16 pb-0">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-
-          {/* Top: logo + description spanning full width, then divider */}
-          <div className="flex items-center gap-6 mb-10 pb-10 border-b border-outline-variant/20">
-            <img
-              src="/logo-opulent-vault.png"
-              alt="Opulent Vault"
-              className="h-16 w-auto shrink-0"
-            />
-            <p className="font-sans text-sm text-on-surface-variant leading-relaxed max-w-lg">
-              A curated luxury lifestyle ecosystem delivering world-class properties, private aviation,
-              chauffeur services, and bespoke concierge across the UK and Europe.
-            </p>
+        <div className="border-t border-[#dbdad9] py-2">
+          <div className="max-w-4xl mx-auto flex flex-col xl:flex-row items-center justify-center gap-3">
+            <p className="font-body-md text-[#575e71] text-[10px] shrink-0">@2026 OPULENT VAULT.</p>
+            <div className="flex items-center justify-center gap-2 shrink-0">
+              <span className="font-label-caps text-[10px] text-secondary uppercase tracking-widest">Available on</span>
+              <a className="inline-flex" href="https://www.apple.com/app-store/" aria-label="Download on the App Store">
+                <img className="h-6 w-auto object-contain" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
+              </a>
+              <a className="inline-flex" href="https://play.google.com/store" aria-label="Get it on Google Play">
+                <img className="h-6 w-auto object-contain" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" />
+              </a>
+            </div>
+            <div className="flex items-center justify-center gap-1.5 shrink-0">
+              <div className="h-7 w-12 border border-[#dbdad9] bg-white flex items-center justify-center px-2"><img className="max-h-3.5 max-w-full object-contain" src="https://cdn.simpleicons.org/visa/1A1F71" alt="Visa" /></div>
+              <div className="h-7 w-12 border border-[#dbdad9] bg-white flex items-center justify-center px-1.5"><img className="max-h-3.5 max-w-full object-contain" src="https://cdn.simpleicons.org/mastercard/EB001B" alt="Mastercard" /></div>
+              <div className="h-7 w-12 border border-[#dbdad9] bg-white flex items-center justify-center px-1.5"><img className="max-h-3.5 max-w-full object-contain" src="https://cdn.simpleicons.org/americanexpress/2E77BC" alt="Amex" /></div>
+              <div className="h-7 w-12 border border-[#dbdad9] bg-white flex items-center justify-center px-1.5"><img className="max-h-3.5 max-w-full object-contain" src="https://cdn.simpleicons.org/paypal/003087" alt="PayPal" /></div>
+              <div className="h-7 w-12 border border-[#dbdad9] bg-white flex items-center justify-center px-1.5"><img className="max-h-3.5 max-w-full object-contain" src="https://cdn.simpleicons.org/klarna/FFB3C7" alt="Klarna" /></div>
+            </div>
+            <a className="font-label-caps text-[10px] uppercase tracking-widest text-[#575e71] hover:text-secondary shrink-0" href="/legal/privacy">Privacy</a>
           </div>
-
-          {/* 4-column link grid — all columns start at same level */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
-            {/* Col 1: brand + socials */}
-            <div>
-              <p className="font-label-caps text-label-caps text-secondary uppercase mb-5 tracking-widest">Opulent Vault</p>
-              <p className="font-sans text-sm text-on-surface-variant leading-relaxed mb-6">
-                Excellence in luxury living across the UK and Europe.
-              </p>
-              <div className="flex gap-3">
-                {["instagram", "facebook", "linkedin", "tiktok", "youtube"].map((s) => (
-                  <a
-                    key={s}
-                    href={`https://${s}.com`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-9 h-9 border border-outline-variant flex items-center justify-center hover:border-secondary transition-colors shrink-0"
-                    aria-label={s}
-                  >
-                    <span className="material-symbols-outlined text-sm text-on-surface-variant">link</span>
-                  </a>
-                ))}
-              </div>
-            </div>
-
-            {/* Col 2 */}
-            <div>
-              <p className="font-label-caps text-label-caps text-secondary uppercase mb-5 tracking-widest">Explore</p>
-              <ul className="space-y-3">
-                {[
-                  { label: "Stays", href: "/stays" },
-                  { label: "Destinations", href: "/destinations" },
-                  { label: "Drive", href: "/drive" },
-                  { label: "Aviation", href: "/aviation" },
-                  { label: "Security", href: "/security" },
-                  { label: "Concierge", href: "/concierge" },
-                  { label: "Experiences", href: "/experiences" },
-                ].map((l) => (
-                  <li key={l.label}>
-                    <Link href={l.href} className="font-sans text-sm text-on-surface-variant hover:text-primary transition-colors">
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Col 3 */}
-            <div>
-              <p className="font-label-caps text-label-caps text-secondary uppercase mb-5 tracking-widest">Partners & Affiliates</p>
-              <ul className="space-y-3">
-                {[
-                  { label: "Become A Partner", href: "/partners#apply" },
-                  { label: "Property Partners", href: "/partners#property" },
-                  { label: "Vehicle Partners", href: "/partners#vehicle" },
-                  { label: "Aviation Partners", href: "/partners#aviation" },
-                  { label: "Security Partners", href: "/partners#security" },
-                  { label: "Affiliate Programme", href: "/affiliates#overview" },
-                  { label: "Partner Login", href: "/partners#login" },
-                  { label: "Affiliate Login", href: "/affiliates#login" },
-                ].map((l) => (
-                  <li key={l.label}>
-                    <Link href={l.href} className="font-sans text-sm text-on-surface-variant hover:text-primary transition-colors">
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Col 4 */}
-            <div>
-              <p className="font-label-caps text-label-caps text-secondary uppercase mb-5 tracking-widest">Join The OPV Circle</p>
-              {subscribed ? (
-                <p className="font-sans text-sm text-on-surface-variant mb-8">You&apos;re subscribed. Thank you.</p>
-              ) : (
-                <form onSubmit={handleSubscribe} className="mb-8">
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Email address"
-                    className="w-full bg-transparent border-b border-outline-variant pb-3 mb-4 font-sans text-sm text-primary placeholder:text-on-surface-variant/60 focus:outline-none focus:border-primary transition-colors"
-                  />
-                  <button
-                    type="submit"
-                    disabled={loading}
-                    className="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors uppercase tracking-widest disabled:opacity-50"
-                  >
-                    {loading ? "..." : "Subscribe →"}
-                  </button>
-                </form>
-              )}
-            </div>
-          </div>
-
-          {/* Legal bar */}
-          <div className="border-t border-outline-variant/20 py-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-            <p className="font-sans text-xs text-on-surface-variant/60">
-              © Opulent Vault. All Rights Reserved.
-            </p>
-            <div className="flex flex-wrap gap-x-6 gap-y-2">
-              {[
-                { label: "Privacy Policy", href: "/privacy" },
-                { label: "Terms and Conditions", href: "/terms" },
-                { label: "Cookie Policy", href: "/cookies" },
-                { label: "Accessibility", href: "/accessibility" },
-                { label: "Sitemap", href: "/sitemap" },
-              ].map((l) => (
-                <Link key={l.label} href={l.href} className="font-sans text-xs text-on-surface-variant/60 hover:text-primary transition-colors">
-                  {l.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
         </div>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
 }

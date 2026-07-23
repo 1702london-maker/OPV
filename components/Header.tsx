@@ -1,526 +1,102 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import Link from "next/link";
-
-type NavItem = {
-  label: string;
-  href?: string;
-  children?: { group?: string; items: { label: string; href: string }[] }[];
-};
-
-const NAV: NavItem[] = [
-  { label: "Home", href: "/" },
-  {
-    label: "Stays",
-    children: [
-      {
-        group: "Accommodation Types",
-        items: [
-          { label: "Luxury Villas", href: "/stays?type=villa" },
-          { label: "Penthouses", href: "/stays?type=penthouse" },
-          { label: "Serviced Apartments", href: "/stays?type=serviced_apartment" },
-          { label: "Long-Term Stays", href: "/stays?type=long_term" },
-          { label: "Corporate Accommodation", href: "/stays?type=corporate" },
-        ],
-      },
-      {
-        group: "UK Locations",
-        items: [
-          { label: "London", href: "/destinations/united-kingdom/london" },
-          { label: "Manchester", href: "/destinations/united-kingdom/manchester" },
-          { label: "Birmingham", href: "/destinations/united-kingdom/birmingham" },
-          { label: "Liverpool", href: "/destinations/united-kingdom/liverpool" },
-          { label: "Edinburgh", href: "/destinations/united-kingdom/edinburgh" },
-        ],
-      },
-      {
-        group: "European Locations",
-        items: [
-          { label: "Paris", href: "/destinations/france/paris" },
-          { label: "Monaco", href: "/destinations/france/monaco" },
-          { label: "Nice", href: "/destinations/france/nice" },
-          { label: "Barcelona", href: "/destinations/spain/barcelona" },
-          { label: "Madrid", href: "/destinations/spain/madrid" },
-          { label: "Lisbon", href: "/destinations/portugal/lisbon" },
-          { label: "Milan", href: "/destinations/italy/milan" },
-          { label: "Rome", href: "/destinations/italy/rome" },
-          { label: "Amsterdam", href: "/destinations/netherlands/amsterdam" },
-          { label: "Geneva", href: "/destinations/switzerland/geneva" },
-          { label: "Mykonos", href: "/destinations/greece/mykonos" },
-          { label: "Santorini", href: "/destinations/greece/santorini" },
-        ],
-      },
-    ],
-  },
-  {
-    label: "Destinations",
-    children: [
-      {
-        group: "United Kingdom",
-        items: [
-          { label: "London", href: "/destinations/united-kingdom/london" },
-          { label: "Manchester", href: "/destinations/united-kingdom/manchester" },
-          { label: "Birmingham", href: "/destinations/united-kingdom/birmingham" },
-          { label: "Liverpool", href: "/destinations/united-kingdom/liverpool" },
-          { label: "Edinburgh", href: "/destinations/united-kingdom/edinburgh" },
-        ],
-      },
-      {
-        group: "France",
-        items: [
-          { label: "Paris", href: "/destinations/france/paris" },
-          { label: "Nice", href: "/destinations/france/nice" },
-          { label: "Cannes", href: "/destinations/france/cannes" },
-          { label: "Monaco Region", href: "/destinations/france/monaco" },
-        ],
-      },
-      {
-        group: "Spain",
-        items: [
-          { label: "Barcelona", href: "/destinations/spain/barcelona" },
-          { label: "Madrid", href: "/destinations/spain/madrid" },
-          { label: "Marbella", href: "/destinations/spain/marbella" },
-        ],
-      },
-      {
-        group: "Portugal",
-        items: [
-          { label: "Lisbon", href: "/destinations/portugal/lisbon" },
-          { label: "Porto", href: "/destinations/portugal/porto" },
-          { label: "Algarve", href: "/destinations/portugal/algarve" },
-        ],
-      },
-      {
-        group: "Italy",
-        items: [
-          { label: "Milan", href: "/destinations/italy/milan" },
-          { label: "Rome", href: "/destinations/italy/rome" },
-          { label: "Florence", href: "/destinations/italy/florence" },
-          { label: "Lake Como", href: "/destinations/italy/lake-como" },
-        ],
-      },
-      {
-        group: "Netherlands & Switzerland",
-        items: [
-          { label: "Amsterdam", href: "/destinations/netherlands/amsterdam" },
-          { label: "Geneva", href: "/destinations/switzerland/geneva" },
-          { label: "Zurich", href: "/destinations/switzerland/zurich" },
-        ],
-      },
-      {
-        group: "Greece",
-        items: [
-          { label: "Mykonos", href: "/destinations/greece/mykonos" },
-          { label: "Santorini", href: "/destinations/greece/santorini" },
-        ],
-      },
-    ],
-  },
-  {
-    label: "Drive",
-    children: [
-      {
-        group: "Chauffeur Services",
-        items: [
-          { label: "Airport Transfers", href: "/drive#airport-transfers" },
-          { label: "Executive Travel", href: "/drive#executive-travel" },
-          { label: "Corporate Travel", href: "/drive#corporate-travel" },
-          { label: "Event Transportation", href: "/drive#event-transportation" },
-        ],
-      },
-      {
-        group: "Self Drive Collection",
-        items: [
-          { label: "Executive Cars", href: "/drive#executive-cars" },
-          { label: "Luxury Cars", href: "/drive#luxury-cars" },
-          { label: "Sports Cars", href: "/drive#sports-cars" },
-          { label: "SUVs", href: "/drive#suvs" },
-        ],
-      },
-      {
-        group: "Fleet Collections",
-        items: [
-          { label: "Executive Fleet", href: "/drive#executive-fleet" },
-          { label: "Luxury Fleet", href: "/drive#luxury-fleet" },
-          { label: "VIP Fleet", href: "/drive#vip-fleet" },
-        ],
-      },
-    ],
-  },
-  {
-    label: "Aviation",
-    children: [
-      {
-        group: "Private Jet Charter",
-        items: [
-          { label: "Light Jets", href: "/aviation#light-jets" },
-          { label: "Mid-Size Jets", href: "/aviation#midsize-jets" },
-          { label: "Heavy Jets", href: "/aviation#heavy-jets" },
-          { label: "Long Range Jets", href: "/aviation#long-range-jets" },
-        ],
-      },
-      {
-        group: "Helicopter Transfers",
-        items: [
-          { label: "Airport Transfers", href: "/aviation#helicopter-airport" },
-          { label: "City Transfers", href: "/aviation#helicopter-city" },
-          { label: "Resort Transfers", href: "/aviation#helicopter-resort" },
-        ],
-      },
-      {
-        group: "VIP Airport Services",
-        items: [
-          { label: "Meet and Greet", href: "/aviation#meet-greet" },
-          { label: "Fast Track", href: "/aviation#fast-track" },
-          { label: "Lounge Access", href: "/aviation#lounge-access" },
-        ],
-      },
-    ],
-  },
-  {
-    label: "Security",
-    children: [
-      {
-        group: "Executive Protection",
-        items: [
-          { label: "Personal Bodyguards", href: "/security#bodyguards" },
-          { label: "Executive Security", href: "/security#executive" },
-          { label: "Celebrity Protection", href: "/security#celebrity" },
-        ],
-      },
-      {
-        group: "Travel Security",
-        items: [
-          { label: "Airport Security", href: "/security#airport" },
-          { label: "Travel Escorts", href: "/security#escorts" },
-          { label: "International Protection", href: "/security#international" },
-        ],
-      },
-      {
-        group: "Residential & Event",
-        items: [
-          { label: "Villa Protection", href: "/security#villa" },
-          { label: "Residence Security", href: "/security#residence" },
-          { label: "Private Events", href: "/security#private-events" },
-          { label: "Corporate Events", href: "/security#corporate-events" },
-          { label: "VIP Events", href: "/security#vip-events" },
-        ],
-      },
-    ],
-  },
-  {
-    label: "Concierge",
-    children: [
-      {
-        group: "Lifestyle Services",
-        items: [
-          { label: "Private Chef", href: "/concierge#private-chef" },
-          { label: "Housekeeping", href: "/concierge#housekeeping" },
-          { label: "Photography", href: "/concierge#photography" },
-          { label: "Personal Shopping", href: "/concierge#personal-shopping" },
-          { label: "Wellness & Spa", href: "/concierge#wellness-spa" },
-        ],
-      },
-      {
-        group: "Premium Services",
-        items: [
-          { label: "Event Planning", href: "/concierge#event-planning" },
-          { label: "Airport Meet & Greet", href: "/concierge#airport-meet-greet" },
-          { label: "VIP Reservations", href: "/concierge#vip-reservations" },
-        ],
-      },
-      {
-        group: "Bespoke Services",
-        items: [
-          { label: "Yacht Charter", href: "/concierge#yacht-charter" },
-          { label: "Luxury Requests", href: "/concierge#luxury-requests" },
-          { label: "Lifestyle Management", href: "/concierge#lifestyle-management" },
-        ],
-      },
-    ],
-  },
-  {
-    label: "Experiences",
-    children: [
-      {
-        group: "Luxury Experiences",
-        items: [
-          { label: "Fine Dining", href: "/experiences#fine-dining" },
-          { label: "Yacht Experiences", href: "/experiences#yacht" },
-          { label: "Luxury Tours", href: "/experiences#tours" },
-          { label: "Spa Retreats", href: "/experiences#spa" },
-        ],
-      },
-      {
-        group: "Travel Experiences",
-        items: [
-          { label: "Cultural Experiences", href: "/experiences#cultural" },
-          { label: "City Experiences", href: "/experiences#city" },
-        ],
-      },
-      {
-        group: "VIP Experiences",
-        items: [
-          { label: "Exclusive Events", href: "/experiences#exclusive-events" },
-          { label: "Fashion Events", href: "/experiences#fashion-events" },
-          { label: "Private Access Experiences", href: "/experiences#private-access" },
-        ],
-      },
-    ],
-  },
-  {
-    label: "Partners",
-    children: [
-      {
-        group: "Partner Categories",
-        items: [
-          { label: "Property Partners", href: "/partners#property" },
-          { label: "Vehicle Partners", href: "/partners#vehicle" },
-          { label: "Aviation Partners", href: "/partners#aviation" },
-          { label: "Security Partners", href: "/partners#security" },
-          { label: "Concierge Partners", href: "/partners#concierge" },
-          { label: "Become A Partner", href: "/partners#apply" },
-        ],
-      },
-    ],
-  },
-  {
-    label: "Affiliates",
-    children: [
-      {
-        group: "Programme",
-        items: [
-          { label: "Affiliate Programme", href: "/affiliates#overview" },
-          { label: "Benefits", href: "/affiliates#benefits" },
-          { label: "Commission Structure", href: "/affiliates#commission" },
-          { label: "Join Programme", href: "/affiliates#join" },
-          { label: "Dashboard", href: "/affiliates#dashboard" },
-        ],
-      },
-    ],
-  },
-  {
-    label: "About",
-    children: [
-      {
-        group: "Company",
-        items: [
-          { label: "Our Story", href: "/about#story" },
-          { label: "Vision", href: "/about#vision" },
-          { label: "Luxury Standards", href: "/about#standards" },
-          { label: "Careers", href: "/about#careers" },
-          { label: "Press", href: "/about#press" },
-        ],
-      },
-    ],
-  },
-  {
-    label: "Contact",
-    children: [
-      {
-        group: "Get In Touch",
-        items: [
-          { label: "Contact Us", href: "/contact" },
-          { label: "Concierge Support", href: "/contact#concierge" },
-          { label: "Business Enquiries", href: "/contact#business" },
-          { label: "Partner Support", href: "/contact#partner" },
-        ],
-      },
-    ],
-  },
-];
+import { useState, useEffect } from "react";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
+    const onScroll = () => setScrolled(window.scrollY > 100);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
-        setActiveDropdown(null);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
-
   return (
-    <header
-      className={`fixed top-0 left-0 w-full z-50 border-b transition-all duration-300 ${
-        scrolled
-          ? "bg-white border-outline-variant/30 shadow-sm"
-          : "glass-nav border-white/20"
-      }`}
-    >
-      <div ref={dropdownRef} className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex items-center justify-between py-5">
+    <nav className={`fixed top-0 w-full z-50 glass-nav bg-primary-container/80 backdrop-blur-md transition-all duration-300 ${scrolled ? "py-4" : "py-6"}`}>
+      <div className="flex justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+
         {/* Logo */}
-        <Link href="/" className="flex items-center shrink-0">
-          <img
-            src="/logo-opulent-vault.png"
-            alt="Opulent Vault"
-            className="h-24 w-auto"
-          />
-        </Link>
+        <div className="flex items-center gap-10">
+          <a className="flex items-center" href="/" aria-label="OPV home">
+            <img className="h-16 w-16 object-contain" src="/assets/opulent-vault-logo-transparent.png" alt="Opulent Vault logo" />
+          </a>
 
-        {/* Desktop Nav */}
-        <nav className="hidden xl:flex items-center gap-6">
-          {NAV.slice(0, 8).map((item) => (
-            <div key={item.label} className="relative group">
-              {item.href && !item.children ? (
-                <Link
-                  href={item.href}
-                  className="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200 uppercase pb-1"
-                >
-                  {item.label}
-                </Link>
-              ) : (
-                <button
-                  onClick={() =>
-                    setActiveDropdown(activeDropdown === item.label ? null : item.label)
-                  }
-                  className="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200 uppercase pb-1 flex items-center gap-1"
-                >
-                  {item.label}
-                  <span className="material-symbols-outlined text-[14px]">expand_more</span>
-                </button>
-              )}
+          {/* Desktop nav links */}
+          <div className="hidden md:flex gap-8 items-center">
 
-              {/* Dropdown */}
-              {item.children && activeDropdown === item.label && (
-                <div className="absolute top-full left-0 mt-2 glass-panel border border-outline-variant/30 shadow-lg min-w-[640px] p-6 z-50">
-                  <div className="grid grid-cols-3 gap-6">
-                    {item.children.map((group) => (
-                      <div key={group.group}>
-                        {group.group && (
-                          <p className="font-label-caps text-label-caps text-on-surface-variant mb-3 uppercase border-b border-outline-variant/30 pb-2">
-                            {group.group}
-                          </p>
-                        )}
-                        <ul className="space-y-2">
-                          {group.items.map((link) => (
-                            <li key={link.label}>
-                              <Link
-                                href={link.href}
-                                onClick={() => setActiveDropdown(null)}
-                                className="font-sans text-sm text-on-surface hover:text-secondary transition-colors duration-200"
-                              >
-                                {link.label}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                  </div>
+            {/* Services mega dropdown */}
+            <div className="relative group">
+              <a className="text-secondary font-semibold border-b border-secondary pb-1 font-label-caps uppercase text-[13px]" href="/services/">Services</a>
+              <div className="absolute left-0 top-full pt-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-[860px] max-w-[calc(100vw-160px)]">
+                <div className="bg-primary-container/95 backdrop-blur-xl border border-outline-variant/20 p-8 grid grid-cols-2 lg:grid-cols-3 gap-5 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
+                  <a className="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/luxury-stays/"><span className="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Luxury Stays</span><span className="font-body-md text-sm text-on-surface-variant leading-5">Verified properties and private residences</span></a>
+                  <a className="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/private-dining/"><span className="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Private Dining</span><span className="font-body-md text-sm text-on-surface-variant leading-5">Chefs, tastings, and hosted tables</span></a>
+                  <a className="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/events-experiences/"><span className="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Events &amp; Experiences</span><span className="font-body-md text-sm text-on-surface-variant leading-5">Member events and rare access</span></a>
+                  <a className="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/wine-tasting/"><span className="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Wine Tasting</span><span className="font-body-md text-sm text-on-surface-variant leading-5">Cellars, vintages, and private tastings</span></a>
+                  <a className="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/private-tours/"><span className="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Private Tours</span><span className="font-body-md text-sm text-on-surface-variant leading-5">Guided journeys with expert hosts</span></a>
+                  <a className="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/vip-security/"><span className="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">VIP &amp; Celebrity Security</span><span className="font-body-md text-sm text-on-surface-variant leading-5">Confidential protection requests</span></a>
+                  <a className="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/car-rentals/"><span className="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Luxury Car Rentals</span><span className="font-body-md text-sm text-on-surface-variant leading-5">Self-drive and chauffeur vehicles</span></a>
+                  <a className="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/private-jet/"><span className="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Private Jet</span><span className="font-body-md text-sm text-on-surface-variant leading-5">Private aircraft and aviation concierge</span></a>
+                  <a className="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/yacht-services/"><span className="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Yacht Services</span><span className="font-body-md text-sm text-on-surface-variant leading-5">Charters, crews, and event hire</span></a>
+                  <a className="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/cleaning-lifestyle/"><span className="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Cleaning &amp; Lifestyle</span><span className="font-body-md text-sm text-on-surface-variant leading-5">Housekeeping and property care</span></a>
+                  <a className="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/videography-photography/"><span className="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Videography &amp; Photography</span><span className="font-body-md text-sm text-on-surface-variant leading-5">Luxury creative coverage</span></a>
+                  <a className="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/personal-shopping/"><span className="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Personal Shopping</span><span className="font-body-md text-sm text-on-surface-variant leading-5">Private sourcing and wardrobe support</span></a>
+                  <a className="group/item block border border-outline-variant/20 p-4 hover:border-secondary/50 hover:bg-white/5 transition-colors" href="/services/luxury-products/"><span className="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-2">Luxury Products</span><span className="font-body-md text-sm text-on-surface-variant leading-5">Curated goods and private sourcing</span></a>
+                  <a className="lg:col-span-3 text-secondary font-label-caps text-label-caps uppercase tracking-widest border-t border-outline-variant/20 pt-5 hover:text-white transition-colors" href="/services/">View All Services</a>
                 </div>
-              )}
+              </div>
             </div>
-          ))}
-        </nav>
 
-        {/* CTAs */}
-        <div className="hidden xl:flex items-center gap-3">
-          <Link
-            href="/contact"
-            className="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors uppercase"
-          >
-            Contact
-          </Link>
-          <Link
-            href="/stays"
-            className="bg-primary text-on-primary font-label-caps text-label-caps px-6 py-3 hover:bg-secondary transition-colors uppercase tracking-widest"
-          >
-            Book Now
-          </Link>
+            {/* Experiences dropdown */}
+            <div className="relative group">
+              <a className="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-[13px]" href="/services/events-experiences/">Experiences</a>
+              <div className="absolute left-0 top-full pt-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-72">
+                <div className="bg-primary-container/95 backdrop-blur-xl border border-outline-variant/20 p-5 space-y-3 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
+                  <a className="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary" href="/services/events-experiences/">Events &amp; Experiences</a>
+                  <a className="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary" href="/services/private-tours/">Private Tours</a>
+                  <a className="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary" href="/services/wine-tasting/">Wine Tasting</a>
+                  <a className="block font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-secondary" href="/blog/">Blog &amp; Editorial</a>
+                </div>
+              </div>
+            </div>
+
+            <a className="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-[13px]" href="/services/luxury-products/">Products</a>
+            <a className="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-[13px]" href="/about/">About</a>
+            <a className="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-[13px]" href="/concierge/">Concierge</a>
+            <a className="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-[13px]" href="/membership/">Membership</a>
+            <a className="text-on-surface-variant font-label-caps hover:text-secondary transition-all duration-300 ease-out uppercase text-[13px]" href="/affiliates/">Affiliate</a>
+          </div>
         </div>
 
-        {/* Mobile hamburger */}
-        <button
-          className="xl:hidden text-primary"
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle menu"
-        >
-          <span className="material-symbols-outlined text-2xl">
-            {mobileOpen ? "close" : "menu"}
-          </span>
-        </button>
+        {/* Right CTAs */}
+        <div className="flex gap-5 items-center shrink-0">
+          <a className="hidden md:inline-flex rounded-full border border-secondary text-on-surface px-7 py-3 font-label-caps uppercase text-[13px] tracking-widest hover:bg-secondary hover:text-primary-container transition-colors whitespace-nowrap" href="/services/">Search the Vault</a>
+          <a className="text-on-surface-variant font-label-caps hover:text-secondary transition-colors uppercase text-[13px]" href="/login/">Login</a>
+          <a className="bg-secondary text-primary-container px-7 py-3 font-label-caps uppercase text-[13px] font-bold tracking-widest hover:bg-white transition-colors duration-300" href="/login/">Register</a>
+          {/* Mobile hamburger */}
+          <button className="md:hidden text-on-surface" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Toggle menu">
+            <span className="material-symbols-outlined text-2xl">{mobileOpen ? "close" : "menu"}</span>
+          </button>
+        </div>
       </div>
 
-      {/* Mobile Nav */}
+      {/* Mobile menu */}
       {mobileOpen && (
-        <div className="xl:hidden glass-panel border-t border-outline-variant/30 max-h-[80vh] overflow-y-auto">
-          <div className="px-margin-mobile py-6 space-y-1">
-            {NAV.map((item) => (
-              <div key={item.label}>
-                {item.href && !item.children ? (
-                  <Link
-                    href={item.href}
-                    onClick={() => setMobileOpen(false)}
-                    className="block font-label-caps text-label-caps text-on-surface py-3 border-b border-outline-variant/20 uppercase"
-                  >
-                    {item.label}
-                  </Link>
-                ) : (
-                  <div>
-                    <button
-                      onClick={() =>
-                        setActiveDropdown(activeDropdown === item.label ? null : item.label)
-                      }
-                      className="w-full flex justify-between items-center font-label-caps text-label-caps text-on-surface py-3 border-b border-outline-variant/20 uppercase"
-                    >
-                      {item.label}
-                      <span className="material-symbols-outlined text-sm">
-                        {activeDropdown === item.label ? "expand_less" : "expand_more"}
-                      </span>
-                    </button>
-                    {activeDropdown === item.label && item.children && (
-                      <div className="pl-4 py-2 space-y-3 bg-surface-container-low">
-                        {item.children.map((group) => (
-                          <div key={group.group}>
-                            {group.group && (
-                              <p className="font-label-caps text-[10px] text-on-surface-variant uppercase mb-1">
-                                {group.group}
-                              </p>
-                            )}
-                            {group.items.map((link) => (
-                              <Link
-                                key={link.label}
-                                href={link.href}
-                                onClick={() => { setActiveDropdown(null); setMobileOpen(false); }}
-                                className="block text-sm text-on-surface py-1 hover:text-secondary transition-colors"
-                              >
-                                {link.label}
-                              </Link>
-                            ))}
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                )}
-              </div>
-            ))}
-            <div className="pt-4 flex flex-col gap-3">
-              <Link
-                href="/stays"
-                onClick={() => setMobileOpen(false)}
-                className="bg-primary text-on-primary font-label-caps text-label-caps px-6 py-4 text-center uppercase tracking-widest"
-              >
-                Book Now
-              </Link>
-            </div>
+        <div className="md:hidden bg-primary-container/98 border-t border-outline-variant/20 px-margin-mobile py-6 space-y-4">
+          <a className="block font-label-caps uppercase text-[13px] text-on-surface-variant hover:text-secondary py-2 border-b border-outline-variant/20" href="/services/" onClick={() => setMobileOpen(false)}>Services</a>
+          <a className="block font-label-caps uppercase text-[13px] text-on-surface-variant hover:text-secondary py-2 border-b border-outline-variant/20" href="/services/events-experiences/" onClick={() => setMobileOpen(false)}>Experiences</a>
+          <a className="block font-label-caps uppercase text-[13px] text-on-surface-variant hover:text-secondary py-2 border-b border-outline-variant/20" href="/services/luxury-products/" onClick={() => setMobileOpen(false)}>Products</a>
+          <a className="block font-label-caps uppercase text-[13px] text-on-surface-variant hover:text-secondary py-2 border-b border-outline-variant/20" href="/about/" onClick={() => setMobileOpen(false)}>About</a>
+          <a className="block font-label-caps uppercase text-[13px] text-on-surface-variant hover:text-secondary py-2 border-b border-outline-variant/20" href="/concierge/" onClick={() => setMobileOpen(false)}>Concierge</a>
+          <a className="block font-label-caps uppercase text-[13px] text-on-surface-variant hover:text-secondary py-2 border-b border-outline-variant/20" href="/membership/" onClick={() => setMobileOpen(false)}>Membership</a>
+          <a className="block font-label-caps uppercase text-[13px] text-on-surface-variant hover:text-secondary py-2 border-b border-outline-variant/20" href="/affiliates/" onClick={() => setMobileOpen(false)}>Affiliate</a>
+          <div className="flex flex-col gap-3 pt-2">
+            <a className="text-center border border-secondary text-on-surface px-7 py-3 font-label-caps uppercase text-[13px] tracking-widest hover:bg-secondary hover:text-primary-container transition-colors" href="/login/" onClick={() => setMobileOpen(false)}>Login</a>
+            <a className="text-center bg-secondary text-primary-container px-7 py-3 font-label-caps uppercase text-[13px] font-bold tracking-widest" href="/login/" onClick={() => setMobileOpen(false)}>Register</a>
           </div>
         </div>
       )}
-    </header>
+    </nav>
   );
 }
