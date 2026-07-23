@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import AIConciergeWidget from "@/components/AIConciergeWidget";
 
 export const metadata: Metadata = {
   title: "Opulent Vault | The Discerning Guardian of Luxury",
@@ -31,7 +34,10 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body-md selection:bg-secondary selection:text-primary-container">
-        {children}
+        <Header />
+        <main>{children}</main>
+        <Footer />
+        <AIConciergeWidget />
       </body>
     </html>
   );
