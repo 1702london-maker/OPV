@@ -14,7 +14,8 @@ function getSupabase() {
 
 export const supabase = new Proxy({} as SupabaseClient, {
   get(_, prop) {
-    return (getSupabase() as any)[prop];
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return (getSupabase() as unknown as Record<string | symbol, unknown>)[prop as string];
   },
 });
 
