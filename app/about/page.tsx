@@ -1,4 +1,4 @@
-import AIConciergeSection from "@/components/AIConciergeSection";
+﻿import AIConciergeSection from "@/components/AIConciergeSection";
 
 export default function AboutPage() {
   return (
@@ -6,7 +6,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="relative h-[80vh] flex items-end pb-section-gap overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1400&q=85&auto=format&fit=crop" alt="Opulent Vault story" data-placeholder="true" />
+          <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-go-xqyFp7mPxMf45rhVrnux-MQBa0MUQsNplbnjd1AcPMn9qbwYX2fgTz8_H9YcvXs8PMCasFaq_xIc4JH_FnlF67_6yeCFVAe5S742ZLLeocJmrDx9QoOVN1IymwMKMqzv8JMSTgB1BAzPSrSHo-vCk6qSPa4_EanENYRuFGqKup3NnpKm52z4Ua2tZKr8TxdimghK3djpvmNxEhe7dHLzz_BFwm8-kkzN9stMh9uZ_YGb8J-fS0Ts-sMYSdFnzD5C5WPI0PNEA" alt="Opulent Vault story" data-placeholder="true" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-background" />
         </div>
         <div className="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full">
@@ -79,10 +79,10 @@ export default function AboutPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
             {[
-              { name: "James Harrington", role: "Founder & CEO", img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=85&auto=format&fit=crop" },
-              { name: "Isabelle Laurent", role: "Chief Experience Officer", img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=85&auto=format&fit=crop" },
-              { name: "Marcus Webb", role: "Head of Properties", img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&q=85&auto=format&fit=crop" },
-              { name: "Amara Osei", role: "Global Partnerships Director", img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=85&auto=format&fit=crop" },
+              { name: "James Harrington", role: "Founder & CEO", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDt41D9c7XTjfxOYEu8i_03Ovnv4_xxsK5iTMjIq23SGdhNPZoLTxZPR135H0ukh1gzZ3kdF5wG-oyOAGkQk5jrX6pHF_d3zlgjN6r_b8iXH9CUYIjwU6ApBUdaIf_fCYe_53HR3KJ_-qgvIdsCEoq7rMXVsKhNT0fKBA9R8Amt6hsW80q4o4PvJVdfo5ZhGbA8wjGkHUEqdl6rO-VTfs3PA3SuszO1lYQRMNqT00jvQnjJrxQySIxLGpFS8AakMZJjeYVSfxt5uBzK" },
+              { name: "Isabelle Laurent", role: "Chief Experience Officer", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuB3SCYU272l4YtDBeRRuwpZeDnJmoU6ot3lpOlq1IO4vcms4KOpnhVklhTuGECRpumEzQQk-VWcsZNNIiQ835RN5RZXLZkZd-vjs_CO1A9zMHu-on3FYjSxMXHafPCEcxQ5i8zk_3E26jx_kgpTst3FxuCIxAdCxCemqnDeAar5OY_irjdr8XGZNc7X7gVfApwEenVxb1oeHlQhpQs9wkYAXQKyYdi-4UNCjia3cURqGelQPuz8ceFuMYrAFT2udNAmYU7G5qd6VQ6b" },
+              { name: "Marcus Webb", role: "Head of Properties", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBGwtr48-VNfQrAYJi_arz4rliozrCRgLvDgO7sR9xle2ZJcjICViB5llMY8F9VNBA8-7ZOaJLMMSehdA1dscQ9Z4_JIjRUa7dLa9tpBmSW6uJKrsGuMmbJjIKSK1QnrxgWkEf046L2_JU8KwFpSmA6HCmMpl8Jch3SRn2duW4Ch4NSVNt48aLO08ShSI5ZtONfDH6qx93m3eYp9468YV6vqp1p32C150BdrWWIe2_bfwdkke_uC-3DIbrq53NsJhdMZjmdTYWfXTck" },
+              { name: "Amara Osei", role: "Global Partnerships Director", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBp9cSsjnUFTXcFUvn-m3ejqEXwDTOiku3POvZJ4lG_bzqg7fJBFi5qC8K-tEPxZF6jV5XrtBx12aUXIyd2hqeAZSWu4YQ8l6K8k7e3qrchW5JCyno-MVssfa7z8cczD9af9haYw3-ZeJvFaTV6x8pWiUonuno-erhVKY8HKtAYmqhug4UDiEy16GhKMLWrueqILu5C39js7EFhXO8fD_f0m1MV9gM0xa2i-N60t8QCu0OEI3J3eFI208zgDNUx5l-8drGHDZt8R0Yi" },
             ].map((p) => (
               <div key={p.name} className="group">
                 <div className="aspect-[3/4] overflow-hidden mb-6">

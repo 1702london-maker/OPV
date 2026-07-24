@@ -5,7 +5,7 @@ export default function PrivateJetPage() {
       {/* Hero */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=85&auto=format&fit=crop')" }}></div>
+          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDoVjXnYf_MB_UDEosmhaecT6ZKq4cSoDhjJBAMhEW4YLAiiX8a6XAJ4U_SXVmjYN4RsWY4TZU5ryTvfoyA8S5QW3yt5Wgqe_S_BC2xRHwXGL1dfzyE8zULasswMlrhBUNtKw3dAU_2p3__V7Wn94SOMtX7BZnZu4ahp0We83yf-UTpdzOqn-y6cOdaWRBKXeUGkuRi0NXHT4X6pffkruAyYmtcFcPGVEzgIkx2aoyoVSDh6-_WWdNqM5_Q2Lp-y0xk1pPhPDvOnDEx')" }}></div>
           <div className="absolute inset-0 bg-primary-container/50"></div>
         </div>
         <div className="relative z-10 text-center max-w-4xl px-margin-mobile">
@@ -79,8 +79,8 @@ export default function PrivateJetPage() {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <div className="aspect-square bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=85&auto=format&fit=crop')" }}></div>
-              <div className="aspect-square bg-cover bg-center mt-8" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=85&auto=format&fit=crop')" }}></div>
+              <div className="aspect-square bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuD3grbHDWTCBk7taDQrAE7DvIsBeR6OF1EaQGaOVRCMnwEbkur1pEy4nu9UlVyMT6GR9zTJTkwyAhJGLQjsHzn3G_cBdx-VBQM9ISy_U7--WuhE0FGLDRsnUY-sKdS_4tP1rDfLwTZgbgw9YUhOmAdU_IYpatIRpJVLOcEWQX0Xmph-H5uPQvMW5wO6HzkVNx6kBvbWzHn4o2zjBR1E-_4_eqLlP5FnWzOYFKHM4QaDnYVQulRS3pMFQ585ctLUi4xJOiXvo5mM_Vn4')" }}></div>
+              <div className="aspect-square bg-cover bg-center mt-8" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCJDiQiU412hiOEJjp2o3SJNF61fe71hV-Yq0zXfixCVoU_j4RY1woKzLCzj-925oxdxrOlFBuu063iib6xDCdo0Akapm_oZwhLpcLvhO3aOjfR3QxoiaFw7_Z86Bk6RBiA5o4x8PCAShcCUvmXGW_nqtqbTjaflZvtQGTf99TcYl2kbFJZziLMn7LlQ0s6D7U-OI3j6FDiHTflF6TmjWysNTcNizdIi_CAT3YlkRyXoBZ6WoHh9KxLy461r6zMc02bsNDEGNYQqN_a')" }}></div>
             </div>
           </div>
         </div>

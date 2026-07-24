@@ -5,7 +5,7 @@ export default function VipSecurityPage() {
       {/* Hero Section */}
       <section className="relative h-[819px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1400&q=85&auto=format&fit=crop')" }}></div>
+          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCGSQNlCsuTCSWs4Flu8AbQYYzqwnVuHUi16iNA0eg9NstWmTmWKDCczgCr2BUtVn3_UpY3oYpesHH1InoUwdQP6S4mcbRcnb0puxcxcS95FFXzjD5XbpYzx-DTnT4-90Xq0KFVvcCCsjRXSV0In-L6EC-MCyNYTUr2JKgYEKLpm0NrR53NUWAEH1BECEQMpq9GJjfK0kFkaWKXe4B4BKNUv4mKzr_wQJZaJ3ScQYdEtcD9QdSRKf9dgg')" }}></div>
           <div className="absolute inset-0 bg-gradient-to-r from-primary-container via-primary-container/60 to-transparent"></div>
         </div>
         <div className="relative z-10 px-margin-desktop max-w-container-max mx-auto w-full">
@@ -60,7 +60,7 @@ export default function VipSecurityPage() {
                     Armoured vehicle options and advanced route planning. Our chauffeurs are trained in evasive driving techniques and emergency medical response.
                   </p>
                 </div>
-                <div className="md:w-1/2 w-full h-48 bg-cover bg-center grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-700" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1200&q=85&auto=format&fit=crop')" }}></div>
+                <div className="md:w-1/2 w-full h-48 bg-cover bg-center grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-700" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDqUKj4hpUqpQd-3z3HGQyoqlD9lIFkBqWLvsn6vyF_K38KDPuS9YcOxBZI6NITGEHMaILxfXp4j81IDQP-o8_bYVoXIOLB630aOdd5hUSkLgV1dfJAkajIoCDrgENnZAY0e9wjLSFwnYUcGHfZkdz-PcPcctLsRQBz6QsM5127CZkuMiSIwi_ceUENd3hjxEDZLV6REa02nhAd71yblBv0CDiBsU-bGwc0o1c9hMCez514CnIYKGbCJg')" }}></div>
               </div>
             </div>
           </div>

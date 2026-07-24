@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 export default function BlogPage() {
   return (
@@ -9,7 +9,7 @@ export default function BlogPage() {
           <div
             className="w-full h-full bg-cover bg-center"
             data-alt="A cinematic, wide-angle shot of a classic private library with dark mahogany wood, floor-to-ceiling bookshelves, and plush leather armchairs."
-            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=1200&q=85&auto=format&fit=crop')" }}
+            style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDhCL-zzlcs2NbLzyaEaTZ7UYSiZzZ0MnmZa7r-ZM7aOORrtwHExNY8PFUCrqLOsUmVLdqZxUHIBXGj0hFOfC-QV683sPbL_fbsNVOFZhqeWemdkQnS0XDA2Cs7ZcCanE9kLANyGm2PKHCEA6G3tZhM7MWNED6zO1tqWd22xFVuAdiPYSLh5CilqlcsL9CzSpi3rt8jdOM9b6E1C49b9dato8pIRnBENVLd1JjsCNdFrvNDOhjWtEJFcw')" }}
           ></div>
           <div className="absolute inset-0 editorial-gradient"></div>
         </div>
@@ -41,7 +41,7 @@ export default function BlogPage() {
             <div
               className="w-full h-full bg-cover bg-center transition-soft-close group-hover:scale-105"
               data-alt="An ultra-modern luxury yacht anchored in a secluded Mediterranean cove at twilight."
-              style={{ backgroundImage: "url('https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200&q=85&auto=format&fit=crop')" }}
+              style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBVUgGvQgnOHeKHmcdzQFaCCi94EdrAAxI750iOL_PAFZ5Cxq5KSn0c-qvpSP0dt-tMe0N1dt0IpVfkB1WTY-tiPzHh7XPAqar_nqPvpzfY_gZCO87TsdmcCED4t5a-XIrCagVOfATPUvHDg05gt4HoTma8W_n65dH4VgZ3_oKkAK6UIGbQEeR-2tWnGpnKR-KcZBkH1fBFYd-BaWtrmgdgNgjWZVcduAlrmZ8fMuRoY_ZWmBPkzLOHyw')" }}
             ></div>
           </div>
           <div className="lg:col-span-5 flex flex-col justify-center">
@@ -69,7 +69,7 @@ export default function BlogPage() {
               <div
                 className="card-image w-full h-full bg-cover bg-center transition-soft-close"
                 data-alt="A macro shot of a vintage crystal decanter being poured into a delicate gold-rimmed glass."
-                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&q=85&auto=format&fit=crop')" }}
+                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuByprsGa-wAJ0GJJM1mOhQ4fQZXCSWFHIOzHNF1Ax6X7_m1LXEu2AimxdnGkqcy4ww0URXXEAO5jfoaViVpUWmBWci_mU2RxW3gOcYFqQd0hxPG5fuBFmN2yJ6dWx9bKKuexQoFuxZ-EFGOzXyFj63doGquaBZTqDc_ygRmgHqeXp4QRn4W5IN06E7sE4TN18weJg0IdHiGPFcubMhs51RfQmdfWcqeLN12rMhiBXSe1GIAMSCeLbBVMQ')" }}
               ></div>
               <div className="absolute top-4 right-4 flex items-center justify-center w-12 h-12 rounded-full border border-secondary bg-primary-container/40 backdrop-blur-sm">
                 <span className="text-secondary text-[10px] font-bold">OPV</span>
@@ -86,7 +86,7 @@ export default function BlogPage() {
               <div
                 className="card-image w-full h-full bg-cover bg-center transition-soft-close"
                 data-alt="Exterior of a minimalist, Brutalist-inspired villa in the Swiss Alps."
-                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=85&auto=format&fit=crop')" }}
+                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCxFg3_8n1X_05KwkKTs7oUSuLt5uWDIXI3Ra97iAIzZ-Os0yn64SWsy5xQOqOWW56Hs3lry2pCCe2oDTBj5NMT95l8wiXofMw6C-8sAqGyrjLA4XSJF9afWlIishYQFZsPlg9yabRRCnHt1pmX_NhCgPLcLy2rhD7L84gcaTL0ApmaBHXlXK5Ned8iH0aTKMh1qvEym64_ljpwBkUfOMmNJ7kuKcpoLHorGXa_BDWSVglzD4r4wLsamg')" }}
               ></div>
             </div>
             <span className="font-label-caps text-on-tertiary-container mb-3 tracking-widest">LUXURY STAYS</span>
@@ -100,7 +100,7 @@ export default function BlogPage() {
               <div
                 className="card-image w-full h-full bg-cover bg-center transition-soft-close"
                 data-alt="A portrait of a high-end personal concierge dressed in a bespoke dark navy wool suit."
-                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=1200&q=85&auto=format&fit=crop')" }}
+                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAukdwMN3CmWOISATFJ7Y_ojj-sRrvnG6j2YvTL6ZgqizEWK4XERuWeHFhxkpyvPTM6IO52F60jHLmlRNWeXf3W1Bzu6AguRc2oO9YcNDW2jq7wRThmL-_S-1FJKF-A_JpM_VNQ7bwuEh7uDEP7PdjLoxiGvb6mHkpNT2AZX20chR0YClFZJUuf9LuIapBzh130e4AykR-CXfw0FraOmiLmn-bi7LTEMoEwinhKnWrexgg4aAjSYUUOoA')" }}
               ></div>
             </div>
             <span className="font-label-caps text-on-tertiary-container mb-3 tracking-widest">THE PHILOSOPHY</span>
@@ -114,7 +114,7 @@ export default function BlogPage() {
               <div
                 className="card-image w-full h-full bg-cover bg-center transition-soft-close"
                 data-alt="An aerial view of a private island in the Maldives during the blue hour."
-                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200&q=85&auto=format&fit=crop')" }}
+                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDRwA_RlQMkDPilohrQSYiHSg3ixcBtg-EBLyHNAcJtdSufFXYJ4zGLhstp9iuTFGglS1Xei-Jy1k-iqsgpnEdX-fNyUHE3DTvhTpkbAshgAplF5ugsCex7Ciow5mK8-xy1TC9Gd6Tp136fH2DXG5e64aMsGhXY1TEnDhfHqCdZJTD2hkQ63ATv21U0aeTE85M5rfKwCdF6q51utWaHTvR1M0h3T5gTIZks5vasGys7Vv5mMGMUbWHGGg')" }}
               ></div>
             </div>
             <span className="font-label-caps text-on-tertiary-container mb-3 tracking-widest">TRAVEL &amp; YACHTS</span>
@@ -128,7 +128,7 @@ export default function BlogPage() {
               <div
                 className="card-image w-full h-full bg-cover bg-center transition-soft-close"
                 data-alt="A close-up of a meticulously tailored charcoal cashmere coat on a classic wooden valet stand."
-                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&q=85&auto=format&fit=crop')" }}
+                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAHvj_pKhtSUImqf8l6CT_DSzXH05GpagydKxEQOJsNmamdx3BwW4fmvtK5d1cv8u-5eWh7lFkv8psLIiIpE9CYH-EyLVo6VwSABgyhA_NjEQ41AXub6rVCYcQ3mOkpX4Gu4bVVxQmBijI9PKj-w7gfX1vDR01QRhTYK6paDdDSHiUJAFNK6KPgndpNNKbgQ90I9Iw8L1MNJEZdSvvlb59Z0QxmHH_ruD-Lk-tYdsiMMBgFWE7_0r19sA')" }}
               ></div>
             </div>
             <span className="font-label-caps text-on-tertiary-container mb-3 tracking-widest">LIFESTYLE &amp; CARE</span>
@@ -142,7 +142,7 @@ export default function BlogPage() {
               <div
                 className="card-image w-full h-full bg-cover bg-center transition-soft-close"
                 data-alt="A sleek black grand piano in a dimly lit, minimalist hall with concrete charcoal walls."
-                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=85&auto=format&fit=crop')" }}
+                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCkneiYOz84b3utiXXZVX7nZXi0tEaBNaVA-ehzDsNtuYaUdH1DgXWHVXuHH2OJrZHbjUMzWCsLbLT15TMAV3WRNui-AkRoRjB9PDE9uZ-VROXwekDFM31Cim_R5KRvHtH_nqLWekHdvlrLVXZlZhyAnFJ5UOdc0jW76PglFHScO7w4ITeDizLSxCLo1zaGaaWmXyss3n_NslizsGjOV_km-NkCfbPboiTp-2eToICWStJEr3TfztucmA')" }}
               ></div>
             </div>
             <span className="font-label-caps text-on-tertiary-container mb-3 tracking-widest">EXPERIENCES</span>
@@ -156,7 +156,7 @@ export default function BlogPage() {
               <div
                 className="card-image w-full h-full bg-cover bg-center transition-soft-close"
                 data-alt="A macro shot of a rare mechanical watch movement, intricate gold and silver gears in motion."
-                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=1200&q=85&auto=format&fit=crop')" }}
+                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAj3fL8Q2XW4ZQUoc5kNoXI-DQIJtjq1_mBG07UBhY3TB6MLDkDORmoE33sunooyzm9y3MSjftTGjfHe2fJkDS7CivMr1-mECrbpH4mfG_qvhcEtGgceL15FNq3wrCOYPLi2U8V8z93VRaIgDgaXp9RFJptb3V7yOtk3FAsaZ0tTNgCS3ZYEXC4Vk4zSltHBB1q0TIbz7fXGCrvOu17Vg-cp70qRRxqre9DGAaLBFi1Wc4_0p1UofcOqw')" }}
               ></div>
             </div>
             <span className="font-label-caps text-on-tertiary-container mb-3 tracking-widest">PRODUCTS</span>
@@ -170,7 +170,7 @@ export default function BlogPage() {
               <div
                 className="card-image w-full h-full bg-cover bg-center transition-soft-close"
                 data-alt="A high-end private dining table set for two in a glass-walled dining room overlooking a dark, rainy city skyline."
-                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200&q=85&auto=format&fit=crop')" }}
+                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCEVRGPK289Eq08or8cvDhnm0IS2au8PXBaGb3JMTCEWdL4OfCcNn-LwiE3iT2LjE3lD7skG8c_yGsqLkPIMzjybQdhXE9jnQKFDtbihGyR3Am8rIPXKMSmFxrscGPc8EmHjFjKLn_S1mrfIFiFSSuOuBav7xxoTkYWSwW-GV2-Nom6aExAlyVMg5h32Lsh3INNhYE-OVP0BpVfq8jK6QBh-mNaC0s-FyJFp2sdXHvDjGr73Ujxc3hk_A')" }}
               ></div>
             </div>
             <span className="font-label-caps text-on-tertiary-container mb-3 tracking-widest">PRIVATE DINING</span>
@@ -184,7 +184,7 @@ export default function BlogPage() {
               <div
                 className="card-image w-full h-full bg-cover bg-center transition-soft-close"
                 data-alt="A minimalist home gallery space with a large abstract painting in muted navy and gold tones."
-                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&q=85&auto=format&fit=crop')" }}
+                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDXdVUnp93XWavVysfuEwawCOuELxD7cu_DEaXVRucXHOdHyckLuIvh30mVIeWd9RXxRoCAt_wBYmZ0M6H9cQDMOxjeMUE0pe1f43JTZxYWB3idY_anh_9ypt97GG8EBXHXiEXxc3M4S6i0bUJulB_AoO2e6OXeiRXxTYgypPn2yAoe6d6cKOzNONoxTZ0Fc5ySrQVsRVidpFNideIsUaYOgBOnbY-uEGQFuXXG2rrYWJm1ly2x8A116w')" }}
               ></div>
             </div>
             <span className="font-label-caps text-on-tertiary-container mb-3 tracking-widest">THE PHILOSOPHY</span>

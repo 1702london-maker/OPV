@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 export default function LoginPage() {
   return (
@@ -15,7 +15,7 @@ export default function LoginPage() {
             <div
               className="absolute inset-0 bg-cover bg-center"
               data-alt="A macro cinematic shot of a high-end textured champagne-colored silk fabric gently rippling in low-key lighting."
-              style={{ backgroundImage: "url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=85&auto=format&fit=crop')" }}
+              style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCO90xkyEJtGlmzM6oNWumTG-3GPHWpfDH8-soxcVgcj_iS84Ak-_BArBC3po34vKQtvTbn8w166CHdkDauz2YLQe5a-zRem0tlon80gavIXJeR4Rd9c-l02RteC3KPitrTEL5mMJGxvquftKurxrlgTptiCxz-vowA_24PTAVvJZ3u_Afehrk40arRBuLwp2JAehJve-rFj530zmgzY1cTomGAyN3dcN8U6JZp341oQ7zEF7sP8a5ecg')" }}
             ></div>
             <div className="absolute inset-0 bg-primary-container/40 backdrop-brightness-75"></div>
             <div className="absolute bottom-12 left-12 right-12">

@@ -2,11 +2,11 @@
 import AIConciergeSection from "@/components/AIConciergeSection";
 
 const UK_CITIES = [
-  { city: "London", country: "united-kingdom", slug: "united-kingdom-london", img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=85&auto=format&fit=crop" },
-  { city: "Manchester", country: "united-kingdom", slug: "united-kingdom-manchester", img: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=85&auto=format&fit=crop" },
-  { city: "Birmingham", country: "united-kingdom", slug: "united-kingdom-birmingham", img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=85&auto=format&fit=crop" },
-  { city: "Liverpool", country: "united-kingdom", slug: "united-kingdom-liverpool", img: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&q=85&auto=format&fit=crop" },
-  { city: "Edinburgh", country: "united-kingdom", slug: "united-kingdom-edinburgh", img: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=1200&q=85&auto=format&fit=crop" },
+  { city: "London", country: "united-kingdom", slug: "united-kingdom-london", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuA5gKWi4-CCPw3xw_7wde24m1wGLEewxhhJdh83-oD-mSK6oG2UTLxhS8h5aARNtv8-_6CHbUy2rj6jNEKtDnQm05-kPKoSeLrdGXApbWw8GbdkM83s_J45M9ii0OKFIKl5oeXJ-bM67Nd4Orpyvr8YQc7SmAFcW-klsYdtAmNGm7-XiPJRLGYnuG31J3GrlrXWw0ZNYSMTZ5slbUO8FluOMsskB1pu6CzBBCykARjzL55_-fvU1CJwSq6SPMJjpoakOd7KIVzo5IJf" },
+  { city: "Manchester", country: "united-kingdom", slug: "united-kingdom-manchester", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCUkK6fS5qGoHzSsWDf-Cd_cwhTMyPJwWpdkO_9FUVlk3W9dzZgylDrk9h-ROIuVzKd2Ti5R4ryoNxY_V3xaAuJy0H281cdTcIjep8rIFRM3Z1Xdq-sxbTmTfGbrLh84RzHeOWTarZ2KtyI4KDKROqAurgldRV4dIiuJFWSlRIO_yV5L0Yyr_JxfDNlQwZOqQffhxqtFmZIcgpkk_-D4zcMVgKjw7RxaJrFN2XwSgWosEXdFznvEGL3vaokH5KzTd5g7Th1hY7pqf5c" },
+  { city: "Birmingham", country: "united-kingdom", slug: "united-kingdom-birmingham", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBwwSJa6wK9BWaHNanQ1haX1YO1gR_f14ockT0ETiUhsB4ZS1OgJNcwoyDQUHKUgZeBiyuOYaiaxxgah_XRg2lsrZotUehNm0auOTPFCcYtUHiDtGzE-WIn70VeASVymUmdTkFqDqxrSsPKqjs1cvX0v4BChR4PaYftTOxV5sr0RsaHqyfQyJOlMHQJ_7zXR9zFaRZYY7x4Dk-M8D2T5nLcf4G5uKS1zcMtfvwd_z8P8HJB-L5OJTCrBtOnW8rUA0ZBCT1XljZ37mZ5" },
+  { city: "Liverpool", country: "united-kingdom", slug: "united-kingdom-liverpool", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuB4VcyGmLGmOP0qA2ygDixzzTPm8zTVqdWVNVSOW4iPwkmNPqbTvplF2TZ0uU1mdY7er7W84shHXUjv__GKMQgSlP4e1U9qpYUItHc0HYwiWj0-omGIwaPD5tLVBQQNt2edq2yLToBDd2prDqqrH7XSuxI_6hFiXaf36shvhUlN6142AUwhQCbb_VC1HUc1DYMTQJ4IAo3dVMTne9S9rM-fn321T_wy6UCxNMeC0eZF_g0dkntcDefpByfgDH7HAToOFW4DpG2cOrlu" },
+  { city: "Edinburgh", country: "united-kingdom", slug: "united-kingdom-edinburgh", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCxy-nsnz4Za4sGLSSelgGUN_6EvaAo9lkZ-MQNnCEmTLyDGkjQ98z2x4u45IV7fzCd3jNuhdwYBVZTVtdTiB_oMTcMFowwSAM8NW3dwgpAO97EnQ43clxpLCF41U493XA1CxCAjH0UC6-c-a3rroZkB_MQsFvShgHG0lG3YJ95j0n-UgDylar71pkAzFy18uChmMusLgKvpKDyjPPDgs4VqRXv6zpcPFjkss_pUQxlIiJmhDUfiPTq-cVYkRfGP1bLxEbrDs6_TkuI" },
 ];
 
 const EUROPE_CITIES = [
@@ -31,7 +31,7 @@ const EUROPE_CITIES = [
   { city: "Santorini", country: "greece", slug: "greece-santorini" },
 ];
 
-const EU_IMG = "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=1200&q=85&auto=format&fit=crop";
+const EU_IMG = "https://lh3.googleusercontent.com/aida-public/AB6AXuDcvJzMFQtpdNf5p4PIOyRfabtWapY2qbzPXtBdQ4-cDv_LhaSpDBuy5ZVGWa-nVIzWDViVliRvdEv98-MLpUXXOr6YLclFsDWAY8b5uZqpJUo_HOgs8vwudc4NXmwtexmgcdjN0IlTevf8USL7gFZHr9M_4xTUo4bwnz89AjbVvMZO5OMDba4AT4VhFt3DwrheMFKdoi4stdMAfZDdMuQd0xvWwaw61LUPz9iT6B84XdrHOw7uaVeaBrRkriy0KtFgZuaZPiCIJ8gr";
 
 function CityCard({ city, country, slug, img }: { city: string; country: string; slug: string; img: string }) {
   return (

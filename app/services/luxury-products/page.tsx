@@ -5,7 +5,7 @@ export default function LuxuryProductsPage() {
       {/* Hero */}
       <section className="relative h-[720px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=85&auto=format&fit=crop')" }}></div>
+          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCOFdziqc_686B8C1iPPwHxftFxuiaJdvAsVDXS_su7vwGD2kVRmyK23CcSAj_5jNkYl3Jdh-sv5JiG9kdXvDxV4ub3aXHnqQdVa1TLm-QQShQlJu3cjI5YxVc7tJxO2FNpyAOiMjc7Okxr4bJ5dtSQ-WzR7rkFLjeQlwsSQFFKv8c69gTjHjo50I4yvQRM0ubDERVQjFbyLIFynmnRww-EndsLzDfusg2ryq6hhRb5s5pZ79UL4VfnrQ')" }}></div>
           <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/50 to-transparent"></div>
         </div>
         <div className="relative z-10 text-center max-w-4xl px-margin-mobile">
@@ -40,21 +40,21 @@ export default function LuxuryProductsPage() {
               name: "Patek Philippe 5270P",
               subtitle: "Perpetual Calendar Chronograph in Platinum",
               price: "Price on Enquiry",
-              img: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=85&auto=format&fit=crop",
+              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAvq6AOHitpYqDZRhRwdYe5yDmnT-Ly5vsDnFAyIZZHeXMuarrWcH3mQaC1aZw9aIR2iAfMT87_f9vbB7PT-Qx-chGQVXUlE8-XFq5m-qooiYx-O36saOygkq52KNhM06v_Je08-7-RzEBpKOhf_7zOuKTpl1QaPpEFLZYkk6DtQHsfKTUel9GQvHyabeb4fs_k_OOTjKMcbKV7QiXMPXcGcbJ4kbmK9H2xD16WOVxsNk2yF2opt8fvew",
             },
             {
               category: "VEHICLES",
               name: "Lucid Air Sapphire",
               subtitle: "1200+ hp electric super-sports sedan",
               price: "$249,000",
-              img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=85&auto=format&fit=crop",
+              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAAxgCEDQpeXZ-enUVor6E2FRwdOIW32ssggfAwhPF_S91klAPibl14_Z6kM0oJQJGjWI1PWDCY6u2RwpI9yocpZcywPUmLVZDmrVG4Uu6DMVW86K6SASI9rFcEuRgUj6MWsIr88UAS447xxnv6aiqC1_E8gAZ7bSnuWNcXCWFkOHR2szz_qYiq1MFwka28D39jobI2CigFBuhvIFnaTUZYSfa4UZpzTZUxxnmD_79rtpfM0HvswM3wag",
             },
             {
               category: "RARE SPIRITS",
               name: "The Macallan 72 Year Old",
               subtitle: "Genesis Decanter — One of 600 worldwide",
               price: "Price on Enquiry",
-              img: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&q=85&auto=format&fit=crop",
+              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCo74sRxEcBbV7FQNpQSxEV0opKH5P8Q9JuDVJ6UJehfbnfmM18wtvatW9jOl9mxetvPpDG0X3r2Tm83hFag0XpLJctjeI_gj3nUa2xrRwsRVkMHLQFzrZjxRX-KH5LHXdqgT4qz42UhLizDHzEyua4s_tJRKDaAbjL1JMEfO4K55d_2p83nOeGFnmL18wySaf8aCxLgMujWg_qhXjsDv8zpoEF7BxFiNfVUcvconf7Ps8_h3sXyqD1KQ",
             },
           ].map(({ category, name, subtitle, price, img }) => (
             <div key={name} className="group bg-primary-container border border-outline-variant/10 overflow-hidden hover:border-secondary/40 transition-all duration-500">

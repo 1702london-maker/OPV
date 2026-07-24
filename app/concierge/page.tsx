@@ -6,7 +6,7 @@ export default function ConciergePage() {
       {/* Hero Section */}
       <section className="relative h-[921px] w-full flex items-end overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1400&q=85&auto=format&fit=crop')" }}></div>
+          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDoFuXqjtEphtZEVoD4C3tM_sExKi-ozdNN3QfOpx3rb8lTEpXuRVKpkDy5i4941Wk1bRo9eNzBQ3Rm6H-8m5DVW2nxD_vMg_T2mkffarNo40vFqs6thUO2x4i4mR20fWnQRl8wNMXnBAxb49L_nC75kyQAAgYs8ObcWHg8QTXXfopwI4BOsuS7IvGyhg8tiHTJKZkFs350nbuMZrOf_6CmW_H0Cf091I46MJrNjqCX29DxhbVETDIwNQ')" }}></div>
           <div className="absolute inset-0" style={{ background: "linear-gradient(180deg, rgba(11,18,33,0) 0%, rgba(11,18,33,0.8) 70%, rgba(11,18,33,1) 100%)" }}></div>
         </div>
         <div className="relative z-10 w-full max-w-container-max mx-auto px-margin-desktop pb-section-gap">
@@ -60,7 +60,7 @@ export default function ConciergePage() {
           <div className="bg-surface-container-low border border-outline-variant/20 overflow-hidden flex flex-col md:flex-row">
             {/* Form Info Side */}
             <div className="md:w-2/5 relative min-h-[400px]">
-              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=85&auto=format&fit=crop')" }}></div>
+              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBRdQfd0Twd1mJ9bHnDy15i9dpteKO655AoqZ5pUQndqoNdusexLfxziQa5m_tgiwpmCMW7otkwM3i4ld95v7GmkE1ipQi-xjpjLIBGkaoxGW8ehpREBTReIVfyTlmMcy9llJc_V1CCNUu82EZgyLcCtfPc8QS_gmF0wP0gbgsq5lwCbWmcNLGuXs0Ko7GGoGoIMdlhbOwlm8D6A-ONluuDXXqogfed5sRvtyOZPtgbPnj72nF1C2aHIA')" }}></div>
               <div className="absolute inset-0 bg-primary-container/40 backdrop-blur-[2px]"></div>
               <div className="relative z-10 p-12 h-full flex flex-col justify-between">
                 <div>

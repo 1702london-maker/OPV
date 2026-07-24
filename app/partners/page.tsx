@@ -1,4 +1,4 @@
-export default function PartnersPage() {
+﻿export default function PartnersPage() {
   return (
     <>
       {/* Full-Width Hero */}
@@ -61,10 +61,10 @@ export default function PartnersPage() {
           <div className="lg:col-span-7">
             <div className="grid grid-cols-2 gap-4">
               <div className="relative aspect-square bg-[#1F1F1F] border border-[rgba(229,225,225,0.2)] overflow-hidden">
-                <img className="object-cover w-full h-full opacity-60" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=85&auto=format&fit=crop" alt="Watch movement" />
+                <img className="object-cover w-full h-full opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsyw6l4tBh5y0YsWjhwLBrIeHPdQL_m39bf9gxGCpIIKw36NBLCWFddW5Yw2qxrh-5lclSNrvC3867aTPWzRI0yNYDfdf4gTN0lQdjPI0OhDjaMpe9l6BAgzyL0emq7oBNouAEshL2DYgwwcxyEWJvdW_Sa0kj6QbOLmzjqpaHGI36LDNda4-sbKObSPrJZ3dA3zgR0-gdEk-T7U9a42KtC3HJvnwhwJy1XCliIqnmouuPKfFCUG1w1A" alt="Watch movement" />
               </div>
               <div className="relative aspect-[4/5] bg-[#1F1F1F] border border-[rgba(229,225,225,0.2)] overflow-hidden translate-y-12">
-                <img className="object-cover w-full h-full opacity-60" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=85&auto=format&fit=crop" alt="Members club" />
+                <img className="object-cover w-full h-full opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDynEP5I3FGGYtmjAJNh-ysWkvvN-F0FRD7dx1qnw_HWig-KuyfbatbS1tpJgVAeT7jb08s6BLRJnwTiPWiqp-YEKvRbrdTcAme7dORQoblAA1pqsklLv-bM_fcJ5fJMOsxiH7Mq1V8FBPQZPFG5idwTHFbTwW1iirbtz0bFu467GPKrjjTTPQ2oX5ttlMs62z7RpyLDZKjwglje0PKq8xF1kKx1x8VCPG8AJheH1QkSTzz0fqhdevkng" alt="Members club" />
               </div>
             </div>
           </div>

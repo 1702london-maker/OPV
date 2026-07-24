@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 export default function FaqsPage() {
   return (
@@ -9,7 +9,7 @@ export default function FaqsPage() {
           <div
             className="w-full h-full bg-cover bg-center"
             data-alt="A cinematic, low-angle shot of a grand, multi-generational private members club interior."
-            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1400&q=85&auto=format&fit=crop')" }}
+            style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAgXa5cAw9AbJwgGW-JR7n9Xhyiz8MmqC3jC4HV7SLLIbvVC-Mjztg1qET2_3_NiaVpwx1VHVD2_SgscRhHd7Csq3l8U8vUYpHXWro5PU9KAID20X-oEZTJI431prsL6MCOrC4oPkTNnSLT4nEZ0g-nTppWOvjpek3nMIA7e07DOj9k-9p1Wgl1Nr6Fo4REk-KdejF_TRnNmMfCpB5DmqQO9Sf-gRfley9H8IibHxGaBR5H0FrJ6Qckbw')" }}
           ></div>
           <div className="absolute inset-0 hero-gradient"></div>
         </div>
@@ -154,7 +154,7 @@ export default function FaqsPage() {
             <div
               className="w-full h-full bg-cover bg-center border-[0.5px] border-outline-variant/30"
               data-alt="A macro photograph of a bespoke gold concierge bell on a polished charcoal marble counter."
-              style={{ backgroundImage: "url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1400&q=85&auto=format&fit=crop')" }}
+              style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZlaEywa3tSx_Sk-CS_4xFrzbh2f81b6w0rOxcCAKNikqyTJjQSszYQQ6KdNXQCQPWZcbQk20-9SNggPh0xs9INdmiFbK0Szv-5Gy6tFjlolnj4BmnzwhbsIxVXqjlVXgdQhU7k0WaUECL8fkF4lKw_rbIICZavMvTMmARn09641FiV1HsSZzu6cmv2s02E5tH5bwxz_3GI7dpq1oalZNWImRgP0LafMkEk1ZNt4bwiBHpoaE4P7Z_0Q')" }}
             ></div>
             <div className="absolute -bottom-6 -left-6 bg-secondary p-8 hidden md:block">
               <span className="material-symbols-outlined text-primary-container text-4xl" style={{ fontVariationSettings: "'FILL' 1" }}>support_agent</span>

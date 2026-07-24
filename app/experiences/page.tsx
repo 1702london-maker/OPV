@@ -33,7 +33,7 @@ export default function ExperiencesPage() {
           </div>
           <div className="col-span-12 md:col-span-7">
             <div className="overflow-hidden h-[600px] relative">
-              <img className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1400&q=85&auto=format&fit=crop" alt="Fine Dining" data-placeholder="true" />
+              <img className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWD177vuPsx_HFPM5A6XD4peESGpGvBzLLldeezB_BMRlftzdTon3G4mvzqXRHyTutL3mfw5lsJWENVEJ9tRePkQZ175lUazzJhpbXce_RBTSVbab4icovt99o_-PcFYgPeYOkSWhK3ppGvslZ1Wqdw1KSB6rf26g0nFYHJvQo6mfe-9nTtX3tP4BjRERKoO88Q5BGweo1JLb9rtZnzJRyJWCOOCEyQPHyWGlJkuciMA-z5eTAqB8KuypYh-4RLASC1nZzqiywF6uU" alt="Fine Dining" data-placeholder="true" />
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function ExperiencesPage() {
           </div>
           <div className="grid grid-cols-12 gap-gutter h-[600px]">
             <div className="col-span-12 md:col-span-8 relative overflow-hidden h-full">
-              <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=85&auto=format&fit=crop" alt="Superyacht" data-placeholder="true" />
+              <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbaJr9CtX4mAkfUdSimwsEKSJiUcRl_IdZIjIuBJ1B9eriYE0EbU452mo_Xie5k-P4yuR_-bzbSXImEaFXjDXqJrjnyFK3VMGUf9f6KG8iZ6RdA45VdlM5MxAM-CznbxR7eo0-TkqB9zQ2d5-lOsUWyYLhhyRam0E_1gfKw0VSCO-mjmLg1C_RsbEwfhilo3h5YDM4N_F-DCg6LEsbdIhD0yV1kVUXousGKFEpRqwZpsNGKQP9-ap97wY3AwJw-XJsOL1fS3pOke5o" alt="Superyacht" data-placeholder="true" />
               <div className="absolute bottom-10 left-10 text-on-primary">
                 <h3 className="font-serif text-headline-md">Superyacht Serenity</h3>
                 <span className="font-label-caps text-label-caps mt-2 block border-b border-white/40 w-max pb-1">View Fleet</span>
@@ -56,10 +56,10 @@ export default function ExperiencesPage() {
             </div>
             <div className="col-span-12 md:col-span-4 grid grid-rows-2 gap-gutter h-full">
               <div className="relative overflow-hidden">
-                <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=1200&q=85&auto=format&fit=crop" alt="Yacht dining" data-placeholder="true" />
+                <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGYtwNTc4wOACFE12LlwI9YmSDPqUrbgtCfCraI0w8D7DvBWgajtV7v6NxTX7pkoR60c8G7uYACX9nxYDbU2LWiSfHHVl7Y7KEgS_D_upl6DPIKrOrF-IbICd5mWTg3FjHhVh-lkXRB_w8K6E0xdNmg7xbwIFLHR4CQ4e7_wD3aJah2fhNjsPSP3caZxHfzOC9aMjNwwGfuV4rp1oqpuVNATKDIXSHPxdEmbK2raldklvvJ2hEN2pUlvjGsA7j5SCpFMfOOjfkmtnk" alt="Yacht dining" data-placeholder="true" />
               </div>
               <div className="relative overflow-hidden">
-                <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1400&q=85&auto=format&fit=crop" alt="Yacht cabin" data-placeholder="true" />
+                <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2nR1y6d6q9UiTqGrixnXLpeDNWhRf-OYbsPoMOXoB9KpeOrsQD-MQYbgldjWDdlZ54MqFKLPrfUFGSUNgTr92VCfs43a3vj5xHv5rnqsKlSraU8nvT6x7qGl-qnXqM0aSfshZSDwlMY0vRSIzkvrgslfjz4-wc534JFvLtwsJmg1pooSd5_fr9HMmv4ufjymUugoP32F7DOIdpU-HCdRXcqr8vnUVNYcKRG6hJAcaDoghd6XCaASr6cHr4VsdpguYoycrmw2cu2_x" alt="Yacht cabin" data-placeholder="true" />
               </div>
             </div>
           </div>
@@ -76,9 +76,9 @@ export default function ExperiencesPage() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {[
-            { label: "Private Aerial", title: "Alpine Ridge Helicopter Tour", desc: "Unprecedented access to the peaks of the Swiss Alps with private summit picnics.", src: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=85&auto=format&fit=crop" },
-            { label: "Cultural Access", title: "After-Hours Louvre Curatorial", desc: "Explore the world&apos;s greatest art in absolute solitude with a leading historian.", src: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=1200&q=85&auto=format&fit=crop" },
-            { label: "Nature Reclaimed", title: "Atacama Stargazing Expedition", desc: "A journey to the edge of the world with astrophysicists in a luxury desert outpost.", src: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1400&q=85&auto=format&fit=crop" },
+            { label: "Private Aerial", title: "Alpine Ridge Helicopter Tour", desc: "Unprecedented access to the peaks of the Swiss Alps with private summit picnics.", src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBPGED_KDN-Oo086bokCIMNFV_sqI8OVsfduyMrlgYaNOBx0nSoUII1-iEvXhWDb59xgyAY1Uxi_-4e3ID_VXlclyvUZQHglwnj9OeWJeldI9cClUojVzf8zdVyL6I10fqsQe8LL7-V8a06hYoxZkK8nuMsCaIb-AAG81pmV8jmZPdb5Ch2ffcemOXJXBZkby7U7_86YHXuTQLadVf8UNiMsu5b--7pke_Xs-PaXS7_hPjmFzss_1wk-BclQv3rHhQuZb0aWvrFfk-L" },
+            { label: "Cultural Access", title: "After-Hours Louvre Curatorial", desc: "Explore the world&apos;s greatest art in absolute solitude with a leading historian.", src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCYGv_g5_8qdHK9mzHLthszDfR6tPouGLjuUfg-wB_-CiB7ylgnN9x3v_EuL19PQyALY8jRxsY7IQl2hXoZ_o20mOiAGxbLBYt3-bJ5NmpsqsGrtkGroAUJGvIxQiB6UggVBcx-Q6-hIvEoDm3jGG5c7DTPbfr78badzUDy1pk4-rAK0FMSiZE-3uRaODx98y1P9p7fYi9icKiqKK_qKsadTnTEBBMofryu6zo9D29AD69lcOacweqBfBGFIlkm-iFKRt8PDRaF5ty_" },
+            { label: "Nature Reclaimed", title: "Atacama Stargazing Expedition", desc: "A journey to the edge of the world with astrophysicists in a luxury desert outpost.", src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBozPnwSDfKfuYt14CwFP3UKmHD1oCOrslhtmC0rYHNB4rDj-PPJomq4MsHcCDAZo-zr5k9nbdvt-8OM1KfUTBuOXibdOeVGdKtJyRmTLDVYejInAWIvctJk_GQJl21Lh197qGAXW_9GNQXZtLIAv9C15BKxWXf3Y_zGAP4648AveFiCMYcidXTbEPFXfvdooYrq4lESf90Fbp49FnZi-6Sz9wtm0QG-F9GXAhcxnHgiDSNC3S-fTY1DmcbVOLdu2PJ8ycmJJMZ8UG_" },
           ].map((tour) => (
             <div key={tour.title} className="group cursor-pointer">
               <div className="aspect-[4/5] overflow-hidden mb-6 relative">
@@ -97,7 +97,7 @@ export default function ExperiencesPage() {
 
       {/* Spa Retreats */}
       <section className="py-section-gap relative min-h-[800px] flex items-center">
-        <img className="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=85&auto=format&fit=crop" alt="Spa Retreat" data-placeholder="true" />
+        <img className="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSrTxN6fQgdcKdmWtM6dDmOnLOhOu3iIb1fspfuMntWx3qUpnx63DInYnzxZGOgiDVuqGLy0ASyDyGJRhfweZ-CyTk5kHr3DgPAwdN_4QfLwv5TAgCuW0WKCAG04sxFU_AkgDpddB3JMKWD8s8-B50kbUfLtBglmlxHYNEMFaGkcYX-fZK9ZtBLWmfJddOV5dztwX2uVMxYDemW5nEojRntNujMCzPVUpJVjK9mXyKpg9_JEPgudYxtscqNdXo0_oYdYAooCQDNBLd" alt="Spa Retreat" data-placeholder="true" />
         <div className="absolute inset-0 bg-primary/20" />
         <div className="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full">
           <div className="max-w-xl glass-panel p-12 md:p-20 border border-white/20">

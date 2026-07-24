@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useState } from "react";
 import AIConciergeSection from "@/components/AIConciergeSection";
 
@@ -29,7 +29,7 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="relative py-40 overflow-hidden bg-primary text-on-primary">
         <div className="absolute inset-0 z-0 opacity-20">
-          <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=85&auto=format&fit=crop" alt="" data-placeholder="true" />
+          <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcGzksrWNGTvCHBJo_X9xYFE7a8mU7XfrhBaCXttF0cAZpep-wS-61f9nFj2QQ8cHyZek6yI8V8if-b8R0RUxHFnVpTbwrBN__aBv4wCqXjrwoPT1kYWX_4sHqiin6d3rhDBg0XrnXpAL7KniJFcAgyn2tX13YPIS6xRt4swHTC68t3evkXuar3qugyEP9yAu7b3sHfiFJ926x7p2zIqzET-7moH5cFi3oog0b3pKdJACCeDWjmaTzYA" alt="" data-placeholder="true" />
         </div>
         <div className="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
           <span className="font-label-caps text-label-caps text-secondary-fixed mb-4 block">Bespoke Support</span>

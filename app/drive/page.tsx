@@ -48,7 +48,7 @@ export default async function DrivePage() {
       {/* Hero */}
       <section className="relative h-[90vh] flex items-end pb-section-gap overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=85&auto=format&fit=crop" alt="Drive" data-placeholder="true" />
+          <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSUWflzRxQf3v9NG7idPR4F2Ch_K5LDzCe7ThlZ_9SWM1hZYl6NIM01LtLXq-69iz-uvljmV54dfcQQDsE22Ei0wcR_tVVdhZJIbd_xuuT-lOO-hQ3dDSmIWCM017cDlVxUQ-3tJn0lroh6binHLOlgcSIYoeK1nhYNyZiRjhevxWdEjq30xZHy4jtzZMp9PRCafwSMvm6wSvetzdzZXj4E88iXTMZc7WVckGPkaAkI0xjf5j7v_wRfg" alt="Drive" data-placeholder="true" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-background" />
         </div>
         <div className="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full">

@@ -1,4 +1,4 @@
-import { createServerClient } from "@/lib/supabase";
+﻿import { createServerClient } from "@/lib/supabase";
 import AIConciergeSection from "@/components/AIConciergeSection";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -42,7 +42,7 @@ export default async function DestinationPage({ params }: Props) {
       {/* Hero */}
       <section className="relative h-screen flex items-end overflow-hidden">
         <img
-          src={destination.hero_image_path || "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=1200&q=85&auto=format&fit=crop"}
+          src={destination.hero_image_path || "https://lh3.googleusercontent.com/aida-public/AB6AXuA5gKWi4-CCPw3xw_7wde24m1wGLEewxhhJdh83-oD-mSK6oG2UTLxhS8h5aARNtv8-_6CHbUy2rj6jNEKtDnQm05-kPKoSeLrdGXApbWw8GbdkM83s_J45M9ii0OKFIKl5oeXJ-bM67Nd4Orpyvr8YQc7SmAFcW-klsYdtAmNGm7-XiPJRLGYnuG31J3GrlrXWw0ZNYSMTZ5slbUO8FluOMsskB1pu6CzBBCykARjzL55_-fvU1CJwSq6SPMJjpoakOd7KIVzo5IJf"}
           alt={`${cityName} luxury destination`}
           data-placeholder="true"
           className="absolute inset-0 w-full h-full object-cover"

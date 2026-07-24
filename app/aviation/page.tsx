@@ -1,4 +1,4 @@
-import AIConciergeSection from "@/components/AIConciergeSection";
+﻿import AIConciergeSection from "@/components/AIConciergeSection";
 
 export default function AviationPage() {
   return (
@@ -6,7 +6,7 @@ export default function AviationPage() {
       {/* Hero */}
       <section className="relative h-screen w-full flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1400&q=85&auto=format&fit=crop" alt="Private Jet" data-placeholder="true" />
+          <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoVjXnYf_MB_UDEosmhaecT6ZKq4cSoDhjJBAMhEW4YLAiiX8a6XAJ4U_SXVmjYN4RsWY4TZU5ryTvfoyA8S5QW3yt5Wgqe_S_BC2xRHwXGL1dfzyE8zULasswMlrhBUNtKw3dAU_2p3__V7Wn94SOMtX7BZnZu4ahp0We83yf-UTpdzOqn-y6cOdaWRBKXeUGkuRi0NXHT4X6pffkruAyYmtcFcPGVEzgIkx2aoyoVSDh6-_WWdNqM5_Q2Lp-y0xk1pPhPDvOnDEx" alt="Private Jet" data-placeholder="true" />
           <div className="absolute inset-0 hero-gradient" />
         </div>
         <div className="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
@@ -35,10 +35,10 @@ export default function AviationPage() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
           {[
-            { num: "01", label: "Light Jets", title: "Phenom 300E", desc: "Ideal for short hops and regional business travel.", src: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=1200&q=85&auto=format&fit=crop" },
-            { num: "02", label: "Mid-Size", title: "Citation Latitude", desc: "The perfect balance of range, comfort, and efficiency.", src: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&q=85&auto=format&fit=crop" },
-            { num: "03", label: "Heavy Jets", title: "Challenger 650", desc: "Spacious transcontinental cabins for up to 12 passengers.", src: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1400&q=85&auto=format&fit=crop" },
-            { num: "04", label: "Long Range", title: "Global 7500", desc: "Unmatched range and ultra-luxury for global missions.", src: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=1200&q=85&auto=format&fit=crop" },
+            { num: "01", label: "Light Jets", title: "Phenom 300E", desc: "Ideal for short hops and regional business travel.", src: "https://lh3.googleusercontent.com/aida-public/AB6AXuD3grbHDWTCBk7taDQrAE7DvIsBeR6OF1EaQGaOVRCMnwEbkur1pEy4nu9UlVyMT6GR9zTJTkwyAhJGLQjsHzn3G_cBdx-VBQM9ISy_U7--WuhE0FGLDRsnUY-sKdS_4tP1rDfLwTZgbgw9YUhOmAdU_IYpatIRpJVLOcEWQX0Xmph-H5uPQvMW5wO6HzkVNx6kBvbWzHn4o2zjBR1E-_4_eqLlP5FnWzOYFKHM4QaDnYVQulRS3pMFQ585ctLUi4xJOiXvo5mM_Vn4" },
+            { num: "02", label: "Mid-Size", title: "Citation Latitude", desc: "The perfect balance of range, comfort, and efficiency.", src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCJDiQiU412hiOEJjp2o3SJNF61fe71hV-Yq0zXfixCVoU_j4RY1woKzLCzj-925oxdxrOlFBuu063iib6xDCdo0Akapm_oZwhLpcLvhO3aOjfR3QxoiaFw7_Z86Bk6RBiA5o4x8PCAShcCUvmXGW_nqtqbTjaflZvtQGTf99TcYl2kbFJZziLMn7LlQ0s6D7U-OI3j6FDiHTflF6TmjWysNTcNizdIi_CAT3YlkRyXoBZ6WoHh9KxLy461r6zMc02bsNDEGNYQqN_a" },
+            { num: "03", label: "Heavy Jets", title: "Challenger 650", desc: "Spacious transcontinental cabins for up to 12 passengers.", src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAWxoEpX8Xg6rnNtALX_k8I_EDYRA39_3x6m4nfyS6XViJthFqUoWkL-DB4x72Bu2FFivaOyAN_MnQH58y1z1p-5yNvTslDGttF3lOpgUq2JnmAfJjCPc2XfHYbthQ5hv-_-jexAQXfF3HaxXTks20LS7-LvuqOrAOe7q4c_hKFDmYBts9hbwW8HzDxHd1Xada-Mkb4wq0A8Pp2Zr3f1JB9ulVIE0cpZ4YkOMRuioqbrQBsAaMb6T9yzNWWxzz6zAwbkJ3gkfUtdY-s" },
+            { num: "04", label: "Long Range", title: "Global 7500", desc: "Unmatched range and ultra-luxury for global missions.", src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAJmQdPa7R_i3qbTZGL6F_wgtjW4WepchWa4BNfR7xrbc3LnGj4JDLSSoFvwIlbuBBQhdTE7xcFPs7-vNbJsmeZwxb2si-qKm4ZoX52H8mXmvsyx1cODklJ-CpxOCeX0uVLIXx_dmaIzauI4wfNS6psBRMFn7YiWFikkZS2JSh2qoP4Xf0AyEZdG20UtBw7Igmz1HotEdQrIq5ANHXVBk93x9eLdx2huia9DmuSEcV972Oe6B9pWUM5FVp5pRUh8ElUjagA-tY4cpx2" },
           ].map((jet) => (
             <div key={jet.num} className="group cursor-pointer">
               <div className="aspect-[3/4] overflow-hidden mb-6">
@@ -75,10 +75,10 @@ export default function AviationPage() {
             </div>
             <div className="lg:col-span-7 grid grid-cols-2 gap-4">
               <div className="pt-12">
-                <img className="w-full h-[400px] object-cover" src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&q=85&auto=format&fit=crop" alt="Helicopter city" data-placeholder="true" />
+                <img className="w-full h-[400px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV53I2Cxk-wr3uVYVLb_CwKYaTdITsRZUE8nMiX2NAoIguizFDOBvi5j9xLoj5jNV5niV5zGdVbG2pKVzyCsAX-Wo7pQkqfUzERtPHFq0Y3C-m7yWQq9eE-eT0XrcwrBFWQa7LT8kbkdPPIpmCEPjUS1s_qPiZgGHHWJmOxnHNgQHODp57CA6fBu_CiWqnTQiogW2hZeqqv_GVR05rHMTKsVL5f-K14gJWrdfS0ej1MjkZHCOVGS9MkgdQl0fm_sba5__Uh_hpNP2l" alt="Helicopter city" data-placeholder="true" />
               </div>
               <div>
-                <img className="w-full h-[400px] object-cover" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1400&q=85&auto=format&fit=crop" alt="Helicopter mountain" data-placeholder="true" />
+                <img className="w-full h-[400px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU9fHWHHYWaTl_n7THuTG0F5jPzuP4L4nr87wF4jGJGnG57gEbuiP3BgDdfvqnHAuTVvxYkq2jXPiEaULM4aM3QmVTDhmGMA1sOoy0mbLJFi_jr1acsAwzKFfUeR6NJPyTA2a79Cm4wi_2yRu5HhIEGzKS2f-VptsfBmH9rAetVKFlN0eQZxAUihNvaMP55vvjjkC1cnXkYo136hfWj5C85DrJobY_cpjrWp4k5PxGE7Xs7ZpnwqUnJGjw9pm7zAYADSpGRmD11z4k" alt="Helicopter mountain" data-placeholder="true" />
               </div>
             </div>
           </div>

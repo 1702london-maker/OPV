@@ -4,9 +4,9 @@ import StaysFilter from "@/components/StaysFilter";
 import AIConciergeSection from "@/components/AIConciergeSection";
 
 const FALLBACK_PROPERTIES = [
-  { id: "1", title: "The Mayfair Penthouse", city: "London", price_from: 4200, guests: 8, bedrooms: 4, image_url: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=85&auto=format&fit=crop" },
-  { id: "2", title: "The Glass Pavilion", city: "Palm Springs", price_from: 2400, guests: 6, bedrooms: 4, image_url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=85&auto=format&fit=crop" },
-  { id: "3", title: "Azure Haven", city: "Maldives", price_from: 3200, guests: 2, bedrooms: 1, image_url: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=85&auto=format&fit=crop" },
+  { id: "1", title: "The Mayfair Penthouse", city: "London", price_from: 4200, guests: 8, bedrooms: 4, image_url: "https://lh3.googleusercontent.com/aida-public/AB6AXuB2SNjLPLMFKvdu4zvVOwtQd4MCHEXKRMddt54gfWmRPI7iYkR46F8TZhetPwAjPkFC6YtYPmdupYGMvpKbFJ_4CwkDLfLiHjwyOIYqs-54N8ykXYiLYVRQFIso6jnq8lUC39gHfqoYOaShflv4VJzDk42PedRDfBbwRTZvo4PJju0KeSu7xutVeDwwcIKVM30CpYDKFYx9659dFwEdjBylZ_u6UUb1MSwqlkz9FJz4BPsbIo-mApio3mBQLQb75Wlbgmg15D9G3wpZ" },
+  { id: "2", title: "The Glass Pavilion", city: "Palm Springs", price_from: 2400, guests: 6, bedrooms: 4, image_url: "https://lh3.googleusercontent.com/aida-public/AB6AXuCpGDQfzHVHUd5BAtByyTRgpZyPjbsG44ZB14F6YLPf0eG4fSkulBTes6pSAgHT7PBQepHUYsJeDspr-tCZTHzrJvOX-K7tccpQLpzMG06WnjWRVNhkXAtfrowa6XePbcH3If1Jgq33K0a3fb5ttjZ_qssl5NDWPPPv6YiBYHzCKYLKCszPw6lD6BG5tAj1iD5a0iPKzs2CLhnaBsDvVanBOrnRubEd2BGm7On65iXpdziQ67fdz3wW3GGn_t3MKu-RcoLmdoB2Fsoz" },
+  { id: "3", title: "Azure Haven", city: "Maldives", price_from: 3200, guests: 2, bedrooms: 1, image_url: "https://lh3.googleusercontent.com/aida-public/AB6AXuAdr-bwIZ7VkMvGZeZvHLiy-ETiAPIBhElKLW2P75aOGaRFXOwQWv6Fmupu9hcjtpGdvyg48D6kHHulqRsGUtqq70FE_pqxtYUcflsFmNRHVkNvlQtR0uwmgDDz7u45pk1uC6zuz7nN2xHvQgq43KDeyRtPUpdjYjnzYsAnW20RPAHEer43-A8Xi9pdQ6KE-l-EbXp3C0qCP7rDM5JsQcRPK2UwdpNXawNRtng1Mg7bea2n_boyxQV0qeqUFxoLuwObb3vyGvGk7D3M" },
 ];
 
 async function getProperties(type?: string) {
@@ -32,7 +32,7 @@ export default async function StaysPage({ searchParams }: { searchParams: { type
       {/* Hero */}
       <section className="relative h-[60vh] flex items-end pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&q=85&auto=format&fit=crop" alt="Luxury Stays" data-placeholder="true" />
+          <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApV0RN1MTnKzILhdNla59xJAa6eUXu2qLaaz1rqvtEUnz4kHWkYz3-NX3MSt_WW2be59EbCsuaBbTFG2544piGQEp0Bo3UQuCIx70KZMgRdduqxEtwGJ-98yd0mLCXix1SzVQl4bY9bqGKwDwpx_Enjc4jh9iBIkOtoT3DjOSMIqmdwJ6Q5J2CKmxISV7ET3gnYY8a2Y2DY5BiQSttGAA80s0nK2pV3_JD_-1YNYTuWLXQmiJ_BKDcPLKfB9k6WmqCR0YjC837dOm1" alt="Luxury Stays" data-placeholder="true" />
           <div className="absolute inset-0 hero-gradient" />
         </div>
         <div className="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
@@ -52,7 +52,7 @@ export default async function StaysPage({ searchParams }: { searchParams: { type
               <div className="overflow-hidden mb-6 aspect-[4/5] relative">
                 <img
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  src={p.image_url || p.hero_image_path || "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=1200&q=85&auto=format&fit=crop"}
+                  src={p.image_url || p.hero_image_path || "https://lh3.googleusercontent.com/aida-public/AB6AXuBCkKNZEoaY49j5qYdbNSeAAz3HX5EYi6wu3Fd9_hHqug90yKycJbHefMoMTTfCYMITg5yZuVrEYUSA9UN8D-29EWCd5OtPbcNu-KpkT1sFL57vEleBkQkuPzVEuuUPckuIH5zvG5ZAfQ7AfSBdQFNjT9ZCrfd1Ij1yt10LfP9j51OW72SbWyDqwx1knF13wOYhw5sXsQeenZffS_eCi5ouvLgbW2naVk37Hp2bxNJDrS5ccrfjQ4SJlYF5tOTwjSMtWDKk-Lsrxyoz"}
                   alt={p.title}
                   data-placeholder="true"
                 />
