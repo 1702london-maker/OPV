@@ -4,7 +4,7 @@
       {/* Hero Section */}
       <section className="relative h-[819px] flex items-end overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCSUWflzRxQf3v9NG7idPR4F2Ch_K5LDzCe7ThlZ_9SWM1hZYl6NIM01LtLXq-69iz-uvljmV54dfcQQDsE22Ei0wcR_tVVdhZJIbd_xuuT-lOO-hQ3dDSmIWCM017cDlVxUQ-3tJn0lroh6binHLOlgcSIYoeK1nhYNyZiRjhevxWdEjq30xZHy4jtzZMp9PRCafwSMvm6wSvetzdzZXj4E88iXTMZc7WVckGPkaAkI0xjf5j7v_wRfg')" }}></div>
+          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=85&auto=format&fit=crop')" }}></div>
           <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(11,18,33,0.2), rgba(11,18,33,1))" }}></div>
         </div>
         <div className="relative z-10 px-margin-desktop pb-section-gap max-w-container-max mx-auto w-full">
@@ -75,7 +75,7 @@
           {/* Property Card 1 */}
           <div className="group cursor-pointer">
             <div className="relative aspect-[4/5] mb-6 overflow-hidden">
-              <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDePvjiVQfeJkywMOVee5JnQfXCVx0LAu-xq-ljzHydnXyGaqSLlS_y1Wgeko8SCoAu0PxjUReQpIy9Z7G5KLkWVzjLLyPodv_e9kpUyPzGDMlezXdIWdesdnbdiBxrZF2ug81D2vKpD4EAOE-nonR37VGoYyCS3lp4klnLj4NBwa1XgI1o_IS2gzMrxm7PPF-RgZK7sWwwRiEo10ZXqg5KOpC1iw-wDhOt77qgVJ13ZoQ6tvJnAID5LA" alt="Azure Sanctum" />
+              <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=85&auto=format&fit=crop" alt="Azure Sanctum" />
               <div className="absolute top-4 left-4 bg-primary-container/80 backdrop-blur px-3 py-1 text-[10px] font-label-caps text-secondary">OPV Managed</div>
             </div>
             <div className="flex justify-between items-start mb-2">
@@ -95,7 +95,7 @@
           {/* Property Card 2 */}
           <div className="group cursor-pointer">
             <div className="relative aspect-[4/5] mb-6 overflow-hidden">
-              <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbf-hKa4ae46vjp1VRM_FaIzuhdSC7DJvbb09r4pz6hnDOGQODOYFW7YnKPrwRLn0fPrMw1Mx2MP7bn_3EQgHZtzSpm3qWOcOiPpaz084w0ZqGvfC8cJjC_fgJkdUNsalqQkGoVlBZ9jroTisdg8MG5dwRKdm2Qusos5qbJfTik_0fkiQNGZq50vOWNhh-i_-0HZ5HotH8_oNbWkXV5ewq5nEHwf7s73L0oIJdWsQwO1LRC5kkk2puwQ" alt="L'Eclat Alpine" />
+              <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=85&auto=format&fit=crop" alt="L'Eclat Alpine" />
               <div className="absolute top-4 left-4 bg-primary-container/80 backdrop-blur px-3 py-1 text-[10px] font-label-caps text-on-surface-variant">Partner Hosted</div>
             </div>
             <div className="flex justify-between items-start mb-2">
@@ -115,7 +115,7 @@
           {/* Property Card 3 */}
           <div className="group cursor-pointer">
             <div className="relative aspect-[4/5] mb-6 overflow-hidden">
-              <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHVJbew-2OHx8xT6zy60j_ZgZ4W8Yzi7ozUIs1CkFR4Us0s9AIAQNO1ezB4hXZAwZZhlR65jME86zqBitmzW9rnX1_t6Fd5DwXgDzPFCLCig-e-Nfk0IqCKBcTXu2lMXAY4hK-42SDVNPvoZZ2xqHbeT5e5L7IuZY9D7s8mH6QHjjfAC2c1itBxr2wi2e0S4bY1G2G-WUh0WoNlsvZnWuC4ZJ0JUOCqoZxBYakwiD8RrhORHBleM5D5Q" alt="Mayfair Sky House" />
+              <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&q=85&auto=format&fit=crop" alt="Mayfair Sky House" />
               <div className="absolute top-4 left-4 bg-primary-container/80 backdrop-blur px-3 py-1 text-[10px] font-label-caps text-secondary">OPV Managed</div>
             </div>
             <div className="flex justify-between items-start mb-2">

@@ -10,24 +10,24 @@ export default function LegalSlugPage({ params }: { params: { slug: string } }) 
   const content = CONTENT[params.slug];
   if (!content) {
     return (
-      <section className="min-h-screen bg-[#f9f9f9] pt-40 pb-24 px-margin-mobile md:px-margin-desktop flex items-center justify-center">
+      <section className="min-h-screen bg-primary-container pt-40 pb-24 px-margin-mobile md:px-margin-desktop flex items-center justify-center">
         <div className="text-center">
-          <h1 className="font-display-lg text-headline-md text-[#0b1221] mb-4">Page Not Found</h1>
-          <a href="/legal/" className="text-secondary font-label-caps uppercase tracking-widest hover:text-[#0b1221] transition-colors">Back to Legal</a>
+          <h1 className="font-display-lg text-headline-md text-on-surface mb-4">Page Not Found</h1>
+          <a href="/legal/" className="text-secondary font-label-caps uppercase tracking-widest hover:text-on-surface transition-colors">Back to Legal</a>
         </div>
       </section>
     );
   }
   return (
-    <section className="min-h-screen bg-[#f9f9f9] pt-40 pb-24 px-margin-mobile md:px-margin-desktop">
+    <section className="min-h-screen bg-primary-container pt-40 pb-24 px-margin-mobile md:px-margin-desktop">
       <div className="max-w-3xl mx-auto">
-        <a href="/legal/" className="inline-flex items-center gap-2 text-secondary font-label-caps text-[11px] uppercase tracking-widest mb-10 hover:text-[#0b1221] transition-colors">
+        <a href="/legal/" className="inline-flex items-center gap-2 text-secondary font-label-caps text-[11px] uppercase tracking-widest mb-10 hover:text-on-surface transition-colors">
           <span className="material-symbols-outlined text-sm">arrow_back</span> Legal
         </a>
-        <h1 className="font-display-lg text-headline-md text-[#0b1221] mb-10">{content.title}</h1>
-        <p className="font-body-lg text-[#575e71] leading-relaxed">{content.body}</p>
+        <h1 className="font-display-lg text-headline-md text-on-surface mb-10">{content.title}</h1>
+        <p className="font-body-lg text-on-surface-variant leading-relaxed">{content.body}</p>
         <div className="mt-16 pt-10 border-t border-[#dbdad9]">
-          <p className="font-body-md text-sm text-[#575e71]">Last updated: January 2026. For questions, contact <a href="/contact/" className="text-secondary hover:text-[#0b1221] transition-colors">our team</a>.</p>
+          <p className="font-body-md text-sm text-on-surface-variant">Last updated: January 2026. For questions, contact <a href="/contact/" className="text-secondary hover:text-on-surface transition-colors">our team</a>.</p>
         </div>
       </div>
     </section>

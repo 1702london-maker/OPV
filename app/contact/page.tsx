@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import { useState } from "react";
 import AIConciergeSection from "@/components/AIConciergeSection";
 
@@ -29,7 +29,7 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="relative py-40 overflow-hidden bg-primary text-on-primary">
         <div className="absolute inset-0 z-0 opacity-20">
-          <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm4LzX8oNBw0P4GJR_MqTZPRZMG7M0bwlQj7G6WJVzJkPK0FiXtGjO1cQWEJV-H0L9oU3bRrLmkv4K5m3OP96DGiPcVL23XkMlsZ3QzJjMfEbIXFwxhLi31ZxAlC47dFMkAkTGCHuJIiWCaLFJIr9NrdNJwvz0J8X4bN2cS0X3sLx3oB3w5ieMPTB-vhV3D0bpK7i5AYdnqPjBrZv0bHnqS_Nq6dZWkRvb7mWi_BNpWD_1f4v6tOMhvJl4dh5QqiGSfqwZ_U" alt="" data-placeholder="true" />
+          <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=85&auto=format&fit=crop" alt="" data-placeholder="true" />
         </div>
         <div className="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
           <span className="font-label-caps text-label-caps text-secondary-fixed mb-4 block">Bespoke Support</span>
@@ -73,7 +73,7 @@ export default function ContactPage() {
                   <p className="font-sans text-body-lg text-on-surface-variant">A member of our concierge team will respond within two hours.</p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-8 bg-white p-12 border border-outline-variant/20">
+                <form onSubmit={handleSubmit} className="space-y-8 bg-surface-container-low p-12 border border-outline-variant/20">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
                       <label className="font-label-caps text-label-caps text-on-surface-variant mb-2 block">Full Name</label>

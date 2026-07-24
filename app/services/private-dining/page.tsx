@@ -5,7 +5,7 @@ export default function PrivateDiningPage() {
       {/* Hero */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuD4FeS-p2tFMaUemkc2X-iJaiNvXM804E_iH0ZqsUeBLE37EQpYfCOhLfEhUDw9Uo29opkig2jnnDUq6oUcVg1j0FIoGa6nt7DQZJ-7jSBHB6u65v-BseEr9unRWmkz50Z_LRxh0-UvaYToDjQ-Sq-5U9RmBlwv_DvrKXT8bcHotLv80zp5OfsGBrjhfu3hiSUIHdgG0Q2JXHeUdfbUXDyv9DVRm9HjVp_rKKhqpYdveiH81vrTFbAM9g')" }}></div>
+          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=85&auto=format&fit=crop')" }}></div>
           <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/40 to-transparent"></div>
         </div>
         <div className="relative z-10 text-center max-w-4xl px-margin-mobile">
@@ -60,7 +60,7 @@ export default function PrivateDiningPage() {
                 stars: "3 Michelin Stars",
                 guests: "12 Guests",
                 price: "€1,250/pp",
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBGy09kVn0AcJDDHKDZxF_C1QEFBWKITvkwbM9dDPw6aajxnQu-iKUZLMmXOkD7amtzJrq97Cxw34X7t5f8d6Fz2DmBScFwgX7-4w8ftNhRJXrf6R6NmR4lVMGjy73uC9D_hK2d3f9-UcTPefQee83qizCN-B_6FzddoxHVAmqUbud4e5hU2Z5w5DXwuxSYjNDHfRA2IFx7hda4fITDyIj6-_x3bii9RDhcT-axpGlgQ5JsyASCaQKWQw",
+                img: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=85&auto=format&fit=crop",
               },
               {
                 name: "Horizon Omakase",
@@ -69,7 +69,7 @@ export default function PrivateDiningPage() {
                 stars: "Omakase Master",
                 guests: "6 Guests",
                 price: "€2,400/pp",
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDyN1YxjwV7Pu_HmiRa6kCx5U3se42d_eQ7xShiskE9gW3lcDvejgZYkHQg9syelcIMaAXghj71kqOLNedpC7lDD01C4Bgc2xu0XSpSBzP0K-YFNaiHwX7RAL_bvhIxngXk5jyp1oh9DfOh0N6Wcx4H8BdyIchL0snvNoTd4CgJvygdbi0BXvOiMHbMOuO9iYD4DDzUtAvRaHYlBxN5b0i_08ZQzki1kD8DTuAZ_96avrR6k8D3sfmiHQ",
+                img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=85&auto=format&fit=crop",
               },
               {
                 name: "Atlas Under Stars",
@@ -78,7 +78,7 @@ export default function PrivateDiningPage() {
                 stars: "Regional Laureate",
                 guests: "20 Guests",
                 price: "€1,800/pp",
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBPHDZGL82QLbTzQ88JPDfah3bqvD3oTppEHQOVlqfGv2xmWh-KwR9X2GoRY8CbwCudY5nvMJyScVEPBxeW8Smypzk5SOCPBLvwYDFIC2ff6vvBELYybGb03rnZq3X1ke0WdQlU8yJo-SUFwbOODun0sUJjN8t-epW1GvG1svBwY1OMnkbwgvIznzK8aGQNkC_A4zOiRFSt50Bds-gBspnsRfzvnr6_iWFtI0XIXJGIHuKBS1Vlm0ExNg",
+                img: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&q=85&auto=format&fit=crop",
               },
             ].map(({ name, location, chef, stars, guests, price, img }) => (
               <div key={name} className="group bg-primary-container border border-outline-variant/10 overflow-hidden hover:border-secondary/40 transition-all duration-500">
@@ -134,7 +134,7 @@ export default function PrivateDiningPage() {
               <a href="/concierge" className="bg-secondary text-primary-container px-10 py-4 font-label-caps inline-block hover:opacity-90 transition-opacity">RESERVE THIS TABLE</a>
             </div>
             <div className="relative aspect-[4/5] overflow-hidden">
-              <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAxmJtzrqzEzJSWc5tA-Oz3kJbC_0n3YG-je96DQKOEME80f9A-Cd26CIeS8jKyvw8AXofPRhEjQgroZ7O432R7-sqaOQsEj66UMY0ZZVjGzWv_cA_5hDdCs6Gol1KC1xZfWu4G6gL1woOrkzja2irvyD4nfFznz92gwNWvkiilQdwOEVrRVfNJ-V_7M-iXDrkvxGqp79Ob6jexVg1mYPmMW0g9BzWplLzCnH5BqcowFYhoUJJPL_IsdA')" }}></div>
+              <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=1200&q=85&auto=format&fit=crop')" }}></div>
               <div className="absolute inset-0 bg-primary-container/10"></div>
             </div>
           </div>

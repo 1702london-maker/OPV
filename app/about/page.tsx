@@ -1,4 +1,4 @@
-﻿import AIConciergeSection from "@/components/AIConciergeSection";
+import AIConciergeSection from "@/components/AIConciergeSection";
 
 export default function AboutPage() {
   return (
@@ -6,7 +6,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="relative h-[80vh] flex items-end pb-section-gap overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm4LzX8oNBw0P4GJR_MqTZPRZMG7M0bwlQj7G6WJVzJkPK0FiXtGjO1cQWEJV-H0L9oU3bRrLmkv4K5m3OP96DGiPcVL23XkMlsZ3QzJjMfEbIXFwxhLi31ZxAlC47dFMkAkTGCHuJIiWCaLFJIr9NrdNJwvz0J8X4bN2cS0X3sLx3oB3w5ieMPTB-vhV3D0bpK7i5AYdnqPjBrZv0bHnqS_Nq6dZWkRvb7mWi_BNpWD_1f4v6tOMhvJl4dh5QqiGSfqwZ_U" alt="Opulent Vault story" data-placeholder="true" />
+          <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1400&q=85&auto=format&fit=crop" alt="Opulent Vault story" data-placeholder="true" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-background" />
         </div>
         <div className="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full">
@@ -79,10 +79,10 @@ export default function AboutPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
             {[
-              { name: "James Harrington", role: "Founder & CEO", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDcgMbzx3g3SZsd-0IqLQT9qiBGwoVEXb-dK6kU1mbTUF8nunhwJBrM4bVITjCLm1B7HTW67XGlye9ciV-nv9oPPUC0PdcQ2Cme7cDTjUNoY9oN8zRgahorlLM402ghmSNIYmWPx6LZIC5Uh78iFY_9JtOjQ0dsVRwsJkDtUb_45dGkO_eyNzZTj9psRbPoZLcBhNgM9GKcm9v55o70pBVyYBYnfxUfxshw8iRH_SxDcn32gkO-QryZVhtUTd-thpjuMo3pWIKwKVGi" },
-              { name: "Isabelle Laurent", role: "Chief Experience Officer", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD64G6fh7cj5KYz-TTku5yLv7c7HvLIEBdXEBEqAoULMGFHCYdgP0YLxi3LrnM-pU7ImYJPJAS4K9jjKjq0sFQIiA5UeW_PSNB2YtaIyjz4yN6_-7YURGxLNyVB12JvzdQft58MMX434L90YTWqe8TAmBaC2givSOsiJmHuyz-DTgp9u43byMoEKSJ6swrB2QWaZ6xfZP_k7ul1DTULWRvqMFZ5UKjEDXvL2T6QSyGl5Dc_iq6F4BuL_tHCwUW6t0slLnicIrcpR4UU" },
-              { name: "Marcus Webb", role: "Head of Properties", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDm4LzX8oNBw0P4GJR_MqTZPRZMG7M0bwlQj7G6WJVzJkPK0FiXtGjO1cQWEJV-H0L9oU3bRrLmkv4K5m3OP96DGiPcVL23XkMlsZ3QzJjMfEbIXFwxhLi31ZxAlC47dFMkAkTGCHuJIiWCaLFJIr9NrdNJwvz0J8X4bN2cS0X3sLx3oB3w5ieMPTB-vhV3D0bpK7i5AYdnqPjBrZv0bHnqS_Nq6dZWkRvb7mWi_BNpWD_1f4v6tOMhvJl4dh5QqiGSfqwZ_U" },
-              { name: "Amara Osei", role: "Global Partnerships Director", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDcgMbzx3g3SZsd-0IqLQT9qiBGwoVEXb-dK6kU1mbTUF8nunhwJBrM4bVITjCLm1B7HTW67XGlye9ciV-nv9oPPUC0PdcQ2Cme7cDTjUNoY9oN8zRgahorlLM402ghmSNIYmWPx6LZIC5Uh78iFY_9JtOjQ0dsVRwsJkDtUb_45dGkO_eyNzZTj9psRbPoZLcBhNgM9GKcm9v55o70pBVyYBYnfxUfxshw8iRH_SxDcn32gkO-QryZVhtUTd-thpjuMo3pWIKwKVGi" },
+              { name: "James Harrington", role: "Founder & CEO", img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=85&auto=format&fit=crop" },
+              { name: "Isabelle Laurent", role: "Chief Experience Officer", img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=85&auto=format&fit=crop" },
+              { name: "Marcus Webb", role: "Head of Properties", img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&q=85&auto=format&fit=crop" },
+              { name: "Amara Osei", role: "Global Partnerships Director", img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=85&auto=format&fit=crop" },
             ].map((p) => (
               <div key={p.name} className="group">
                 <div className="aspect-[3/4] overflow-hidden mb-6">
@@ -103,13 +103,13 @@ export default function AboutPage() {
             <span className="font-label-caps text-label-caps text-secondary-fixed mb-4 block">Careers</span>
             <h3 className="font-serif text-headline-md mb-6">Join the Vault.</h3>
             <p className="font-sans text-body-md text-on-primary/70 mb-8">We seek exceptional individuals who share our commitment to perfection. If you believe in the power of bespoke service, we want to hear from you.</p>
-            <a href="/contact" className="inline-block border border-white/30 text-on-primary font-label-caps text-label-caps px-8 py-4 hover:bg-white hover:text-primary transition-all">Get In Touch</a>
+            <a href="/contact" className="inline-block border border-white/30 text-on-primary font-label-caps text-label-caps px-8 py-4 hover:bg-surface-container-low hover:text-primary transition-all">Get In Touch</a>
           </div>
           <div className="border border-white/10 p-12">
             <span className="font-label-caps text-label-caps text-secondary-fixed mb-4 block">Press</span>
             <h3 className="font-serif text-headline-md mb-6">Media Enquiries.</h3>
             <p className="font-sans text-body-md text-on-primary/70 mb-8">For press packs, interview requests, and brand partnership enquiries, our communications team is available to assist journalists and media professionals.</p>
-            <a href="/contact" className="inline-block border border-white/30 text-on-primary font-label-caps text-label-caps px-8 py-4 hover:bg-white hover:text-primary transition-all">Contact Press</a>
+            <a href="/contact" className="inline-block border border-white/30 text-on-primary font-label-caps text-label-caps px-8 py-4 hover:bg-surface-container-low hover:text-primary transition-all">Contact Press</a>
           </div>
         </div>
       </section>

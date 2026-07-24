@@ -5,7 +5,7 @@ export default function PersonalShoppingPage() {
       {/* Hero */}
       <section className="relative h-screen flex items-end overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQD68hQdh60qJq-gwY-m2ugBkfr0DE7F_isLPOgOKXHJ5VtqLV80FOoxD8eeuyKPfz5dPHLCb1X8D3ShiIztQB3T5tkf-SZ7oVSARiJY_d7odZ7q52JlAsZbIiX7D8S83arzkmV1x_WSmRtkr8wproLhxYveu8633sJAH94j9O1BebuoffQg55LkIZSRKOvozYJZveaMexY-cRUGm_g-zxmk8G31a_po4cg0jJLMcM_cHZja7Utav6Hw')" }}></div>
+          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1400&q=85&auto=format&fit=crop')" }}></div>
           <div className="absolute inset-0 bg-gradient-to-b from-primary-container/40 to-primary-container"></div>
         </div>
         <div className="relative z-10 px-margin-desktop pb-section-gap max-w-container-max mx-auto w-full">
@@ -33,10 +33,10 @@ export default function PersonalShoppingPage() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="aspect-[3/4] bg-primary-container overflow-hidden">
-              <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9qsTt5TwWFU2jub2OaVg5evlwBjy6w-ZVYQd4iQOOFmsoZKksfXchtuoO5CSr2zwuWTB466gL8lgQ8d2MC0Mk3S-kiReC7H_WqGCD63qxwagyKAdegQ7GQl6g4PX8hmd3oiICvJC6Tk-4l-8Dt0BqOL2YUrzZIUT1Pcl9_wwxvIfC-CRJcDw0NJZeRlpMsqcjQ7CHlOBJ-etJlrqXycBHQIA150UOJxwFZlDEtR-Gdt-PA2tGiovwgg" alt="Luxury watch" />
+              <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1200&q=85&auto=format&fit=crop" alt="Luxury watch" />
             </div>
             <div className="aspect-[3/4] bg-primary-container overflow-hidden mt-8">
-              <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3gb8R_67dAKYfo_7jhYHK9HG1p5uh9onBfDHKgeha-3tiFoivRqy2xEtsDmRmC7dcaBTroAmN2DQ2CgnPbyD5OxvUxYqRJTKKzdqJj7J0ZHCJS7jNT6L69M9ddUG3YhnwfjPHOdl7PkPqJPU_hoXuqksaEeSRPI9fEb6zLqSQCMjQddpGDRoB5Qp239SgvydQsKoPlDAxs2CKg_7azyf7XbmzErpu7U-j5IttV_Ub4ZmWn4x1kmEe7w" alt="Leather goods" />
+              <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1200&q=85&auto=format&fit=crop" alt="Leather goods" />
             </div>
           </div>
         </div>
@@ -59,21 +59,21 @@ export default function PersonalShoppingPage() {
                 specialty: "Haute Couture & Heritage Jewelry",
                 bio: "Former Senior Buyer at LVMH. 15 years specializing in European archival sourcing and private jewelry auctions.",
                 credential: "LVMH Group Alumna",
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBAyU1DxuTo-593xEBYVXae4l3zs9Ge9W8r3FFFD0OSSaDXkrvZTSFQ1_aVjQFyoM_ALIefaY9D6fjlEo5PEEEYCq8c3RiBYp8YnxDSUMTqwN9LNXaZNqYOD5_W8dMy1YkrZ8XSGsSX6Y0EuL2Js3r_hyy7zYblZEzRDgOJDjgQyWqbChLxLbPxa8U19eZ0tHsS1r8ysnnDsRoomHQz1bKpysK_rtxqXPIv4h3jmPBOGvtfs5xdY9ga9A",
+                img: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1400&q=85&auto=format&fit=crop",
               },
               {
                 name: "Julian Thorne",
                 specialty: "Horology & Bespoke Tailoring",
                 bio: "Expert in rare watch complications and Savile Row heritage. Previously headed VIP relations for a Swiss Manufacture.",
                 credential: "Certified Gemologist",
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCJVYl0S3hMRalAIjqQAIdaSoaPPh-yQOSLNW5V5W8kh-x9Yq3TEc-2ySH5sP1Fk8ZAux7RiY296tsJNT4O_S3aL6_w4VSfSzyhULitp-KUKss7GzJqjgHwYKoYBX3gg6-pC3Vay8R9rMJ5qhzJBUno4MU7NMrgRou_yAwXWx_LmJrj1RABJyeXwcndXX0KvhLWlJ_AmrIAKPZx6XM7rtGn3bx44Ol9UETXhpwzeEl4uT4PbVtlvqIeEA",
+                img: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1200&q=85&auto=format&fit=crop",
               },
               {
                 name: "Sofia Zhang",
                 specialty: "Emerging Luxury & Tech-Fashion",
                 bio: "Specialist in limited-edition drops and sustainable luxury innovation. Deep connections within the Tokyo and Milan markets.",
                 credential: "Global Fashion Institute Merit",
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDjpJbo11xoQTpUHrEgY5fDx5QDsE_EwcOUYuxwXXg3n1_OAmIFYmYlx8N7Jr3uAs7wsfS8nZtIjCPaqiq_5JERrdid_lXtjRq3DmLIE9iDcz86ylfMF4Ejquay2XJQzG1UcvyhRJrU2zhaeevQeJ0RDQNXhbTFBosMd_Bk0eflrShrN1iTBv_Yup5R5LCjH5sUt8nqGvtaayEobSG8tZ91GcxCj-QuwszMzxoUtsX5BFcFU09VKRaBXw",
+                img: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1200&q=85&auto=format&fit=crop",
               },
             ].map(({ name, specialty, bio, credential, img }) => (
               <div key={name} className="bg-primary-container border border-outline-variant/20 group hover:border-secondary/40 transition-all duration-500">
@@ -154,7 +154,7 @@ export default function PersonalShoppingPage() {
           </div>
           <div className="md:w-2/3 grid grid-cols-2 gap-gutter">
             <div className="group relative overflow-hidden aspect-square">
-              <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDTabAq0XFsTMln_ixbHAWOSyWW4q5umNfloG8EF1JqB6cMZExfIBPS_jZoUDUW2CJaoqfZnQa5zdCjVtHJxHI1RT_zu14HbKLI5pcJPLr6u6oki32KPxuUBFuD9_wsZVNcSXq6r56YeyKtNhMVmecHNo6aJfj-H6ETZAkN3hTaYK5UvNOvjzwhtknAeBO5sjQtdPei5pAQHFhDLEN3CcjqA4d6zZMbt7MgXYIBw9lLu1KFfhJWLXZFnQ')" }}></div>
+              <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1400&q=85&auto=format&fit=crop')" }}></div>
               <div className="absolute inset-0 bg-primary-container/40 group-hover:bg-primary-container/20 transition-colors"></div>
               <div className="absolute bottom-6 left-6">
                 <span className="font-label-caps text-secondary text-xs">Recently Sourced</span>
@@ -162,7 +162,7 @@ export default function PersonalShoppingPage() {
               </div>
             </div>
             <div className="group relative overflow-hidden aspect-square mt-12">
-              <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuATNU11ok0AmUMfHrrvrYtkzwm09dfgPRocOWpTON2yaJjMTz2LCzMqbaYR28sysOuw4CiwShwCLZoWm3bSp-9nizB6rI8bAVSh7waxT-5x56vifGWBbfv4i-akXlJ9m_qXURirT9VQk99O4n7DYlMn-tyPtulMYI1mY7umux9XN0EJK28nrfHjJYSOdAu6LfrGKZDTfE37pAMsqbDi49n9_OowxAFoovRSwP4pTMzToEGkve_w2Xj2xw')" }}></div>
+              <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1200&q=85&auto=format&fit=crop')" }}></div>
               <div className="absolute inset-0 bg-primary-container/40 group-hover:bg-primary-container/20 transition-colors"></div>
               <div className="absolute bottom-6 left-6">
                 <span className="font-label-caps text-secondary text-xs">Private Sale</span>

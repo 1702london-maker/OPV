@@ -4,7 +4,7 @@
       {/* Hero */}
       <section className="relative h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqjWHFBpRMGc5Q8wLvXfVE6Bq0kJ_bVRJxSlbf4m9YhS7Bz4BxvXA3dBfWgZiVPLkRpOa3kQ1K6X_qKl5DPBjcBjHr0yTfN5KCExZlNe_zs1x0j3kMilY1U7gRPFPP3cMHQPyPFJHMOoVFbP5rPEyuYwJY84mJO3Xm3iMV77MJerLjGm5uJzL2Y3kzR-y2G7pKuSMNfovJSE4K2y3p6JHfH0ZRGKLXGh5P_aGUFqm4L4eRVZfplA')" }}></div>
+          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1400&q=85&auto=format&fit=crop')" }}></div>
           <div className="absolute inset-0 bg-gradient-to-r from-primary-container via-primary-container/60 to-transparent"></div>
         </div>
         <div className="relative z-10 px-margin-desktop max-w-container-max mx-auto w-full">
@@ -84,7 +84,7 @@
               driver: "Self-Drive + Chauffeur",
               accel: "0-60: 3.5sec",
               engine: "6.0L W12",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCqjWHFBpRMGc5Q8wLvXfVE6Bq0kJ_bVRJxSlbf4m9YhS7Bz4BxvXA3dBfWgZiVPLkRpOa3kQ1K6X_qKl5DPBjcBjHr0yTfN5KCExZlNe_zs1x0j3kMilY1U7gRPFPP3cMHQPyPFJHMOoVFbP5rPEyuYwJY84mJO3Xm3iMV77MJerLjGm5uJzL2Y3kzR-y2G7pKuSMNfovJSE4K2y3p6JHfH0ZRGKLXGh5P_aGUFqm4L4eRVZfplA",
+              img: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1200&q=85&auto=format&fit=crop",
             },
             {
               name: "Ferrari 812 Superfast V12",
@@ -92,7 +92,7 @@
               driver: "Self-Drive Only",
               accel: "0-60: 2.9sec",
               engine: "6.5L V12",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCrEQnSKVOSKv3C1G0Ps-7X2PmJBaaTk8j2FxKGGv9V9hZ-a4gqf2FhV0N4NQOQ4dKd3MiC3iHEO5cJGvqXjX0jzY2uAUFbBzJgHiJVqv_IrW3JVJx_g",
+              img: "https://images.unsplash.com/photo-1617531653332-bd46c16f4d68?w=1200&q=85&auto=format&fit=crop",
             },
             {
               name: "Rolls-Royce Cullinan Black Badge",
@@ -100,7 +100,7 @@
               driver: "Chauffeur Only",
               accel: "0-60: 4.5sec",
               engine: "6.75L V12",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDpKxQ1vB_CqSNkKMnfDPJrSYjXE4nWaB7iA9mLT3BfAqJxB7iJpVFahnWaVPH0kHkjHJB7OW9P-0MhGf2Ej0-PeBw",
+              img: "https://images.unsplash.com/photo-1493238792000-8113da705763?w=1200&q=85&auto=format&fit=crop",
             },
           ].map(({ name, price, driver, accel, engine, img }) => (
             <div key={name} className="group bg-primary-container border border-outline-variant/10 overflow-hidden hover:border-secondary/40 transition-all duration-500">

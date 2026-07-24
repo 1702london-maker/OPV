@@ -5,7 +5,7 @@ export default function PrivateJetPage() {
       {/* Hero */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6r2jrQd_MaGankgmtPfqYnkyX-aekjmU_ZQ1r1gd2JKwYdoIBrfWhvJur6QdHJvL9YuTBVaup-HLsCZiKEdKZk0lSjjfBVok3pQ03DmzbPIQtPFr3lObmG8Y6fXdCL04qOROrfwd2z7AmZJykgWXWGTZyjuFA-SSustv1htv-p528rBYBuPC4O59oIjIPTbtpGEXlcpYknGVd1J_Mu2iaTqQNJRY-7WhVSRx5iTp3MNQnZnv2-WvjQg')" }}></div>
+          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=85&auto=format&fit=crop')" }}></div>
           <div className="absolute inset-0 bg-primary-container/50"></div>
         </div>
         <div className="relative z-10 text-center max-w-4xl px-margin-mobile">
@@ -79,8 +79,8 @@ export default function PrivateJetPage() {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <div className="aspect-square bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBxjNYN8pHr-OTRMtvTrxaziYGgASSIbfBlIXmW_cDXupozFzbZJz_9E7jHkaSBd-AC6lqsJIOMEvfaFOQ9qbPb3Otuj84itJO0zoawt3nMFAt4BEd7Qda-KQCMjuSN0ySu3j5Cw2QKxLTqY2ZoJ6GhmGUo6m-3txhbLtT7bWWLbmaUsisk3B-LkiMzu6XcN_HQfwhhQsMSorBf-IbRQ0eFNSJmX9fFAYLXcBL6Nv1sQXB_gvx6LfGIGw')" }}></div>
-              <div className="aspect-square bg-cover bg-center mt-8" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCHo8avzFcqvhd5Y8zY6LvGu6M2tp6PMXJFH1V2ZFFOEjax0XcX8-NqYob5di19rqww78HEWfAu30Fr0p2IuOa66oNzicUhvS7NNlTncwER5g_I2gLq_3KqsqEnIMTuGBSn7JsAEu9uL1_8EUk1jLZpTdJwyR_TRI5aOTqKftUZxU_VJvX6iZOJe9tug1TLyKK3_qWEEacMkstwdaZzPQH5-yVkZBUrxHu8vku6S-1mcn_jxTNMiIPG9Q')" }}></div>
+              <div className="aspect-square bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=85&auto=format&fit=crop')" }}></div>
+              <div className="aspect-square bg-cover bg-center mt-8" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=85&auto=format&fit=crop')" }}></div>
             </div>
           </div>
         </div>

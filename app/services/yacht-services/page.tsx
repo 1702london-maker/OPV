@@ -4,7 +4,7 @@
       {/* Hero */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6r2jrQd_MaGankgmtPfqYnkyX-aekjmU_ZQ1r1gd2JKwYdoIBrfWhvJur6QdHJvL9YuTBVaup-HLsCZiKEdKZk0lSjjfBVok3pQ03DmzbPIQtPFr3lObmG8Y6fXdCL04qOROrfwd2z7AmZJykgWXWGTZyjuFA-SSustv1htv-p528rBYBuPC4O59oIjIPTbtpGEXlcpYknGVd1J_Mu2iaTqQNJRY-7WhVSRx5iTp3MNQnZnv2-WvjQg')" }}></div>
+          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=85&auto=format&fit=crop')" }}></div>
           <div className="absolute inset-0 bg-primary-container/40"></div>
         </div>
         <div className="relative z-10 text-center max-w-4xl px-margin-mobile">
@@ -41,7 +41,7 @@
         </div>
         <div className="relative group">
           <div className="absolute -inset-4 border border-secondary/20 transition-all group-hover:inset-0"></div>
-          <div className="aspect-[4/5] bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_97JRo182rYdX0OjrX9dgLCYDm_ImJdYBVFDTBeXgxgZ3DlWZLLEsB1rccPdvWeTuLPxGobxHYYRPFPclvPwybLduRDmlXZjEyI6qivl2ilkvTEXQlfyeP7pOC-I8eges9rM3zEb5ujD6uTlVnzUrBm_AiX9Wbo22XaFG-aFk_FE1vRWLr7Udbvn9LHKjBOSbkNU85I2S06HjbcDeGndGrNcl0QRLt4RNVncBg0VEa3L_NCmnN_wfIw')" }}></div>
+          <div className="aspect-[4/5] bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=85&auto=format&fit=crop')" }}></div>
           <div className="absolute bottom-8 right-8 p-6 bg-primary-container/80 backdrop-blur flex items-center gap-4">
             <div className="w-12 h-12 rounded-full border border-secondary flex items-center justify-center font-display-lg text-secondary text-xs">OPV</div>
             <div>
@@ -71,9 +71,9 @@
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { name: "AURELIA I", builder: "Heesen Yachts • 2021", price: "€180,000 / week", length: "45m / 147ft", guests: "12 Guests", crew: "9 Professional", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAxmJtzrqzEzJSWc5tA-Oz3kJbC_0n3YG-je96DQKOEME80f9A-Cd26CIeS8jKyvw8AXofPRhEjQgroZ7O432R7-sqaOQsEj66UMY0ZZVjGzWv_cA_5hDdCs6Gol1KC1xZfWu4G6gL1woOrkzja2irvyD4nfFznz92gwNWvkiilQdwOEVrRVfNJ-V_7M-iXDrkvxGqp79Ob6jexVg1mYPmMW0g9BzWplLzCnH5BqcowFYhoUJJPL_IsdA" },
-              { name: "MIDNIGHT BLUE", builder: "Lürssen • 2019", price: "€450,000 / week", length: "62m / 203ft", guests: "14 Guests", crew: "16 Professional", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCHo8avzFcqvhd5Y8zY6LvGu6M2tp6PMXJFH1V2ZFFOEjax0XcX8-NqYob5di19rqww78HEWfAu30Fr0p2IuOa66oNzicUhvS7NNlTncwER5g_I2gLq_3KqsqEnIMTuGBSn7JsAEu9uL1_8EUk1jLZpTdJwyR_TRI5aOTqKftUZxU_VJvX6iZOJe9tug1TLyKK3_qWEEacMkstwdaZzPQH5-yVkZBUrxHu8vku6S-1mcn_jxTNMiIPG9Q" },
-              { name: "ELEGANZA", builder: "Perini Navi • 2023", price: "€220,000 / week", length: "52m / 171ft", guests: "10 Guests", crew: "8 Professional", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBxjNYN8pHr-OTRMtvTrxaziYGgASSIbfBlIXmW_cDXupozFzbZJz_9E7jHkaSBd-AC6lqsJIOMEvfaFOQ9qbPb3Otuj84itJO0zoawt3nMFAt4BEd7Qda-KQCMjuSN0ySu3j5Cw2QKxLTqY2ZoJ6GhmGUo6m-3txhbLtT7bWWLbmaUsisk3B-LkiMzu6XcN_HQfwhhQsMSorBf-IbRQ0eFNSJmX9fFAYLXcBL6Nv1sQXB_gvx6LfGIGw" },
+              { name: "AURELIA I", builder: "Heesen Yachts • 2021", price: "€180,000 / week", length: "45m / 147ft", guests: "12 Guests", crew: "9 Professional", img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=85&auto=format&fit=crop" },
+              { name: "MIDNIGHT BLUE", builder: "Lürssen • 2019", price: "€450,000 / week", length: "62m / 203ft", guests: "14 Guests", crew: "16 Professional", img: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&q=85&auto=format&fit=crop" },
+              { name: "ELEGANZA", builder: "Perini Navi • 2023", price: "€220,000 / week", length: "52m / 171ft", guests: "10 Guests", crew: "8 Professional", img: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=1200&q=85&auto=format&fit=crop" },
             ].map(({ name, builder, price, length, guests, crew, img }) => (
               <div key={name} className="group bg-surface-container relative overflow-hidden flex flex-col">
                 <div className="relative aspect-[16/10] overflow-hidden">

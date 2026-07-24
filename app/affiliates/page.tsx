@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import { useState } from "react";
 import AIConciergeSection from "@/components/AIConciergeSection";
 
@@ -44,7 +44,7 @@ export default function AffiliatesPage() {
       {/* Hero */}
       <section className="relative h-[70vh] flex items-end pb-section-gap overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img className="w-full h-full object-cover grayscale opacity-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcgMbzx3g3SZsd-0IqLQT9qiBGwoVEXb-dK6kU1mbTUF8nunhwJBrM4bVITjCLm1B7HTW67XGlye9ciV-nv9oPPUC0PdcQ2Cme7cDTjUNoY9oN8zRgahorlLM402ghmSNIYmWPx6LZIC5Uh78iFY_9JtOjQ0dsVRwsJkDtUb_45dGkO_eyNzZTj9psRbPoZLcBhNgM9GKcm9v55o70pBVyYBYnfxUfxshw8iRH_SxDcn32gkO-QryZVhtUTd-thpjuMo3pWIKwKVGi" alt="Affiliates" data-placeholder="true" />
+          <img className="w-full h-full object-cover grayscale opacity-40" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=85&auto=format&fit=crop" alt="Affiliates" data-placeholder="true" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
         </div>
         <div className="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full">
@@ -76,7 +76,7 @@ export default function AffiliatesPage() {
             </div>
             <div className="col-span-12 md:col-span-6 md:col-start-7">
               <div className="relative">
-                <img className="w-full aspect-[4/5] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD64G6fh7cj5KYz-TTku5yLv7c7HvLIEBdXEBEqAoULMGFHCYdgP0YLxi3LrnM-pU7ImYJPJAS4K9jjKjq0sFQIiA5UeW_PSNB2YtaIyjz4yN6_-7YURGxLNyVB12JvzdQft58MMX434L90YTWqe8TAmBaC2givSOsiJmHuyz-DTgp9u43byMoEKSJ6swrB2QWaZ6xfZP_k7ul1DTULWRvqMFZ5UKjEDXvL2T6QSyGl5Dc_iq6F4BuL_tHCwUW6t0slLnicIrcpR4UU" alt="Luxury affiliate" data-placeholder="true" />
+                <img className="w-full aspect-[4/5] object-cover" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=85&auto=format&fit=crop" alt="Luxury affiliate" data-placeholder="true" />
                 <div className="absolute -bottom-8 -left-8 bg-surface p-8 hidden md:block border border-outline-variant/20">
                   <p className="font-serif text-headline-md leading-none mb-1">12%</p>
                   <p className="font-label-caps text-label-caps text-on-surface-variant">Average Commission</p>
@@ -151,7 +151,7 @@ export default function AffiliatesPage() {
               { label: "Conversions", value: "47", icon: "trending_up" },
               { label: "Cookie Days", value: "90", icon: "calendar_month" },
             ].map((stat) => (
-              <div key={stat.label} className="bg-white/10 border border-white/10 p-8">
+              <div key={stat.label} className="bg-surface-container-low/10 border border-white/10 p-8">
                 <span className="material-symbols-outlined text-secondary-fixed mb-4 block text-3xl">{stat.icon}</span>
                 <div className="font-serif text-headline-md text-on-primary mb-1">{stat.value}</div>
                 <p className="font-label-caps text-label-caps text-on-primary/60">{stat.label}</p>
@@ -177,7 +177,7 @@ export default function AffiliatesPage() {
                 <p className="font-sans text-body-lg text-on-surface-variant">Welcome to the Circle. Our team will review your application and be in touch within 48 hours.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-8 bg-white p-12 border border-outline-variant/20">
+              <form onSubmit={handleSubmit} className="space-y-8 bg-surface-container-low p-12 border border-outline-variant/20">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
                     <label className="font-label-caps text-label-caps text-on-surface-variant mb-2 block">Full Name</label>

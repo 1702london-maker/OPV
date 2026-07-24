@@ -42,7 +42,7 @@ export default async function DestinationPage({ params }: Props) {
       {/* Hero */}
       <section className="relative h-screen flex items-end overflow-hidden">
         <img
-          src={destination.hero_image_path || "https://lh3.googleusercontent.com/aida-public/AB6AXuCS4cLtPQI76KAWTUP2hOixbBx1qIHoUqwpiaqOiqLlpSNU-ImCaBVkyROsmJ9Fe9t55VzysDHPVGkqZzwDiTYDTTWtJaeWBDX8c9VgFKNHmUHaor3peq9Yw9w5ViAOVcI9TIYWsWd4PdWWOjs5a0Q9Lcbu74useb7_BcMnXnB0kpiGqo-5-hGKXQqCntiYQQW2BI5k_XKYAZSmpr2LUq_hIVx85R2LMod5_mhNh7N0SYMIWmJaAXJD1rCdZuoIjGc8QhQyV8yATih2"}
+          src={destination.hero_image_path || "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=1200&q=85&auto=format&fit=crop"}
           alt={`${cityName} luxury destination`}
           data-placeholder="true"
           className="absolute inset-0 w-full h-full object-cover"
@@ -128,7 +128,7 @@ export default async function DestinationPage({ params }: Props) {
           {experiences && experiences.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {experiences.map((e) => (
-                <div key={e.id} className="bg-white border border-outline-variant/30 group cursor-pointer">
+                <div key={e.id} className="bg-surface-container-low border border-outline-variant/30 group cursor-pointer">
                   <div className="aspect-video overflow-hidden bg-surface-container">
                     {e.image_path && (
                       <img src={e.image_path} alt={e.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />

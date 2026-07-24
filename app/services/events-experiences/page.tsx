@@ -5,7 +5,7 @@ export default function EventsExperiencesPage() {
       {/* Hero */}
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBxjNYN8pHr-OTRMtvTrxaziYGgASSIbfBlIXmW_cDXupozFzbZJz_9E7jHkaSBd-AC6lqsJIOMEvfaFOQ9qbPb3Otuj84itJO0zoawt3nMFAt4BEd7Qda-KQCMjuSN0ySu3j5Cw2QKxLTqY2ZoJ6GhmGUo6m-3txhbLtT7bWWLbmaUsisk3B-LkiMzu6XcN_HQfwhhQsMSorBf-IbRQ0eFNSJmX9fFAYLXcBL6Nv1sQXB_gvx6LfGIGw')" }}></div>
+          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1400&q=85&auto=format&fit=crop')" }}></div>
           <div className="absolute inset-0 bg-gradient-to-b from-primary-container/60 via-primary-container/30 to-primary-container/80"></div>
         </div>
         <div className="relative z-10 text-center max-w-4xl px-margin-mobile">
@@ -46,7 +46,7 @@ export default function EventsExperiencesPage() {
               guests: "12 Guests",
               type: "PRIVATE INVITATION",
               price: "Enquiry Only",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD4FeS-p2tFMaUemkc2X-iJaiNvXM804E_iH0ZqsUeBLE37EQpYfCOhLfEhUDw9Uo29opkig2jnnDUq6oUcVg1j0FIoGa6nt7DQZJ-7jSBHB6u65v-BseEr9unRWmkz50Z_LRxh0-UvaYToDjQ-Sq-5U9RmBlwv_DvrKXT8bcHotLv80zp5OfsGBrjhfu3hiSUIHdgG0Q2JXHeUdfbUXDyv9DVRm9HjVp_rKKhqpYdveiH81vrTFbAM9g",
+              img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=85&auto=format&fit=crop",
             },
             {
               title: "Opera Under the Duomo Spires",
@@ -55,7 +55,7 @@ export default function EventsExperiencesPage() {
               guests: "50 Guests",
               type: "PUBLIC LISTING",
               price: "$2,450/Seat",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBGy09kVn0AcJDDHKDZxF_C1QEFBWKITvkwbM9dDPw6aajxnQu-iKUZLMmXOkD7amtzJrq97Cxw34X7t5f8d6Fz2DmBScFwgX7-4w8ftNhRJXrf6R6NmR4lVMGjy73uC9D_hK2d3f9-UcTPefQee83qizCN-B_6FzddoxHVAmqUbud4e5hU2Z5w5DXwuxSYjNDHfRA2IFx7hda4fITDyIj6-_x3bii9RDhcT-axpGlgQ5JsyASCaQKWQw",
+              img: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=1200&q=85&auto=format&fit=crop",
             },
             {
               title: "The Unveiling: Prototype 01",
@@ -64,7 +64,7 @@ export default function EventsExperiencesPage() {
               guests: "20 Guests",
               type: "PRIVATE INVITATION",
               price: "Enquiry Only",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDyN1YxjwV7Pu_HmiRa6kCx5U3se42d_eQ7xShiskE9gW3lcDvejgZYkHQg9syelcIMaAXghj71kqOLNedpC7lDD01C4Bgc2xu0XSpSBzP0K-YFNaiHwX7RAL_bvhIxngXk5jyp1oh9DfOh0N6Wcx4H8BdyIchL0snvNoTd4CgJvygdbi0BXvOiMHbMOuO9iYD4DDzUtAvRaHYlBxN5b0i_08ZQzki1kD8DTuAZ_96avrR6k8D3sfmiHQ",
+              img: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1400&q=85&auto=format&fit=crop",
             },
           ].map(({ title, venue, date, guests, type, price, img }) => (
             <div key={title} className="group bg-primary-container border border-outline-variant/10 overflow-hidden hover:border-secondary/40 transition-all duration-500">
@@ -104,7 +104,7 @@ export default function EventsExperiencesPage() {
         <div className="px-margin-desktop max-w-container-max mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative aspect-[4/3] overflow-hidden">
-              <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPHDZGL82QLbTzQ88JPDfah3bqvD3oTppEHQOVlqfGv2xmWh-KwR9X2GoRY8CbwCudY5nvMJyScVEPBxeW8Smypzk5SOCPBLvwYDFIC2ff6vvBELYybGb03rnZq3X1ke0WdQlU8yJo-SUFwbOODun0sUJjN8t-epW1GvG1svBwY1OMnkbwgvIznzK8aGQNkC_A4zOiRFSt50Bds-gBspnsRfzvnr6_iWFtI0XIXJGIHuKBS1Vlm0ExNg')" }}></div>
+              <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=85&auto=format&fit=crop')" }}></div>
               <div className="absolute inset-0 bg-primary-container/20"></div>
             </div>
             <div className="space-y-6">

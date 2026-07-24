@@ -5,7 +5,7 @@ export default function VideographyPhotographyPage() {
       {/* Hero */}
       <section className="relative h-[921px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6r2jrQd_MaGankgmtPfqYnkyX-aekjmU_ZQ1r1gd2JKwYdoIBrfWhvJur6QdHJvL9YuTBVaup-HLsCZiKEdKZk0lSjjfBVok3pQ03DmzbPIQtPFr3lObmG8Y6fXdCL04qOROrfwd2z7AmZJykgWXWGTZyjuFA-SSustv1htv-p528rBYBuPC4O59oIjIPTbtpGEXlcpYknGVd1J_Mu2iaTqQNJRY-7WhVSRx5iTp3MNQnZnv2-WvjQg')" }}></div>
+          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400&q=85&auto=format&fit=crop')" }}></div>
           <div className="absolute inset-0 bg-primary-container/40"></div>
         </div>
         <div className="relative z-10 text-center max-w-4xl px-margin-mobile">
@@ -40,21 +40,21 @@ export default function VideographyPhotographyPage() {
                 specialty: "Architectural & Estate",
                 rate: "Rate on Enquiry",
                 desc: "Specialists in heritage property documentation and architectural portraiture. Trusted by seven of Europe&apos;s leading private estates.",
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBsyw6l4tBh5y0YsWjhwLBrIeHPdQL_m39bf9gxGCpIIKw36NBLCWFddW5Yw2qxrh-5lclSNrvC3867aTPWzRI0yNYDfdf4gTN0lQdjPI0OhDjaMpe9l6BAgzyL0emq7oBNouAEshL2DYgwwcxyEWJvdW_Sa0kj6QbOLmzjqpaHGI36LDNda4-sbKObSPrJZ3dA3zgR0-gdEk-T7U9a42KtC3HJvnwhwJy1XCliIqnmouuPKfFCUG1w1A",
+                img: "https://images.unsplash.com/photo-1452802447250-470a88ac82bc?w=1200&q=85&auto=format&fit=crop",
               },
               {
                 studio: "Julian Thorne Studio",
                 specialty: "Portrait & Legacy",
                 rate: "From $8,500",
                 desc: "Julian Thorne is widely regarded as the pre-eminent portrait photographer for high-net-worth families. His studio creates archival legacy documentation.",
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDynEP5I3FGGYtmjAJNh-ysWkvvN-F0FRD7dx1qnw_HWig-KuyfbatbS1tpJgVAeT7jb08s6BLRJnwTiPWiqp-YEKvRbrdTcAme7dORQoblAA1pqsklLv-bM_fcJ5fJMOsxiH7Mq1V8FBPQZPFG5idwTHFbTwW1iirbtz0bFu467GPKrjjTTPQ2oX5ttlMs62z7RpyLDKjwglje0PKq8xF1kKx1x8VCPG8AJheH1QkSTzz0fqhdevkng",
+                img: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=1200&q=85&auto=format&fit=crop",
               },
               {
                 studio: "Aether Motion",
                 specialty: "Event & Cinematography",
                 rate: "Rate on Enquiry",
                 desc: "Award-winning cinematic event coverage. Aether Motion produces 4K documentary films of private galas, weddings, and corporate milestones.",
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCHo8avzFcqvhd5Y8zY6LvGu6M2tp6PMXJFH1V2ZFFOEjax0XcX8-NqYob5di19rqww78HEWfAu30Fr0p2IuOa66oNzicUhvS7NNlTncwER5g_I2gLq_3KqsqEnIMTuGBSn7JsAEu9uL1_8EUk1jLZpTdJwyR_TRI5aOTqKftUZxU_VJvX6iZOJe9tug1TLyKK3_qWEEacMkstwdaZzPQH5-yVkZBUrxHu8vku6S-1mcn_jxTNMiIPG9Q",
+                img: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400&q=85&auto=format&fit=crop",
               },
             ].map(({ studio, specialty, rate, desc, img }) => (
               <div key={studio} className="group bg-primary-container border border-outline-variant/10 overflow-hidden hover:border-secondary/40 transition-all duration-500">
@@ -98,9 +98,9 @@ export default function VideographyPhotographyPage() {
               <a href="/concierge" className="bg-secondary text-primary-container px-10 py-4 font-label-caps inline-block hover:opacity-90 transition-opacity">REQUEST COMMISSION</a>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <div className="aspect-square bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBGy09kVn0AcJDDHKDZxF_C1QEFBWKITvkwbM9dDPw6aajxnQu-iKUZLMmXOkD7amtzJrq97Cxw34X7t5f8d6Fz2DmBScFwgX7-4w8ftNhRJXrf6R6NmR4lVMGjy73uC9D_hK2d3f9-UcTPefQee83qizCN-B_6FzddoxHVAmqUbud4e5hU2Z5w5DXwuxSYjNDHfRA2IFx7hda4fITDyIj6-_x3bii9RDhcT-axpGlgQ5JsyASCaQKWQw')" }}></div>
-              <div className="aspect-square bg-cover bg-center mt-8" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDyN1YxjwV7Pu_HmiRa6kCx5U3se42d_eQ7xShiskE9gW3lcDvejgZYkHQg9syelcIMaAXghj71kqOLNedpC7lDD01C4Bgc2xu0XSpSBzP0K-YFNaiHwX7RAL_bvhIxngXk5jyp1oh9DfOh0N6Wcx4H8BdyIchL0snvNoTd4CgJvygdbi0BXvOiMHbMOuO9iYD4DDzUtAvRaHYlBxN5b0i_08ZQzki1kD8DTuAZ_96avrR6k8D3sfmiHQ')" }}></div>
-              <div className="col-span-2 aspect-video bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPHDZGL82QLbTzQ88JPDfah3bqvD3oTppEHQOVlqfGv2xmWh-KwR9X2GoRY8CbwCudY5nvMJyScVEPBxeW8Smypzk5SOCPBLvwYDFIC2ff6vvBELYybGb03rnZq3X1ke0WdQlU8yJo-SUFwbOODun0sUJjN8t-epW1GvG1svBwY1OMnkbwgvIznzK8aGQNkC_A4zOiRFSt50Bds-gBspnsRfzvnr6_iWFtI0XIXJGIHuKBS1Vlm0ExNg')" }}></div>
+              <div className="aspect-square bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1452802447250-470a88ac82bc?w=1200&q=85&auto=format&fit=crop')" }}></div>
+              <div className="aspect-square bg-cover bg-center mt-8" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=1200&q=85&auto=format&fit=crop')" }}></div>
+              <div className="col-span-2 aspect-video bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400&q=85&auto=format&fit=crop')" }}></div>
             </div>
           </div>
         </div>
