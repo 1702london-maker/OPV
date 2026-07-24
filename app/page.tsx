@@ -35,7 +35,7 @@ export default function HomePage() {
             ></div>
           </div>
         </div>
-        <div className="relative z-20 text-center px-6 max-w-4xl">
+        <div className="relative z-20 text-center px-6 w-full max-w-4xl">
           <span className="font-label-caps text-label-caps text-secondary uppercase tracking-[0.3em] mb-4 block fade-in-up">The Discerning Guardian</span>
           <h1 className="font-display-lg text-display-lg md:text-display-lg text-on-surface mb-8 fade-in-up">Access to the Exceptional.</h1>
           <p className="font-body-lg text-body-lg text-on-surface-variant mb-12 fade-in-up" style={{ animationDelay: "0.2s" }}>The UK&apos;s most trusted curated luxury lifestyle platform.</p>
@@ -106,7 +106,7 @@ export default function HomePage() {
           <h3 className="font-display-lg text-headline-md text-on-surface">Exceptional Properties</h3>
         </div>
         <div className="flex gap-8 px-margin-desktop overflow-x-auto no-scrollbar snap-x snap-mandatory">
-          <div className="min-w-[400px] md:min-w-[800px] snap-center">
+          <div className="min-w-[85vw] md:min-w-[800px] snap-center">
             <div className="relative aspect-video mb-8">
               <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBR-cMhxjgJqwb6z8vwuYOi8oyyzPs6fnyrkcf5HlQ5nCC51hJTw64w8jX4M3M2iFVlYVo3x_h1gkg63C6saWgqSruL8wysHCR36l2Azrg4NZQsmuzWAzBpL8EfpTGzOR_KnpHv78XOJygGpssva51BhoqZu3qu80ERl_WmAIkf7hrmrUurOb_DFqSRdwMHC22ApsfGo0pfq6Jxhsszr7gXnGxxnaZB0aoSTuRmtzsUkhSdFW-1GreHOg')" }}></div>
               <div className="absolute top-8 left-8 flex items-center gap-3 bg-primary-container/80 backdrop-blur-md px-4 py-2 border border-secondary/40">
@@ -124,7 +124,7 @@ export default function HomePage() {
               <span className="font-display-lg text-headline-sm text-secondary">£12,000 / night</span>
             </div>
           </div>
-          <div className="min-w-[400px] md:min-w-[800px] snap-center">
+          <div className="min-w-[85vw] md:min-w-[800px] snap-center">
             <div className="relative aspect-video mb-8">
               <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAydN9tfir1woqDVTZf1t_M2yE01r4am-_H9ewVYz3vSag4uVIOYYQCyCuYhNqyV5ZqrUkB8jyySQUisDaTujWoSgVDGBkNOqFLB7VxiNVnDAfaKDrDygUXhdXWglYdTFFlGx12JRUS0X4oYazaxKJ41Gnb7uQnmyfSzCilIZfo_HnkgbeRHiIUw7Zz17pA7UnQMA54tyNaIkdIiNvJjWzHxwc0fwSNTxcaJtF_skKgjbyj22yX9NRZaQ')" }}></div>
               <div className="absolute top-8 left-8 flex items-center gap-3 bg-primary-container/80 backdrop-blur-md px-4 py-2 border border-secondary/40">
