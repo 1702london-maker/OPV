@@ -47,12 +47,12 @@ export default function ContactPage() {
               { icon: "mail", label: "Email", value: "concierge@opulentvault.com", sub: "Response within 2 hours" },
               { icon: "location_on", label: "Head Office", value: "Mayfair, London W1K", sub: "By appointment only" },
             ].map((c) => (
-              <div key={c.label} className="bg-surface-container-low p-12 text-center border border-outline/5">
+              <div key={c.label} className="bg-surface-container-low p-6 md:p-12 text-center border border-outline/5">
                 <div className="w-14 h-14 flex items-center justify-center border border-secondary mx-auto mb-6">
                   <span className="material-symbols-outlined text-secondary">{c.icon}</span>
                 </div>
                 <p className="font-label-caps text-label-caps text-on-surface-variant mb-2">{c.label}</p>
-                <p className="font-serif text-headline-md mb-1">{c.value}</p>
+                <p className="font-serif text-body-lg md:text-headline-md mb-1 break-all">{c.value}</p>
                 <p className="font-sans text-body-md text-on-surface-variant">{c.sub}</p>
               </div>
             ))}
@@ -67,13 +67,13 @@ export default function ContactPage() {
             </div>
             <div>
               {submitted ? (
-                <div className="bg-surface-container-low border border-secondary/30 p-16 text-center">
+                <div className="bg-surface-container-low border border-secondary/30 p-8 md:p-16 text-center">
                   <span className="material-symbols-outlined text-secondary text-5xl mb-4 block">check_circle</span>
                   <h3 className="font-serif text-headline-md mb-4">Message Received</h3>
                   <p className="font-sans text-body-lg text-on-surface-variant">A member of our concierge team will respond within two hours.</p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-8 bg-surface-container-low p-12 border border-outline-variant/20">
+                <form onSubmit={handleSubmit} className="space-y-8 bg-surface-container-low p-6 md:p-12 border border-outline-variant/20">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
                       <label className="font-label-caps text-label-caps text-on-surface-variant mb-2 block">Full Name</label>
